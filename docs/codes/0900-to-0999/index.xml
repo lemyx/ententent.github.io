@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0900-to-0999/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
+      <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
+思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+    </item>
+    
+  </channel>
+</rss>

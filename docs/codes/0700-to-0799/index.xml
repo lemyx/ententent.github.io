@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0700-to-0799/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/</guid>
+      <description> 704. Binary Search # 题目 # 给定一个n个元素有序的升序整型数组nums和一个目标值target，写一个函数搜索nums中的target，如果目标值存在返回下标，否则返回-1。
+思路 # 保持consistency不变量。
+代码 # class Solution { public int search(int[] nums, int target) { int left = 0, right = nums.length; while (left &amp;lt; right) { int medium = left + (right - left) / 2; if (nums[medium] == target) return medium; else if (nums[medium] &amp;gt; target) right = medium; else left = medium + 1; } return -1; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0707.-Design-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0707.-Design-Linked-List/</guid>
+      <description>707. Design Linked List # 题目 # 设计链表的实现。可以选择使用单链表或双链表。
+在链表类中实现这些功能：
+get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。 addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。 addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。 addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val 的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。 deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。 思路 # 代码 # public class ListNode { public ListNode prev; public ListNode next; public int val; public ListNode(ListNode prev, ListNode next, int val) { this.prev = prev; this.next = next; this.val = val; } } class MyLinkedList { private ListNode sentinel; private int size; public MyLinkedList() { this.</description>
+    </item>
+    
+  </channel>
+</rss>

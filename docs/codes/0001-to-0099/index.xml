@@ -17,12 +17,32 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</guid>
+      <description>19. Remove Nth Node from End of List # 题目 # 给定链表，要求删除链表的倒数第 n 个结点，并且返回链表的头结点。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeNthFromEnd(ListNode head, int n) { ListNode sentinel = new ListNode(-1, head); ListNode slow = sentinel, fast = slow; for (int i=0; i&amp;lt;n+1; i++) fast = fast.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
       <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private ListNode mergeHelper(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeHelper(list1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</guid>
+      <description>24. Swap Nodes in Pairs # 题目 # 给定链表，两两交换其中相邻的节点，并返回交换后链表的头节点。只能进行节点交换，不能修改节点内部的值。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null) return head; if (head.next == null) return head; else { ListNode newHead = head.next; head.</description>
     </item>
     
     <item>
@@ -44,6 +64,21 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0054.-Spiral-Matrix/</guid>
       <description>54. Spiral Matrix # 题目 # 给定一个m行n列的矩阵matrix，按照顺时针螺旋顺序，返回矩阵中的所有元素。
 思路 # 代码 # class Solution { public void circle(int[][] matrix, List&amp;lt;Integer&amp;gt; result, int top, int left, int right, int bottom) { if (top &amp;gt; bottom || left &amp;gt; right) return; if (top == bottom) { for (int j=left; j&amp;lt;=right; j++) result.add(matrix[top][j]); return; } else if (left == right) { for (int i=top; i&amp;lt;=bottom; i++) result.add(matrix[i][left]); return; } for (int j=left; j&amp;lt;right; j++) result.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</guid>
+      <description> 59. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
+思路 # 对于n阶方阵，共有n/2个完整螺旋。
+若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
+对于第offset个螺旋，考虑四角元素的坐标，由左上顺时针分别为：
+(offset, offset)、(offset, n-offset-1)、(n-offset-1, n-offset-1)、(n-offset-1, offset)
+分别添加螺旋[上]、螺旋[右]、螺旋[下]、螺旋[左]四条边的元素，添加过程中保持区间左闭右开的一致性。
+代码 # class Solution { public int[][] generateMatrix(int n) { int[][] matrix = new int [n][n]; int val = 1; for (int offset=0; offset&amp;lt;n/2; offset++) { for (int j=offset; j&amp;lt;n-offset-1; j++) matrix[offset][j] = val++; for (int i=offset; i&amp;lt;n-offset-1; i++) matrix[i][n-offset-1] = val++; for (int j=n-offset-1; j&amp;gt;offset; j--) matrix[n-offset-1][j] = val++; for (int i=n-offset-1; i&amp;gt;offset; i--) matrix[i][offset] = val++; } if (n % 2 == 1) matrix[n/2][n/2] = n*n; return matrix; } } </description>
     </item>
     
   </channel>

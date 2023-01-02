@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" 704. Binary Search # 题目 # 给定一个n个元素有序的升序整型数组nums和一个目标值target，写一个函数搜索nums中的target，如果目标值存在返回下标，否则返回-1。
+思路 # 保持consistency不变量。
+代码 # class Solution { public int search(int[] nums, int target) { int left = 0, right = nums.length; while (left &lt; right) { int medium = left &#43; (right - left) / 2; if (nums[medium] == target) return medium; else if (nums[medium] &gt; target) right = medium; else left = medium &#43; 1; } return -1; } } ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" 704. Binary Search # 题目 # 给定一个n个元素有序的升序整型数组nums和一个目标值target，写一个函数搜索nums中的target，如果目标值存在返回下标，否则返回-1。
+思路 # 保持consistency不变量。
+代码 # class Solution { public int search(int[] nums, int target) { int left = 0, right = nums.length; while (left &lt; right) { int medium = left &#43; (right - left) / 2; if (nums[medium] == target) return medium; else if (nums[medium] &gt; target) right = medium; else left = medium &#43; 1; } return -1; } } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/" /><meta property="article:section" content="docs" />
+
+
+<title>0704. Binary Search | LeetCode Recipe</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.4b35fed0bea034bbc19c89c71e14b73fb9c68cfcc586b9382adfb9b7b103ba06.css" integrity="sha256-SzX&#43;0L6gNLvBnInHHhS3P7nGjPzFhrk4Kt&#43;5t7EDugY=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.3a6df5d561b094086dc0e0ac3fb14495566291f6845b208aba6901ac7139bbbc.js" integrity="sha256-Om311WGwlAhtwOCsP7FElVZikfaEWyCKumkBrHE5u7w=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>LeetCode Recipe</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/" class="">Topic</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/array/" class="">1.01 Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/linked-list/" class="">1.02 Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/" class="">Codes</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
+    <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
+      <a role="button" class="">0001 to 0099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/" class="">0002. Add Two Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/" class="">0019. Remove Nth Node From End of List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/" class="">0021. Merge Two Sorted Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/" class="">0024. Swap Nodes in Pairs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0027.-Remove-Element/" class="">0027. Remove Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0054.-Spiral-Matrix/" class="">0054. Spiral Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/" class="">0059. Spiral Matrix Ii</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd5dde26833080b2913dd50e3fd335d6" class="toggle"  />
+    <label for="section-cd5dde26833080b2913dd50e3fd335d6" class="flex justify-between">
+      <a role="button" class="">0100 to 0199</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/" class="">0141. Linked List Cycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/" class="">0142. Linked List Cycle Ii</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f6e90de89406b3d2e96fbd107c91b627" class="toggle"  />
+    <label for="section-f6e90de89406b3d2e96fbd107c91b627" class="flex justify-between">
+      <a role="button" class="">0200 to 0299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/" class="">0203. Remove Linked List Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" class="">0206. Reverse Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/" class="">0209. Minimum Size Subarray Sum</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2bd5c1b03f9f98091a194999a33306cf" class="toggle"  />
+    <label for="section-2bd5c1b03f9f98091a194999a33306cf" class="flex justify-between">
+      <a role="button" class="">0300 to 0399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/" class="">0328. Odd Even Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b6e0c04e11fb5b167b6150beeca1d75e" class="toggle" checked />
+    <label for="section-b6e0c04e11fb5b167b6150beeca1d75e" class="flex justify-between">
+      <a role="button" class="">0700 to 0799</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0704.-Binary-Search/" class="active">0704. Binary Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0707.-Design-Linked-List/" class="">0707. Design Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="toggle"  />
+    <label for="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="flex justify-between">
+      <a role="button" class="">0900 to 0999</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/" class="">0977. Squares of a Sorted Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77c52f6e02bb053791d65c6510860578" class="toggle"  />
+    <label for="section-77c52f6e02bb053791d65c6510860578" class="flex justify-between">
+      <a role="button" class="">剑指 Offer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/" class="">剑指 Offer 18. 删除链表的节点</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3548349c75abc0aa04669478999a37be" class="toggle"  />
+    <label for="section-3548349c75abc0aa04669478999a37be" class="flex justify-between">
+      <a role="button" class="">面试题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.07.-%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/" class="">面试题 02.07. 链表相交</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>0704. Binary Search</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="704-binary-searchhttpsleetcodecnproblemsbinary-search">
+  
+  <a href="https://leetcode.cn/problems/binary-search/">704. Binary Search</a>
+  <a class="anchor" href="#704-binary-searchhttpsleetcodecnproblemsbinary-search">#</a>
+</h1>
+<h2 id="题目">
+  题目
+  <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
+</h2>
+<p>给定一个<code>n</code>个元素有序的升序整型数组<code>nums</code>和一个目标值<code>target</code>，写一个函数搜索<code>nums</code>中的<code>target</code>，如果目标值存在返回下标，否则返回<code>-1</code>。</p>
+<h2 id="思路">
+  思路
+  <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
+</h2>
+<p>保持<code>consistency</code>不变量。</p>
+<h2 id="代码">
+  代码
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">search</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> nums<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> left <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> right <span style="color:#f92672">=</span> nums<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>left <span style="color:#f92672">&lt;</span> right<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">int</span> medium <span style="color:#f92672">=</span> left <span style="color:#f92672">+</span> <span style="color:#f92672">(</span>right <span style="color:#f92672">-</span> left<span style="color:#f92672">)</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>medium<span style="color:#f92672">]</span> <span style="color:#f92672">==</span> target<span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> medium<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>medium<span style="color:#f92672">]</span> <span style="color:#f92672">&gt;</span> target<span style="color:#f92672">)</span> right <span style="color:#f92672">=</span> medium<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> left <span style="color:#f92672">=</span> medium <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content.en/docs/codes/0700%20to%200799/0704.%20Binary%20Search.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0100-to-0199/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</guid>
+      <description>141. Linked List Cycle # 题目 # 给定链表头节点 head ，判断链表中是否有环。
+如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。
+如果链表中存在环 ，则返回 true 。 否则，返回 false 。
+思路 # 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public boolean hasCycle(ListNode head) { ListNode slow=head, fast=head; while (fast != null &amp;amp;&amp;amp; fast.next != null) { fast = fast.next.next; slow = slow.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</guid>
+      <description>142. Linked List Cycle II # 题目 # 给定链表头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
+不允许修改 链表。
+思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { if (head == null || head.next == null) return null; ListNode slow = head, fast = head; while (fast !</description>
+    </item>
+    
+  </channel>
+</rss>

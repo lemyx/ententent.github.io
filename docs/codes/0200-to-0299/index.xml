@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0200-to-0299/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</guid>
+      <description>203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
+思路 # 对于n阶方阵，共有n/2个完整螺旋。
+若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
+对于第offset个螺旋，考虑四角元素的坐标，由左上顺时针分别为：
+(offset, offset)、(offset, n-offset-1)、(n-offset-1, n-offset-1)、(n-offset-1, offset)
+分别添加螺旋[上]、螺旋[右]、螺旋[下]、螺旋[左]四条边的元素，添加过程中保持区间左闭右开的一致性。
+代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeElements(ListNode head, int val) { if (head == null) return null; if (head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/</guid>
+      <description> 206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</guid>
+      <description> 209. Minimum Size Subarray Sum # 题目 # 给定一个含有n个正整数的数组和一个正整数target。找出该数组中满足其和&amp;gt;=target的长度最小的连续子数组，并返回其长度。如果不存在符合条件的子数组，返回0。
+思路 # 代码 # class Solution { public int minSubArrayLen(int target, int[] nums) { if (nums == null) return 0; int left=0, right=0, len=0, cumSum=0; while (left &amp;lt;= right &amp;amp;&amp;amp; right &amp;lt; nums.length) { curSum += nums[right]; if (curSum &amp;gt;= target) { if (len == 0 || len &amp;gt; right-left+1) len = right-left+1; curSum -= nums[left]; left += 1; curSum -= nums[right]; } else right += 1; } return len; } } </description>
+    </item>
+    
+  </channel>
+</rss>
