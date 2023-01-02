@@ -10,7 +10,7 @@
 <meta property="og:description" content="21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private ListNode mergeHelper(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &lt; list2.val) { list1.next = mergeHelper(list1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://example.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/" /><meta property="article:section" content="docs" />
 
 
 <title>0021. Merge Two Sorted Lists | LeetCode Recipe</title>
