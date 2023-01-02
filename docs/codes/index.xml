@@ -12,7 +12,8 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/reference/buttons/</guid>
       <description> Buttons # Buttons are styled links that can lead to local page or external link.
-Example # {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}} Get Home Contribute </description>
+Example # {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}} Get Home Contribute TODO
+将题目的URL替换为leetcode.com的相应链接 标记题目的difficulty 完善每道题目的analysis 融合Anki </description>
     </item>
     
     <item>

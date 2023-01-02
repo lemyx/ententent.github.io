@@ -81,5 +81,27 @@
 代码 # class Solution { public int[][] generateMatrix(int n) { int[][] matrix = new int [n][n]; int val = 1; for (int offset=0; offset&amp;lt;n/2; offset++) { for (int j=offset; j&amp;lt;n-offset-1; j++) matrix[offset][j] = val++; for (int i=offset; i&amp;lt;n-offset-1; i++) matrix[i][n-offset-1] = val++; for (int j=n-offset-1; j&amp;gt;offset; j--) matrix[n-offset-1][j] = val++; for (int i=n-offset-1; i&amp;gt;offset; i--) matrix[i][offset] = val++; } if (n % 2 == 1) matrix[n/2][n/2] = n*n; return matrix; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</guid>
+      <description>82. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor != null) { ListNode probe = anchor.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</guid>
+      <description>83. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode ptr = head; while (ptr != null &amp;amp;&amp;amp; ptr.next != null) { if (ptr.next.val == ptr.</description>
+    </item>
+    
   </channel>
 </rss>

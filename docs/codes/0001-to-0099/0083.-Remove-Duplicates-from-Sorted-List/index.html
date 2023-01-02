@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
-思路 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } 迭代 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.">
+<meta name="description" content="83. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode ptr = head; while (ptr != null &amp;&amp; ptr.next != null) { if (ptr.next.val == ptr.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
-思路 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } 迭代 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this." />
+<meta property="og:description" content="83. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode ptr = head; while (ptr != null &amp;&amp; ptr.next != null) { if (ptr.next.val == ptr." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-01-02T19:52:07+08:00" />
-<title>0206. Reverse Linked List | LeetCode Recipe</title>
+<title>0083. Remove Duplicates From Sorted List | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.4b35fed0bea034bbc19c89c71e14b73fb9c68cfcc586b9382adfb9b7b103ba06.css" integrity="sha256-SzX&#43;0L6gNLvBnInHHhS3P7nGjPzFhrk4Kt&#43;5t7EDugY=" crossorigin="anonymous">
@@ -129,7 +131,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle" checked />
     <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
       <a role="button" class="">0001 to 0099</a>
     </label>
@@ -249,7 +251,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/" class="">0083. Remove Duplicates From Sorted List</a>
+    <a href="/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/" class="active">0083. Remove Duplicates From Sorted List</a>
   
 
         </li>
@@ -314,7 +316,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-f6e90de89406b3d2e96fbd107c91b627" class="toggle" checked />
+    <input type="checkbox" id="section-f6e90de89406b3d2e96fbd107c91b627" class="toggle"  />
     <label for="section-f6e90de89406b3d2e96fbd107c91b627" class="flex justify-between">
       <a role="button" class="">0200 to 0299</a>
     </label>
@@ -343,7 +345,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" class="active">0206. Reverse Linked List</a>
+    <a href="/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" class="">0206. Reverse Linked List</a>
   
 
         </li>
@@ -604,7 +606,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>0206. Reverse Linked List</strong>
+  <strong>0083. Remove Duplicates From Sorted List</strong>
 
   <label for="toc-control">
     
@@ -618,16 +620,17 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="206-reverse-linked-listhttpsleetcodecnproblemsreverse-linked-list">
+  <article class="markdown"><h1 id="83-remove-duplicates-from-sorted-listhttpsleetcodecnproblemsremove-duplicates-from-sorted-list">
   
-  <a href="https://leetcode.cn/problems/reverse-linked-list/">206. Reverse Linked List</a>
-  <a class="anchor" href="#206-reverse-linked-listhttpsleetcodecnproblemsreverse-linked-list">#</a>
+  <a href="https://leetcode.cn/problems/remove-duplicates-from-sorted-list/">83. Remove Duplicates from Sorted List</a>
+  <a class="anchor" href="#83-remove-duplicates-from-sorted-listhttpsleetcodecnproblemsremove-duplicates-from-sorted-list">#</a>
 </h1>
 <h2 id="题目">
   题目
   <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
 </h2>
-<p>给定单链表头节点<code>head</code>，反转并返回反转后的链表。</p>
+<p>给定排序链表的头节点<code>head</code>，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。</p>
+<p>链表数据保证链表已经按升序排列。</p>
 <h2 id="思路">
   思路
   <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
@@ -636,10 +639,6 @@ https://github.com/alex-shpak/hugo-book
   代码
   <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
 </h2>
-<h3 id="递归">
-  递归
-  <a class="anchor" href="#%e9%80%92%e5%bd%92">#</a>
-</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> val<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    ListNode next<span style="color:#f92672">;</span>
@@ -648,35 +647,13 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">,</span> ListNode next<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ListNode <span style="color:#a6e22e">reverseList</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>head <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        ListNode newHead <span style="color:#f92672">=</span> reverseList<span style="color:#f92672">(</span>head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> newHead<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="迭代">
-  迭代
-  <a class="anchor" href="#%e8%bf%ad%e4%bb%a3">#</a>
-</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> val<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    ListNode next<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">()</span> <span style="color:#f92672">{}</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">,</span> ListNode next<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ListNode <span style="color:#a6e22e">reverseList</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        ListNode prev <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">,</span> cur <span style="color:#f92672">=</span> head<span style="color:#f92672">,</span> next <span style="color:#f92672">=</span> head<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>cur <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            cur<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> prev<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            prev <span style="color:#f92672">=</span> cur<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            cur <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>next <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> next <span style="color:#f92672">=</span> next<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ListNode <span style="color:#a6e22e">deleteDuplicates</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        ListNode ptr <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>ptr <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">==</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">val</span><span style="color:#f92672">)</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> ptr <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> prev<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> head<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></article>
@@ -697,7 +674,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content.en/docs/codes/0200%20to%200299/0206.%20Reverse%20Linked%20List.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content.en/docs/codes/0001%20to%200099/0083.%20Remove%20Duplicates%20from%20Sorted%20List.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>

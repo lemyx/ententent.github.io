@@ -147,6 +147,28 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</guid>
+      <description>82. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor != null) { ListNode probe = anchor.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</guid>
+      <description>83. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。
+链表数据保证链表已经按升序排列。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode ptr = head; while (ptr != null &amp;amp;&amp;amp; ptr.next != null) { if (ptr.next.val == ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -189,8 +211,8 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/</guid>
-      <description> 206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } </description>
+      <description>206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
+思路 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } 迭代 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
     </item>
     
     <item>
@@ -201,6 +223,17 @@ Follow the following steps:</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</guid>
       <description> 209. Minimum Size Subarray Sum # 题目 # 给定一个含有n个正整数的数组和一个正整数target。找出该数组中满足其和&amp;gt;=target的长度最小的连续子数组，并返回其长度。如果不存在符合条件的子数组，返回0。
 思路 # 代码 # class Solution { public int minSubArrayLen(int target, int[] nums) { if (nums == null) return 0; int left=0, right=0, len=0, cumSum=0; while (left &amp;lt;= right &amp;amp;&amp;amp; right &amp;lt; nums.length) { curSum += nums[right]; if (curSum &amp;gt;= target) { if (len == 0 || len &amp;gt; right-left+1) len = right-left+1; curSum -= nums[left]; left += 1; curSum -= nums[right]; } else right += 1; } return len; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</guid>
+      <description>234. Palindrome Linked List # 题目 # 给定单链表的头节点head，判断该链表是否为回文链表。
+考虑使用O(n)时间复杂度和O(1)空间复杂度解决此题。
+思路 # 分割、翻转 # 使用快慢指针找到链表中心节点。 如果链表长度为偶，则fast.next == null时，slow指向链表前半部分的最后一个节点。 如果链表长度为奇，则fast == null时，slow指向链表的轴节点。 使用迭代的方式以O(1)空间复杂度翻转链表的后半部分。 判断链表是否为回文链表。 将后半部分链表恢复原状，避免对链表的破坏。 返回结果。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode locateMiddle(ListNode head) { ListNode slow = head, fast = head.</description>
     </item>
     
     <item>
@@ -255,7 +288,8 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       
       <guid>https://leetcode.akaeecs.com/docs/codes/reference/buttons/</guid>
       <description> Buttons # Buttons are styled links that can lead to local page or external link.
-Example # {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}} Get Home Contribute </description>
+Example # {{&amp;lt; button relref=&amp;#34;/&amp;#34; [class=&amp;#34;...&amp;#34;] &amp;gt;}}Get Home{{&amp;lt; /button &amp;gt;}} {{&amp;lt; button href=&amp;#34;https://github.com/alex-shpak/hugo-book&amp;#34; &amp;gt;}}Contribute{{&amp;lt; /button &amp;gt;}} Get Home Contribute TODO
+将题目的URL替换为leetcode.com的相应链接 标记题目的difficulty 完善每道题目的analysis 融合Anki </description>
     </item>
     
     <item>
