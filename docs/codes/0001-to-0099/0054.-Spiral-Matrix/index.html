@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="54. Spiral Matrix # 题目 # 给定一个m行n列的矩阵matrix，按照顺时针螺旋顺序，返回矩阵中的所有元素。
+思路 # 代码 # class Solution { public void circle(int[][] matrix, List&lt;Integer&gt; result, int top, int left, int right, int bottom) { if (top &gt; bottom || left &gt; right) return; if (top == bottom) { for (int j=left; j&lt;=right; j&#43;&#43;) result.add(matrix[top][j]); return; } else if (left == right) { for (int i=top; i&lt;=bottom; i&#43;&#43;) result.add(matrix[i][left]); return; } for (int j=left; j&lt;right; j&#43;&#43;) result.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content="54. Spiral Matrix # 题目 # 给定一个m行n列的矩阵matrix，按照顺时针螺旋顺序，返回矩阵中的所有元素。
+思路 # 代码 # class Solution { public void circle(int[][] matrix, List&lt;Integer&gt; result, int top, int left, int right, int bottom) { if (top &gt; bottom || left &gt; right) return; if (top == bottom) { for (int j=left; j&lt;=right; j&#43;&#43;) result.add(matrix[top][j]); return; } else if (left == right) { for (int i=top; i&lt;=bottom; i&#43;&#43;) result.add(matrix[i][left]); return; } for (int j=left; j&lt;right; j&#43;&#43;) result." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/docs/codes/0001-to-0099/0054.-Spiral-Matrix/" /><meta property="article:section" content="docs" />
+
+
+<title>0054. Spiral Matrix | LeetCode Recipe</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.4b35fed0bea034bbc19c89c71e14b73fb9c68cfcc586b9382adfb9b7b103ba06.css" integrity="sha256-SzX&#43;0L6gNLvBnInHHhS3P7nGjPzFhrk4Kt&#43;5t7EDugY=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.426b4d96bd08c5b48daf96a865da2a00392021f00904f488e3d7d56eae019f81.js" integrity="sha256-QmtNlr0IxbSNr5aoZdoqADkgIfAJBPSI49fVbq4Bn4E=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>LeetCode Recipe</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/" class="">Topic</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/array/" class="">1.01 Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/linked-list/" class="">1.02 Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/" class="">Codes</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle" checked />
+    <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
+      <a role="button" class="">0001 to 0099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/" class="">0002. Add Two Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0054.-Spiral-Matrix/" class="active">0054. Spiral Matrix</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>0054. Spiral Matrix</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="54-spiral-matrixhttpsleetcodecnproblemsspiral-matrix">
+  
+  <a href="https://leetcode.cn/problems/spiral-matrix/">54. Spiral Matrix</a>
+  <a class="anchor" href="#54-spiral-matrixhttpsleetcodecnproblemsspiral-matrix">#</a>
+</h1>
+<h2 id="题目">
+  题目
+  <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
+</h2>
+<p>给定一个<code>m</code>行<code>n</code>列的矩阵<code>matrix</code>，按照<strong>顺时针螺旋顺序</strong>，返回矩阵中的所有元素。</p>
+<h2 id="思路">
+  思路
+  <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
+</h2>
+<h2 id="代码">
+  代码
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">circle</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> matrix<span style="color:#f92672">,</span> List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> result<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> top<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> left<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> right<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> bottom<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>top <span style="color:#f92672">&gt;</span> bottom <span style="color:#f92672">||</span> left <span style="color:#f92672">&gt;</span> right<span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>top <span style="color:#f92672">==</span> bottom<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">&lt;=</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>top<span style="color:#f92672">][</span>j<span style="color:#f92672">]);</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>left <span style="color:#f92672">==</span> right<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;=</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>left<span style="color:#f92672">]);</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">&lt;</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>top<span style="color:#f92672">][</span>j<span style="color:#f92672">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>right<span style="color:#f92672">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">&gt;</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">--)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>bottom<span style="color:#f92672">][</span>j<span style="color:#f92672">]);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">&gt;</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">--)</span> result<span style="color:#f92672">.</span><span style="color:#a6e22e">add</span><span style="color:#f92672">(</span>matrix<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>left<span style="color:#f92672">]);</span>
+</span></span><span style="display:flex;"><span>        circle<span style="color:#f92672">(</span>matrix<span style="color:#f92672">,</span> result<span style="color:#f92672">,</span> top<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> left<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> right<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> bottom<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">spiralOrder</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> matrix<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> m <span style="color:#f92672">=</span> matrix<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">,</span> n <span style="color:#f92672">=</span> matrix<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">].</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        List<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ArrayList<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">&gt;();</span>
+</span></span><span style="display:flex;"><span>        circle<span style="color:#f92672">(</span>matrix<span style="color:#f92672">,</span> result<span style="color:#f92672">,</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> m<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><h2 id="致谢">
+  致谢
+  <a class="anchor" href="#%e8%87%b4%e8%b0%a2">#</a>
+</h2>
+<ul>
+<li>
+  <a href="https://leetcode.cn/problems/spiral-matrix/solutions/656891/xiang-jie-xing-zhuang-jie-fa-fang-xiang-3qmhf/">宫水三叶</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content.en/docs/codes/0001%20to%200099/0054.%20Spiral%20Matrix.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
