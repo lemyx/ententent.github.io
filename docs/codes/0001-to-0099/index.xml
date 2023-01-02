@@ -17,6 +17,27 @@
     
     <item>
       <title></title>
+      <link>https://example.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
+      <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private ListNode mergeHelper(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeHelper(list1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://example.com/docs/codes/0001-to-0099/0027.-Remove-Element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/docs/codes/0001-to-0099/0027.-Remove-Element/</guid>
+      <description> 27. Remove Element # 题目 # 给定一个数组nums和一个值val，原地移除所有值等于val的元素，并返回移除后数组的新长度。
+要求使用O(1)额外空间并原地修改输入数组。
+思路 # 代码 # class Solution { public int removeElements(int[] nums, int val) { int sz = 0; for (int ptr = 0; ptr &amp;lt; nums.length; ptr ++) { if (nums[ptr] != val) { nums[sz] = nums[ptr]; sz += 1; } } return sz; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://example.com/docs/codes/0001-to-0099/0054.-Spiral-Matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
