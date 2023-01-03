@@ -32,7 +32,7 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
       <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private ListNode mergeHelper(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeHelper(list1.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeTwoLists(list1.</description>
     </item>
     
     <item>
@@ -68,10 +68,10 @@
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</guid>
       <description> 59. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
 思路 # 对于n阶方阵，共有n/2个完整螺旋。
 若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
@@ -83,13 +83,13 @@
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</guid>
-      <description>82. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</guid>
+      <description>82. Remove Duplicates from Sorted List II # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
 链表数据保证链表已经按升序排列。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor != null) { ListNode probe = anchor.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor !</description>
     </item>
     
     <item>

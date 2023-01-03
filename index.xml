@@ -96,7 +96,7 @@ Follow the following steps:</description>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
       <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private ListNode mergeHelper(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeHelper(list1.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeTwoLists(list1.</description>
     </item>
     
     <item>
@@ -132,10 +132,10 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</guid>
       <description> 59. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
 思路 # 对于n阶方阵，共有n/2个完整螺旋。
 若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
@@ -147,13 +147,13 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</guid>
-      <description>82. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</guid>
+      <description>82. Remove Duplicates from Sorted List II # 题目 # 给定排序链表的头节点head，删除原始链表中所有重复数字的节点，只留下不同的数字。返回已排序的链表。
 链表数据保证链表已经按升序排列。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor != null) { ListNode probe = anchor.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode sentinel = new ListNode(-1, null); ListNode preserve = sentinel, anchor = head; while (anchor !</description>
     </item>
     
     <item>
@@ -181,13 +181,23 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</guid>
       <description>142. Linked List Cycle II # 题目 # 给定链表头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 不允许修改 链表。
 思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { if (head == null || head.next == null) return null; ListNode slow = head, fast = head; while (fast !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</guid>
+      <description>160. Intersection of Two Linked Lists # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回null。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.</description>
     </item>
     
     <item>
@@ -197,12 +207,7 @@ Follow the following steps:</description>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</guid>
       <description>203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
-思路 # 对于n阶方阵，共有n/2个完整螺旋。
-若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
-对于第offset个螺旋，考虑四角元素的坐标，由左上顺时针分别为：
-(offset, offset)、(offset, n-offset-1)、(n-offset-1, n-offset-1)、(n-offset-1, offset)
-分别添加螺旋[上]、螺旋[右]、螺旋[下]、螺旋[左]四条边的元素，添加过程中保持区间左闭右开的一致性。
-代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeElements(ListNode head, int val) { if (head == null) return null; if (head.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeElements(ListNode head, int val) { if (head == null) return null; if (head.val == val) return removeElements(head.next, val); else { head.</description>
     </item>
     
     <item>
@@ -212,7 +217,7 @@ Follow the following steps:</description>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/</guid>
       <description>206. Reverse Linked List # 题目 # 给定单链表头节点head，反转并返回反转后的链表。
-思路 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null) return null; ListNode newHead = reverseList(head.next); head.next.next = head; head.next = null; return newHead; } } 迭代 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+思路 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { if (head == null || head.next == null) return head; ListNode newHead = reverseList(head.next); head.next.next = head; head.</description>
     </item>
     
     <item>
@@ -234,6 +239,19 @@ Follow the following steps:</description>
       <description>234. Palindrome Linked List # 题目 # 给定单链表的头节点head，判断该链表是否为回文链表。
 考虑使用O(n)时间复杂度和O(1)空间复杂度解决此题。
 思路 # 分割、翻转 # 使用快慢指针找到链表中心节点。 如果链表长度为偶，则fast.next == null时，slow指向链表前半部分的最后一个节点。 如果链表长度为奇，则fast == null时，slow指向链表的轴节点。 使用迭代的方式以O(1)空间复杂度翻转链表的后半部分。 判断链表是否为回文链表。 将后半部分链表恢复原状，避免对链表的破坏。 返回结果。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode locateMiddle(ListNode head) { ListNode slow = head, fast = head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/</guid>
+      <description> 237. Delete Node in A Linked List # 题目 # 有一个单链表的head，想要删除它的一个节点node。
+给定需要删除的节点node，并且无法访问第一个节点head。
+链表所有值都是唯一的，且给定的节点node不是链表中的最后一个节点。
+删除节点的意思是指：
+给定节点的值不应该存在于链表中。 链表中的节点数应该减少1。 node前面所有值的顺序相同。 node后面所有值的顺序相同。 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void deleteNode(ListNode node) { node.val = node.next.val; node.next = node.next.next; } } </description>
     </item>
     
     <item>
@@ -273,12 +291,34 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</guid>
+      <description>876. Middle of the Linked List # 题目 # 给定一个头结点为head的非空单链表，返回链表的中间结点。
+如果有两个中间结点，则返回第二个中间结点。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode middleNode(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast != null &amp;amp;&amp;amp; fast.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
       <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
 思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</guid>
+      <description>2095. Delete the Middle Node of A Linked List # 题目 # 给定链表头节点head，删除链表的中间节点，并返回修改后的链表头节点head。
+长度为 n 链表的中间节点是从头数起第 ⌊n / 2⌋ 个节点（下标从 0 开始），其中 ⌊x⌋ 表示小于或等于 x 的最大整数。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteMiddle(ListNode head) { if (head == null) return null; ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast !</description>
     </item>
     
     <item>
@@ -375,16 +415,6 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/</guid>
       <description> 剑指 Offer 18. 删除链表的节点 # 题目 # 给定单链表的头指针和一个要删除的节点的值，定义一个函数删除该节点，返回删除后的链表的头节点。链表中节点的值互不相同。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode deleteNode(ListNode head, int val) { if (head.val == val) return head.next; ListNode ptr = head; while (ptr.next.val != val) ptr = ptr.next; ptr.next = ptr.next.next; return head;s } } </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.07.-%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.07.-%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/</guid>
-      <description> 面试题 02.07. 链表相交 # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表的起始节点。如果两个链表没有交点，返回null。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.next; if (ptrA == null &amp;amp;&amp;amp; ptrB == null) return null; else if (ptrA == null) ptrA = headB; else if (ptrB == null) ptrB = headA; } return ptrA; } } </description>
     </item>
     
     <item>

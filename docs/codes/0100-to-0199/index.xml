@@ -19,13 +19,23 @@
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</guid>
       <description>142. Linked List Cycle II # 题目 # 给定链表头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 不允许修改 链表。
 思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { if (head == null || head.next == null) return null; ListNode slow = head, fast = head; while (fast !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</guid>
+      <description>160. Intersection of Two Linked Lists # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回null。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.</description>
     </item>
     
   </channel>

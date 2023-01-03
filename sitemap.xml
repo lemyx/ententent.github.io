@@ -38,9 +38,11 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/</loc>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/</loc>
   </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/</loc>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/posts/goisforlovers/</loc>
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
@@ -96,11 +98,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0054.-Spiral-Matrix/</loc>
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-II/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</loc>
   </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-II/</loc>
-    <lastmod>2023-01-02T19:52:07+08:00</lastmod>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</loc>
     <lastmod>2023-01-02T19:52:07+08:00</lastmod>
@@ -108,8 +108,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-II/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</loc>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
@@ -123,6 +124,8 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</loc>
     <lastmod>2023-01-02T19:52:07+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/</loc>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
@@ -132,8 +135,12 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0707.-Design-Linked-List/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</loc>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/reference/buttons/</loc>
     <lastmod>2023-01-02T19:52:07+08:00</lastmod>
@@ -160,8 +167,6 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/</loc>
-  </url><url>
-    <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.07.-%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/topic/hidden/</loc>
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
