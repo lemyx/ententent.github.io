@@ -147,6 +147,16 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0061.-RotateList/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0061.-RotateList/</guid>
+      <description>61. Rotate List # 题目 # 给定链表头节点head，旋转链表，将链表每个节点向右移动k个位置。
+思路 # 使用指针ptr统计链表长度n。 若k % n == 0，等价于不旋转链表。 将链表尾部节点rear与头节点head相连，即ptr.next = head，链表构成环。 设给定链表长度为n，将链表每个节点向右移动k个位置，等价于将链表每个节点向右移动k%n个位置。此时第n+1-k%n个节点将作为newHead。 令ptr指向第n-k%n个节点，在此处令ptr.next = null以断开环，并返回newHead。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode rotateRight(ListNode head, int k) { if (head == null) return null; ListNode ptr = head; int length = 1; while (ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
