@@ -42,7 +42,7 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</guid>
       <description>24. Swap Nodes in Pairs # 题目 # 给定链表，两两交换其中相邻的节点，并返回交换后链表的头节点。只能进行节点交换，不能修改节点内部的值。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null) return head; if (head.next == null) return head; else { ListNode newHead = head.next; head.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null || head.next == null) return head; else { ListNode newHead = head.next; head.next = swapPairs(newHead.</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0027.-Remove-Element/</guid>
       <description> 27. Remove Element # 题目 # 给定一个数组nums和一个值val，原地移除所有值等于val的元素，并返回移除后数组的新长度。
 要求使用O(1)额外空间并原地修改输入数组。
-思路 # 代码 # class Solution { public int removeElements(int[] nums, int val) { int sz = 0; for (int ptr = 0; ptr &amp;lt; nums.length; ptr ++) { if (nums[ptr] != val) { nums[sz] = nums[ptr]; sz += 1; } } return sz; } } </description>
+思路 # 代码 # class Solution { public int removeElements(int[] nums, int val) { int sz = 0; for (int ptr = 0; ptr &amp;lt; nums.length; ptr++) if (nums[ptr] != val) nums[sz++] = nums[ptr]; return sz; } } </description>
     </item>
     
     <item>
@@ -101,6 +101,16 @@
       <description>83. Remove Duplicates from Sorted List # 题目 # 给定排序链表的头节点head，删除所有重复元素，使每个元素只出现一次。返回已排序的链表。
 链表数据保证链表已经按升序排列。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicates(ListNode head) { ListNode ptr = head; while (ptr != null &amp;amp;&amp;amp; ptr.next != null) { if (ptr.next.val == ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</guid>
+      <description>92. Reverse Linked List ii # 题目 # 给定单链表头节点head和两个整数left和right，其中left &amp;lt;= right。反转从位置left到位置right的链表节点，返回反转后的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode head, ListNode tail) { if (head == tail) return; reverseList(head.next, tail); head.next.next = head; } public ListNode reverseBetween(ListNode head, int left, int right) { ListNode sentinel = new ListNode(-1, head); ListNode beforeLeft = sentinel, ptrRight = sentinel; for (int i=0; i&amp;lt;left-1; i++) beforeLeft = beforeLeft.</description>
     </item>
     
   </channel>

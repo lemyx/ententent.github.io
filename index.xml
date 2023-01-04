@@ -106,7 +106,7 @@ Follow the following steps:</description>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</guid>
       <description>24. Swap Nodes in Pairs # 题目 # 给定链表，两两交换其中相邻的节点，并返回交换后链表的头节点。只能进行节点交换，不能修改节点内部的值。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null) return head; if (head.next == null) return head; else { ListNode newHead = head.next; head.</description>
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null || head.next == null) return head; else { ListNode newHead = head.next; head.next = swapPairs(newHead.</description>
     </item>
     
     <item>
@@ -117,7 +117,7 @@ Follow the following steps:</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0027.-Remove-Element/</guid>
       <description> 27. Remove Element # 题目 # 给定一个数组nums和一个值val，原地移除所有值等于val的元素，并返回移除后数组的新长度。
 要求使用O(1)额外空间并原地修改输入数组。
-思路 # 代码 # class Solution { public int removeElements(int[] nums, int val) { int sz = 0; for (int ptr = 0; ptr &amp;lt; nums.length; ptr ++) { if (nums[ptr] != val) { nums[sz] = nums[ptr]; sz += 1; } } return sz; } } </description>
+思路 # 代码 # class Solution { public int removeElements(int[] nums, int val) { int sz = 0; for (int ptr = 0; ptr &amp;lt; nums.length; ptr++) if (nums[ptr] != val) nums[sz++] = nums[ptr]; return sz; } } </description>
     </item>
     
     <item>
@@ -169,6 +169,16 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</guid>
+      <description>92. Reverse Linked List ii # 题目 # 给定单链表头节点head和两个整数left和right，其中left &amp;lt;= right。反转从位置left到位置right的链表节点，返回反转后的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode head, ListNode tail) { if (head == tail) return; reverseList(head.next, tail); head.next.next = head; } public ListNode reverseBetween(ListNode head, int left, int right) { ListNode sentinel = new ListNode(-1, head); ListNode beforeLeft = sentinel, ptrRight = sentinel; for (int i=0; i&amp;lt;left-1; i++) beforeLeft = beforeLeft.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -187,7 +197,7 @@ Follow the following steps:</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</guid>
       <description>142. Linked List Cycle II # 题目 # 给定链表头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 不允许修改 链表。
-思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { if (head == null || head.next == null) return null; ListNode slow = head, fast = head; while (fast !</description>
+思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { ListNode slow = head, fast = head; while (fast != null &amp;amp;&amp;amp; fast.</description>
     </item>
     
     <item>
@@ -308,6 +318,38 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
       <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
 思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</guid>
+      <description>1290. Convert Binary Number in A Linked List to Integer # 题目 # 给定单链表头节点head，已知此链表是一个整数数字的二进制表示形式，链表中每个节点的值非0即1。返回链表所表示数字的十进制值。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null, cur = head, next = head.next; while(cur != null) { cur.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</guid>
+      <description>1669. Merge in Between Linked Lists # 题目 # 给定两个链表list1和list2，它们包含的元素分别为n个和m个。
+将list1中下标从a到b的全部节点都删除，并将list2接在被删除节点的位置。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) { ListNode ptrA = list1, ptrB = list1; for (int i=0; i&amp;lt;a-1; i++) ptrA = ptrA.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1721.-Swapping-Nodes-in-A-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1721.-Swapping-Nodes-in-A-Linked-List/</guid>
+      <description>1721. Swapping Nodes in A Linked List # 题目 # 给定链表头节点head和一个整数k
+交换链表正数第k个节点和倒数第k个节点的值后，返回链表的头节点（链表从1开始索引）
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution{ public ListNode locateForward(ListNode head, int k) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; for (int i=0; i&amp;lt;k; i++) ptr = ptr.</description>
     </item>
     
     <item>
