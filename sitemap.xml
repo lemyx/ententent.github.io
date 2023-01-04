@@ -30,22 +30,25 @@
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/</loc>
-    <lastmod>2023-01-03T08:15:13+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -98,10 +101,10 @@
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0027.-Remove-Element/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0054.-Spiral-Matrix/</loc>
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
@@ -115,13 +118,17 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/</loc>
     <lastmod>2023-01-02T19:52:07+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0086.-Partition-List/</loc>
+    <lastmod>2023-01-04T10:45:17+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/</loc>
-    <lastmod>2023-01-03T08:15:13+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -148,7 +155,7 @@
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0707.-Design-Linked-List/</loc>
-    <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -157,10 +164,13 @@
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1721.-Swapping-Nodes-in-A-Linked-List/</loc>
+    <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -198,7 +208,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-03T08:15:13+08:00</lastmod>
+    <lastmod>2023-01-04T10:45:17+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>

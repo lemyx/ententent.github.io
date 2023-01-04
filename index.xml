@@ -169,6 +169,16 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0086.-Partition-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0086.-Partition-List/</guid>
+      <description>86. Partition List # 题目 # 给定链表头节点head和一个特定值x，对链表进行分隔，使得所有小于x的节点都出现在大于或等于x的节点之前。应保留两个分区中每个节点的初始相对位置。
+思路 # 定位第一个值小于x的节点的前驱节点secLessLast，以及第一个值不小于x的节点secMoreFirst 设置preserve指针，指向当前secMore分区的最后一个节点 移动preserve指针，每次查看preserve指针的下一个节点，若其值小于x，则将此节点设置为新的secLessLast节点 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode partition(ListNode head, int x) { ListNode sentinel = new ListNode(-1, head); ListNode secLessLast = sentinel; while (secLessLast.next != null &amp;amp;&amp;amp; secLessLast.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
