@@ -27,5 +27,18 @@
 get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。 addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。 addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。 addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val 的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。 deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。 思路 # 代码 # public class ListNode { public ListNode prev; public ListNode next; public int val; public ListNode(ListNode prev, ListNode next, int val) { this.prev = prev; this.next = next; this.val = val; } } class MyLinkedList { private ListNode sentinel; private int size; public MyLinkedList() { this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</guid>
+      <description>725. Split Linked List in Parts # 题目 # 给定一个头结点为head的单链表和一个整数k，设计一个算法将链表分隔为k个连续的部分。
+每部分的长度应该尽可能相等：任意两部分的长度差距不能超过1，这可能会导致有些部分为null。
+这k个部分应该按照在链表中出现的顺序排列，并且排在前面的部分的长度应不小于排在后面的长度。
+返回一个由上述k部分组成的数组。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode[] splitListToParts(ListNode head, int k) { /** 1. 确定链表长度 length */ ListNode ptr = head; int length = 0; while (ptr !</description>
+    </item>
+    
   </channel>
 </rss>

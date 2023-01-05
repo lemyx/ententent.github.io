@@ -321,6 +321,19 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</guid>
+      <description>725. Split Linked List in Parts # 题目 # 给定一个头结点为head的单链表和一个整数k，设计一个算法将链表分隔为k个连续的部分。
+每部分的长度应该尽可能相等：任意两部分的长度差距不能超过1，这可能会导致有些部分为null。
+这k个部分应该按照在链表中出现的顺序排列，并且排在前面的部分的长度应不小于排在后面的长度。
+返回一个由上述k部分组成的数组。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode[] splitListToParts(ListNode head, int k) { /** 1. 确定链表长度 length */ ListNode ptr = head; int length = 0; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -338,6 +351,18 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
       <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
 思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/</guid>
+      <description>1019. Next Grater Node in Linked List # 题目 # 给定一个长度为n的链表head
+对于链表中的每个节点，查找下一个更大节点的值。即，对于每个节点，找到它旁边的第一个节点的值，这个节点的值严格大于它的值。
+返回一个整数数组answer，其中answer[i]是第i个节点（从1开始）的下一个更大节点的值。如果第i个节点没有下一个更大的节点，设置answer[i] = 0。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int[] nextLargerNodes(ListNode head) { /** 1. 统计链表长度 */ int length = 0; ListNode ptr = head; while (ptr !</description>
     </item>
     
     <item>
@@ -381,6 +406,17 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <description>2095. Delete the Middle Node of A Linked List # 题目 # 给定链表头节点head，删除链表的中间节点，并返回修改后的链表头节点head。
 长度为 n 链表的中间节点是从头数起第 ⌊n / 2⌋ 个节点（下标从 0 开始），其中 ⌊x⌋ 表示小于或等于 x 的最大整数。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteMiddle(ListNode head) { if (head == null) return null; ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2487.-Remove-Nodes-From-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2487.-Remove-Nodes-From-Linked-List/</guid>
+      <description>2487. Remove Nodes From Linked List # 题目 # 给定链表头节点head，对于链表中的每个节点node，如果其右侧存在一个具有严格更大值的节点，则移除node。
+返回修改后链表的头节点head。
+思路 # 代码 # 反转&amp;amp;移除 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution{ public ListNode reverseList(ListNode head) { if (head == null || head.next == null) return head; ListNode newHead = reverseList(head.next); head.next.next = head; head.</description>
     </item>
     
     <item>
