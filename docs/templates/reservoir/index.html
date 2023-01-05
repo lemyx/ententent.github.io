@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="86. Partition List # 题目 # 给定链表头节点head和一个特定值x，对链表进行分隔，使得所有小于x的节点都出现在大于或等于x的节点之前。应保留两个分区中每个节点的初始相对位置。
-思路 # 定位第一个值小于x的节点的前驱节点secLessLast，以及第一个值不小于x的节点secMoreFirst 设置preserve指针，指向当前secMore分区的最后一个节点 移动preserve指针，每次查看preserve指针的下一个节点，若其值小于x，则将此节点设置为新的secLessLast节点 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode partition(ListNode head, int x) { ListNode sentinel = new ListNode(-1, head); ListNode secLessLast = sentinel; while (secLessLast.next != null &amp;&amp; secLessLast.">
+<meta name="description" content="Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="86. Partition List # 题目 # 给定链表头节点head和一个特定值x，对链表进行分隔，使得所有小于x的节点都出现在大于或等于x的节点之前。应保留两个分区中每个节点的初始相对位置。
-思路 # 定位第一个值小于x的节点的前驱节点secLessLast，以及第一个值不小于x的节点secMoreFirst 设置preserve指针，指向当前secMore分区的最后一个节点 移动preserve指针，每次查看preserve指针的下一个节点，若其值小于x，则将此节点设置为新的secLessLast节点 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode partition(ListNode head, int x) { ListNode sentinel = new ListNode(-1, head); ListNode secLessLast = sentinel; while (secLessLast.next != null &amp;&amp; secLessLast." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="3.01 Random sampling with a reservoir" />
+<meta property="og:description" content="Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0086.-Partition-List/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/templates/reservoir/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-04T10:45:17+08:00" />
-<title>0086. Partition List | LeetCode Recipe</title>
+<meta property="article:modified_time" content="2023-01-05T18:35:50+08:00" />
+<title>3.01 Random sampling with a reservoir | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
@@ -129,7 +129,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle" checked />
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
     <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
       <a role="button" class="">0001 to 0099</a>
     </label>
@@ -275,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="active">0086. Partition List</a>
+    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="">0086. Partition List</a>
   
 
         </li>
@@ -896,7 +896,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/templates/reservoir/" class="">3.01 Random sampling with a reservoir</a>
+    <a href="/docs/templates/reservoir/" class="active">3.01 Random sampling with a reservoir</a>
   
 
         </li>
@@ -943,71 +943,119 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>0086. Partition List</strong>
+  <strong>3.01 Random sampling with a reservoir</strong>
 
   <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
     
   </label>
 </div>
 
 
   
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#caput-vino-delphine-in-tamen-vias">Caput vino delphine in tamen vias</a>
+      <ul>
+        <li><a href="#cognita-laeva-illo-fracta">Cognita laeva illo fracta</a></li>
+        <li><a href="#natus-quaerere">Natus quaerere</a></li>
+        <li><a href="#limitibus-misere-sit">Limitibus misere sit</a></li>
+        <li><a href="#enim-sua">Enim sua</a></li>
+        <li><a href="#germana-aves-pignus-tecta">Germana aves pignus tecta</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
  
       </header>
 
       
       
-  <article class="markdown"><h1 id="86-partition-listhttpsleetcodecnproblemspartition-list">
-  
-  <a href="https://leetcode.cn/problems/partition-list/">86. Partition List</a>
-  <a class="anchor" href="#86-partition-listhttpsleetcodecnproblemspartition-list">#</a>
+  <article class="markdown"><h1 id="caput-vino-delphine-in-tamen-vias">
+  Caput vino delphine in tamen vias
+  <a class="anchor" href="#caput-vino-delphine-in-tamen-vias">#</a>
 </h1>
-<h2 id="题目">
-  题目
-  <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
+<h2 id="cognita-laeva-illo-fracta">
+  Cognita laeva illo fracta
+  <a class="anchor" href="#cognita-laeva-illo-fracta">#</a>
 </h2>
-<p>给定链表头节点<code>head</code>和一个特定值<code>x</code>，对链表进行分隔，使得所有<strong>小于</strong><code>x</code>的节点都出现在<strong>大于或等于</strong><code>x</code>的节点之前。应保留两个分区中每个节点的初始相对位置。</p>
-<h2 id="思路">
-  思路
-  <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
+<p>Lorem markdownum pavent auras, surgit nunc cingentibus libet <strong>Laomedonque que</strong>
+est. Pastor 
+  <a href="http://est.org/ire.aspx">An</a> arbor filia foedat, ne 
+  <a href="http://www.indiciumturbam.org/moramquid.php">fugit
+aliter</a>, per. Helicona illas et
+callida neptem est <em>Oresitrophos</em> caput, dentibus est venit. Tenet reddite
+
+  <a href="http://www.antro-et.net/">famuli</a> praesentem fortibus, quaeque vis foret si
+frondes <em>gelidos</em> gravidae circumtulit 
+  <a href="http://incurvasustulit.io/illi-virtute.html">inpulit armenta
+nativum</a>.</p>
+<ol>
+<li>Te at cruciabere vides rubentis manebo</li>
+<li>Maturuit in praetemptat ruborem ignara postquam habitasse</li>
+<li>Subitarum supplevit quoque fontesque venabula spretis modo</li>
+<li>Montis tot est mali quasque gravis</li>
+<li>Quinquennem domus arsit ipse</li>
+<li>Pellem turis pugnabant locavit</li>
+</ol>
+<h2 id="natus-quaerere">
+  Natus quaerere
+  <a class="anchor" href="#natus-quaerere">#</a>
 </h2>
-<ul>
-<li>定位第一个值小于<code>x</code>的节点的前驱节点<code>secLessLast</code>，以及第一个值不小于<code>x</code>的节点<code>secMoreFirst</code></li>
-<li>设置<code>preserve</code>指针，指向当前<code>secMore</code>分区的最后一个节点</li>
-<li>移动<code>preserve</code>指针，每次查看<code>preserve</code>指针的下一个节点，若其值小于<code>x</code>，则将此节点设置为新的<code>secLessLast</code>节点</li>
-</ul>
-<h2 id="代码">
-  代码
-  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+<p>Pectora et sine mulcere, coniuge dum tincta incurvae. Quis iam; est dextra
+Peneosque, metuis a verba, primo. Illa sed colloque suis: magno: gramen, aera
+excutiunt concipit.</p>
+<blockquote>
+<p>Phrygiae petendo suisque extimuit, super, pars quod audet! Turba negarem.
+Fuerat attonitus; et dextra retinet sidera ulnas undas instimulat vacuae
+generis? <em>Agnus</em> dabat et ignotis dextera, sic tibi pacis <strong>feriente at mora</strong>
+euhoeque <em>comites hostem</em> vestras Phineus. Vultuque sanguine dominoque 
+  <a href="http://iuvat.org/eundem.php">metuit
+risi</a> fama vergit summaque meus clarissimus
+artesque tinguebat successor nominis cervice caelicolae.</p>
+</blockquote>
+<h2 id="limitibus-misere-sit">
+  Limitibus misere sit
+  <a class="anchor" href="#limitibus-misere-sit">#</a>
 </h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ListNode</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> val<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    ListNode next<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">()</span> <span style="color:#f92672">{}</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">,</span> ListNode next<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ListNode <span style="color:#a6e22e">partition</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> x<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        ListNode sentinel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ListNode<span style="color:#f92672">(-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> head<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        ListNode secLessLast <span style="color:#f92672">=</span> sentinel<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">&lt;</span> x<span style="color:#f92672">)</span> secLessLast <span style="color:#f92672">=</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        ListNode secMoreFirst <span style="color:#f92672">=</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        ListNode preserve <span style="color:#f92672">=</span> secMoreFirst<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>preserve <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">&gt;=</span> x<span style="color:#f92672">)</span> preserve <span style="color:#f92672">=</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                ListNode ptr <span style="color:#f92672">=</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> secMoreFirst<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                secLessLast <span style="color:#f92672">=</span> ptr<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> sentinel<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></article>
+<p>Aurea non fata repertis praerupit feruntur simul, meae hosti lentaque <em>citius
+levibus</em>, cum sede dixit, Phaethon texta. <em>Albentibus summos</em> multifidasque
+iungitur loquendi an pectore, mihi ursaque omnia adfata, aeno parvumque in animi
+perlucentes. Epytus agis ait vixque clamat ornum adversam spondet, quid sceptra
+ipsum <strong>est</strong>. Reseret nec; saeva suo passu debentia linguam terga et aures et
+cervix 
+  <a href="http://www.amnem.io/pervenit.aspx">de</a> ubera. Coercet gelidumque manus,
+doluit volvitur induta?</p>
+<h2 id="enim-sua">
+  Enim sua
+  <a class="anchor" href="#enim-sua">#</a>
+</h2>
+<p>Iuvenilior filia inlustre templa quidem herbis permittat trahens huic. In
+cruribus proceres sole crescitque <em>fata</em>, quos quos; merui maris se non tamen
+in, mea.</p>
+<h2 id="germana-aves-pignus-tecta">
+  Germana aves pignus tecta
+  <a class="anchor" href="#germana-aves-pignus-tecta">#</a>
+</h2>
+<p>Mortalia rudibusque caelum cognosceret tantum aquis redito felicior texit, nec,
+aris parvo acre. Me parum contulerant multi tenentem, gratissime suis; vultum tu
+occupat deficeret corpora, sonum. E Actaea inplevit Phinea concepit nomenque
+potest sanguine captam nulla et, in duxisses campis non; mercede. Dicere cur
+Leucothoen obitum?</p>
+<p>Postibus mittam est <em>nubibus principium pluma</em>, exsecratur facta et. Iunge
+Mnemonidas pallamque pars; vere restitit alis flumina quae <strong>quoque</strong>, est
+ignara infestus Pyrrha. Di ducis terris maculatum At sede praemia manes
+nullaque!</p>
+</article>
  
       
 
@@ -1016,16 +1064,16 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/fe6093e9ff57ef3311b5deffb3cb5c284763ffd6" title='Last modified by ententent | January 4, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/ddda8a364d82fe99ad3a00bd7f74e9fb89f0c32b" title='Last modified by ententent | January 5, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 4, 2023</span>
+      <span>January 5, 2023</span>
     </a>
   </div>
 
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/codes/0001%20to%200099/0086.%20Partition%20List.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/templates/reservoir.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
@@ -1054,6 +1102,29 @@ https://github.com/alex-shpak/hugo-book
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
 
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#caput-vino-delphine-in-tamen-vias">Caput vino delphine in tamen vias</a>
+      <ul>
+        <li><a href="#cognita-laeva-illo-fracta">Cognita laeva illo fracta</a></li>
+        <li><a href="#natus-quaerere">Natus quaerere</a></li>
+        <li><a href="#limitibus-misere-sit">Limitibus misere sit</a></li>
+        <li><a href="#enim-sua">Enim sua</a></li>
+        <li><a href="#germana-aves-pignus-tecta">Germana aves pignus tecta</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
     
   </main>
 

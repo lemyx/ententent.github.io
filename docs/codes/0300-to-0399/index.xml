@@ -18,5 +18,17 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode oddEvenList(ListNode head) { if (head == null || head.next == null) return head; ListNode Odd = head, Even = head.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</guid>
+      <description>382. Linked List Random Node # 题目 # 给定单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点被选中的概率一样。
+考虑处理以下情形：
+链表非常大且长度未知 使用O(1)的额外空间复杂度 思路 # 使用 蓄水池抽样算法 以O(n)的时间复杂度和O(1)的空间复杂度解决此问题。
+代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private Random rand; private ListNode sentinel; public Solution(ListNode head) { this.rand = new Random(); this.sentinel = new ListNode(-1, head); } public int getRandom() { ListNode ptr = this.</description>
+    </item>
+    
   </channel>
 </rss>

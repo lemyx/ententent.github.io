@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Introduction on LeetCode Recipe</title>
+    <title>日拱一卒，功不唐捐 on LeetCode Recipe</title>
     <link>https://leetcode.akaeecs.com/</link>
-    <description>Recent content in Introduction on LeetCode Recipe</description>
+    <description>Recent content in 日拱一卒，功不唐捐 on LeetCode Recipe</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
@@ -44,6 +44,16 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
       <guid>https://leetcode.akaeecs.com/docs/topic/linked-list/</guid>
       <description>At me ipso nepotibus nunc celebratior genus # Tanto oblite # Lorem markdownum pectora novis patenti igne sua opus aurae feras materiaque illic demersit imago et aristas questaque posset. Vomit quoque suo inhaesuro clara. Esse cumque, per referri triste. Ut exponit solisque communis in tendens vincetis agisque iamque huic bene ante vetat omina Thebae rates. Aeacus servat admonitu concidit, ad resimas vultus et rugas vultu dignamque Siphnon.
 Quam iugulum regia simulacra, plus meruit humo pecorumque haesit, ab discedunt dixit: ritu pharetramque.</description>
+    </item>
+    
+    <item>
+      <title>3.01 Random sampling with a reservoir</title>
+      <link>https://leetcode.akaeecs.com/docs/templates/reservoir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/templates/reservoir/</guid>
+      <description>Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
     </item>
     
     <item>
@@ -295,6 +305,18 @@ Follow the following steps:</description>
 偶数组和奇数组内部的相对顺序应该与输入时保持一致。
 需要在O(1)的额外空间复杂度和O(n)的时间复杂度下解决这个问题。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode oddEvenList(ListNode head) { if (head == null || head.next == null) return head; ListNode Odd = head, Even = head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</guid>
+      <description>382. Linked List Random Node # 题目 # 给定单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点被选中的概率一样。
+考虑处理以下情形：
+链表非常大且长度未知 使用O(1)的额外空间复杂度 思路 # 使用 蓄水池抽样算法 以O(n)的时间复杂度和O(1)的空间复杂度解决此问题。
+代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private Random rand; private ListNode sentinel; public Solution(ListNode head) { this.rand = new Random(); this.sentinel = new ListNode(-1, head); } public int getRandom() { ListNode ptr = this.</description>
     </item>
     
     <item>

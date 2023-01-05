@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="86. Partition List # 题目 # 给定链表头节点head和一个特定值x，对链表进行分隔，使得所有小于x的节点都出现在大于或等于x的节点之前。应保留两个分区中每个节点的初始相对位置。
-思路 # 定位第一个值小于x的节点的前驱节点secLessLast，以及第一个值不小于x的节点secMoreFirst 设置preserve指针，指向当前secMore分区的最后一个节点 移动preserve指针，每次查看preserve指针的下一个节点，若其值小于x，则将此节点设置为新的secLessLast节点 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode partition(ListNode head, int x) { ListNode sentinel = new ListNode(-1, head); ListNode secLessLast = sentinel; while (secLessLast.next != null &amp;&amp; secLessLast.">
+<meta name="description" content="382. Linked List Random Node # 题目 # 给定单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点被选中的概率一样。
+考虑处理以下情形：
+链表非常大且长度未知 使用O(1)的额外空间复杂度 思路 # 使用 蓄水池抽样算法 以O(n)的时间复杂度和O(1)的空间复杂度解决此问题。
+代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private Random rand; private ListNode sentinel; public Solution(ListNode head) { this.rand = new Random(); this.sentinel = new ListNode(-1, head); } public int getRandom() { ListNode ptr = this.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="86. Partition List # 题目 # 给定链表头节点head和一个特定值x，对链表进行分隔，使得所有小于x的节点都出现在大于或等于x的节点之前。应保留两个分区中每个节点的初始相对位置。
-思路 # 定位第一个值小于x的节点的前驱节点secLessLast，以及第一个值不小于x的节点secMoreFirst 设置preserve指针，指向当前secMore分区的最后一个节点 移动preserve指针，每次查看preserve指针的下一个节点，若其值小于x，则将此节点设置为新的secLessLast节点 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode partition(ListNode head, int x) { ListNode sentinel = new ListNode(-1, head); ListNode secLessLast = sentinel; while (secLessLast.next != null &amp;&amp; secLessLast." />
+<meta property="og:description" content="382. Linked List Random Node # 题目 # 给定单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点被选中的概率一样。
+考虑处理以下情形：
+链表非常大且长度未知 使用O(1)的额外空间复杂度 思路 # 使用 蓄水池抽样算法 以O(n)的时间复杂度和O(1)的空间复杂度解决此问题。
+代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private Random rand; private ListNode sentinel; public Solution(ListNode head) { this.rand = new Random(); this.sentinel = new ListNode(-1, head); } public int getRandom() { ListNode ptr = this." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0086.-Partition-List/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-04T10:45:17+08:00" />
-<title>0086. Partition List | LeetCode Recipe</title>
+<meta property="article:modified_time" content="2023-01-05T18:35:50+08:00" />
+<title>0382. Linked List Random Node | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
@@ -129,7 +133,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle" checked />
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
     <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
       <a role="button" class="">0001 to 0099</a>
     </label>
@@ -275,7 +279,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="active">0086. Partition List</a>
+    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="">0086. Partition List</a>
   
 
         </li>
@@ -452,7 +456,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <input type="checkbox" id="section-2bd5c1b03f9f98091a194999a33306cf" class="toggle"  />
+    <input type="checkbox" id="section-2bd5c1b03f9f98091a194999a33306cf" class="toggle" checked />
     <label for="section-2bd5c1b03f9f98091a194999a33306cf" class="flex justify-between">
       <a role="button" class="">0300 to 0399</a>
     </label>
@@ -481,7 +485,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/" class="">0382. Linked List Random Node</a>
+    <a href="/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/" class="active">0382. Linked List Random Node</a>
   
 
         </li>
@@ -943,7 +947,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>0086. Partition List</strong>
+  <strong>0382. Linked List Random Node</strong>
 
   <label for="toc-control">
     
@@ -957,25 +961,26 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="86-partition-listhttpsleetcodecnproblemspartition-list">
+  <article class="markdown"><h1 id="382-linked-list-random-nodehttpsleetcodecnproblemslinked-list-random-node">
   
-  <a href="https://leetcode.cn/problems/partition-list/">86. Partition List</a>
-  <a class="anchor" href="#86-partition-listhttpsleetcodecnproblemspartition-list">#</a>
+  <a href="https://leetcode.cn/problems/linked-list-random-node">382. Linked List Random Node</a>
+  <a class="anchor" href="#382-linked-list-random-nodehttpsleetcodecnproblemslinked-list-random-node">#</a>
 </h1>
 <h2 id="题目">
   题目
   <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
 </h2>
-<p>给定链表头节点<code>head</code>和一个特定值<code>x</code>，对链表进行分隔，使得所有<strong>小于</strong><code>x</code>的节点都出现在<strong>大于或等于</strong><code>x</code>的节点之前。应保留两个分区中每个节点的初始相对位置。</p>
+<p>给定单链表，随机选择链表的一个节点，并返回相应的节点值。每个节点被选中的概率一样。</p>
+<p>考虑处理以下情形：</p>
+<ul>
+<li>链表非常大且长度未知</li>
+<li>使用<code>O(1)</code>的额外空间复杂度</li>
+</ul>
 <h2 id="思路">
   思路
   <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
 </h2>
-<ul>
-<li>定位第一个值小于<code>x</code>的节点的前驱节点<code>secLessLast</code>，以及第一个值不小于<code>x</code>的节点<code>secMoreFirst</code></li>
-<li>设置<code>preserve</code>指针，指向当前<code>secMore</code>分区的最后一个节点</li>
-<li>移动<code>preserve</code>指针，每次查看<code>preserve</code>指针的下一个节点，若其值小于<code>x</code>，则将此节点设置为新的<code>secLessLast</code>节点</li>
-</ul>
+<p>使用 <strong>蓄水池抽样算法</strong> 以<code>O(n)</code>的时间复杂度和<code>O(1)</code>的空间复杂度解决此问题。</p>
 <h2 id="代码">
   代码
   <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
@@ -987,27 +992,42 @@ https://github.com/alex-shpak/hugo-book
 </span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    ListNode<span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> val<span style="color:#f92672">,</span> ListNode next<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">=</span> val<span style="color:#f92672">;</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> next<span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ListNode <span style="color:#a6e22e">partition</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> x<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        ListNode sentinel <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ListNode<span style="color:#f92672">(-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> head<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        ListNode secLessLast <span style="color:#f92672">=</span> sentinel<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">&lt;</span> x<span style="color:#f92672">)</span> secLessLast <span style="color:#f92672">=</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        ListNode secMoreFirst <span style="color:#f92672">=</span> secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        ListNode preserve <span style="color:#f92672">=</span> secMoreFirst<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>preserve <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;&amp;</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">.</span><span style="color:#a6e22e">val</span> <span style="color:#f92672">&gt;=</span> x<span style="color:#f92672">)</span> preserve <span style="color:#f92672">=</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                ListNode ptr <span style="color:#f92672">=</span> preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                preserve<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                secLessLast<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">=</span> secMoreFirst<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>                secLessLast <span style="color:#f92672">=</span> ptr<span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> Random rand<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">private</span> ListNode sentinel<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">Solution</span><span style="color:#f92672">(</span>ListNode head<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">rand</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Random<span style="color:#f92672">();</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sentinel</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ListNode<span style="color:#f92672">(-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> head<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getRandom</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        ListNode ptr <span style="color:#f92672">=</span> <span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">sentinel</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> size <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> result <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">while</span> <span style="color:#f92672">(</span>ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            ptr <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            size <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">.</span><span style="color:#a6e22e">rand</span><span style="color:#f92672">.</span><span style="color:#a6e22e">nextInt</span><span style="color:#f92672">(</span><span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> size<span style="color:#f92672">)</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">)</span> result <span style="color:#f92672">=</span> ptr<span style="color:#f92672">.</span><span style="color:#a6e22e">val</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> sentinel<span style="color:#f92672">.</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></article>
+</span></span></code></pre></div><h2 id="致谢">
+  致谢
+  <a class="anchor" href="#%e8%87%b4%e8%b0%a2">#</a>
+</h2>
+<ul>
+<li>
+  <a href="https://www.bilibili.com/video/BV1vY411U7bN/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d2fb836a26e496b507775f8784008115">小学生都能看懂的蓄水池抽样算法 - @迷路的小画家 - 哔哩哔哩</a></li>
+<li>
+  <a href="https://www.bilibili.com/video/BV17i4y1j7wE/?spm_id_from=333.337.search-card.all.click&amp;vd_source=d2fb836a26e496b507775f8784008115">蓄水池抽样算法 - @五点七边 - 哔哩哔哩</a></li>
+<li>
+  <a href="https://leetcode.cn/problems/linked-list-random-node/solutions/1213605/gong-shui-san-xie-xu-shui-chi-chou-yang-1lp9d/">宫水三叶</a></li>
+<li>
+  <a href="https://dl.acm.org/doi/abs/10.1145/3147.3165">Random sampling with a reservoir</a></li>
+</ul>
+</article>
  
       
 
@@ -1016,16 +1036,16 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/fe6093e9ff57ef3311b5deffb3cb5c284763ffd6" title='Last modified by ententent | January 4, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/ddda8a364d82fe99ad3a00bd7f74e9fb89f0c32b" title='Last modified by ententent | January 5, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 4, 2023</span>
+      <span>January 5, 2023</span>
     </a>
   </div>
 
 
 
   <div>
-    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/codes/0001%20to%200099/0086.%20Partition%20List.md" target="_blank" rel="noopener">
+    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/codes/0300%20to%200399/0382.%20Linked%20List%20Random%20Node.md" target="_blank" rel="noopener">
       <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
       <span>Edit this page</span>
     </a>
