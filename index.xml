@@ -57,6 +57,16 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
     </item>
     
     <item>
+      <title>3.02 LRU &amp; LFU</title>
+      <link>https://leetcode.akaeecs.com/docs/templates/LRU/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/templates/LRU/</guid>
+      <description>Caput vino delphine in tamen vias # Cognita laeva illo fracta # Lorem markdownum pavent auras, surgit nunc cingentibus libet Laomedonque que est. Pastor An arbor filia foedat, ne fugit aliter, per. Helicona illas et callida neptem est Oresitrophos caput, dentibus est venit. Tenet reddite famuli praesentem fortibus, quaeque vis foret si frondes gelidos gravidae circumtulit inpulit armenta nativum.
+Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
+    </item>
+    
+    <item>
       <title>(Hu)go Template Primer</title>
       <link>https://leetcode.akaeecs.com/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
@@ -228,6 +238,18 @@ Follow the following steps:</description>
       <description>142. Linked List Cycle II # 题目 # 给定链表头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
 不允许修改 链表。
 思路 # 设head至环入口距离为x，环入口至相遇处距离为y，相遇处至环入口距离为z assert: 相遇时slow指针在环内尚未走过完整的一圈。 proof: 若slow指针在环入口处与fast指针相遇，则此时slow指针尚未走过完整的一圈。若slow指针在环入口处尚未与fast指针相遇，则此时slow指针与fast指针的相对距离小于一圈，又因为fast指针追击slow指针的相对速度为1，则在slow指针尚未走过一圈的时间内，fast指针就将追击slow指针。故相遇时slow指针在环内尚未走过完整的一圈。 相遇时slow指针走过的距离可表示为x+y，fast指针走过的距离可表示为x+n(y+z)+y 有等式2(x+y) = x+y+n(y+z)，化简有x=(n-1)(y+z) + z 新建指针ptr指向head。令fast指针与ptr指针同时以速度1向前移动，则fast指针与ptr指针将在环入口处相遇。 代码 # class ListNode { int val; ListNode next; ListNode (int x) { val = x; next = null; } } public class Solution { public ListNode detectCycle(ListNode head) { ListNode slow = head, fast = head; while (fast != null &amp;amp;&amp;amp; fast.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0146.-LRU-Cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0146.-LRU-Cache/</guid>
+      <description>146. LRU Cache # 题目 # 设计并实现一个满足 LRU（最近最少使用）缓存 约束的数据结构。
+实现 LRUCache 类：
+LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 int get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 void put(int key, int value) 如果关键字 key 已经存在，则变更其数据值 value；如果不存在，则向缓存中插入该组 key-value，如果插入操作导致关键字数量超过 capacity，则应该逐出最久未使用的关键字。 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。 思路 # 使用 双向链表 结合 哈希表 实现 LRU Cache 数据结构。
+代码 # class LRUCache { private class ListNode { int key; int val; public ListNode prev; public ListNode next; ListNode (int key, int val, ListNode prev, ListNode next) { this.</description>
     </item>
     
     <item>

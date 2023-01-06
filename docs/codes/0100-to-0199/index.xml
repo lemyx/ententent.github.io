@@ -30,6 +30,18 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0146.-LRU-Cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0146.-LRU-Cache/</guid>
+      <description>146. LRU Cache # 题目 # 设计并实现一个满足 LRU（最近最少使用）缓存 约束的数据结构。
+实现 LRUCache 类：
+LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 int get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 void put(int key, int value) 如果关键字 key 已经存在，则变更其数据值 value；如果不存在，则向缓存中插入该组 key-value，如果插入操作导致关键字数量超过 capacity，则应该逐出最久未使用的关键字。 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。 思路 # 使用 双向链表 结合 哈希表 实现 LRU Cache 数据结构。
+代码 # class LRUCache { private class ListNode { int key; int val; public ListNode prev; public ListNode next; ListNode (int key, int val, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
