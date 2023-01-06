@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" 2326. Spiral Matrix IV # 题目 # 给定两个整数 m 和 n，表示矩阵的维数。
+另外给定一个整数链表的头节点 head。
+生成并返回一个大小为 m x n 的螺旋矩阵，矩阵包含链表中的所有整数。链表中的整数从矩阵左上角开始、顺时针按螺旋顺序填充。如果还存在剩余的空格，则用 -1 填充。
+思路 # 代码 # class Solution { public int getValue(ListNode[] ptr) { if (ptr[0] == null) return -1; int value = ptr[0].val; ptr[0] = ptr[0].next; return value; } public void helper(int[][] result, int top, int bottom, int left, int right, ListNode[] ptr) { if (top &gt; bottom || left &gt; right) return; if (top == bottom) { for (int j=left; j&lt;=right; j&#43;&#43;) result[top][j] = getValue(ptr); return; } if (left == right) { for (int i=top; i&lt;=bottom; i&#43;&#43;) result[i][left] = getValue(ptr); return; } else { for (int j=left; j&lt;right; j&#43;&#43;) result[top][j] = getValue(ptr); for (int i=top; i&lt;bottom; i&#43;&#43;) result[i][right] = getValue(ptr); for (int j=right; j&gt;left; j--) result[bottom][j] = getValue(ptr); for (int i=bottom; i&gt;top; i--) result[i][left] = getValue(ptr); } helper(result, top&#43;1, bottom-1, left&#43;1, right-1, ptr); } public int[][] spiralMatrix(int m, int n, ListNode head) { int[][] result = new int[m][n]; ListNode[] ptr = new ListNode[1]; ptr[0] = head; helper(result, 0, m-1, 0, n-1, ptr); return result; } } ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" 2326. Spiral Matrix IV # 题目 # 给定两个整数 m 和 n，表示矩阵的维数。
+另外给定一个整数链表的头节点 head。
+生成并返回一个大小为 m x n 的螺旋矩阵，矩阵包含链表中的所有整数。链表中的整数从矩阵左上角开始、顺时针按螺旋顺序填充。如果还存在剩余的空格，则用 -1 填充。
+思路 # 代码 # class Solution { public int getValue(ListNode[] ptr) { if (ptr[0] == null) return -1; int value = ptr[0].val; ptr[0] = ptr[0].next; return value; } public void helper(int[][] result, int top, int bottom, int left, int right, ListNode[] ptr) { if (top &gt; bottom || left &gt; right) return; if (top == bottom) { for (int j=left; j&lt;=right; j&#43;&#43;) result[top][j] = getValue(ptr); return; } if (left == right) { for (int i=top; i&lt;=bottom; i&#43;&#43;) result[i][left] = getValue(ptr); return; } else { for (int j=left; j&lt;right; j&#43;&#43;) result[top][j] = getValue(ptr); for (int i=top; i&lt;bottom; i&#43;&#43;) result[i][right] = getValue(ptr); for (int j=right; j&gt;left; j--) result[bottom][j] = getValue(ptr); for (int i=bottom; i&gt;top; i--) result[i][left] = getValue(ptr); } helper(result, top&#43;1, bottom-1, left&#43;1, right-1, ptr); } public int[][] spiralMatrix(int m, int n, ListNode head) { int[][] result = new int[m][n]; ListNode[] ptr = new ListNode[1]; ptr[0] = head; helper(result, 0, m-1, 0, n-1, ptr); return result; } } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-01-06T11:56:05+08:00" />
+<title>2326. Spiral Matrix Iv | LeetCode Recipe</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.0712aaeeb1a7964952ea6d5bb83097e0093575f1130408ea2a226714daf84ecb.js" integrity="sha256-BxKq7rGnlklS6m1buDCX4Ak1dfETBAjqKiJnFNr4Tss=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>LeetCode Recipe</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/" class="">Topic</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/array/" class="">1.01 Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/linked-list/" class="">1.02 Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/" class="">Codes</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
+    <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
+      <a role="button" class="">0001 to 0099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/" class="">0002. Add Two Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/" class="">0019. Remove Nth Node From End of List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/" class="">0021. Merge Two Sorted Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/" class="">0024. Swap Nodes in Pairs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0027.-Remove-Element/" class="">0027. Remove Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0054.-Spiral-Matrix/" class="">0054. Spiral Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/" class="">0059. Spiral Matrix Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0061.-RotateList/" class="">0061. Rotate List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/" class="">0082. Remove Duplicates From Sorted List Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/" class="">0083. Remove Duplicates From Sorted List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="">0086. Partition List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/" class="">0092. Reverse Linked List Ii</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd5dde26833080b2913dd50e3fd335d6" class="toggle"  />
+    <label for="section-cd5dde26833080b2913dd50e3fd335d6" class="flex justify-between">
+      <a role="button" class="">0100 to 0199</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/" class="">0141. Linked List Cycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/" class="">0142. Linked List Cycle Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/" class="">0160. Intersection of Two Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f6e90de89406b3d2e96fbd107c91b627" class="toggle"  />
+    <label for="section-f6e90de89406b3d2e96fbd107c91b627" class="flex justify-between">
+      <a role="button" class="">0200 to 0299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/" class="">0203. Remove Linked List Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" class="">0206. Reverse Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/" class="">0209. Minimum Size Subarray Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/" class="">0234. Palindrome Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/" class="">0237. Delete Nodes in a Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2bd5c1b03f9f98091a194999a33306cf" class="toggle"  />
+    <label for="section-2bd5c1b03f9f98091a194999a33306cf" class="flex justify-between">
+      <a role="button" class="">0300 to 0399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/" class="">0328. Odd Even Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/" class="">0382. Linked List Random Node</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5fbe824fef779ca2125c866051eb76e8" class="toggle"  />
+    <label for="section-5fbe824fef779ca2125c866051eb76e8" class="flex justify-between">
+      <a role="button" class="">0400 to 0499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/" class="">0445. Add Two Numbers Ii</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b6e0c04e11fb5b167b6150beeca1d75e" class="toggle"  />
+    <label for="section-b6e0c04e11fb5b167b6150beeca1d75e" class="flex justify-between">
+      <a role="button" class="">0700 to 0799</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0704.-Binary-Search/" class="">0704. Binary Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0707.-Design-Linked-List/" class="">0707. Design Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/" class="">0725. Split Linked List in Parts</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20586204c49b6a1799e6989506fab6c8" class="toggle"  />
+    <label for="section-20586204c49b6a1799e6989506fab6c8" class="flex justify-between">
+      <a role="button" class="">0800 to 0899</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/" class="">876. Middle of the Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="toggle"  />
+    <label for="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="flex justify-between">
+      <a role="button" class="">0900 to 0999</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/" class="">0977. Squares of a Sorted Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-249e5a4bf35001596fa3af040d4d4bc5" class="toggle"  />
+    <label for="section-249e5a4bf35001596fa3af040d4d4bc5" class="flex justify-between">
+      <a role="button" class="">1000 to 1099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/" class="">1019. Next Greater Node in Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0896ec8c597c0f1df734aa8fd96f23d4" class="toggle"  />
+    <label for="section-0896ec8c597c0f1df734aa8fd96f23d4" class="flex justify-between">
+      <a role="button" class="">1200 to 1299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/" class="">1290. Convert Binary Number in a Linked List to Integer</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-882c6dfa4cac6a5a4fc53d76ea16e6a9" class="toggle"  />
+    <label for="section-882c6dfa4cac6a5a4fc53d76ea16e6a9" class="flex justify-between">
+      <a role="button" class="">1400 to 1499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1472.-Design-Browser-History/" class="">1472. Design Browser History</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2ef42fab8c3d128ac222bcb81913a18d" class="toggle"  />
+    <label for="section-2ef42fab8c3d128ac222bcb81913a18d" class="flex justify-between">
+      <a role="button" class="">1600 to 1699</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/" class="">1669. Merge in Between Linked Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c8d50336e45d2ee7a05b738c99dbd66" class="toggle"  />
+    <label for="section-7c8d50336e45d2ee7a05b738c99dbd66" class="flex justify-between">
+      <a role="button" class="">1700 to 1799</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1721.-Swapping-Nodes-in-A-Linked-List/" class="">1721. Swapping Nodes in a Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e201d992afa23525d93fd88b6f14424" class="toggle"  />
+    <label for="section-3e201d992afa23525d93fd88b6f14424" class="flex justify-between">
+      <a role="button" class="">2000 to 2099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/" class="">2095. Delete the Middle Node of a Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ae5f2a479797f4c4177fac58d9f00259" class="toggle" checked />
+    <label for="section-ae5f2a479797f4c4177fac58d9f00259" class="flex justify-between">
+      <a role="button" class="">2300 to 2399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/" class="active">2326. Spiral Matrix Iv</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-510a7b32d3f64083c77e9f20b163e680" class="toggle"  />
+    <label for="section-510a7b32d3f64083c77e9f20b163e680" class="flex justify-between">
+      <a role="button" class="">2400 to 2499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2487.-Remove-Nodes-From-Linked-List/" class="">2487. Remove Nodes From Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77c52f6e02bb053791d65c6510860578" class="toggle"  />
+    <label for="section-77c52f6e02bb053791d65c6510860578" class="flex justify-between">
+      <a role="button" class="">剑指 Offer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-06.-%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/" class="">剑指 Offer 06. 从尾到头打印链表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/" class="">剑指 Offer 18. 删除链表的节点</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/" class="">Templates</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/reservoir/" class="">3.01 Random sampling with a reservoir</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>2326. Spiral Matrix Iv</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="2326-spiral-matrix-ivhttpsleetcodecnproblemsspiral-matrix-iv">
+  
+  <a href="https://leetcode.cn/problems/spiral-matrix-iv">2326. Spiral Matrix IV</a>
+  <a class="anchor" href="#2326-spiral-matrix-ivhttpsleetcodecnproblemsspiral-matrix-iv">#</a>
+</h1>
+<h2 id="题目">
+  题目
+  <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
+</h2>
+<p>给定两个整数 <code>m</code> 和 <code>n</code>，表示矩阵的维数。</p>
+<p>另外给定一个整数链表的头节点 <code>head</code>。</p>
+<p>生成并返回一个大小为 <code>m x n</code> 的螺旋矩阵，矩阵包含链表中的所有整数。链表中的整数从矩阵左上角开始、顺时针按螺旋顺序填充。如果还存在剩余的空格，则用 <code>-1</code> 填充。</p>
+<h2 id="思路">
+  思路
+  <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
+</h2>
+<h2 id="代码">
+  代码
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">getValue</span><span style="color:#f92672">(</span>ListNode<span style="color:#f92672">[]</span> ptr<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>ptr<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> value <span style="color:#f92672">=</span> ptr<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">].</span><span style="color:#a6e22e">val</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        ptr<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> ptr<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">].</span><span style="color:#a6e22e">next</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> value<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">helper</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> result<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> top<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> bottom<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> left<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> right<span style="color:#f92672">,</span> ListNode<span style="color:#f92672">[]</span> ptr<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>top <span style="color:#f92672">&gt;</span> bottom <span style="color:#f92672">||</span> left <span style="color:#f92672">&gt;</span> right<span style="color:#f92672">)</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>top <span style="color:#f92672">==</span> bottom<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">&lt;=</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> result<span style="color:#f92672">[</span>top<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>left <span style="color:#f92672">==</span> right<span style="color:#f92672">)</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;=</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> result<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>left<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span> <span style="color:#66d9ef">return</span><span style="color:#f92672">;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">&lt;</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">++)</span> result<span style="color:#f92672">[</span>top<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> result<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>right<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> j<span style="color:#f92672">=</span>right<span style="color:#f92672">;</span> j<span style="color:#f92672">&gt;</span>left<span style="color:#f92672">;</span> j<span style="color:#f92672">--)</span> result<span style="color:#f92672">[</span>bottom<span style="color:#f92672">][</span>j<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span>bottom<span style="color:#f92672">;</span> i<span style="color:#f92672">&gt;</span>top<span style="color:#f92672">;</span> i<span style="color:#f92672">--)</span> result<span style="color:#f92672">[</span>i<span style="color:#f92672">][</span>left<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> getValue<span style="color:#f92672">(</span>ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        helper<span style="color:#f92672">(</span>result<span style="color:#f92672">,</span> top<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> bottom<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> left<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> right<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> <span style="color:#a6e22e">spiralMatrix</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> m<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> n<span style="color:#f92672">,</span> ListNode head<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[][]</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span>m<span style="color:#f92672">][</span>n<span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>        ListNode<span style="color:#f92672">[]</span> ptr <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> ListNode<span style="color:#f92672">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">];</span>
+</span></span><span style="display:flex;"><span>        ptr<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> head<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        helper<span style="color:#f92672">(</span>result<span style="color:#f92672">,</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> m<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> n<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> ptr<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/d4dae037ad99c81e8487d75245d77c7216e02006" title='Last modified by ententent | January 6, 2023' target="_blank" rel="noopener">
+      <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
+      <span>January 6, 2023</span>
+    </a>
+  </div>
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/codes/2300%20to%202399/2326.%20Spiral%20Matrix%20IV.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

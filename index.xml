@@ -321,6 +321,16 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</guid>
+      <description>445. Add Two Numbers II # 题目 # 给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode l1, ListNode l2) { if (l1.next == null &amp;amp;&amp;amp; l2.next == null) { int carry = (l1.val + l2.val) / 10; l1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -399,6 +409,17 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</guid>
+      <description>1472. Design Browser History # 题目 # 现有一个只支持单个标签页的 浏览器， 最开始浏览的网页是 homepage，可以访问其他的网站 url，也可以在浏览器中后退 steps 步或前进 steps 步。
+设计实现 BrowserHistory 类：
+BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit(string url) 从当前页面跳转访问 url 对应的页面。执行此操作会把浏览历史前进的记录全部删除。 string back(int steps) 在浏览历史中后退 steps 步。如果只能在浏览历史中后退至多 x 步且 steps &amp;gt; x，那么只后退 x 步。请返回后退至多 steps 步以后的 url。 string forward(int steps) 在浏览历史中前进 steps 步。如果只能在浏览历史中前进至多 x 步且 steps &amp;gt; x，那么只前进 x 步。请返回前进至多 steps 步以后的 url。 思路 # 借助双向链表实现。 注意 visit 操作执行后会将浏览历史前进的记录全部删除。 代码 # class BrowserHistory { private class ListNode { public String url; public ListNode prev; public ListNode next; ListNode(String url, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -428,6 +449,18 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <description>2095. Delete the Middle Node of A Linked List # 题目 # 给定链表头节点head，删除链表的中间节点，并返回修改后的链表头节点head。
 长度为 n 链表的中间节点是从头数起第 ⌊n / 2⌋ 个节点（下标从 0 开始），其中 ⌊x⌋ 表示小于或等于 x 的最大整数。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteMiddle(ListNode head) { if (head == null) return null; ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/</guid>
+      <description> 2326. Spiral Matrix IV # 题目 # 给定两个整数 m 和 n，表示矩阵的维数。
+另外给定一个整数链表的头节点 head。
+生成并返回一个大小为 m x n 的螺旋矩阵，矩阵包含链表中的所有整数。链表中的整数从矩阵左上角开始、顺时针按螺旋顺序填充。如果还存在剩余的空格，则用 -1 填充。
+思路 # 代码 # class Solution { public int getValue(ListNode[] ptr) { if (ptr[0] == null) return -1; int value = ptr[0].val; ptr[0] = ptr[0].next; return value; } public void helper(int[][] result, int top, int bottom, int left, int right, ListNode[] ptr) { if (top &amp;gt; bottom || left &amp;gt; right) return; if (top == bottom) { for (int j=left; j&amp;lt;=right; j++) result[top][j] = getValue(ptr); return; } if (left == right) { for (int i=top; i&amp;lt;=bottom; i++) result[i][left] = getValue(ptr); return; } else { for (int j=left; j&amp;lt;right; j++) result[top][j] = getValue(ptr); for (int i=top; i&amp;lt;bottom; i++) result[i][right] = getValue(ptr); for (int j=right; j&amp;gt;left; j--) result[bottom][j] = getValue(ptr); for (int i=bottom; i&amp;gt;top; i--) result[i][left] = getValue(ptr); } helper(result, top+1, bottom-1, left+1, right-1, ptr); } public int[][] spiralMatrix(int m, int n, ListNode head) { int[][] result = new int[m][n]; ListNode[] ptr = new ListNode[1]; ptr[0] = head; helper(result, 0, m-1, 0, n-1, ptr); return result; } } </description>
     </item>
     
     <item>
