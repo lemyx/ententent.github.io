@@ -219,6 +219,18 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</guid>
+      <description>138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+构造这个链表的 深拷贝。
+思路 # 通过两次遍历实现深拷贝。
+第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&amp;lt;Node, Node&amp;gt; correspond = new HashMap&amp;lt;Node, Node&amp;gt;(); while (ptrOld.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -349,6 +361,30 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</guid>
       <description>445. Add Two Numbers II # 题目 # 给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode l1, ListNode l2) { if (l1.next == null &amp;amp;&amp;amp; l2.next == null) { int carry = (l1.val + l2.val) / 10; l1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0622.-Design-Circular-Queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0622.-Design-Circular-Queue/</guid>
+      <description>622. Design Circular Queue # 题目 # 设计循环队列。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。
+循环队列的一个好处是我们可以利用这个队列之前用过的空间。在一个普通队列里，一旦一个队列满了，我们就不能插入下一个元素，即使在队列前面仍有空间。但是使用循环队列，我们能使用这些空间去存储新的值。
+你的实现应该支持如下操作：
+MyCircularQueue(k): 构造器，设置队列长度为 k 。 Front: 从队首获取元素。如果队列为空，返回 -1 。 Rear: 获取队尾元素。如果队列为空，返回 -1 。 enQueue(value): 向循环队列插入一个元素。如果成功插入则返回真。 deQueue(): 从循环队列中删除一个元素。如果成功删除则返回真。 isEmpty(): 检查循环队列是否为空。 isFull(): 检查循环队列是否已满。 思路 # 基于链表的实现较为简单，而基于数组的实现相对复杂。
+代码 # class MyCircularQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode (int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } private int size; private int capacity; ListNode sentinel; public MyCircularQueue(int k) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0641.-Design-Circular-Deque/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0641.-Design-Circular-Deque/</guid>
+      <description>641. Design Circular Deque # 题目 # 设计实现双端队列。
+实现 MyCircularDeque 类:
+MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean insertFront()：将一个元素添加到双端队列头部。 如果操作成功返回 true ，否则返回 false 。 boolean insertLast() ：将一个元素添加到双端队列尾部。如果操作成功返回 true ，否则返回 false 。 boolean deleteFront() ：从双端队列头部删除一个元素。 如果操作成功返回 true ，否则返回 false 。 boolean deleteLast() ：从双端队列尾部删除一个元素。如果操作成功返回 true ，否则返回 false 。 int getFront() )：从双端队列头部获得一个元素。如果双端队列为空，返回 -1 。 int getRear() ：获得双端队列的最后一个元素。 如果双端队列为空，返回 -1 。 boolean isEmpty() ：若双端队列为空，则返回 true ，否则返回 false 。 boolean isFull() ：若双端队列满了，则返回 true ，否则返回 false 。 思路 # 代码 # class MyCircularDeque { private class ListNode { public int val; public ListNode prev; public ListNode next; ListNode (int value, ListNode prev, ListNode next) { this.</description>
     </item>
     
     <item>
@@ -600,6 +636,16 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/%E5%89%91%E6%8C%87-Offer-18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/</guid>
       <description> 剑指 Offer 18. 删除链表的节点 # 题目 # 给定单链表的头指针和一个要删除的节点的值，定义一个函数删除该节点，返回删除后的链表的头节点。链表中节点的值互不相同。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode deleteNode(ListNode head, int val) { if (head.val == val) return head.next; ListNode ptr = head; while (ptr.next.val != val) ptr = ptr.next; ptr.next = ptr.next.next; return head;s } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</guid>
+      <description> 面试题 02.01. 移除重复节点 # 题目 # 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode removeDuplicateNodes(ListNode head) { if (head == null) return null; HashSet&amp;lt;Integer&amp;gt; record = new HashSet&amp;lt;&amp;gt;(); ListNode ptr = head; while (ptr.next != null) { record.add(ptr.val); if (record.contains(ptr.next.val)) ptr.next = ptr.next.next; else ptr = ptr.next; } return head; } } </description>
     </item>
     
     <item>

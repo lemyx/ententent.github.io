@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0100-to-0199/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</guid>
+      <description>138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+构造这个链表的 深拷贝。
+思路 # 通过两次遍历实现深拷贝。
+第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&amp;lt;Node, Node&amp;gt; correspond = new HashMap&amp;lt;Node, Node&amp;gt;(); while (ptrOld.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
