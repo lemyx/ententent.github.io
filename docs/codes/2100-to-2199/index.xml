@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2100-to-2199/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/</guid>
+      <description>2130. Maximum Twin Sum of A Linked List # 题目 # 在一个大小为 n 且 n 为 偶数 的链表中，对于 0 &amp;lt;= i &amp;lt;= (n / 2) - 1 的 i ，第 i 个节点（下标从 0 开始）的孪生节点为第 (n-1-i) 个节点 。
+比方说，n = 4 那么节点 0 是节点 3 的孪生节点，节点 1 是节点 2 的孪生节点。这是长度为 n = 4 的链表中所有的孪生节点。 孪生和 定义为一个节点和它孪生节点两者值之和。
+给你一个长度为偶数的链表的头节点 head ，请你返回链表的 最大孪生和 。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+  </channel>
+</rss>
