@@ -16,5 +16,16 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) { ListNode ptrA = list1, ptrB = list1; for (int i=0; i&amp;lt;a-1; i++) ptrA = ptrA.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1670.-Design-Front-Middle-Back-Queue/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1670.-Design-Front-Middle-Back-Queue/</guid>
+      <description>1670. Design Front Middle Back Queue # 题目 # 请你设计一个队列，支持在前，中，后三个位置的 push 和 pop 操作。
+请你完成 FrontMiddleBack 类：
+FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到队列的 最前面 。 void pushMiddle(int val) 将 val 添加到队列的 正中间 。 void pushBack(int val) 将 val 添加到队里的 最后面 。 int popFront() 将 最前面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popMiddle() 将 正中间 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popBack() 将 最后面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 思路 # 代码 # class FrontMiddleBackQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode(int value, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
   </channel>
 </rss>

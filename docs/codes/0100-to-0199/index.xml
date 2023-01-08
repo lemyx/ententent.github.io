@@ -42,6 +42,19 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0143.-Reorder-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0143.-Reorder-List/</guid>
+      <description>143. Reorder List # 题目 # 给定一个单链表 L 的头节点 head ，单链表 L 表示为：
+L0 → L1 → … → Ln - 1 → Ln 请将其重新排列后变为：
+L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → … 不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
+思路 # 寻找链表中心结点 + 翻转链表 + 合并链表
+代码 # 暴力解 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0146.-LRU-Cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -50,6 +63,17 @@
 实现 LRUCache 类：
 LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 int get(int key) 如果关键字 key 存在于缓存中，则返回关键字的值，否则返回 -1 void put(int key, int value) 如果关键字 key 已经存在，则变更其数据值 value；如果不存在，则向缓存中插入该组 key-value，如果插入操作导致关键字数量超过 capacity，则应该逐出最久未使用的关键字。 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。 思路 # 使用 双向链表 结合 哈希表 实现 LRU Cache 数据结构。
 代码 # class LRUCache { private class ListNode { int key; int val; public ListNode prev; public ListNode next; ListNode (int key, int val, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0147.-Insertion-Sort-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0147.-Insertion-Sort-List/</guid>
+      <description>147. Insertion Sort List # 题目 # 给定单个链表的头 head ，使用 插入排序 对链表进行排序，并返回 排序后链表的头 。
+插入排序 算法的步骤:
+插入排序是迭代的，每次只移动一个元素，直到所有元素可以形成一个有序的输出列表。 每次迭代中，插入排序只从输入数据中移除一个待排序的元素，找到它在序列中适当的位置，并将其插入。 重复直到所有输入数据插入完为止。 思路 # 代码 # class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode insertSortList(ListNode head) { ListNode sentinel = new ListNode(-1, head); /** 设置 preserve 指向已排序链表的尾结点，每次新处理的结点为 preserve.</description>
     </item>
     
     <item>
