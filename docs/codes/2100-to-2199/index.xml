@@ -17,5 +17,17 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</guid>
+      <description>2181. Merge Nodes in Between Zeros # 题目 # 给定链表头节点 head ，该链表包含由 0 分隔开的一连串整数。链表的 开端 和 末尾 的节点都满足 Node.val == 0 。
+对于每两个相邻的 0 ，之间的所有节点合并为一个节点，其值是所有已合并节点的值之和。然后将所有 0 移除，修改后的链表不应该含有任何 0 。
+返回修改后链表的头节点 head 。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeNodes(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr !</description>
+    </item>
+    
   </channel>
 </rss>

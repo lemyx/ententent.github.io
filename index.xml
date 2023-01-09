@@ -379,6 +379,18 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0430.-Flatten-a-Multilevel-Doubly-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0430.-Flatten-a-Multilevel-Doubly-Linked-List/</guid>
+      <description>430. Flatten a Multilevel Doubly Linked List # 题目 # 给定一个双链表，各节点有一个 next 指针、一个 prev 指针和一个的 child 指针 。这个 child 指针 可能指向一个单独的双向链表，也包含这些特殊的节点。这些子列表可以有一个或多个自己的子列表，从而构成 多层数据结构 。
+给定链表的头节点 head ，将链表 扁平化 ，使所有节点都出现在单层双链表中。让 curr 是一个带有子列表的节点。子列表中的节点应该出现在扁平化列表中的 curr 之后 和 curr.next 之前 。
+返回 扁平列表的 head 。列表中的节点必须将其 所有 子指针设置为 null 。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -448,10 +460,21 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/876.-Middle-of-the-Linked-List/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</guid>
+      <description>0817. Linked List Components # 题目 # 给定链表头结点 head，该链表上的每个结点都有一个 唯一的整型值。同时给定列表 nums，该列表是上述链表中整型值的一个子集。
+返回列表 nums 中组件的个数，这里对组件的定义为：链表中一段最长连续结点的值（该值必须在列表 nums 中）构成的集合。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int numComponents(ListNode head, int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for(int x: nums) set.add(x); boolean flag = false; int num = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</guid>
       <description>876. Middle of the Linked List # 题目 # 给定一个头结点为head的非空单链表，返回链表的中间结点。
 如果有两个中间结点，则返回第二个中间结点。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode middleNode(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast != null &amp;amp;&amp;amp; fast.</description>
@@ -535,6 +558,20 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</guid>
+      <description>2058. Find the Minimum and Maximum Number of Nodes Between Critical Points # 题目 # 链表中的 临界点 定义为一个 局部极大值点 或 局部极小值点 。
+如果当前节点的值 严格大于 前一个节点和后一个节点，那么这个节点就是一个 局部极大值点 。
+如果当前节点的值 严格小于 前一个节点和后一个节点，那么这个节点就是一个 局部极小值点 。
+注意：节点只有在同时存在前一个节点和后一个节点的情况下，才能成为一个 局部极大值点 / 极小值点 。
+给你一个链表 head ，返回一个长度为 2 的数组 [minDistance, maxDistance] ，其中 minDistance 是任意两个不同临界点之间的最小距离，maxDistance 是任意两个不同临界点之间的最大距离。如果临界点少于两个，则返回 [-1，-1] 。
+思路 # 在第一个节点存在的情况下，每遇到一个新的临界点，maxDistance 在原有基础上递增距离，minDistance 重新计算。 maxDistance 是所有临界点分段的距离之和。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -554,6 +591,18 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 比方说，n = 4 那么节点 0 是节点 3 的孪生节点，节点 1 是节点 2 的孪生节点。这是长度为 n = 4 的链表中所有的孪生节点。 孪生和 定义为一个节点和它孪生节点两者值之和。
 给你一个长度为偶数的链表的头节点 head ，请你返回链表的 最大孪生和 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</guid>
+      <description>2181. Merge Nodes in Between Zeros # 题目 # 给定链表头节点 head ，该链表包含由 0 分隔开的一连串整数。链表的 开端 和 末尾 的节点都满足 Node.val == 0 。
+对于每两个相邻的 0 ，之间的所有节点合并为一个节点，其值是所有已合并节点的值之和。然后将所有 0 移除，修改后的链表不应该含有任何 0 。
+返回修改后链表的头节点 head 。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeNodes(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr !</description>
     </item>
     
     <item>

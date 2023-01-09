@@ -7,6 +7,20 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2000-to-2099/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</guid>
+      <description>2058. Find the Minimum and Maximum Number of Nodes Between Critical Points # 题目 # 链表中的 临界点 定义为一个 局部极大值点 或 局部极小值点 。
+如果当前节点的值 严格大于 前一个节点和后一个节点，那么这个节点就是一个 局部极大值点 。
+如果当前节点的值 严格小于 前一个节点和后一个节点，那么这个节点就是一个 局部极小值点 。
+注意：节点只有在同时存在前一个节点和后一个节点的情况下，才能成为一个 局部极大值点 / 极小值点 。
+给你一个链表 head ，返回一个长度为 2 的数组 [minDistance, maxDistance] ，其中 minDistance 是任意两个不同临界点之间的最小距离，maxDistance 是任意两个不同临界点之间的最大距离。如果临界点少于两个，则返回 [-1，-1] 。
+思路 # 在第一个节点存在的情况下，每遇到一个新的临界点，maxDistance 在原有基础上递增距离，minDistance 重新计算。 maxDistance 是所有临界点分段的距离之和。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
