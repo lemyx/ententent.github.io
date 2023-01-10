@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1200-to-1299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</guid>
+      <description> 1265. Print Immutable Linked List in Reverse # 题目 # 给定一个不可变的链表，使用下列接口逆序打印每个节点的值：
+ImmutableListNode: 描述不可变链表的接口，链表的头节点已给出。 使用以下 API 来访问此链表：
+ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.getNext()：返回下一个节点。 思路 # 代码 # class Solution { public void printLinkedListInReverse(ImmutableListNode head) { if (head == null) return; printLinkedListInReverse(head.getNext()); head.printValue(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

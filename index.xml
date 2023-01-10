@@ -367,6 +367,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</guid>
+      <description>369. Plus One Linked List # 题目 # 给定一个用 链表 表示的非负整数，然后将这个整数加一。
+最高位有效数字位于链表的首尾 head。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode head, int carry) { if (head.next == null) { int result = (head.val + carry) / 10; head.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -397,6 +408,20 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</guid>
       <description>445. Add Two Numbers II # 题目 # 给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode l1, ListNode l2) { if (l1.next == null &amp;amp;&amp;amp; l2.next == null) { int carry = (l1.val + l2.val) / 10; l1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-FLU-Cache/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-FLU-Cache/</guid>
+      <description>460. LFU Cache # 题目 # 为 最不经常使用（LFU）缓存算法设计并实现数据结构。
+实现 LFUCache 类：
+LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int get(int key) - 如果键 key 存在于缓存中，则获取键的值，否则返回 -1 。 void put(int key, int value) - 如果键 key 已存在，则变更其值；如果键不存在，请插入键值对。当缓存达到其容量 capacity 时，则应该在插入新项之前，移除最不经常使用的项。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，应该去除 最近最久未使用 的键。 为了确定最不常使用的键，可以为缓存中的每个键维护一个 使用计数器 。使用计数最小的键是最久未使用的键。
+当一个键首次插入到缓存中时，它的使用计数器被设置为 1 (由于 put 操作)。对缓存中的键执行 get 或 put 操作，使用计数器的值将会递增。
+函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。
+思路 # 代码 # class LFUCache { private class ListNode { public int key; public int frequency; public int val; public ListNode prev; public ListNode next; ListNode(int key, int value, ListNode prev, ListNode next) { this.</description>
     </item>
     
     <item>
@@ -504,6 +529,17 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</guid>
+      <description> 1265. Print Immutable Linked List in Reverse # 题目 # 给定一个不可变的链表，使用下列接口逆序打印每个节点的值：
+ImmutableListNode: 描述不可变链表的接口，链表的头节点已给出。 使用以下 API 来访问此链表：
+ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.getNext()：返回下一个节点。 思路 # 代码 # class Solution { public void printLinkedListInReverse(ImmutableListNode head) { if (head == null) return; printLinkedListInReverse(head.getNext()); head.printValue(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -554,6 +590,26 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       <description>1721. Swapping Nodes in A Linked List # 题目 # 给定链表头节点head和一个整数k
 交换链表正数第k个节点和倒数第k个节点的值后，返回链表的头节点（链表从1开始索引）
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution{ public ListNode locateForward(ListNode head, int k) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; for (int i=0; i&amp;lt;k; i++) ptr = ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</guid>
+      <description>1836. Remove Duplicates from An Unsorted Linked List # 题目 # 给定链表头节点 head，找到链表中所有出现 多于一次 的元素，并删除这些元素所在的节点。返回删除后的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicatesUnsorted(ListNode head) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</guid>
+      <description>2046. Sort Linked List Already Sorted Using absolute Values # 题目 # 给定链表头结点 head，该链表根据结点的 绝对值 进行 升序 排序，返回重新根据 结点的值 进行 升序 排序的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode sortLinkedList(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = head; while (ptr !</description>
     </item>
     
     <item>

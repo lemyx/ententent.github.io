@@ -20,6 +20,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</guid>
+      <description>369. Plus One Linked List # 题目 # 给定一个用 链表 表示的非负整数，然后将这个整数加一。
+最高位有效数字位于链表的首尾 head。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode head, int carry) { if (head.next == null) { int result = (head.val + carry) / 10; head.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1800-to-1899/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</guid>
+      <description>1836. Remove Duplicates from An Unsorted Linked List # 题目 # 给定链表头节点 head，找到链表中所有出现 多于一次 的元素，并删除这些元素所在的节点。返回删除后的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicatesUnsorted(ListNode head) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+  </channel>
+</rss>

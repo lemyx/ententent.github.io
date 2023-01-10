@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2000-to-2099/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</guid>
+      <description>2046. Sort Linked List Already Sorted Using absolute Values # 题目 # 给定链表头结点 head，该链表根据结点的 绝对值 进行 升序 排序，返回重新根据 结点的值 进行 升序 排序的链表。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode sortLinkedList(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
