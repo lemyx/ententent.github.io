@@ -16,5 +16,16 @@
 BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit(string url) 从当前页面跳转访问 url 对应的页面。执行此操作会把浏览历史前进的记录全部删除。 string back(int steps) 在浏览历史中后退 steps 步。如果只能在浏览历史中后退至多 x 步且 steps &amp;gt; x，那么只后退 x 步。请返回后退至多 steps 步以后的 url。 string forward(int steps) 在浏览历史中前进 steps 步。如果只能在浏览历史中前进至多 x 步且 steps &amp;gt; x，那么只前进 x 步。请返回前进至多 steps 步以后的 url。 思路 # 借助双向链表实现。 注意 visit 操作执行后会将浏览历史前进的记录全部删除。 代码 # class BrowserHistory { private class ListNode { public String url; public ListNode prev; public ListNode next; ListNode(String url, ListNode prev, ListNode next) { this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1474.-Delete-N-Nodes-After-M-Nodes-of-A-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1474.-Delete-N-Nodes-After-M-Nodes-of-A-Linked-List/</guid>
+      <description>1472. Design Browser History # 题目 # 给定链表头结点 head 和两个整数 m 和 n，遍历该链表并按照如下方式删除结点：
+开始时以头结点作为当前结点 保留以当前结点开始的前 m 个结点 删除接下来的 n 个结点 重复步骤 2 和 3，直到到达链表结尾 在删除了指定结点之后，返回修改过后的链表头结点。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } LIstNOde(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteNodes(ListNode head, int m, int n) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr.</description>
+    </item>
+    
   </channel>
 </rss>

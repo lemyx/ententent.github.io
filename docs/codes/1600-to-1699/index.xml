@@ -7,6 +7,19 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1600-to-1699/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/</guid>
+      <description>1634. Add Two Polynomials Represented as Linked Lists # 题目 # 多项式链表是一种特殊形式的链表，每个结点表示多项式的一项。
+每个结点有三个属性：
+coefficient： 该项的系数 power：该项的指数 next：指向下一个结点的指针，如果当前结点为链表的最后一个结点则为 null 多项式链表是标准形式的，即多项式 严格 按指数 power 的递减顺序排列。系数 coefficient 为 0 的项需要省略。
+给定两个多项式链表的头结点 poly1 和 poly2，返回它们的和的头结点。
+思路 # 代码 # class PolyNode { int coefficient, power; PolyNode next = null; PolyNode() {} PolyNode(int x, int y) { this.coefficient = x; this.power = y; } PolyNode(int x, int y, PolyNode next) { this.coefficient = x; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

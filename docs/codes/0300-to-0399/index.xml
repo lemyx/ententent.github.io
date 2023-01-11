@@ -31,6 +31,16 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0379.-Design-Phone-Directory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0379.-Design-Phone-Directory/</guid>
+      <description>379. Design Phone Directory # 题目 # 设计一个电话目录管理系统，令其支持以下功能：
+get： 分配给用户一个未被使用的电话号码，获取失败时返回 -1 check：检查指定的电话号码是否被使用 release：释放掉一个电话号码，使其能够重新被分配 思路 # 代码 # class PhoneDirectory { private class ListNode { int val; ListNode prev; ListNode next; ListNode(int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } private ListNode sentinel; private Map&amp;lt;Integer, ListNode&amp;gt; map; /** 记录电话号码 number 是否被分配 */ public PhoneDirectory(int maxNumbers) { this.sentinel = new ListNode(-1, null, null); this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
