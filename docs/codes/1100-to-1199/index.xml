@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1100-to-1199/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</guid>
+      <description>1171. Remove Zero Sum Consecutive Nodes from Linked List # 题目 # 给定链表头节点 head ，反复删去链表中由 总和 值为 0 的连续节点组成的序列，直到不存在这样的序列为止。
+删除完毕后，返回最终结果链表的头节点。
+思路 # 考察第 k 个链表结点，判断其是否位于某个 零子序列 中，只需通过检查第 k-1 个结点的前缀和在 &amp;gt;=k 结点处是否再次出现。 可以通过两次遍历链表，借助 HashMap 实现这一需求 第一趟遍历，计算每个结点的前缀和，并构建前缀和与最远结点的映射关系 第二趟遍历，从哨兵结点开始，从映射中查找当前前缀和对应的结点，若找到则移除之间的结点。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeZeroSumSublists(ListNode head) { ListNode sentinel = new ListNode(0, head); Map&amp;lt;Integer, ListNode&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); map.</description>
+    </item>
+    
+  </channel>
+</rss>

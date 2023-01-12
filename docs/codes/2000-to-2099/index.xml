@@ -31,6 +31,19 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2074.-Reverse-Nodes-in-Even-Length-Groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2074.-Reverse-Nodes-in-Even-Length-Groups/</guid>
+      <description>2074. Reverse Nodes in Even Length Groups # 题目 # 给定链表头结点 head。
+链表中的结点按照 按顺序 划分为若干 非空 组。这些非空组的长度构成一个自然数序列 {1, 2, 3, 4, ...}。一个组的 长度 就是组中分配到的结点数目。换言之：
+结点 1 分配给第一组 结点 2 分配给第二组 结点 4、5、6 分配给第三组，以此类推 注意，最后一组的长度可能小于或等于 1 + 倒数第二组的长度。
+反转 每个 偶数长度 组中的结点，并返回修改后链表的头结点 head。
+思路 # 代码 # class Solution { public void reverseList(ListNode beforeHead, ListNode tail) { /** (beforeHead, tail] 要求 beforeHead != tail */ if (beforeHead == tail) return; ListNode afterTail = tail.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -412,6 +412,18 @@ get： 分配给用户一个未被使用的电话号码，获取失败时返回 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0432.-All-O1-Data-Structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0432.-All-O1-Data-Structure/</guid>
+      <description>432. All O(1) Data Structure # 题目 # 设计一个用于存储字符串计数的数据结构，并能够返回计数最小和最大的字符串。
+实现 AllOne 类：
+AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计数增加 1 。如果数据结构中尚不存在 key ，那么插入计数为 1 的 key 。 dec(String key) 字符串 key 的计数减少 1 。如果 key 的计数在减少后为 0 ，那么需要将这个 key 从数据结构中删除。测试用例保证：在减少计数前，key 存在于数据结构中。 getMaxKey() 返回任意一个计数最大的字符串。如果没有元素存在，返回一个空字符串 &amp;quot;&amp;quot; 。 getMinKey() 返回任意一个计数最小的字符串。如果没有元素存在，返回一个空字符串 &amp;quot;&amp;quot; 。 **注意：**每个函数都应当满足 O(1) 平均时间复杂度。
+思路 # 采用 双向链表 + 哈希表 的方式实现。 链表结点记录 频率 以及 该频率对应的字符串集合，以 Max &amp;lt;&amp;ndash;&amp;gt; Min 的顺序存储。 HashSet 可以在 O(1) 的时间复杂度内实现 add 和 remove 操作。 代码 # class AllOne { private class ListNode { public int count; public Set&amp;lt;String&amp;gt; collection; public ListNode prev; public ListNode next; ListNode(int count, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -422,10 +434,10 @@ get： 分配给用户一个未被使用的电话号码，获取失败时返回 
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-FLU-Cache/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-LFU-Cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-FLU-Cache/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-LFU-Cache/</guid>
       <description>460. LFU Cache # 题目 # 为 最不经常使用（LFU）缓存算法设计并实现数据结构。
 实现 LFUCache 类：
 LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int get(int key) - 如果键 key 存在于缓存中，则获取键的值，否则返回 -1 。 void put(int key, int value) - 如果键 key 已存在，则变更其值；如果键不存在，请插入键值对。当缓存达到其容量 capacity 时，则应该在插入新项之前，移除最不经常使用的项。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，应该去除 最近最久未使用 的键。 为了确定最不常使用的键，可以为缓存中的每个键维护一个 使用计数器 。使用计数最小的键是最久未使用的键。
@@ -535,6 +547,17 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
 对于链表中的每个节点，查找下一个更大节点的值。即，对于每个节点，找到它旁边的第一个节点的值，这个节点的值严格大于它的值。
 返回一个整数数组answer，其中answer[i]是第i个节点（从1开始）的下一个更大节点的值。如果第i个节点没有下一个更大的节点，设置answer[i] = 0。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int[] nextLargerNodes(ListNode head) { /** 1. 统计链表长度 */ int length = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</guid>
+      <description>1171. Remove Zero Sum Consecutive Nodes from Linked List # 题目 # 给定链表头节点 head ，反复删去链表中由 总和 值为 0 的连续节点组成的序列，直到不存在这样的序列为止。
+删除完毕后，返回最终结果链表的头节点。
+思路 # 考察第 k 个链表结点，判断其是否位于某个 零子序列 中，只需通过检查第 k-1 个结点的前缀和在 &amp;gt;=k 结点处是否再次出现。 可以通过两次遍历链表，借助 HashMap 实现这一需求 第一趟遍历，计算每个结点的前缀和，并构建前缀和与最远结点的映射关系 第二趟遍历，从哨兵结点开始，从映射中查找当前前缀和对应的结点，若找到则移除之间的结点。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeZeroSumSublists(ListNode head) { ListNode sentinel = new ListNode(0, head); Map&amp;lt;Integer, ListNode&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); map.</description>
     </item>
     
     <item>
@@ -658,6 +681,19 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 注意：节点只有在同时存在前一个节点和后一个节点的情况下，才能成为一个 局部极大值点 / 极小值点 。
 给你一个链表 head ，返回一个长度为 2 的数组 [minDistance, maxDistance] ，其中 minDistance 是任意两个不同临界点之间的最小距离，maxDistance 是任意两个不同临界点之间的最大距离。如果临界点少于两个，则返回 [-1，-1] 。
 思路 # 在第一个节点存在的情况下，每遇到一个新的临界点，maxDistance 在原有基础上递增距离，minDistance 重新计算。 maxDistance 是所有临界点分段的距离之和。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2074.-Reverse-Nodes-in-Even-Length-Groups/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2074.-Reverse-Nodes-in-Even-Length-Groups/</guid>
+      <description>2074. Reverse Nodes in Even Length Groups # 题目 # 给定链表头结点 head。
+链表中的结点按照 按顺序 划分为若干 非空 组。这些非空组的长度构成一个自然数序列 {1, 2, 3, 4, ...}。一个组的 长度 就是组中分配到的结点数目。换言之：
+结点 1 分配给第一组 结点 2 分配给第二组 结点 4、5、6 分配给第三组，以此类推 注意，最后一组的长度可能小于或等于 1 + 倒数第二组的长度。
+反转 每个 偶数长度 组中的结点，并返回修改后链表的头结点 head。
+思路 # 代码 # class Solution { public void reverseList(ListNode beforeHead, ListNode tail) { /** (beforeHead, tail] 要求 beforeHead != tail */ if (beforeHead == tail) return; ListNode afterTail = tail.</description>
     </item>
     
     <item>
@@ -845,6 +881,17 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</guid>
       <description> 面试题 02.01. 移除重复节点 # 题目 # 编写代码，移除未排序链表中的重复节点。保留最开始出现的节点。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode removeDuplicateNodes(ListNode head) { if (head == null) return null; HashSet&amp;lt;Integer&amp;gt; record = new HashSet&amp;lt;&amp;gt;(); ListNode ptr = head; while (ptr.next != null) { record.add(ptr.val); if (record.contains(ptr.next.val)) ptr.next = ptr.next.next; else ptr = ptr.next; } return head; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.03.-%E5%A0%86%E7%9B%98%E5%AD%90/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.03.-%E5%A0%86%E7%9B%98%E5%AD%90/</guid>
+      <description>面试题 03.03. 堆盘子 # 题目 # 堆盘子。设想有一堆盘子，堆太高可能会倒下来。因此，在现实生活中，盘子堆到一定高度时，就会堆另外一堆盘子。实现数据结构 SetOfStacks，模拟这种行为。SetOfStacks 应该由多个栈组成，并在在前一个栈填满时新建一个栈。此外，SetOfStacks.push()和 SetOfStacks.pop() 应该与普通栈的操作方法相同 (即，pop 的返回值应该与只有一个栈时的情况一致)。此外，实现 popAt(int index) 方法，根据指定的子栈，执行 pop 操作。
+当某个栈为空时，应删除该栈。当栈中没有元素或不存在该栈时，pop，popAt 应返回 -1。
+思路 # 代码 # class StackOfPlates { private class stackNode { public int val; public stackNode next; stackNode(int val, stackNode next) { this.val = val; this.next = next; } } private class Stack { private int size; private int capacity; private stackNode sentinel; Stack(int capacity) { this.size = 0; this.</description>
     </item>
     
     <item>
