@@ -91,6 +91,16 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</guid>
+      <description> 1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+思路 # 代码 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.containsKey(target-nums[i]) == true) { result[0] = map.get(target-nums[i]); result[1] = i; } else map.put(nums[i], i); } return result; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -121,12 +131,35 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</guid>
+      <description>23. 合并K个升序链表 # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
+将所有链表合并到一个升序链表中，返回合并后的链表。
+思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.val = val; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</guid>
       <description>24. Swap Nodes in Pairs # 题目 # 给定链表，两两交换其中相邻的节点，并返回交换后链表的头节点。只能进行节点交换，不能修改节点内部的值。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null || head.next == null) return head; else { ListNode newHead = head.next; head.next = swapPairs(newHead.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0025.-Reverse-Nodes-in-K-Group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0025.-Reverse-Nodes-in-K-Group/</guid>
+      <description>25. Reverse Nodes in K Group # 题目 # 给定链表头结点 head，每 k 个结点一组进行翻转，返回修改后的链表。
+k 是一个正整数，它的值小于或等于链表的长度。如果结点总数不是 k 的整数倍，将最后的结点保持原有顺序。
+不能只是单纯的改变结点内部的值，而是需要进行实际的结点交换。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode beforeHead, ListNode tail) { if (beforeHead == tail) return; ListNode afterTail = tail.</description>
     </item>
     
     <item>
@@ -729,6 +762,18 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 对于每两个相邻的 0 ，之间的所有节点合并为一个节点，其值是所有已合并节点的值之和。然后将所有 0 移除，修改后的链表不应该含有任何 0 。
 返回修改后链表的头节点 head 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeNodes(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2296.-Design-A-Text-Editor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2296.-Design-A-Text-Editor/</guid>
+      <description>2296. Design A Text Editor # 题目 # 请设计一个带光标的文本编辑器，它可以实现以下功能：
+添加：在光标处添加文本。 删除：在光标处删除文本。 移动：将光标往左或往右移动。 当删除文本时，只有光标左边的字符会被删除。光标会留在文本内，即任何时候 0 &amp;lt;= cursor.position &amp;lt;= currentText.length 都成立。
+请实现 TextEditor 类：
+TextEditor() 用空文本初始化对象。 void addText(String text) 将 text 添加到光标所在位置。添加完后光标在 text 的右边。 int deleteText(int k) 删除光标左边 k 个字符。返回实际删除的字符数目。 String cursorLeft(int k) 将光标向左移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 String cursorRight(int k) 将光标向右移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 思路 # 代码 # class TextEditor { private class ListNode { public char character; public ListNode prev; public ListNode next; ListNode (char character, ListNode prev, ListNode next) { this.</description>
     </item>
     
     <item>

@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</guid>
+      <description> 1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+思路 # 代码 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.containsKey(target-nums[i]) == true) { result[0] = map.get(target-nums[i]); result[1] = i; } else map.put(nums[i], i); } return result; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -37,12 +47,35 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</guid>
+      <description>23. 合并K个升序链表 # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
+将所有链表合并到一个升序链表中，返回合并后的链表。
+思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.val = val; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/</guid>
       <description>24. Swap Nodes in Pairs # 题目 # 给定链表，两两交换其中相邻的节点，并返回交换后链表的头节点。只能进行节点交换，不能修改节点内部的值。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode swapPairs(ListNode head) { if (head == null || head.next == null) return head; else { ListNode newHead = head.next; head.next = swapPairs(newHead.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0025.-Reverse-Nodes-in-K-Group/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0025.-Reverse-Nodes-in-K-Group/</guid>
+      <description>25. Reverse Nodes in K Group # 题目 # 给定链表头结点 head，每 k 个结点一组进行翻转，返回修改后的链表。
+k 是一个正整数，它的值小于或等于链表的长度。如果结点总数不是 k 的整数倍，将最后的结点保持原有顺序。
+不能只是单纯的改变结点内部的值，而是需要进行实际的结点交换。
+思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode beforeHead, ListNode tail) { if (beforeHead == tail) return; ListNode afterTail = tail.</description>
     </item>
     
     <item>
