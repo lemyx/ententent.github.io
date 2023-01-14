@@ -20,6 +20,27 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</guid>
+      <description>349. Intersection of Two Arrays # 题目 # 给定两个数组 nums1 和 nums2，返回 它们的交集。输出结果中的每个元素一定是 唯一 的。不考虑输出结果的顺序。
+思路 # 代码 # class Solution { public int[] intersection(int[] nums1, int[] nums2) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums1) set.add(num); List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;&amp;gt;(); for (int num: nums2) { if (set.contains(num) == true) { list.add(num); set.remove(num); } } int[] result = new int[list.size()]; for (int i=0; i&amp;lt;list.size(); i++) result[i] = list.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0355.-Design-Twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0355.-Design-Twitter/</guid>
+      <description>355. Design Twitter # 题目 # 设计一个简化版的推特，让用户实现发送推文，关注/取消关注其他用户，能够看见关注人（包括自己）的最近 10 条推文。
+实现 Twitter 类：
+Twitter() 初始化简易版推特对象 void postTweet(int userId, int tweetId) 根据给定的 tweetId 和 userId 创建一条新推文。每次调用此函数都会使用一个不同的 tweetId。 List&amp;lt;Integer&amp;gt; getNewsFeed(int userId) 检索当前用户新闻推送中最近 10 条推文的 ID。新闻推送中的每一项都必须是由用户关注的人或者是用户自己发布的推文。推文必须 按照时间顺序由最近到最远排序。 void follow(int followerId, int followeeId) ID 为 followerId 的用户开始关注 ID 为 followeeId 的用户。 void unfollow(int followerId, int followeeId) ID 为 followerId 的用户不再关注 ID 为 followeeId 的用户。 思路 # 哈希表 存储用户的关注列表。 单链表 存储用户的推文链表。 优先级队列 实现按时间戳排序的推文链表的合并。 大顶堆 实现最近 N 条推文的获取。 代码 # class Twitter { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int timestamp; public int tweetId; public ListNode next; ListNode(int timestamp, int tweetId, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

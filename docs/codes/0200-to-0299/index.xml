@@ -59,5 +59,16 @@
 给定节点的值不应该存在于链表中。 链表中的节点数应该减少1。 node前面所有值的顺序相同。 node后面所有值的顺序相同。 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void deleteNode(ListNode node) { node.val = node.next.val; node.next = node.next.next; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0242.-Valid-Anagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0242.-Valid-Anagram/</guid>
+      <description>237. Valid Anagram # 题目 # 给定两个字符串 s 和 t，编写一个函数来判断 t 是否是 s 的字母异位词。
+若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。
+思路 # 代码 # public Solution { public boolean isAnagram(String s, String t) { if (s.length() != t.length()) return false; Map&amp;lt;Character, Integer&amp;gt; sMap = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Character, Integer&amp;gt; tMap = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char ch = s.charAt(i); int times = sMap.containsKey(ch) == false ?</description>
+    </item>
+    
   </channel>
 </rss>

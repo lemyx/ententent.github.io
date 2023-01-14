@@ -387,6 +387,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0242.-Valid-Anagram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0242.-Valid-Anagram/</guid>
+      <description>237. Valid Anagram # 题目 # 给定两个字符串 s 和 t，编写一个函数来判断 t 是否是 s 的字母异位词。
+若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。
+思路 # 代码 # public Solution { public boolean isAnagram(String s, String t) { if (s.length() != t.length()) return false; Map&amp;lt;Character, Integer&amp;gt; sMap = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Character, Integer&amp;gt; tMap = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char ch = s.charAt(i); int times = sMap.containsKey(ch) == false ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -396,6 +407,27 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
 偶数组和奇数组内部的相对顺序应该与输入时保持一致。
 需要在O(1)的额外空间复杂度和O(n)的时间复杂度下解决这个问题。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode oddEvenList(ListNode head) { if (head == null || head.next == null) return head; ListNode Odd = head, Even = head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</guid>
+      <description>349. Intersection of Two Arrays # 题目 # 给定两个数组 nums1 和 nums2，返回 它们的交集。输出结果中的每个元素一定是 唯一 的。不考虑输出结果的顺序。
+思路 # 代码 # class Solution { public int[] intersection(int[] nums1, int[] nums2) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums1) set.add(num); List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;&amp;gt;(); for (int num: nums2) { if (set.contains(num) == true) { list.add(num); set.remove(num); } } int[] result = new int[list.size()]; for (int i=0; i&amp;lt;list.size(); i++) result[i] = list.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0355.-Design-Twitter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0355.-Design-Twitter/</guid>
+      <description>355. Design Twitter # 题目 # 设计一个简化版的推特，让用户实现发送推文，关注/取消关注其他用户，能够看见关注人（包括自己）的最近 10 条推文。
+实现 Twitter 类：
+Twitter() 初始化简易版推特对象 void postTweet(int userId, int tweetId) 根据给定的 tweetId 和 userId 创建一条新推文。每次调用此函数都会使用一个不同的 tweetId。 List&amp;lt;Integer&amp;gt; getNewsFeed(int userId) 检索当前用户新闻推送中最近 10 条推文的 ID。新闻推送中的每一项都必须是由用户关注的人或者是用户自己发布的推文。推文必须 按照时间顺序由最近到最远排序。 void follow(int followerId, int followeeId) ID 为 followerId 的用户开始关注 ID 为 followeeId 的用户。 void unfollow(int followerId, int followeeId) ID 为 followerId 的用户不再关注 ID 为 followeeId 的用户。 思路 # 哈希表 存储用户的关注列表。 单链表 存储用户的推文链表。 优先级队列 实现按时间戳排序的推文链表的合并。 大顶堆 实现最近 N 条推文的获取。 代码 # class Twitter { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int timestamp; public int tweetId; public ListNode next; ListNode(int timestamp, int tweetId, ListNode next) { this.</description>
     </item>
     
     <item>
@@ -523,6 +555,17 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
       <description>707. Design Linked List # 题目 # 设计链表的实现。可以选择使用单链表或双链表。
 在链表类中实现这些功能：
 get(index)：获取链表中第 index 个节点的值。如果索引无效，则返回-1。 addAtHead(val)：在链表的第一个元素之前添加一个值为 val 的节点。插入后，新节点将成为链表的第一个节点。 addAtTail(val)：将值为 val 的节点追加到链表的最后一个元素。 addAtIndex(index,val)：在链表中的第 index 个节点之前添加值为 val 的节点。如果 index 等于链表的长度，则该节点将附加到链表的末尾。如果 index 大于链表长度，则不会插入节点。如果index小于0，则在头部插入节点。 deleteAtIndex(index)：如果索引 index 有效，则删除链表中的第 index 个节点。 思路 # 代码 # public class ListNode { public ListNode prev; public ListNode next; public int val; public ListNode(ListNode prev, ListNode next, int val) { this.prev = prev; this.next = next; this.val = val; } } class MyLinkedList { private ListNode sentinel; private int size; public MyLinkedList() { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</guid>
+      <description>716. Max Stack # 题目 # 设计一个最大栈数据结构，既支持栈操作，又支持查找栈中最大元素。
+实现 MaxStack 类：
+MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop() 移除栈顶元素并返回这个元素 int top() 返回栈顶元素，无需移除 int peekMax() 检索并返回栈中最大元素，无需移除 int popMax() 检索并返回栈中最大元素，并将其移除。如果有多个最大元素，移除 最靠近栈顶 的那个 思路 # Explicit Better Than Implicit 代码 # class MaxStack { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int index; public int val; public ListNode prev; public ListNode next; ListNode(int index, int val, ListNode prev, ListNode next) { this.</description>
     </item>
     
     <item>

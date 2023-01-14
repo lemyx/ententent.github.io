@@ -215,8 +215,17 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0242.-Valid-Anagram/</loc>
+    <lastmod>2023-01-14T12:12:52+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</loc>
+    <lastmod>2023-01-14T12:12:52+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0355.-Design-Twitter/</loc>
+    <lastmod>2023-01-14T12:12:52+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/</loc>
     <lastmod>2023-01-10T14:30:41+08:00</lastmod>
@@ -250,6 +259,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0707.-Design-Linked-List/</loc>
     <lastmod>2023-01-04T09:09:27+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</loc>
+    <lastmod>2023-01-14T12:12:52+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</loc>
     <lastmod>2023-01-05T10:55:55+08:00</lastmod>
@@ -364,7 +376,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-13T23:24:07+08:00</lastmod>
+    <lastmod>2023-01-14T12:12:52+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>

@@ -29,6 +29,17 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</guid>
+      <description>716. Max Stack # 题目 # 设计一个最大栈数据结构，既支持栈操作，又支持查找栈中最大元素。
+实现 MaxStack 类：
+MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop() 移除栈顶元素并返回这个元素 int top() 返回栈顶元素，无需移除 int peekMax() 检索并返回栈中最大元素，无需移除 int popMax() 检索并返回栈中最大元素，并将其移除。如果有多个最大元素，移除 最靠近栈顶 的那个 思路 # Explicit Better Than Implicit 代码 # class MaxStack { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int index; public int val; public ListNode prev; public ListNode next; ListNode(int index, int val, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
