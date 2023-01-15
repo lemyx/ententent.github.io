@@ -7,6 +7,20 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1200-to-1299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</guid>
+      <description>1206. Design SkipList # 题目 # 不使用任何库函数，设计一个 跳表 。
+跳表 是在 O(log(n)) 时间内完成增加、删除、搜索操作的数据结构。跳表相比于AVL树和红黑树，性能与之相当。且跳表的代码长度相较下更短，其设计思想与链表相似。
+跳表中有很多层，每一层是一个短的链表。在第一层的作用下，增加、删除和搜索操作的时间复杂度不超过 O(n)。跳表的每一个操作的平均时间复杂度是 O(log(n))，空间复杂度是 O(n)。，
+本题的设计应该包含以下函数：
+bool search(int target)：返回 target 是否存在于跳表中。 void add(int num)：插入一个元素到跳表。 bool erase(int num)：在跳表中删除一个值，如果 num 不存在，直接返回 false。如果存在多个 num，删除其中任意一个即可。 Tips 跳表中可能存在多个相同的值，所设计的跳表需要处理这种情况。
+思路 # 代码 # class Skiplist { private int MAX_LEVEL = 10; private class SkipNode { public int val; public SkipNode[] next; SkipNode(int val) { this.val = val; this.next = new SkipNode[this.MAX_LEVEL]; } } private SkipNode sentinel; private Random random; public Skiplist() { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -78,6 +78,16 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0148.-Sort-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0148.-Sort-List/</guid>
+      <description>148. Sort List # 题目 # 给定链表头结点 head，将其按 升序 排列并返回 排序后的链表
+思路 # 分治，归并排序：寻找链表中心结点，分别对链表前半段和后半段排序，合并排序后的前半段链表和后半段链表 代码 # public class ListNode int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode headA, ListNode headB) { if (headA == null) return headB; if (headB == null) return headA; ListNode sentinel = new ListNode(-1, null); ListNode ptr = sentinel; while (headA !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

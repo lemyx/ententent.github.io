@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2200-to-2299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</guid>
+      <description>2289. Steps to Make Array Non-decreasing # 题目 # 给定一个下标从 0 开始的整数数组 nums。在一步操作中，移除所有满足 nums[i-1] &amp;gt; nums[i] 的 nums[i]，其中 0 &amp;lt; i &amp;lt; nums.length。
+重复执行步骤，直到 nums 变为 非递减 数组，返回所需执行的操作数。
+思路 # 代码 # class Solution { /** 观察: 如果一个结点的左侧结点未发生变化，则该结点在本轮不会被删除 * 推论: 仅有被删除的结点会触发下一轮删除。当某结点被删除时，考虑是否将被删除结点的下一个结点纳入下一轮删除的列表里 */ private class ListNode { public int val; public ListNode prev; public ListNode next; ListNode(int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } public int totalSteps(int[] nums) { ListNode sentinel = new ListNode(-1, null, null); sentinel.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2296.-Design-A-Text-Editor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

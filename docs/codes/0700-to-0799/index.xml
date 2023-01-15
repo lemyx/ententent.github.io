@@ -29,6 +29,19 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0708.-Insert-into-a-Sorted-Circular-Linked-List/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0708.-Insert-into-a-Sorted-Circular-Linked-List/</guid>
+      <description>708. Insert into a Sorted Circular Linked List # 题目 # 给定 循环单调非递减列表 中的一个点，写一个函数向这个列表中插入一个新元素 interval，使这个列表仍然是循环非降序的。
+给定的可以是这个列表中任意一个顶点的指针，并不一定是这个列表中最小元素的指针。
+如果有多个满足条件的插入位置，可以选择任意一个位置插入心得值，插入后整个列表仍然保持有序。
+如果列表为空（给定的节点是 null)，需要创建一个循环有序列表并返回这个节点。否则，返回原先给定的节点。
+思路 # 代码 # class Node { public int val; public Node next; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, Node _next) { val = _val; next = _next; } } class Solution { public boolean canInsert (Node head, int insertVal) { if (head.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

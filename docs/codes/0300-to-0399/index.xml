@@ -72,5 +72,17 @@ get： 分配给用户一个未被使用的电话号码，获取失败时返回 
 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private Random rand; private ListNode sentinel; public Solution(ListNode head) { this.rand = new Random(); this.sentinel = new ListNode(-1, head); } public int getRandom() { ListNode ptr = this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0383.-Ransom-Note/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0383.-Ransom-Note/</guid>
+      <description> 383. Ransom Note # 题目 # 给定两个字符串: ransomNote 和 magazine，判断 ransomNote 能不能由 magazine 里面的字符构成。
+如果可以，返回 true，否则返回 false。
+magazine 中的每个字符只能在 ransomNote 中使用一次。
+思路 # 代码 # class Solution { public boolean canConstruct(String ransomNote, String magazine) { if (ransomNote.length() &amp;gt; magazine.length()) return false; int[] count = new int[26]; for(int i=0; i&amp;lt;magazine.length(); i++) count[magazine.charAt(i)-&amp;#39;a&amp;#39;] += 1; for(int i=0; i&amp;lt;ransomNote.length(); i++) { if (count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] == 0) return false; count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] -= 1; } return true; } } </description>
+    </item>
+    
   </channel>
 </rss>

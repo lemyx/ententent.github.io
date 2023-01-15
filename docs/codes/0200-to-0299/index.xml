@@ -7,6 +7,20 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0200-to-0299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0202.-Happy-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0202.-Happy-Number/</guid>
+      <description> 202. Happe Number # 题目 # 判断一个数 n 是否为快乐数。是快乐数则返回 true，否则返回 false。
+「快乐数」 定义为:
+对于一个正整数，每一次将该数替换为它每个位置上数字的平方和。 重复这个过程直至这个数变为 1，也可能是 无限循环 但始终变不到 1。 如果这个过程 结果为1，那么这个数就是快乐数。 思路 # 题目中声明，该过程有两种情况：「该数最终变为1」，「该数进入无限循环，变不到1」。
+如果这句话有所关注，就比较容易地想到用哈希集合解决该问题。
+否则将需要思考快乐数的演化情况，演化情况可参考 力扣官方题解。
+代码 # class Solution { public boolean isHappy(int n) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); while (n != 1) { if (set.contains(n) == true) return false; set.add(n); int new Number = 0; while (n != 0) { newNumber += Math.pow(n%10, 2); n /= 10; } n = newNumber; } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
