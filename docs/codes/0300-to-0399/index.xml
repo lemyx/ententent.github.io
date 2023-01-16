@@ -20,6 +20,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</guid>
+      <description> 344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
+不要给另外的数组分配额外的空间，原地修改输入数组，使用 O(1) 的额外空间解决这一问题。
+思路 # 代码 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

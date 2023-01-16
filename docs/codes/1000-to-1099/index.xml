@@ -17,5 +17,17 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int[] nextLargerNodes(ListNode head) { /** 1. 统计链表长度 */ int length = 0; ListNode ptr = head; while (ptr !</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</guid>
+      <description>1047. Remove All Adjacent Duplicates In String # 题目 # 给出由小写字母组成的字符串 S， 重复项删除操作会选择两个相邻且相同的字母，并删除它们。
+在 S 上反复执行重复项删除操作，直至无法继续删除。
+在完成所有重复项删除操作后返回最终的字符串。
+思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
+    </item>
+    
   </channel>
 </rss>

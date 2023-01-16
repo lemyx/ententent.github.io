@@ -140,6 +140,17 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</guid>
+      <description>20. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
+有效字符串需满足:
+左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 代码 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.push(bracket); continue; } /** 逢右括号出栈并检查匹配情况 */ if (stack.empty() == true) reutrn false; char topElement = stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -454,6 +465,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</guid>
+      <description> 344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
+不要给另外的数组分配额外的空间，原地修改输入数组，使用 O(1) 的额外空间解决这一问题。
+思路 # 代码 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -564,6 +586,16 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 当一个键首次插入到缓存中时，它的使用计数器被设置为 1 (由于 put 操作)。对缓存中的键执行 get 或 put 操作，使用计数器的值将会递增。
 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。
 思路 # 代码 # class LFUCache { private class ListNode { public int key; public int frequency; public int val; public ListNode prev; public ListNode next; ListNode(int key, int value, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</guid>
+      <description>541. Reverse String II # 题目 # 给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
+如果剩余字符少于 k 个，则将剩余字符全部反转。 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。 思路 # 代码 # class Solution { public void reversePart(char[] charArray, int left, int right) { while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left += 1; right -= 1; } } public String reverseStr(String s, int k) { char[] charArray = s.</description>
     </item>
     
     <item>
@@ -691,6 +723,18 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
 对于链表中的每个节点，查找下一个更大节点的值。即，对于每个节点，找到它旁边的第一个节点的值，这个节点的值严格大于它的值。
 返回一个整数数组answer，其中answer[i]是第i个节点（从1开始）的下一个更大节点的值。如果第i个节点没有下一个更大的节点，设置answer[i] = 0。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int[] nextLargerNodes(ListNode head) { /** 1. 统计链表长度 */ int length = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</guid>
+      <description>1047. Remove All Adjacent Duplicates In String # 题目 # 给出由小写字母组成的字符串 S， 重复项删除操作会选择两个相邻且相同的字母，并删除它们。
+在 S 上反复执行重复项删除操作，直至无法继续删除。
+在完成所有重复项删除操作后返回最终的字符串。
+思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
     </item>
     
     <item>

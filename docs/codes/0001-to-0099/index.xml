@@ -37,6 +37,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</guid>
+      <description>20. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
+有效字符串需满足:
+左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 代码 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.push(bracket); continue; } /** 逢右括号出栈并检查匹配情况 */ if (stack.empty() == true) reutrn false; char topElement = stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
