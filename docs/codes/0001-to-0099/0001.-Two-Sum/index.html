@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 代码 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map.containsKey(target-nums[i]) == true) { result[0] = map.get(target-nums[i]); result[1] = i; } else map.put(nums[i], i); } return result; } } ">
+<meta name="description" content="1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" 1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 代码 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map.containsKey(target-nums[i]) == true) { result[0] = map.get(target-nums[i]); result[1] = i; } else map.put(nums[i], i); } return result; } } " />
+<meta property="og:description" content="1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-13T23:24:07+08:00" />
+<meta property="article:modified_time" content="2023-01-17T23:10:26+08:00" />
 <title>0001. Two Sum | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c22668637cea8eb4c67776c8444c9554da2d804a12cad30aadc9503a39321c9f.js" integrity="sha256-wiZoY3zqjrTGd3bIREyVVNotgEoSytMKrclQOjkyHJ8=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d915b4b929d288c06c6ac470f09828921ded42379938010370b7c2fddc08fd54.js" integrity="sha256-2RW0uSnSiMBsasRw8Jgokh3tQjeZOAEDcLfC/dwI/VQ=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -374,6 +374,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0100-to-0199/0136.-Single-Number/" class="">0136. Single Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/" class="">0138. Copy List With Random Pointer</a>
   
 
@@ -578,6 +591,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0200-to-0299/0242.-Valid-Anagram/" class="">0242. Valid Anagram</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0268.-Missing-Number/" class="">0268. Missing Number</a>
   
 
         </li>
@@ -1839,10 +1865,23 @@ https://github.com/alex-shpak/hugo-book
   思路
   <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
 </h2>
+<h3 id="哈希">
+  哈希
+  <a class="anchor" href="#%e5%93%88%e5%b8%8c">#</a>
+</h3>
+<ul>
+<li>遍历数组，每访问到一个数组元素 <code>x</code>，若 <code>target-x</code> 已被访问，则找到 <strong>和为目标值</strong> <code>target</code> 的两个整数。</li>
+<li>可使用 <code>HashSet</code> 实现对于 <strong>元素是否被访问过</strong> 的判断。</li>
+<li>由于题目要返回符合条件的两个整数的 <strong>下标</strong>，因此可在遍历数组时使用 <code>HashMap</code> 建立 <strong>数组元素</strong> 至 <strong>数组下标</strong> 的映射。</li>
+</ul>
 <h2 id="代码">
   代码
   <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
 </h2>
+<h3 id="哈希-1">
+  哈希
+  <a class="anchor" href="#%e5%93%88%e5%b8%8c-1">#</a>
+</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">twoSum</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> nums<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">};</span>
@@ -1866,9 +1905,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/eb9324733384057180ee9ad1d639a9768468b697" title='Last modified by ententent | January 13, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/f8ed462eb51eaa1a1ed03e94f70857eb4c6f40a9" title='Last modified by ententent | January 17, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 13, 2023</span>
+      <span>January 17, 2023</span>
     </a>
   </div>
 

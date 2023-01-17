@@ -114,8 +114,8 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</guid>
-      <description> 1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 代码 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.containsKey(target-nums[i]) == true) { result[0] = map.get(target-nums[i]); result[1] = i; } else map.put(nums[i], i); } return result; } } </description>
+      <description>1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.</description>
     </item>
     
     <item>
@@ -146,7 +146,7 @@ Follow the following steps:</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</guid>
       <description>20. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
 有效字符串需满足:
-左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 代码 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.push(bracket); continue; } /** 逢右括号出栈并检查匹配情况 */ if (stack.empty() == true) reutrn false; char topElement = stack.</description>
+左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 栈 # 可使用 栈 求解括号匹配问题 逢左括号入栈，逢右括号出栈 逢右括号 不匹配 / 遇栈空，或遍历结束时栈非空，则括号失配 代码 # 栈 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.</description>
     </item>
     
     <item>
@@ -278,6 +278,18 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</guid>
       <description>92. Reverse Linked List ii # 题目 # 给定单链表头节点head和两个整数left和right，其中left &amp;lt;= right。反转从位置left到位置right的链表节点，返回反转后的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode head, ListNode tail) { if (head == tail) return; reverseList(head.next, tail); head.next.next = head; } public ListNode reverseBetween(ListNode head, int left, int right) { ListNode sentinel = new ListNode(-1, head); ListNode beforeLeft = sentinel, ptrRight = sentinel; for (int i=0; i&amp;lt;left-1; i++) beforeLeft = beforeLeft.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</guid>
+      <description> 136. Single Number # 题目 # 给定一个 非空 整数数组 nums，除了某个元素只出现一次之外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
+思路 # x ^ x = 0、 x ^ 0 = x
+代码 # class Solution { public int singleNumber(int[] nums) { int result = 0; for (int num: nums) result = result ^ num; return result; } } </description>
     </item>
     
     <item>
@@ -448,6 +460,16 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <description>237. Valid Anagram # 题目 # 给定两个字符串 s 和 t，编写一个函数来判断 t 是否是 s 的字母异位词。
 若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异位词。
 思路 # 代码 # public Solution { public boolean isAnagram(String s, String t) { if (s.length() != t.length()) return false; Map&amp;lt;Character, Integer&amp;gt; sMap = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Character, Integer&amp;gt; tMap = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char ch = s.charAt(i); int times = sMap.containsKey(ch) == false ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</guid>
+      <description>268. Missing Number # 题目 # 给定一个包含 [0, n] 中 n 个数的数组 nums，找出 [0, n] 这个范围内没有出现在数组中的那个数。
+思路 # 数学: expectSum - actualSum 异或: x ^ x = 0，expect ^ actual 原地哈希: :question: 代码 # 数学 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } 异或 # class Solution { public int missingNumber(int[] nums) { int whole = 0; for (int i = 0; i &amp;lt; nums.</description>
     </item>
     
     <item>

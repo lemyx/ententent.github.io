@@ -84,5 +84,15 @@
 思路 # 代码 # public Solution { public boolean isAnagram(String s, String t) { if (s.length() != t.length()) return false; Map&amp;lt;Character, Integer&amp;gt; sMap = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Character, Integer&amp;gt; tMap = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char ch = s.charAt(i); int times = sMap.containsKey(ch) == false ?</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</guid>
+      <description>268. Missing Number # 题目 # 给定一个包含 [0, n] 中 n 个数的数组 nums，找出 [0, n] 这个范围内没有出现在数组中的那个数。
+思路 # 数学: expectSum - actualSum 异或: x ^ x = 0，expect ^ actual 原地哈希: :question: 代码 # 数学 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } 异或 # class Solution { public int missingNumber(int[] nums) { int whole = 0; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
+    
   </channel>
 </rss>
