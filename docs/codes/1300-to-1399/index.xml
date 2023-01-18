@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1300-to-1399/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</guid>
+      <description>1342. Number of Steps to Reduce a Number to Zero # 题目 # 给你一个非负整数 nums，返回将它变为 0 所需要的步数。
+如果当前数字是偶数，则将它除以 2，否则减去 1。
+思路 # 模拟 数学 + 位运算 可从如下角度考虑模拟过程: 若 nums 最低位非 1，则进行右移 若 nums 最低位为 1，则消减最低位的 1 总操作次数等于: 最高位 1 的右移次数 + nums 的二进制表示中 1 的个数 代码 # 模拟 # class Solution { public int numberOfSteps(int num) { int step = 0; while (num != 0 &amp;amp;&amp;amp; ++step &amp;gt; 0) num = (num &amp;amp; 1 == 0) ?</description>
+    </item>
+    
+  </channel>
+</rss>

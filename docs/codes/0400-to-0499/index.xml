@@ -53,5 +53,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 思路 # 代码 # class LFUCache { private class ListNode { public int key; public int frequency; public int val; public ListNode prev; public ListNode next; ListNode(int key, int value, ListNode prev, ListNode next) { this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0461.-Hamming-Distance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0461.-Hamming-Distance/</guid>
+      <description> 461. Hamming Distance # 题目 # 两个整数之间的 汉明距离 指的是这两个数字对应二进制位不同的位置的数目。
+给定两个整数 x 和 y，计算并返回它们之间的汉明距离。
+思路 # 异或 + 统计 1 的数目
+代码 # 汉明距离 # class Solution { public int hammingDistance(int x, int y) { int sum = x ^ y; int hammingDistance = 0; for (int i=31; i&amp;gt;=0; i--) { if (((sum &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
+    </item>
+    
   </channel>
 </rss>

@@ -385,6 +385,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</guid>
+      <description> 191. Number of 1 Bits # 题目 # 编写一个函数，输入是一个无符号整数 (以二进制串的形式)，返回其二进制表达式中数字位数位 &#39;1&#39; 的个数，也称为 汉明重量。
+在 Java 中，整数的表示有以下两个特点：
+没有无符号整数类型，输入和输出都将被指定为有符号整数类型。 编译器使用 二进制补码 表示有符号整数。 思路 # 代码 # public class Solution { public int hamingWeight(int n) { int numOnes = 0; for (int i = 31; i &amp;gt;= 0; i--) { if ( ((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1 ) numOnes += 1; } return numOnes;s } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0202.-Happy-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -425,6 +436,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</guid>
       <description> 209. Minimum Size Subarray Sum # 题目 # 给定一个含有n个正整数的数组和一个正整数target。找出该数组中满足其和&amp;gt;=target的长度最小的连续子数组，并返回其长度。如果不存在符合条件的子数组，返回0。
 思路 # 代码 # class Solution { public int minSubArrayLen(int target, int[] nums) { if (nums == null) return 0; int left=0, right=0, len=0, cumSum=0; while (left &amp;lt;= right &amp;amp;&amp;amp; right &amp;lt; nums.length) { curSum += nums[right]; if (curSum &amp;gt;= target) { if (len == 0 || len &amp;gt; right-left+1) len = right-left+1; curSum -= nums[left]; left += 1; curSum -= nums[right]; } else right += 1; } return len; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0231.-Power-of-Two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0231.-Power-of-Two/</guid>
+      <description>231. Power of Two # 题目 # 给定一个整数 n，判断该整数是否是 2的幂次方。如果是，返回 true；否则，返回 false。
+如果存在一个整数 x 使得 n == 2^x，则认为 n 是 2 的幂次方。
+思路 # 对于数字 2^x，当且仅当加数不小于 2^x 时，和才不小于 2^(x+1) 若 n 的二进制表示中存在不止一个 1，则该整数不是 2 的幂次方。 代码 # 较繁琐的实现 # class Solution { public boolean isPowerOfTwo(int n) { if (n &amp;lt;= 0) return false; boolean flag = false; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if (flag == false) flag = true; else return false; } } return true; } } 利用位运算简化代码 # class Solution { public boolean isPowerOfTwo(int n) { return n &amp;gt; 0 &amp;amp;&amp;amp; (n &amp;amp; n-1) == 0;s } } 致谢 # Krahets</description>
     </item>
     
     <item>
@@ -608,6 +630,18 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 当一个键首次插入到缓存中时，它的使用计数器被设置为 1 (由于 put 操作)。对缓存中的键执行 get 或 put 操作，使用计数器的值将会递增。
 函数 get 和 put 必须以 O(1) 的平均时间复杂度运行。
 思路 # 代码 # class LFUCache { private class ListNode { public int key; public int frequency; public int val; public ListNode prev; public ListNode next; ListNode(int key, int value, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0461.-Hamming-Distance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0461.-Hamming-Distance/</guid>
+      <description> 461. Hamming Distance # 题目 # 两个整数之间的 汉明距离 指的是这两个数字对应二进制位不同的位置的数目。
+给定两个整数 x 和 y，计算并返回它们之间的汉明距离。
+思路 # 异或 + 统计 1 的数目
+代码 # 汉明距离 # class Solution { public int hammingDistance(int x, int y) { int sum = x ^ y; int hammingDistance = 0; for (int i=31; i&amp;gt;=0; i--) { if (((sum &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
     </item>
     
     <item>
@@ -803,6 +837,17 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</guid>
       <description>1290. Convert Binary Number in A Linked List to Integer # 题目 # 给定单链表头节点head，已知此链表是一个整数数字的二进制表示形式，链表中每个节点的值非0即1。返回链表所表示数字的十进制值。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null, cur = head, next = head.next; while(cur != null) { cur.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</guid>
+      <description>1342. Number of Steps to Reduce a Number to Zero # 题目 # 给你一个非负整数 nums，返回将它变为 0 所需要的步数。
+如果当前数字是偶数，则将它除以 2，否则减去 1。
+思路 # 模拟 数学 + 位运算 可从如下角度考虑模拟过程: 若 nums 最低位非 1，则进行右移 若 nums 最低位为 1，则消减最低位的 1 总操作次数等于: 最高位 1 的右移次数 + nums 的二进制表示中 1 的个数 代码 # 模拟 # class Solution { public int numberOfSteps(int num) { int step = 0; while (num != 0 &amp;amp;&amp;amp; ++step &amp;gt; 0) num = (num &amp;amp; 1 == 0) ?</description>
     </item>
     
     <item>

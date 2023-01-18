@@ -51,6 +51,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0231.-Power-of-Two/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0231.-Power-of-Two/</guid>
+      <description>231. Power of Two # 题目 # 给定一个整数 n，判断该整数是否是 2的幂次方。如果是，返回 true；否则，返回 false。
+如果存在一个整数 x 使得 n == 2^x，则认为 n 是 2 的幂次方。
+思路 # 对于数字 2^x，当且仅当加数不小于 2^x 时，和才不小于 2^(x+1) 若 n 的二进制表示中存在不止一个 1，则该整数不是 2 的幂次方。 代码 # 较繁琐的实现 # class Solution { public boolean isPowerOfTwo(int n) { if (n &amp;lt;= 0) return false; boolean flag = false; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if (flag == false) flag = true; else return false; } } return true; } } 利用位运算简化代码 # class Solution { public boolean isPowerOfTwo(int n) { return n &amp;gt; 0 &amp;amp;&amp;amp; (n &amp;amp; n-1) == 0;s } } 致谢 # Krahets</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

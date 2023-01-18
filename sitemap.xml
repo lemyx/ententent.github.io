@@ -62,6 +62,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/</loc>
     <lastmod>2023-01-04T09:09:27+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/</loc>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/</loc>
     <lastmod>2023-01-06T11:56:05+08:00</lastmod>
   </url><url>
@@ -218,6 +221,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</loc>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0202.-Happy-Number/</loc>
     <lastmod>2023-01-15T20:14:10+08:00</lastmod>
   </url><url>
@@ -229,6 +235,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0231.-Power-of-Two/</loc>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -277,6 +286,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-LFU-Cache/</loc>
     <lastmod>2023-01-12T17:29:53+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0461.-Hamming-Distance/</loc>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</loc>
     <lastmod>2023-01-16T10:22:54+08:00</lastmod>
@@ -328,6 +340,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</loc>
     <lastmod>2023-01-04T09:09:27+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</loc>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</loc>
     <lastmod>2023-01-06T11:56:05+08:00</lastmod>
@@ -419,7 +434,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-17T23:10:26+08:00</lastmod>
+    <lastmod>2023-01-18T19:22:04+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>
