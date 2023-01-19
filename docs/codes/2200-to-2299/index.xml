@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2200-to-2299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</guid>
+      <description> 2220. Minimum Bit Flips to Convert Number # 题目 # 一次 位翻转 定义为将数字 x 二进制位中的一个位进行 翻转 操作，即将 0 变成 1，或者将 1 变成 0。
+给定两个整数 start 和 goal，返回将 start 转变为 goal 的 最少位翻转 次数。
+思路 # 代码 # class Solution { public int minBitFlips(int start, int goal) { int xor = start ^ goal; int hammingDistance = 0; for (int i = 31; i &amp;gt;= 0; i--) { if (((xor &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -18,6 +18,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0868.-Binary-Gap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0868.-Binary-Gap/</guid>
+      <description> 0868. Binay Gap # 题目 # 给定正整数 n，找到并返回 n 的二进制表示中两个相邻 1 之间的最长距离。若不存在两个相邻的 1，返回 0。
+若只有 0 将两个 1 分隔开，则认为这两个 1 彼此相邻。两个 1 之间的距离是它们的二进制表示中位置的绝对差。
+思路 # 代码 # class Solution { public int binaryGap(int n) { int gap = 0, flag = -1; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if (flag &amp;gt; 0) gap = Math.max(gap, flag - i); flag = i; } } return gap; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

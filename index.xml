@@ -86,6 +86,15 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
     </item>
     
     <item>
+      <title>3.05 Bit Operation</title>
+      <link>https://leetcode.akaeecs.com/docs/templates/bit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/templates/bit/</guid>
+      <description>位运算 # 位运算符 # Symbol Description Rule &amp;amp; 与 1 &amp;amp; 1 = 1, 0 ^ x = 0 ` ` 或 ~ 非 ~1 = 0, ~0 = 1 ^ 异或 0 ^ 1 = 1, 1 ^ 1 = 0, 0 ^ 0 = 0 &amp;lt;&amp;lt; 左移 各二进制位全部左移若干位，高位丢弃，低位补零 &amp;gt;&amp;gt; 算术右移 各二进制位全部右移若干位，高位补符号位 &amp;gt;&amp;gt;&amp;gt; 逻辑右移 各二进制位全部右移若干位，高位补零 Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae. Quis iam; est dextra Peneosque, metuis a verba, primo.</description>
+    </item>
+    
+    <item>
       <title>(Hu)go Template Primer</title>
       <link>https://leetcode.akaeecs.com/posts/goisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
@@ -509,6 +518,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</guid>
+      <description> 342. Power of Four # 题目 # 给定一个整数，判断它是否是 4 的幂次方。
+思路 # 某个整数是 4 的幂次需要满足三个条件:
+正数 二进制表示中只含有一位 1 二进制表示中最高位 1 所在比特位为偶数 代码 # class Solution { public boolean isPowerOfFour(int n) { if (n &amp;lt;= 0) return false; boolean found = false; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if ((i &amp;amp; 1) == 1 || found == true) return false; found = true; } } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -680,6 +700,16 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</guid>
+      <description>693. Binary Number with Alternating Bits # 题目 # 给定一个正整数，检查其二进制表示是否总是 0、1 交替出现。换言之，二进制表示中相邻两位的数字永不相同。
+思路 # 代码 # class Solution { public boolean hasAlternatingBits(int n) { /** 先定位最高位的 1 */ int start = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 0) continue; start = i; break; } /** 判断数 n 的二进制表示中相邻两位的数字永不相同 */ for (int i = start - 1, lastBit = ((n &amp;gt;&amp;gt; start) &amp;amp; 1); i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == lastBit) return false; lastBit = lastBit = 1 ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -746,6 +776,17 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description>0817. Linked List Components # 题目 # 给定链表头结点 head，该链表上的每个结点都有一个 唯一的整型值。同时给定列表 nums，该列表是上述链表中整型值的一个子集。
 返回列表 nums 中组件的个数，这里对组件的定义为：链表中一段最长连续结点的值（该值必须在列表 nums 中）构成的集合。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int numComponents(ListNode head, int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for(int x: nums) set.add(x); boolean flag = false; int num = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0868.-Binary-Gap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0868.-Binary-Gap/</guid>
+      <description> 0868. Binay Gap # 题目 # 给定正整数 n，找到并返回 n 的二进制表示中两个相邻 1 之间的最长距离。若不存在两个相邻的 1，返回 0。
+若只有 0 将两个 1 分隔开，则认为这两个 1 彼此相邻。两个 1 之间的距离是它们的二进制表示中位置的绝对差。
+思路 # 代码 # class Solution { public int binaryGap(int n) { int gap = 0, flag = -1; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if (flag &amp;gt; 0) gap = Math.max(gap, flag - i); flag = i; } } return gap; } } </description>
     </item>
     
     <item>
@@ -1002,6 +1043,17 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</guid>
+      <description> 2220. Minimum Bit Flips to Convert Number # 题目 # 一次 位翻转 定义为将数字 x 二进制位中的一个位进行 翻转 操作，即将 0 变成 1，或者将 1 变成 0。
+给定两个整数 start 和 goal，返回将 start 转变为 goal 的 最少位翻转 次数。
+思路 # 代码 # class Solution { public int minBitFlips(int start, int goal) { int xor = start ^ goal; int hammingDistance = 0; for (int i = 31; i &amp;gt;= 0; i--) { if (((xor &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1171,6 +1223,15 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <description>面试题 03.03. 堆盘子 # 题目 # 堆盘子。设想有一堆盘子，堆太高可能会倒下来。因此，在现实生活中，盘子堆到一定高度时，就会堆另外一堆盘子。实现数据结构 SetOfStacks，模拟这种行为。SetOfStacks 应该由多个栈组成，并在在前一个栈填满时新建一个栈。此外，SetOfStacks.push()和 SetOfStacks.pop() 应该与普通栈的操作方法相同 (即，pop 的返回值应该与只有一个栈时的情况一致)。此外，实现 popAt(int index) 方法，根据指定的子栈，执行 pop 操作。
 当某个栈为空时，应删除该栈。当栈中没有元素或不存在该栈时，pop，popAt 应返回 -1。
 思路 # 代码 # class StackOfPlates { private class stackNode { public int val; public stackNode next; stackNode(int val, stackNode next) { this.val = val; this.next = next; } } private class Stack { private int size; private int capacity; private stackNode sentinel; Stack(int capacity) { this.size = 0; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/topic/bit-operation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/topic/bit-operation/</guid>
+      <description></description>
     </item>
     
     <item>

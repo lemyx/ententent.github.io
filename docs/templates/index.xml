@@ -45,5 +45,14 @@ Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara po
 Te at cruciabere vides rubentis manebo Maturuit in praetemptat ruborem ignara postquam habitasse Subitarum supplevit quoque fontesque venabula spretis modo Montis tot est mali quasque gravis Quinquennem domus arsit ipse Pellem turis pugnabant locavit Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae.</description>
     </item>
     
+    <item>
+      <title>3.05 Bit Operation</title>
+      <link>https://leetcode.akaeecs.com/docs/templates/bit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/templates/bit/</guid>
+      <description>位运算 # 位运算符 # Symbol Description Rule &amp;amp; 与 1 &amp;amp; 1 = 1, 0 ^ x = 0 ` ` 或 ~ 非 ~1 = 0, ~0 = 1 ^ 异或 0 ^ 1 = 1, 1 ^ 1 = 0, 0 ^ 0 = 0 &amp;lt;&amp;lt; 左移 各二进制位全部左移若干位，高位丢弃，低位补零 &amp;gt;&amp;gt; 算术右移 各二进制位全部右移若干位，高位补符号位 &amp;gt;&amp;gt;&amp;gt; 逻辑右移 各二进制位全部右移若干位，高位补零 Natus quaerere # Pectora et sine mulcere, coniuge dum tincta incurvae. Quis iam; est dextra Peneosque, metuis a verba, primo.</description>
+    </item>
+    
   </channel>
 </rss>

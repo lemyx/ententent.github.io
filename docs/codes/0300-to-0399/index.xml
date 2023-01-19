@@ -20,6 +20,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</guid>
+      <description> 342. Power of Four # 题目 # 给定一个整数，判断它是否是 4 的幂次方。
+思路 # 某个整数是 4 的幂次需要满足三个条件:
+正数 二进制表示中只含有一位 1 二进制表示中最高位 1 所在比特位为偶数 代码 # class Solution { public boolean isPowerOfFour(int n) { if (n &amp;lt;= 0) return false; boolean found = false; for (int i = 31; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) { if ((i &amp;amp; 1) == 1 || found == true) return false; found = true; } } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

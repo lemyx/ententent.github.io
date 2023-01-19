@@ -29,5 +29,15 @@ MyCircularQueue(k): 构造器，设置队列长度为 k 。 Front: 从队首获�
 MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean insertFront()：将一个元素添加到双端队列头部。 如果操作成功返回 true ，否则返回 false 。 boolean insertLast() ：将一个元素添加到双端队列尾部。如果操作成功返回 true ，否则返回 false 。 boolean deleteFront() ：从双端队列头部删除一个元素。 如果操作成功返回 true ，否则返回 false 。 boolean deleteLast() ：从双端队列尾部删除一个元素。如果操作成功返回 true ，否则返回 false 。 int getFront() )：从双端队列头部获得一个元素。如果双端队列为空，返回 -1 。 int getRear() ：获得双端队列的最后一个元素。 如果双端队列为空，返回 -1 。 boolean isEmpty() ：若双端队列为空，则返回 true ，否则返回 false 。 boolean isFull() ：若双端队列满了，则返回 true ，否则返回 false 。 思路 # 代码 # class MyCircularDeque { private class ListNode { public int val; public ListNode prev; public ListNode next; ListNode (int value, ListNode prev, ListNode next) { this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</guid>
+      <description>693. Binary Number with Alternating Bits # 题目 # 给定一个正整数，检查其二进制表示是否总是 0、1 交替出现。换言之，二进制表示中相邻两位的数字永不相同。
+思路 # 代码 # class Solution { public boolean hasAlternatingBits(int n) { /** 先定位最高位的 1 */ int start = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 0) continue; start = i; break; } /** 判断数 n 的二进制表示中相邻两位的数字永不相同 */ for (int i = start - 1, lastBit = ((n &amp;gt;&amp;gt; start) &amp;amp; 1); i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == lastBit) return false; lastBit = lastBit = 1 ?</description>
+    </item>
+    
   </channel>
 </rss>
