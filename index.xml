@@ -518,6 +518,16 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0338.-Counting-Bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0338.-Counting-Bits/</guid>
+      <description> 338. Counting Bits # 题目 # 给定一个整数 n，对于 0 &amp;lt;= i &amp;lt;= n 中的每个 i，计算其二进制表示中 1 的个数，返回一个长度为 n+1 的数组 ans 作为答案。
+思路 # 右移计数 Brian Kernighan 代码 # 右移计数 # class Solution { public int count(int num) { int result = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) result += 1; } return result; } public int[] countBits(int n) { int[] ans = new int[n + 1]; for (int i = 0; i &amp;lt;= n; i++) { ans[i] = count(i); } return ans; } } Brian Kernighan # class Solution { public int count(int num) { int ans = 0; while (num &amp;gt; 0) { num &amp;amp;= num - 1; ans += 1; } return ans; } public int[] countBits(int n) { int[] ans = new int[n + 1]; for(int i = 0; i &amp;lt;= n; i++) ans[i] = count(i); return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -602,6 +612,18 @@ get： 分配给用户一个未被使用的电话号码，获取失败时返回 
 如果可以，返回 true，否则返回 false。
 magazine 中的每个字符只能在 ransomNote 中使用一次。
 思路 # 代码 # class Solution { public boolean canConstruct(String ransomNote, String magazine) { if (ransomNote.length() &amp;gt; magazine.length()) return false; int[] count = new int[26]; for(int i=0; i&amp;lt;magazine.length(); i++) count[magazine.charAt(i)-&amp;#39;a&amp;#39;] += 1; for(int i=0; i&amp;lt;ransomNote.length(); i++) { if (count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] == 0) return false; count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] -= 1; } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0389.-Find-the-Difference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0389.-Find-the-Difference/</guid>
+      <description> 389. Find the Difference # 题目 # 给定两个字符串 s 和 t，它们只包含小写字母。
+字符串 t 由字符串 s 随机重排，然后在随机位置添加一个字母。
+找出在 t 中被添加的字母。
+思路 # 代码 # class Solution { public char findTheDifference(String s, String t) { char res = 0; for (int i = 0; i &amp;lt; s.length(); i++) res ^= s.charAt(i); for (int i = 0; i &amp;lt; t.length(); i++) res ^= t.charAt(i); return res; } } </description>
     </item>
     
     <item>
@@ -700,6 +722,18 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</guid>
+      <description> 645. Set Mismatch # 题目 # 集合 s 包含从 1 到 n 的整数。但集合 丢失了一个数字 并 有一个数字重复。
+给定数组 nums 代表集合 s 发生错误后的结果。
+先找出重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。
+思路 # 代码 # class Solution { public int[] findErrorNums(int[] nums) { int[] ans = new int[2]; /** 另 1~n 与 nums 进行异或操作，返回值为 missing ^ duplicate */ int xor = 0; int[] appearance = new int[nums.length]; for (int i = 0; i &amp;lt; nums.length; i++) { xor ^= (i + 1) ^ nums[i]; appearance[nums[i] - 1] += 1; if (appearance[nums[i] - 1] == 2) ans[0] = nums[i]; } /** missing = missing ^ duplicate ^ duplicate */ ans[1] = xor ^ ans[0]; return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -765,6 +799,17 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
 这k个部分应该按照在链表中出现的顺序排列，并且排在前面的部分的长度应不小于排在后面的长度。
 返回一个由上述k部分组成的数组。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode[] splitListToParts(ListNode head, int k) { /** 1. 确定链表长度 length */ ListNode ptr = head; int length = 0; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/</guid>
+      <description> 762. Prime Number of Set Bits in Binary Representation # 题目 # 给定两个整数 left 和 right，在闭区间 [left, right] 范围内，统计并返回 计算置位位数为质数 的整数个数。
+计算置位位数 就是二进制表示中 1 的个数。
+思路 # 代码 # class Solution { public boolean isPrime(int num) { if (num == 1) return false; for (int i = 2; i &amp;lt;= Math.sqrt(num); i++) { if (num % i == 0) return false; } return true; } public int count(int num) { int count = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) count += 1; } return count; } public int countPrimeSetBits(int left, int right) { int numPrime = 0; for (int i = left; i &amp;lt;= right; i++) { int num = count(i); if (isPrime(num) == true) numPrime += 1; } return numPrime; } } </description>
     </item>
     
     <item>

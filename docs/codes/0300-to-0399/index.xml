@@ -20,6 +20,16 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0338.-Counting-Bits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0338.-Counting-Bits/</guid>
+      <description> 338. Counting Bits # 题目 # 给定一个整数 n，对于 0 &amp;lt;= i &amp;lt;= n 中的每个 i，计算其二进制表示中 1 的个数，返回一个长度为 n+1 的数组 ans 作为答案。
+思路 # 右移计数 Brian Kernighan 代码 # 右移计数 # class Solution { public int count(int num) { int result = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) result += 1; } return result; } public int[] countBits(int n) { int[] ans = new int[n + 1]; for (int i = 0; i &amp;lt;= n; i++) { ans[i] = count(i); } return ans; } } Brian Kernighan # class Solution { public int count(int num) { int ans = 0; while (num &amp;gt; 0) { num &amp;amp;= num - 1; ans += 1; } return ans; } public int[] countBits(int n) { int[] ans = new int[n + 1]; for(int i = 0; i &amp;lt;= n; i++) ans[i] = count(i); return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0342.-Power-of-Four/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -104,6 +114,18 @@ get： 分配给用户一个未被使用的电话号码，获取失败时返回 
 如果可以，返回 true，否则返回 false。
 magazine 中的每个字符只能在 ransomNote 中使用一次。
 思路 # 代码 # class Solution { public boolean canConstruct(String ransomNote, String magazine) { if (ransomNote.length() &amp;gt; magazine.length()) return false; int[] count = new int[26]; for(int i=0; i&amp;lt;magazine.length(); i++) count[magazine.charAt(i)-&amp;#39;a&amp;#39;] += 1; for(int i=0; i&amp;lt;ransomNote.length(); i++) { if (count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] == 0) return false; count[ransomNote.charAt(i)-&amp;#39;a&amp;#39;] -= 1; } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0389.-Find-the-Difference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0389.-Find-the-Difference/</guid>
+      <description> 389. Find the Difference # 题目 # 给定两个字符串 s 和 t，它们只包含小写字母。
+字符串 t 由字符串 s 随机重排，然后在随机位置添加一个字母。
+找出在 t 中被添加的字母。
+思路 # 代码 # class Solution { public char findTheDifference(String s, String t) { char res = 0; for (int i = 0; i &amp;lt; s.length(); i++) res ^= s.charAt(i); for (int i = 0; i &amp;lt; t.length(); i++) res ^= t.charAt(i); return res; } } </description>
     </item>
     
   </channel>

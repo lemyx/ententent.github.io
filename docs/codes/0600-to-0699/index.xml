@@ -31,6 +31,18 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</guid>
+      <description> 645. Set Mismatch # 题目 # 集合 s 包含从 1 到 n 的整数。但集合 丢失了一个数字 并 有一个数字重复。
+给定数组 nums 代表集合 s 发生错误后的结果。
+先找出重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。
+思路 # 代码 # class Solution { public int[] findErrorNums(int[] nums) { int[] ans = new int[2]; /** 另 1~n 与 nums 进行异或操作，返回值为 missing ^ duplicate */ int xor = 0; int[] appearance = new int[nums.length]; for (int i = 0; i &amp;lt; nums.length; i++) { xor ^= (i + 1) ^ nums[i]; appearance[nums[i] - 1] += 1; if (appearance[nums[i] - 1] == 2) ans[0] = nums[i]; } /** missing = missing ^ duplicate ^ duplicate */ ans[1] = xor ^ ans[0]; return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
