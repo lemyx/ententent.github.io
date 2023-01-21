@@ -65,5 +65,18 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 代码 # 汉明距离 # class Solution { public int hammingDistance(int x, int y) { int sum = x ^ y; int hammingDistance = 0; for (int i=31; i&amp;gt;=0; i--) { if (((sum &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</guid>
+      <description> 476. Number Complement # 题目 # 对整数的二进制表示取反 (0 变 1，1 变 0) 后，再转换为十进制表示，可以得到这个整数的补数。
+如整数 5 的二进制表示是 &amp;quot;101&amp;quot;，取反后得到 &amp;quot;010&amp;quot;，再转回十进制表示得到补数 2。
+给定一个整数，输出其补数。
+注: 1 &amp;lt;= num &amp;lt; 2^31}
+思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
   </channel>
 </rss>

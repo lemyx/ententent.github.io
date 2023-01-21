@@ -688,6 +688,19 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</guid>
+      <description> 476. Number Complement # 题目 # 对整数的二进制表示取反 (0 变 1，1 变 0) 后，再转换为十进制表示，可以得到这个整数的补数。
+如整数 5 的二进制表示是 &amp;quot;101&amp;quot;，取反后得到 &amp;quot;010&amp;quot;，再转回十进制表示得到补数 2。
+给定一个整数，输出其补数。
+注: 1 &amp;lt;= num &amp;lt; 2^31}
+思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -960,6 +973,18 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/</guid>
+      <description> 1486. XOR Operation in an Array # 题目 # 给定两个整数，n 和 start。
+数组 nums 定义为: nums[i] = start + 2*i （下标从0开始）且 n == nums.length。
+返回 nums 中所有元素按位异或 (XOR) 后得到的结果。
+思路 # 代码 # class Solution { public int xorOperation(int n, int start) { int xor = 0; for (int i = 0; i &amp;lt; n; i++) xor ^= start + 2 * i; return xor; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -991,6 +1016,19 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
       <description>1670. Design Front Middle Back Queue # 题目 # 请你设计一个队列，支持在前，中，后三个位置的 push 和 pop 操作。
 请你完成 FrontMiddleBack 类：
 FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到队列的 最前面 。 void pushMiddle(int val) 将 val 添加到队列的 正中间 。 void pushBack(int val) 将 val 添加到队里的 最后面 。 int popFront() 将 最前面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popMiddle() 将 正中间 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popBack() 将 最后面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 思路 # 代码 # class FrontMiddleBackQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode(int value, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</guid>
+      <description>1720. Decode XORed Array # 题目 # 未知整数数组 arr 由 n 个非负整数组成。
+经编码后变为长度为 n - 1 的另一个整数数组 encoded，其中 encoded[i] = arr[i] XOR arr[i + 1]。例如 arr = [1, 0, 2, 1] 经编码后得到 encoded = [1, 2, 3]。
+给定编码后的数组 encoded 和原数组 arr 的第一个元素 first (arr[0])。
+解码返回原数组 arr，可以证明答案存在并且是唯一的。
+思路 # 代码 # class Solution { public int[] decode(int[] encoded, int first) { int[] ans = new int[encoded.length + 1]; ans[0] = first; for (int i = 1; i &amp;lt; ans.</description>
     </item>
     
     <item>
@@ -1247,6 +1285,18 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/</guid>
       <description> 剑指 Offer 18. 删除链表的节点 # 题目 # 给定单链表的头指针和一个要删除的节点的值，定义一个函数删除该节点，返回删除后的链表的头节点。链表中节点的值互不相同。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode deleteNode(ListNode head, int val) { if (head.val == val) return head.next; ListNode ptr = head; while (ptr.next.val != val) ptr = ptr.next; ptr.next = ptr.next.next; return head; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</guid>
+      <description> 面试题 01.01. 判断字符是否唯一 # 题目 # 实现算法判断给定字符串 s 的所有字符是否全都不同。
+s[i] 仅包含小写字母。
+如果不使用额外的数据结构，会很加分。
+思路 # 代码 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } </description>
     </item>
     
     <item>

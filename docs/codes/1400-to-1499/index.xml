@@ -27,5 +27,17 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } LIstNOde(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteNodes(ListNode head, int m, int n) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/</guid>
+      <description> 1486. XOR Operation in an Array # 题目 # 给定两个整数，n 和 start。
+数组 nums 定义为: nums[i] = start + 2*i （下标从0开始）且 n == nums.length。
+返回 nums 中所有元素按位异或 (XOR) 后得到的结果。
+思路 # 代码 # class Solution { public int xorOperation(int n, int start) { int xor = 0; for (int i = 0; i &amp;lt; n; i++) xor ^= start + 2 * i; return xor; } } </description>
+    </item>
+    
   </channel>
 </rss>
