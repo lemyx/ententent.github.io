@@ -249,6 +249,17 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0070.-Climbing-Stairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0070.-Climbing-Stairs/</guid>
+      <description> 70. Climbing Stairs # 题目 # 假定某人正在爬楼梯，需要 n 阶才能到达楼顶。
+每次可以爬 1 或 2 个台阶。求出爬到楼顶的方案总数。
+思路 # 代码 # class Solution { public int climbStairs(int n) { if (n == 1 || n == 2) return n; int prev = 1, cur = 2; for (int i = 3; i &amp;lt;= n; i++) { int temp = prev + cur; prev = cur; cur = temp; } return cur; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -287,6 +298,27 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</guid>
       <description>92. Reverse Linked List ii # 题目 # 给定单链表头节点head和两个整数left和right，其中left &amp;lt;= right。反转从位置left到位置right的链表节点，返回反转后的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public void reverseList(ListNode head, ListNode tail) { if (head == tail) return; reverseList(head.next, tail); head.next.next = head; } public ListNode reverseBetween(ListNode head, int left, int right) { ListNode sentinel = new ListNode(-1, head); ListNode beforeLeft = sentinel, ptrRight = sentinel; for (int i=0; i&amp;lt;left-1; i++) beforeLeft = beforeLeft.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0101.-Symmetric-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0101.-Symmetric-Tree/</guid>
+      <description>101. Symmetric Tree # 题目 # 给定二叉树的根节点 root，检查它是否轴对称。
+思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public boolean checkTwoNodes(TreeNode node1, TreeNode2) { if (node1 == null &amp;amp;&amp;amp; node2 == null) return true; if (node1 == null &amp;amp;&amp;amp; node2 !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0104.-Maximum-Depth-of-BInary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0104.-Maximum-Depth-of-BInary-Tree/</guid>
+      <description>104. Maximum Depth of Binary Tree # 题目 # 给定一个二叉树，找出其最大深度。
+二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
+思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int maxDepth(TreeNode root) { if (root == null) return 0; return 1 + Math.</description>
     </item>
     
     <item>
@@ -445,6 +477,16 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/</guid>
       <description> 209. Minimum Size Subarray Sum # 题目 # 给定一个含有n个正整数的数组和一个正整数target。找出该数组中满足其和&amp;gt;=target的长度最小的连续子数组，并返回其长度。如果不存在符合条件的子数组，返回0。
 思路 # 代码 # class Solution { public int minSubArrayLen(int target, int[] nums) { if (nums == null) return 0; int left=0, right=0, len=0, cumSum=0; while (left &amp;lt;= right &amp;amp;&amp;amp; right &amp;lt; nums.length) { curSum += nums[right]; if (curSum &amp;gt;= target) { if (len == 0 || len &amp;gt; right-left+1) len = right-left+1; curSum -= nums[left]; left += 1; curSum -= nums[right]; } else right += 1; } return len; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0226.-Invert-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0226.-Invert-Binary-Tree/</guid>
+      <description>226. Invert Binary Tree # 题目 # 给定二叉树的根节点 root，翻转这棵二叉树，并返回其根节点。
+思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public TreeNode invertTree(TreeNode root) { if (root == null || (root.left == null &amp;amp;&amp;amp; root.</description>
     </item>
     
     <item>
@@ -1293,10 +1335,11 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</guid>
-      <description> 面试题 01.01. 判断字符是否唯一 # 题目 # 实现算法判断给定字符串 s 的所有字符是否全都不同。
+      <description>面试题 01.01. 判断字符是否唯一 # 题目 # 实现算法判断给定字符串 s 的所有字符是否全都不同。
 s[i] 仅包含小写字母。
 如果不使用额外的数据结构，会很加分。
-思路 # 代码 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } </description>
+思路 # 哈希 位运算 代码 # 哈希 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } 致谢 # 珍珠好好吃
+MAllk33</description>
     </item>
     
     <item>

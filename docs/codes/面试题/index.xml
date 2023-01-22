@@ -11,10 +11,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</guid>
-      <description> 面试题 01.01. 判断字符是否唯一 # 题目 # 实现算法判断给定字符串 s 的所有字符是否全都不同。
+      <description>面试题 01.01. 判断字符是否唯一 # 题目 # 实现算法判断给定字符串 s 的所有字符是否全都不同。
 s[i] 仅包含小写字母。
 如果不使用额外的数据结构，会很加分。
-思路 # 代码 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } </description>
+思路 # 哈希 位运算 代码 # 哈希 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } 致谢 # 珍珠好好吃
+MAllk33</description>
     </item>
     
     <item>

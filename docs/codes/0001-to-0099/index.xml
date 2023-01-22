@@ -137,6 +137,17 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0070.-Climbing-Stairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0070.-Climbing-Stairs/</guid>
+      <description> 70. Climbing Stairs # 题目 # 假定某人正在爬楼梯，需要 n 阶才能到达楼顶。
+每次可以爬 1 或 2 个台阶。求出爬到楼顶的方案总数。
+思路 # 代码 # class Solution { public int climbStairs(int n) { if (n == 1 || n == 2) return n; int prev = 1, cur = 2; for (int i = 3; i &amp;lt;= n; i++) { int temp = prev + cur; prev = cur; cur = temp; } return cur; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
