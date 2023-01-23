@@ -28,6 +28,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0111.-Minimum-Depth-of-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0111.-Minimum-Depth-of-Binary-Tree/</guid>
+      <description>111. Minimum Depth of Binary Tree # 题目 # 给定一个二叉树，找出其最小深度。
+最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
+思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int minDepth(TreeNode root) { if (root == null) return 0; if (root.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -84,6 +95,26 @@ L0 → L1 → … → Ln - 1 → Ln 请将其重新排列后变为：
 L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → … 不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 思路 # 寻找链表中心结点 + 翻转链表 + 合并链表
 代码 # 暴力解 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0144.-Binary-Tree-Preorder-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0144.-Binary-Tree-Preorder-Traversal/</guid>
+      <description>144. Binary Tree Preorder Traversal # 题目 # 给定二叉树的根节点 root，返回它节点值的 前序 遍历。
+思路 # 代码 # 暴力解 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public void traversal(TreeNode root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0145.-Binary-Tree-Postorder-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0145.-Binary-Tree-Postorder-Traversal/</guid>
+      <description>145. Binary Tree Postorder Traversal # 题目 # 给定二叉树的根节点 root，返回它节点值的 后序 遍历。
+思路 # 代码 # 暴力解 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public void traversal(TreeNode root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; traverse(root.</description>
     </item>
     
     <item>
