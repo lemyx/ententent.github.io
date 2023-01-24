@@ -39,5 +39,16 @@ MAllk33</description>
 思路 # 代码 # class StackOfPlates { private class stackNode { public int val; public stackNode next; stackNode(int val, stackNode next) { this.val = val; this.next = next; } } private class Stack { private int size; private int capacity; private stackNode sentinel; Stack(int capacity) { this.size = 0; this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-05.07.-%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%8D%A2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-05.07.-%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%8D%A2/</guid>
+      <description>面试题 05.07. 配对交换 # 题目 # 配对交换，编写代码，交换某个整数的奇数位和偶数位，尽量使用较少的指令。
+即将位0与位1交换，位2与位3交换，以此类推。
+思路 # 位运算 代码 # local picture # class Solution { public int exchangeBits(int num) { int odd = 1 &amp;lt;&amp;lt; 1, even = 1 &amp;lt;&amp;lt; 0; while (0 &amp;lt;= odd &amp;amp;&amp;amp; odd &amp;lt;= (1 &amp;lt;&amp;lt; 29)) { if (((num &amp;amp; odd) != 0) &amp;amp;&amp;amp; (num &amp;amp; even) == 0) || (num &amp;amp; odd) == 0 &amp;amp;&amp;amp; (num &amp;amp; even) != 0) { num ^= odd ^ even; } odd &amp;lt;= 2; even &amp;lt;= 2; } return num; } } global picture # class Solution { public int exchangeBits(int num) { return ((num &amp;amp; 0xaaaaaaaa) &amp;gt;&amp;gt; 1) | ((num &amp;amp; 0x55555555) &amp;lt;&amp;lt; 1); } } 致谢 # 我要出去乱说</description>
+    </item>
+    
   </channel>
 </rss>
