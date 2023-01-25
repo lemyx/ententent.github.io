@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0500-to-0599/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</guid>
+      <description>515. Find Largest Value in Each Tree Row # 题目 # 给定一棵二叉树的根节点 root，找出该二叉树中每一层的最大值。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;Integer&amp;gt; largestValues(TreeNode root) { List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

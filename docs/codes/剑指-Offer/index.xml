@@ -25,5 +25,35 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode deleteNode(ListNode head, int val) { if (head.val == val) return head.next; ListNode ptr = head; while (ptr.next.val != val) ptr = ptr.next; ptr.next = ptr.next.next; return head; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/27.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/27.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/</guid>
+      <description> 剑指 Offer 27. 二叉树的镜像 # 题目 # 给定一棵二叉树，输出其镜像。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public TreeNode mirrorTree(TreeNode root) { if (root == null || (root.left == null &amp;amp;&amp;amp; root.right == null)) return root; TreeNode temp = mirrorTree(root.left); root.left = mirrorTree(root.right); root.right = temp; return root; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>剑指 Offer 22. 对称的二叉树 # 题目 # 请实现一个函数，用来判断一棵二叉树是否是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public boolean isTwoSymmetric(TreeNode root1, TreeNode root2) { if (root1 == null) return root2 == null; if (root2 == null) return false; return (root1.val == root2.val) &amp;amp; isTwoSymmetric(root1.left, root2.right) &amp;amp; isTwoSymmetric(root1.right, root2.left); } public boolean isSymmetric(TreeNode root) { if (root == null) return true; return isTwoSymmetric(root.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/55.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/55.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/</guid>
+      <description> 剑指 Offer 55. 二叉树的深度 # 题目 # 给定一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public int maxDepth(TreeNode root) { if (root == null) return 0; return 1 + Math.max(maxDepth(root.left), maxDepth(root.right)); } } </description>
+    </item>
+    
   </channel>
 </rss>

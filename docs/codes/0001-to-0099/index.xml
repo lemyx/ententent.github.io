@@ -91,6 +91,19 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0026.-Remove-Duplicates-from-Sorted-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0026.-Remove-Duplicates-from-Sorted-Array/</guid>
+      <description>26. Remove Duplicates from Sorted Array # 题目 # 给定一个 升序排列 的数组 nums，原地删除重复出现的元素，使每个元素只出现一次，返回删除后数组的新长度。元素的 相对顺序 应该保持 一致。
+如果在删除重复项后有 k 个元素，那么 nums 的前 k 个元素应该保存最终结果。
+将最终结果插入 nums 的前 k 个位置后返回 k。
+在 原地 修改输入数组并在使用 O(1) 额外空间的条件下完成。
+思路 # 双指针 代码 # class Solution { public int removeDuplicates(int[] nums) { if (nums.length == 1) return 1; /** 双指针法 */ int i = 0, j = 1; while (j &amp;lt; nums.length) { if (nums[j] !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0027.-Remove-Element/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -133,6 +146,18 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0061.-Rotate-List/</guid>
       <description>61. Rotate List # 题目 # 给定链表头节点head，旋转链表，将链表每个节点向右移动k个位置。
 思路 # 使用指针ptr统计链表长度n。 若k % n == 0，等价于不旋转链表。 将链表尾部节点rear与头节点head相连，即ptr.next = head，链表构成环。 设给定链表长度为n，将链表每个节点向右移动k个位置，等价于将链表每个节点向右移动k%n个位置。此时第n+1-k%n个节点将作为newHead。 令ptr指向第n-k%n个节点，在此处令ptr.next = null以断开环，并返回newHead。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode rotateRight(ListNode head, int k) { if (head == null) return null; ListNode ptr = head; int length = 1; while (ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</guid>
+      <description>66. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+最高位数字存放在数组的首位，数组中每个数字只存储 单个 数字。
+可以假定除整数 0 之外，这个整数不会以零开头。
+思路 # 代码 # class Solution { public int[] plusOne(int[] digits) { int carry = 1; for (int i = digits.length - 1; i &amp;gt;= 0; i--) { int newDigit = (digits[i] + carry) % 0; carry = (digits[i] + carry) / 10; digits[i] = newDigit; } if (carry == 0) return digits; int[] ans = new int[digits.</description>
     </item>
     
     <item>

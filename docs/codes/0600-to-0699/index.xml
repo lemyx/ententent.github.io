@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0600-to-0699/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</guid>
+      <description>617. Merge Two Binary Trees # 题目 # 给定两棵二叉树 root1 和 root2。
+想象一下，当泥浆其中一棵覆盖到另一棵上时，两棵树上的一些节点将会重叠（而另一些不会）。需要将这两棵树合并成一棵新二叉树。合并的规则是：如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。
+返回合并后的二叉树。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode (int val) { this.val = val; } TreeNode (int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public TreeNode mergeTrees(TreeNode root1, TreeNode root2) { if (root1 == null) return root2; if (root2 == null) return root1; root1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0622.-Design-Circular-Queue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -16,6 +28,17 @@
 你的实现应该支持如下操作：
 MyCircularQueue(k): 构造器，设置队列长度为 k 。 Front: 从队首获取元素。如果队列为空，返回 -1 。 Rear: 获取队尾元素。如果队列为空，返回 -1 。 enQueue(value): 向循环队列插入一个元素。如果成功插入则返回真。 deQueue(): 从循环队列中删除一个元素。如果成功删除则返回真。 isEmpty(): 检查循环队列是否为空。 isFull(): 检查循环队列是否已满。 思路 # 基于链表的实现较为简单，而基于数组的实现相对复杂。
 代码 # class MyCircularQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode (int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } private int size; private int capacity; ListNode sentinel; public MyCircularQueue(int k) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0637.-Average-of-Levels-in-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0637.-Average-of-Levels-in-Binary-Tree/</guid>
+      <description>637. Average of Levels in Binary Tree # 题目 # 给定一个非空二叉树的根节点 root，以数组的形式返回每一层节点的平均值。
+与实际答案相差 10^-5 以内的答案可以被接受。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode (int val) { this.val = val; } TreeNode (int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;Double&amp;gt; averageOfLevels(TreeNode root) { List&amp;lt;Double&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>

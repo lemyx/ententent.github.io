@@ -41,6 +41,17 @@ MAllk33</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/</guid>
+      <description>面试题 04.03. 特定深度节点链表 # 题目 # 给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表。
+返回一个包含所有深度的链表的数组。
+思路 # 层序遍历变体 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } } public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode[] listOfDepth(TreeNode tree) { /* 用queue存储单链表头节点，而后将queue转为ListNode[] */ Queue&amp;lt;ListNode&amp;gt; ansQueue = new LinkedList&amp;lt;&amp;gt;(); /* 二叉树的层序遍历 */ Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-05.07.-%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%8D%A2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

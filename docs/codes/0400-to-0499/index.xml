@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0400-to-0499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</guid>
+      <description>429. N-ary Tree Level Order Traversal # 题目 # 给定一个 N 叉树，返回其节点的 层序遍历。
+思路 # 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _ children; } } class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; levelOrder(Node root) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0430.-Flatten-a-Multilevel-Doubly-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

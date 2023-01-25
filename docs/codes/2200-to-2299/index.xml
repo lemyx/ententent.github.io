@@ -18,6 +18,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</guid>
+      <description> 2236. Root Equals Sum of Children # 题目 # 给定二叉树的根节点 root，该二叉树恰由三个节点组成：根节点、左子节点、右子节点。
+如果根节点值等于两个子节点值值和，返回 true，否则返回 false。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public boolean checkTree(TreeNode root) { return root.val == root.left.val + root.right.val; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

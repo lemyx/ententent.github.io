@@ -203,6 +203,19 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0026.-Remove-Duplicates-from-Sorted-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0026.-Remove-Duplicates-from-Sorted-Array/</guid>
+      <description>26. Remove Duplicates from Sorted Array # 题目 # 给定一个 升序排列 的数组 nums，原地删除重复出现的元素，使每个元素只出现一次，返回删除后数组的新长度。元素的 相对顺序 应该保持 一致。
+如果在删除重复项后有 k 个元素，那么 nums 的前 k 个元素应该保存最终结果。
+将最终结果插入 nums 的前 k 个位置后返回 k。
+在 原地 修改输入数组并在使用 O(1) 额外空间的条件下完成。
+思路 # 双指针 代码 # class Solution { public int removeDuplicates(int[] nums) { if (nums.length == 1) return 1; /** 双指针法 */ int i = 0, j = 1; while (j &amp;lt; nums.length) { if (nums[j] !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0027.-Remove-Element/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -245,6 +258,18 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0061.-Rotate-List/</guid>
       <description>61. Rotate List # 题目 # 给定链表头节点head，旋转链表，将链表每个节点向右移动k个位置。
 思路 # 使用指针ptr统计链表长度n。 若k % n == 0，等价于不旋转链表。 将链表尾部节点rear与头节点head相连，即ptr.next = head，链表构成环。 设给定链表长度为n，将链表每个节点向右移动k个位置，等价于将链表每个节点向右移动k%n个位置。此时第n+1-k%n个节点将作为newHead。 令ptr指向第n-k%n个节点，在此处令ptr.next = null以断开环，并返回newHead。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode rotateRight(ListNode head, int k) { if (head == null) return null; ListNode ptr = head; int length = 1; while (ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</guid>
+      <description>66. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+最高位数字存放在数组的首位，数组中每个数字只存储 单个 数字。
+可以假定除整数 0 之外，这个整数不会以零开头。
+思路 # 代码 # class Solution { public int[] plusOne(int[] digits) { int carry = 1; for (int i = digits.length - 1; i &amp;gt;= 0; i--) { int newDigit = (digits[i] + carry) % 0; carry = (digits[i] + carry) / 10; digits[i] = newDigit; } if (carry == 0) return digits; int[] ans = new int[digits.</description>
     </item>
     
     <item>
@@ -339,7 +364,7 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0102.-Binary-Tree-Level-Order-Traversal/</guid>
       <description>102. Binary Tree Level Order Traversal # 题目 # 给定二叉树的根节点 root，返回其节点值的 层序遍历。
 即逐层地，从左到右访问所有节点。
-思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; levelOrder(TreeNode root) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; levelOrder(TreeNode root) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>
@@ -377,6 +402,17 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0110.-Balanced-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0110.-Balanced-Binary-Tree/</guid>
+      <description>110. Balanced Binary Tree # 题目 # 给定一棵二叉树，判断其是否为高度平衡的二叉树。
+高度平衡二叉树定义为：每个节点的左右两个子树的高度差的绝对值不超过1。
+思路 # 编写代码的过程中会发现，需要类型分别为 boolean 和 int 的两个返回值，对应 以 root 为根节点的树是否高度平衡 和 以 root 为根节点的树的高度 鉴于树高为非负整数，故负整数可用于表示 以 root 为根节点的树非高度平衡 树的高度通过子树的高度计算得出。且负树高具有传递性。 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { /** 以 -1 表示 root 非高度平衡二叉树 */ public int depth(TreeNode root) { if (root == null) return 0; int leftDepth = depth(root.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0111.-Minimum-Depth-of-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -384,6 +420,17 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <description>111. Minimum Depth of Binary Tree # 题目 # 给定一个二叉树，找出其最小深度。
 最小深度是从根节点到最近叶子节点的最短路径上的节点数量。
 思路 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int minDepth(TreeNode root) { if (root == null) return 0; if (root.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0112.-Path-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0112.-Path-Sum/</guid>
+      <description>112. Path Sum # 题目 # 给定二叉树的根节点 root 和一个表示目标和的整数 targetSum。判断该树上是否存在 根节点到叶子节点 的路径，这条路径上所有节点值相加等于目标和 targetSum。
+叶子节点 是指没有子节点的节点。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public boolean hasPathSum(TreeNode root, int targetSum) { if (root == null) return false; if (root.</description>
     </item>
     
     <item>
@@ -525,6 +572,18 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0150.-Evaluate-Reverse-Polish-Notation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0150.-Evaluate-Reverse-Polish-Notation/</guid>
+      <description>150. Evaluate Reverse Polish Notation # 题目 # 给定字符串数组 tokens，表示一个根据 逆波兰表示法 表示的算术表达式。
+返回表达式的值。
+注意：
+有效的算符为 &#39;+&#39;、&#39;-&#39;、&#39;*&#39; 和 &#39;/&#39; 。 每个操作数（运算对象）都可以是一个整数或者另一个表达式。 两个整数之间的除法总是 向零截断 。 表达式中不含除零运算。 输入是一个根据逆波兰表示法表示的算术表达式。 答案及所有中间计算结果可以用 32 位 整数表示。 思路 # 逆波兰表达式主要有以下两个优点： 去掉括号后表达式无歧义。 适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中 代码 # class Solution { public int evalRPN(String[] tokens) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for(String token: tokens) { switch (token) { case &amp;#34;+&amp;#34; : stack.push(stack.pop() + stack.pop()); break; case &amp;#34;-&amp;#34; : int operand_2 = stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -542,6 +601,16 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <description> 191. Number of 1 Bits # 题目 # 编写一个函数，输入是一个无符号整数 (以二进制串的形式)，返回其二进制表达式中数字位数位 &#39;1&#39; 的个数，也称为 汉明重量。
 在 Java 中，整数的表示有以下两个特点：
 没有无符号整数类型，输入和输出都将被指定为有符号整数类型。 编译器使用 二进制补码 表示有符号整数。 思路 # 代码 # public class Solution { public int hamingWeight(int n) { int numOnes = 0; for (int i = 31; i &amp;gt;= 0; i--) { if ( ((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1 ) numOnes += 1; } return numOnes;s } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0199.-Binary-Tree-Right-Side-View/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0199.-Binary-Tree-Right-Side-View/</guid>
+      <description>199. Binary Tree Right Side View # 题目 # 给定一个二叉树的 根节点 root，按照从顶部到底部的顺序，返回从右侧所能看到的节点值。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;Integer&amp;gt; rightSideView(TreeNode root) { List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>
@@ -779,6 +848,16 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</guid>
+      <description>429. N-ary Tree Level Order Traversal # 题目 # 给定一个 N 叉树，返回其节点的 层序遍历。
+思路 # 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _ children; } } class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; levelOrder(Node root) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0430.-Flatten-a-Multilevel-Doubly-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -852,12 +931,34 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</guid>
+      <description>515. Find Largest Value in Each Tree Row # 题目 # 给定一棵二叉树的根节点 root，找出该二叉树中每一层的最大值。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;Integer&amp;gt; largestValues(TreeNode root) { List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</guid>
       <description>541. Reverse String II # 题目 # 给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
 如果剩余字符少于 k 个，则将剩余字符全部反转。 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。 思路 # 代码 # class Solution { public void reversePart(char[] charArray, int left, int right) { while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left += 1; right -= 1; } } public String reverseStr(String s, int k) { char[] charArray = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</guid>
+      <description>617. Merge Two Binary Trees # 题目 # 给定两棵二叉树 root1 和 root2。
+想象一下，当泥浆其中一棵覆盖到另一棵上时，两棵树上的一些节点将会重叠（而另一些不会）。需要将这两棵树合并成一棵新二叉树。合并的规则是：如果两个节点重叠，那么将这两个节点的值相加作为合并后节点的新值；否则，不为 null 的节点将直接作为新二叉树的节点。
+返回合并后的二叉树。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode (int val) { this.val = val; } TreeNode (int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public TreeNode mergeTrees(TreeNode root1, TreeNode root2) { if (root1 == null) return root2; if (root2 == null) return root1; root1.</description>
     </item>
     
     <item>
@@ -871,6 +972,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 你的实现应该支持如下操作：
 MyCircularQueue(k): 构造器，设置队列长度为 k 。 Front: 从队首获取元素。如果队列为空，返回 -1 。 Rear: 获取队尾元素。如果队列为空，返回 -1 。 enQueue(value): 向循环队列插入一个元素。如果成功插入则返回真。 deQueue(): 从循环队列中删除一个元素。如果成功删除则返回真。 isEmpty(): 检查循环队列是否为空。 isFull(): 检查循环队列是否已满。 思路 # 基于链表的实现较为简单，而基于数组的实现相对复杂。
 代码 # class MyCircularQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode (int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } private int size; private int capacity; ListNode sentinel; public MyCircularQueue(int k) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0637.-Average-of-Levels-in-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0637.-Average-of-Levels-in-Binary-Tree/</guid>
+      <description>637. Average of Levels in Binary Tree # 题目 # 给定一个非空二叉树的根节点 root，以数组的形式返回每一层节点的平均值。
+与实际答案相差 10^-5 以内的答案可以被接受。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode (int val) { this.val = val; } TreeNode (int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public List&amp;lt;Double&amp;gt; averageOfLevels(TreeNode root) { List&amp;lt;Double&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>
@@ -1007,6 +1119,17 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description>876. Middle of the Linked List # 题目 # 给定一个头结点为head的非空单链表，返回链表的中间结点。
 如果有两个中间结点，则返回第二个中间结点。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode middleNode(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast != null &amp;amp;&amp;amp; fast.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</guid>
+      <description>965. Univalued Binary Tree # 题目 # 如果二叉树的每个节点都具有相同的值，那么该二叉树就是 单值 二叉树。
+只有给定的树是单值二叉树时，才返回 true，否则返回 false。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public boolean preOrderTraversal(TreeNode root, int uniVal) { if (root == null) return true; if (root.</description>
     </item>
     
     <item>
@@ -1288,6 +1411,17 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</guid>
+      <description> 2236. Root Equals Sum of Children # 题目 # 给定二叉树的根节点 root，该二叉树恰由三个节点组成：根节点、左子节点、右子节点。
+如果根节点值等于两个子节点值值和，返回 true，否则返回 false。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public boolean checkTree(TreeNode root) { return root.val == root.left.val + root.right.val; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1319,6 +1453,19 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
 另外给定一个整数链表的头节点 head。
 生成并返回一个大小为 m x n 的螺旋矩阵，矩阵包含链表中的所有整数。链表中的整数从矩阵左上角开始、顺时针按螺旋顺序填充。如果还存在剩余的空格，则用 -1 填充。
 思路 # 代码 # class Solution { public int getValue(ListNode[] ptr) { if (ptr[0] == null) return -1; int value = ptr[0].val; ptr[0] = ptr[0].next; return value; } public void helper(int[][] result, int top, int bottom, int left, int right, ListNode[] ptr) { if (top &amp;gt; bottom || left &amp;gt; right) return; if (top == bottom) { for (int j=left; j&amp;lt;=right; j++) result[top][j] = getValue(ptr); return; } if (left == right) { for (int i=top; i&amp;lt;=bottom; i++) result[i][left] = getValue(ptr); return; } else { for (int j=left; j&amp;lt;right; j++) result[top][j] = getValue(ptr); for (int i=top; i&amp;lt;bottom; i++) result[i][right] = getValue(ptr); for (int j=right; j&amp;gt;left; j--) result[bottom][j] = getValue(ptr); for (int i=bottom; i&amp;gt;top; i--) result[i][left] = getValue(ptr); } helper(result, top+1, bottom-1, left+1, right-1, ptr); } public int[][] spiralMatrix(int m, int n, ListNode head) { int[][] result = new int[m][n]; ListNode[] ptr = new ListNode[1]; ptr[0] = head; helper(result, 0, m-1, 0, n-1, ptr); return result; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2331.-Evaluate-Boolean-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2331.-Evaluate-Boolean-Binary-Tree/</guid>
+      <description>2331. Evaluate Boolean Binary Tree # 题目 # 给定一棵 完整二叉树 的根，这棵树有以下特征：
+叶子节点 要么值为 0 要么值为 1，其中 0 表示 false，1 表示 true。 非叶子节点 要么值为 2 要么值为 3，其中 2 表示逻辑或 OR，3表示逻辑与 AND。 计算一个节点的值方式如下：
+如果节点是个叶子节点，那么节点的 值 为它本身，即 true 或 false。 否则，计算 两个孩子的节点值，然后将该节点的运算符对两个孩子值进行 运算。 返回根节点 root 的不二运算值。
+完整二叉树 是每个节点有 0 个或者 2 个孩子的二叉树。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.</description>
     </item>
     
     <item>
@@ -1440,6 +1587,36 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/27.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/27.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/</guid>
+      <description> 剑指 Offer 27. 二叉树的镜像 # 题目 # 给定一棵二叉树，输出其镜像。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public TreeNode mirrorTree(TreeNode root) { if (root == null || (root.left == null &amp;amp;&amp;amp; root.right == null)) return root; TreeNode temp = mirrorTree(root.left); root.left = mirrorTree(root.right); root.right = temp; return root; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>剑指 Offer 22. 对称的二叉树 # 题目 # 请实现一个函数，用来判断一棵二叉树是否是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public boolean isTwoSymmetric(TreeNode root1, TreeNode root2) { if (root1 == null) return root2 == null; if (root2 == null) return false; return (root1.val == root2.val) &amp;amp; isTwoSymmetric(root1.left, root2.right) &amp;amp; isTwoSymmetric(root1.right, root2.left); } public boolean isSymmetric(TreeNode root) { if (root == null) return true; return isTwoSymmetric(root.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/55.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/55.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/</guid>
+      <description> 剑指 Offer 55. 二叉树的深度 # 题目 # 给定一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public int maxDepth(TreeNode root) { if (root == null) return 0; return 1 + Math.max(maxDepth(root.left), maxDepth(root.right)); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1470,6 +1647,17 @@ MAllk33</description>
       <description>面试题 03.03. 堆盘子 # 题目 # 堆盘子。设想有一堆盘子，堆太高可能会倒下来。因此，在现实生活中，盘子堆到一定高度时，就会堆另外一堆盘子。实现数据结构 SetOfStacks，模拟这种行为。SetOfStacks 应该由多个栈组成，并在在前一个栈填满时新建一个栈。此外，SetOfStacks.push()和 SetOfStacks.pop() 应该与普通栈的操作方法相同 (即，pop 的返回值应该与只有一个栈时的情况一致)。此外，实现 popAt(int index) 方法，根据指定的子栈，执行 pop 操作。
 当某个栈为空时，应删除该栈。当栈中没有元素或不存在该栈时，pop，popAt 应返回 -1。
 思路 # 代码 # class StackOfPlates { private class stackNode { public int val; public stackNode next; stackNode(int val, stackNode next) { this.val = val; this.next = next; } } private class Stack { private int size; private int capacity; private stackNode sentinel; Stack(int capacity) { this.size = 0; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/</guid>
+      <description>面试题 04.03. 特定深度节点链表 # 题目 # 给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表。
+返回一个包含所有深度的链表的数组。
+思路 # 层序遍历变体 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } } public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode[] listOfDepth(TreeNode tree) { /* 用queue存储单链表头节点，而后将queue转为ListNode[] */ Queue&amp;lt;ListNode&amp;gt; ansQueue = new LinkedList&amp;lt;&amp;gt;(); /* 二叉树的层序遍历 */ Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>

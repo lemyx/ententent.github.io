@@ -17,5 +17,18 @@
 思路 # 代码 # class Solution { public int getValue(ListNode[] ptr) { if (ptr[0] == null) return -1; int value = ptr[0].val; ptr[0] = ptr[0].next; return value; } public void helper(int[][] result, int top, int bottom, int left, int right, ListNode[] ptr) { if (top &amp;gt; bottom || left &amp;gt; right) return; if (top == bottom) { for (int j=left; j&amp;lt;=right; j++) result[top][j] = getValue(ptr); return; } if (left == right) { for (int i=top; i&amp;lt;=bottom; i++) result[i][left] = getValue(ptr); return; } else { for (int j=left; j&amp;lt;right; j++) result[top][j] = getValue(ptr); for (int i=top; i&amp;lt;bottom; i++) result[i][right] = getValue(ptr); for (int j=right; j&amp;gt;left; j--) result[bottom][j] = getValue(ptr); for (int i=bottom; i&amp;gt;top; i--) result[i][left] = getValue(ptr); } helper(result, top+1, bottom-1, left+1, right-1, ptr); } public int[][] spiralMatrix(int m, int n, ListNode head) { int[][] result = new int[m][n]; ListNode[] ptr = new ListNode[1]; ptr[0] = head; helper(result, 0, m-1, 0, n-1, ptr); return result; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2331.-Evaluate-Boolean-Binary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2331.-Evaluate-Boolean-Binary-Tree/</guid>
+      <description>2331. Evaluate Boolean Binary Tree # 题目 # 给定一棵 完整二叉树 的根，这棵树有以下特征：
+叶子节点 要么值为 0 要么值为 1，其中 0 表示 false，1 表示 true。 非叶子节点 要么值为 2 要么值为 3，其中 2 表示逻辑或 OR，3表示逻辑与 AND。 计算一个节点的值方式如下：
+如果节点是个叶子节点，那么节点的 值 为它本身，即 true 或 false。 否则，计算 两个孩子的节点值，然后将该节点的运算符对两个孩子值进行 运算。 返回根节点 root 的不二运算值。
+完整二叉树 是每个节点有 0 个或者 2 个孩子的二叉树。
+思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.</description>
+    </item>
+    
   </channel>
 </rss>
