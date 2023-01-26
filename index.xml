@@ -931,6 +931,20 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</guid>
+      <description>495. Teemo Attacking # 题目 # 在《英雄联盟》的世界中，有一个叫 “提莫” 的英雄。他的攻击可以让敌方英雄艾希（编者注：寒冰射手）进入中毒状态。
+当提莫攻击艾希，艾希的中毒状态正好持续 duration 秒。
+正式地讲，提莫在 t 发起发起攻击意味着艾希在时间区间 [t, t + duration - 1]（含 t 和 t + duration - 1）处于中毒状态。如果提莫在中毒影响结束 前 再次攻击，中毒状态计时器将会 重置 ，在新的攻击之后，中毒影响将会在 duration 秒后结束。
+给你一个 非递减 的整数数组 timeSeries ，其中 timeSeries[i] 表示提莫在 timeSeries[i] 秒时对艾希发起攻击，以及一个表示中毒持续时间的整数 duration 。
+返回艾希处于中毒状态的 总 秒数。
+思路 # 代码 # class Solution { public int findPoisonedDuration(int[] timeSeries, int duration) { int lasting = 0; for (int i = 0; i &amp;lt; timeSeries.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -947,6 +961,19 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</guid>
       <description>541. Reverse String II # 题目 # 给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
 如果剩余字符少于 k 个，则将剩余字符全部反转。 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。 思路 # 代码 # class Solution { public void reversePart(char[] charArray, int left, int right) { while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left += 1; right -= 1; } } public String reverseStr(String s, int k) { char[] charArray = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/</guid>
+      <description> 566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。
+给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。
+重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。
+如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
+思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &amp;lt; r; i++) { for (int j = 0; j &amp;lt; c; j++) { int index = i * c + j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } </description>
     </item>
     
     <item>
@@ -1097,6 +1124,30 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description>0817. Linked List Components # 题目 # 给定链表头结点 head，该链表上的每个结点都有一个 唯一的整型值。同时给定列表 nums，该列表是上述链表中整型值的一个子集。
 返回列表 nums 中组件的个数，这里对组件的定义为：链表中一段最长连续结点的值（该值必须在列表 nums 中）构成的集合。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int numComponents(ListNode head, int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for(int x: nums) set.add(x); boolean flag = false; int num = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</guid>
+      <description>0832. Flipping an Image # 题目 # 给定一个 n x n 的二进制矩阵 image ，先 水平 翻转图像，然后 反转 图像并返回 结果 。
+水平翻转图片就是将图片的每一行都进行翻转，即逆序。
+例如，水平翻转 [1,1,0] 的结果是 [0,1,1]。 反转图片的意思是图片中的 0 全部被 1 替换， 1 全部被 0 替换。
+例如，反转 [0,1,1] 的结果是 [1,0,0]。
+思路 # 代码 # class Solution { public void swap(int[][] image, int r1, int c1, int r2, int c2) { /** 对于数组元素来讲，这里的最终结果都是0*/ image[r1][c1] ^= image[r2][c2]; image[r2][c2] ^= image[r1][c1]; image[r1][c1] ^= image[r2][c2]; } public int[][] flipAndInvertImage(int[][] image) { int M = image.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0867.-Transpose-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0867.-Transpose-Matrix/</guid>
+      <description> 0867. Transpose Matrix # 题目 # 给定一个二维整数数组 matrix，返回 matrix 的 转置矩阵。
+矩阵的 转置 是指将矩阵的主对角线翻转，交换矩阵的行索引与列索引。
+思路 # 代码 # class Solution { public int[][] transpose(int[][] matrix) { int m = matrix.length, n = matrix[0].length; int[][] ans = new int[n][m]; for (int i = 0; i &amp;lt; n; i++) { for (int j = 0; j &amp;lt; m; j++) { ans[i][j] = matrix[j][i]; } } return ans; } } </description>
     </item>
     
     <item>

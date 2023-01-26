@@ -88,5 +88,19 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</guid>
+      <description>495. Teemo Attacking # 题目 # 在《英雄联盟》的世界中，有一个叫 “提莫” 的英雄。他的攻击可以让敌方英雄艾希（编者注：寒冰射手）进入中毒状态。
+当提莫攻击艾希，艾希的中毒状态正好持续 duration 秒。
+正式地讲，提莫在 t 发起发起攻击意味着艾希在时间区间 [t, t + duration - 1]（含 t 和 t + duration - 1）处于中毒状态。如果提莫在中毒影响结束 前 再次攻击，中毒状态计时器将会 重置 ，在新的攻击之后，中毒影响将会在 duration 秒后结束。
+给你一个 非递减 的整数数组 timeSeries ，其中 timeSeries[i] 表示提莫在 timeSeries[i] 秒时对艾希发起攻击，以及一个表示中毒持续时间的整数 duration 。
+返回艾希处于中毒状态的 总 秒数。
+思路 # 代码 # class Solution { public int findPoisonedDuration(int[] timeSeries, int duration) { int lasting = 0; for (int i = 0; i &amp;lt; timeSeries.</description>
+    </item>
+    
   </channel>
 </rss>

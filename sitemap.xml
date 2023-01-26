@@ -368,11 +368,17 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</loc>
     <lastmod>2023-01-21T23:49:39+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</loc>
+    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</loc>
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</loc>
     <lastmod>2023-01-16T10:22:54+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/</loc>
+    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</loc>
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
@@ -412,6 +418,12 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</loc>
     <lastmod>2023-01-09T17:36:24+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</loc>
+    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0867.-Transpose-Matrix/</loc>
+    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0868.-Binary-Gap/</loc>
     <lastmod>2023-01-19T09:36:25+08:00</lastmod>
@@ -566,7 +578,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-25T09:26:03+08:00</lastmod>
+    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>
