@@ -98,6 +98,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/LCP/</loc>
+    <lastmod>2023-01-27T23:02:57+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/templates/reservoir/</loc>
     <lastmod>2023-01-05T18:35:50+08:00</lastmod>
   </url><url>
@@ -431,6 +434,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</loc>
     <lastmod>2023-01-09T17:36:24+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</loc>
+    <lastmod>2023-01-27T23:02:57+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</loc>
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
   </url><url>
@@ -476,6 +482,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1670.-Design-Front-Middle-Back-Queue/</loc>
     <lastmod>2023-01-08T18:31:59+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/</loc>
+    <lastmod>2023-01-27T23:02:57+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</loc>
     <lastmod>2023-01-21T23:49:39+08:00</lastmod>
   </url><url>
@@ -500,6 +509,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/</loc>
     <lastmod>2023-01-08T18:48:04+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2169.-Count-Operations-to-Obtain-Zero/</loc>
+    <lastmod>2023-01-27T23:02:57+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</loc>
     <lastmod>2023-01-09T17:36:24+08:00</lastmod>
   </url><url>
@@ -523,6 +535,8 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2487.-Remove-Nodes-From-Linked-List/</loc>
     <lastmod>2023-01-05T10:55:55+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/reference/buttons/</loc>
     <lastmod>2023-01-02T19:52:07+08:00</lastmod>
@@ -578,7 +592,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-27T00:07:46+08:00</lastmod>
+    <lastmod>2023-01-27T23:02:57+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>

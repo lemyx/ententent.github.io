@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0900-to-0999/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</guid>
+      <description>933. Number of Recent Calls # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
+请你实现 RecentCounter 类：
+RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 代码 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.poll(); return queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

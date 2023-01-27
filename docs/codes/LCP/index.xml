@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/LCP/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/LCP/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</guid>
+      <description>LCP 50. 宝石补给 # 题目 # 欢迎各位勇者来到力扣新手村，在开始试炼之前，请各位勇者先进行「宝石补给」。
+每位勇者初始都拥有一些能量宝石， gem[i] 表示第 i 位勇者的宝石数量。现在这些勇者们进行了一系列的赠送，operations[j] = [x, y] 表示在第 j 次的赠送中 第 x 位勇者将自己一半的宝石（需向下取整）赠送给第 y 位勇者。
+在完成所有的赠送后，请找到拥有最多宝石的勇者和拥有最少宝石的勇者，并返回他们二者的宝石数量之差。
+思路 # 模拟 代码 # class Solution { public int giveGem(int[] gem, int[][] operations) { for (int i = 0; i &amp;lt; operations.length; i++) { int giver = operations[i][0], claimant = operations[i][1]; int numGems = gem[giver] / 2; gem[giver] -= numGems; gem[claimant] += numGems; } int minGems = gem[0], maxGems = gem[0]; for (int i = 0; i &amp;lt; gem.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1174,6 +1174,17 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</guid>
+      <description>933. Number of Recent Calls # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
+请你实现 RecentCounter 类：
+RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 代码 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.poll(); return queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1345,6 +1356,18 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/</guid>
+      <description>1700. Number of Students Unable to Eat Lunch # 题目 # 学校的自助午餐提供圆形和方形的三明治，分别用数字 0 和 1 表示。所有学生站在一个队列里，每个学生要么喜欢圆形的要么喜欢方形的。
+餐厅里三明治的数量与学生的数量相同。所有三明治都放在一个 栈 里，每一轮：
+如果队列最前面的学生 喜欢 栈顶的三明治，那么会 拿走它 并离开队列。 否则，这名学生会 放弃这个三明治 并回到队列的尾部。 这个过程会一直持续到队列里所有学生都不喜欢栈顶的三明治为止。 给你两个整数数组 students 和 sandwiches ，其中 sandwiches[i] 是栈里面第 i 个三明治的类型（i = 0 是栈的顶部）， students[j] 是初始队列里第 j 名学生对三明治的喜好（j = 0 是队列的最开始位置）。请你返回无法吃午餐的学生数量。
+思路 # 模拟 计数 代码 # 模拟 # class Solution { public int countStudents(int[] students, int[] sandwiches) { /** 初始化三明治 */ Stack&amp;lt;Integer&amp;gt; sandwichesStack = new Stack&amp;lt;&amp;gt;(); for (int i = sandwiches.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1439,6 +1462,18 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2169.-Count-Operations-to-Obtain-Zero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2169.-Count-Operations-to-Obtain-Zero/</guid>
+      <description> 2169. Count Operations to Obtain Zero # 题目 # 给你两个 非负 整数 num1 和 num2。
+每一步 操作 中，如果 num1 &amp;gt;= num2 ，你必须用 num1 减 num2 ；否则，你必须用 num2 减 num1 。
+返回使 num1 = 0 或 num2 = 0 的 操作数 。
+思路 # 模拟 代码 # class Solution { public int countOperations(int num1, int num2) { int step = 0; while (num != 0 &amp;amp;&amp;amp; num2 != 0) { if (num1 &amp;gt;= num2) num1 -= num2; else num2 -= num1; step += 1; } return step; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1528,6 +1563,18 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
       <description>2487. Remove Nodes From Linked List # 题目 # 给定链表头节点head，对于链表中的每个节点node，如果其右侧存在一个具有严格更大值的节点，则移除node。
 返回修改后链表的头节点head。
 思路 # 代码 # 反转&amp;amp;移除 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution{ public ListNode reverseList(ListNode head) { if (head == null || head.next == null) return head; ListNode newHead = reverseList(head.next); head.next.next = head; head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</guid>
+      <description>LCP 50. 宝石补给 # 题目 # 欢迎各位勇者来到力扣新手村，在开始试炼之前，请各位勇者先进行「宝石补给」。
+每位勇者初始都拥有一些能量宝石， gem[i] 表示第 i 位勇者的宝石数量。现在这些勇者们进行了一系列的赠送，operations[j] = [x, y] 表示在第 j 次的赠送中 第 x 位勇者将自己一半的宝石（需向下取整）赠送给第 y 位勇者。
+在完成所有的赠送后，请找到拥有最多宝石的勇者和拥有最少宝石的勇者，并返回他们二者的宝石数量之差。
+思路 # 模拟 代码 # class Solution { public int giveGem(int[] gem, int[][] operations) { for (int i = 0; i &amp;lt; operations.length; i++) { int giver = operations[i][0], claimant = operations[i][1]; int numGems = gem[giver] / 2; gem[giver] -= numGems; gem[claimant] += numGems; } int minGems = gem[0], maxGems = gem[0]; for (int i = 0; i &amp;lt; gem.</description>
     </item>
     
     <item>
