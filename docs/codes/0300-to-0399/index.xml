@@ -118,6 +118,16 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0387.-First-Unique-Character-in-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0387.-First-Unique-Character-in-a-String/</guid>
+      <description> 387. First Unique Character in a String # 题目 # 给定一个字符串 s，找到它的第一个不重复的字符，并返回它的索引。如果不存在，则返回 -1。
+思路 # 代码 # class Solution { public int firstUniqChar(String s) { int[] seen = new int[26]; for (int i = 0; i &amp;lt; s.length(); i++) seen[s.charAt(i) - &amp;#39;a&amp;#39;] += 1; for (int i = 0; i &amp;lt; s.length(); i++) if (seen[s.charAt(i) - &amp;#39;a&amp;#39;] == 1) return i; return -1; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0389.-Find-the-Difference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

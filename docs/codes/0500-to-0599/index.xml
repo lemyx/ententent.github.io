@@ -38,5 +38,15 @@
 思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &amp;lt; r; i++) { for (int j = 0; j &amp;lt; c; j++) { int index = i * c + j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/</guid>
+      <description>589. N-ary Tree Preorder Traversal # 题目 # 给定一个 n 叉树的根节点 root，返回其节点值的 前序遍历。
+思路 # 递归 迭代 代码 # 递归 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public void traversal(Node root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; ans.</description>
+    </item>
+    
   </channel>
 </rss>
