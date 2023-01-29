@@ -459,6 +459,18 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</guid>
+      <description>125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
+字母和数字都属于字母数字字符。
+给定字符串 s，判断其是否为 回文串。
+思路 # 代码 # class Solution { public boolean isPalindrome(String s) { int left = 0, right = s.length() - 1; while (left &amp;lt; right) { while (left &amp;lt; s.length() &amp;amp;&amp;amp; Character.isLetterOrDigit(s.charAt(left)) == false) left += 1; while (right &amp;gt;= 0 &amp;amp;&amp;amp; Character.isLetterOfDigit(s.charAt(right)) == false) right -= 1; if (left &amp;gt;= right) return true; if (Character.toLowerCase(s.charAt(left++)) != Character.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -467,6 +479,17 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
 设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
 思路 # x ^ x = 0、 x ^ 0 = x
 代码 # class Solution { public int singleNumber(int[] nums) { int result = 0; for (int num: nums) result = result ^ num; return result; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0137.-Single-Number-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0137.-Single-Number-ii/</guid>
+      <description>137. Single Number ii # 题目 # 给定整数数组 nums，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次。找出并返回只出现了一次的元素。
+设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
+思路 # 位数统计 代码 # class Solution { public int singleNumber(int[] nums) { int[] count = new int[32]; for (int num: nums) { for (int i = 0; i &amp;lt; 32; i++) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) count[i] += 1; } } int ans = 0; for (int i = 0; i &amp;lt; 32; i++) { if (count[i] % 3 == 1) ans ^= (1 &amp;lt;&amp;lt; i); } return ans; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -594,6 +617,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</guid>
+      <description>169. Majority Element # 题目 # 给定一个大小为 n 的数组 nums，返回其中的多数元素。多数元素是指在数组中出现次数 大于 n/2 的元素。
+假定数组非空，且给定的数组总是存在多数元素。
+思路 # 摩尔投票法 代码 # class Solution { public int majorityElement(int[] nums) { int major = -1, count = 0; for (int num: nums) { if (count == 0) { major = num; count = 1; } else if (major == num) { count += 1; } else count -= 1; } return major; } } 致谢 # 田野吹吹风</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -633,8 +667,8 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</guid>
-      <description>203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeElements(ListNode head, int val) { if (head == null) return null; if (head.val == val) return removeElements(head.next, val); else { head.</description>
+      <description> 203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
+思路 # 代码 # class Solution { public void moveZeros(int[] nums) { int slow = 0, fast = 0; while (fast &amp;lt; nums.length) { if (nums[fast] != 0) nums[slow++] = nums[fast]; fast += 1; } while (slow &amp;lt; nums.length) nums[slow++] = 0; } } </description>
     </item>
     
     <item>
@@ -721,6 +755,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</guid>
       <description>268. Missing Number # 题目 # 给定一个包含 [0, n] 中 n 个数的数组 nums，找出 [0, n] 这个范围内没有出现在数组中的那个数。
 思路 # 数学: expectSum - actualSum 异或: x ^ x = 0，expect ^ actual 原地哈希: :question: 代码 # 数学 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } 异或 # class Solution { public int missingNumber(int[] nums) { int whole = 0; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</guid>
+      <description> 283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
+必须在不复制数组的情况下原地对数组进行操作。
+思路 # 代码 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } </description>
     </item>
     
     <item>
@@ -955,6 +1000,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</guid>
+      <description>513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
+假定二叉树至少有一个节点。
+思路 # 层数遍历 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int findBottomLeftValue(TreeNode root) { int ans = root.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -971,6 +1027,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</guid>
       <description>541. Reverse String II # 题目 # 给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
 如果剩余字符少于 k 个，则将剩余字符全部反转。 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。 思路 # 代码 # class Solution { public void reversePart(char[] charArray, int left, int right) { while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left += 1; right -= 1; } } public String reverseStr(String s, int k) { char[] charArray = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</guid>
+      <description>559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
+最大深度是指从根节点到最远叶子节点的最长路径上的节点总数。
+思路 # 层序遍历 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public int maxDepth(Node root) { if (root == null) return 0; int depth = 0; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>
@@ -994,6 +1061,16 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/</guid>
       <description>589. N-ary Tree Preorder Traversal # 题目 # 给定一个 n 叉树的根节点 root，返回其节点值的 前序遍历。
 思路 # 递归 迭代 代码 # 递归 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public void traversal(Node root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/</guid>
+      <description>590. N-ary Tree Postorder Traversal # 题目 # 给定一个 n 叉树的根节点 root，返回其节点值的 后序遍历。
+思路 # 递归 迭代 代码 # 递归 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public void traversal(Node root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; for (Node child: root.</description>
     </item>
     
     <item>
@@ -1315,6 +1392,18 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <description>1342. Number of Steps to Reduce a Number to Zero # 题目 # 给你一个非负整数 nums，返回将它变为 0 所需要的步数。
 如果当前数字是偶数，则将它除以 2，否则减去 1。
 思路 # 模拟 数学 + 位运算 可从如下角度考虑模拟过程: 若 nums 最低位非 1，则进行右移 若 nums 最低位为 1，则消减最低位的 1 总操作次数等于: 最高位 1 的右移次数 + nums 的二进制表示中 1 的个数 代码 # 模拟 # class Solution { public int numberOfSteps(int num) { int step = 0; while (num != 0 &amp;amp;&amp;amp; ++step &amp;gt; 0) num = (num &amp;amp; 1 == 0) ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1394.-Find-Lucky-Integer-in-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1394.-Find-Lucky-Integer-in-an-Array/</guid>
+      <description> 1394. Find Lucky Integer in an Array # 题目 # 在整数数组中，如果一个整数的出现频次和它的数值大小相等，则称此整数为 幸运数。
+给定整数数组 arr，从中找出并返回一个幸运数。
+若数组中存在多个幸运数，则返回最大的那个。若数组中不含幸运数，返回 -1。
+思路 # 代码 # class Solution { public int findLucky(int[] arr) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: arr) map.put(num, map.getOrDefault(num, 0) + 1); int maxLucky = -1; for (Integer x: map.keySet()) if (map.get(x) == x) maxLucky = Math.max(x, maxLucky); return maxLucky; } } </description>
     </item>
     
     <item>
@@ -1769,6 +1858,18 @@ s[i] 仅包含小写字母。
 如果不使用额外的数据结构，会很加分。
 思路 # 哈希 位运算 代码 # 哈希 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } 致谢 # 珍珠好好吃
 MAllk33</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</guid>
+      <description>面试题 01.04. 回文排列 # 题目 # 给定一个字符串，编写一个函数判定其是否为某个回文串的排列之一。
+回文串是指正反两个方向都一样的单词或短语。排列是指字母的重新排列。
+回文串不一定是字典中的单词。
+思路 # 若 s.length() 为奇数，只允许存在一个元素仅出现一次。 若 s.length() 为偶数，不允许出现存在次数为偶数的元素。 代码 # class Solution { public boolean canPermutePalindrome(String s) { Map&amp;lt;Character, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1); int numOdd = 0; for (Integer cnt: map.values()) if (cnt % 2 == 1) numOdd += 1; return s.length() % 2 == 0 ?</description>
     </item>
     
     <item>

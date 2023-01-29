@@ -245,8 +245,14 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/</loc>
     <lastmod>2023-01-24T11:25:19+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</loc>
     <lastmod>2023-01-17T23:10:26+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0137.-Single-Number-ii/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</loc>
     <lastmod>2023-01-07T15:51:38+08:00</lastmod>
@@ -281,6 +287,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</loc>
     <lastmod>2023-01-18T19:22:04+08:00</lastmod>
   </url><url>
@@ -291,7 +300,7 @@
     <lastmod>2023-01-15T20:14:10+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</loc>
-    <lastmod>2023-01-03T08:15:13+08:00</lastmod>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/</loc>
     <lastmod>2023-01-03T08:15:13+08:00</lastmod>
@@ -316,6 +325,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</loc>
     <lastmod>2023-01-17T23:10:26+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</loc>
     <lastmod>2023-01-02T16:50:32+08:00</lastmod>
@@ -377,17 +389,26 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</loc>
     <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</loc>
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</loc>
     <lastmod>2023-01-16T10:22:54+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/</loc>
     <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/</loc>
     <lastmod>2023-01-28T08:29:25+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</loc>
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
@@ -472,6 +493,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</loc>
     <lastmod>2023-01-18T19:22:04+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1394.-Find-Lucky-Integer-in-an-Array/</loc>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</loc>
     <lastmod>2023-01-06T11:56:05+08:00</lastmod>
@@ -586,6 +610,8 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/</loc>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</loc>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</loc>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.03.-%E5%A0%86%E7%9B%98%E5%AD%90/</loc>
@@ -604,7 +630,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-01-28T08:29:25+08:00</lastmod>
+    <lastmod>2023-01-29T09:29:54+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>

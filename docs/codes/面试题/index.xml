@@ -20,6 +20,18 @@ MAllk33</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</guid>
+      <description>面试题 01.04. 回文排列 # 题目 # 给定一个字符串，编写一个函数判定其是否为某个回文串的排列之一。
+回文串是指正反两个方向都一样的单词或短语。排列是指字母的重新排列。
+回文串不一定是字典中的单词。
+思路 # 若 s.length() 为奇数，只允许存在一个元素仅出现一次。 若 s.length() 为偶数，不允许出现存在次数为偶数的元素。 代码 # class Solution { public boolean canPermutePalindrome(String s) { Map&amp;lt;Character, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1); int numOdd = 0; for (Integer cnt: map.values()) if (cnt % 2 == 1) numOdd += 1; return s.length() % 2 == 0 ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

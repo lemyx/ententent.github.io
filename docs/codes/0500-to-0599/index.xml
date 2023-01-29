@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0500-to-0599/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</guid>
+      <description>513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
+假定二叉树至少有一个节点。
+思路 # 层数遍历 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int findBottomLeftValue(TreeNode root) { int ans = root.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -23,6 +34,17 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</guid>
       <description>541. Reverse String II # 题目 # 给定一个字符串 s 和一个整数 k，从字符串开头算起，每计数至 2k 个字符，就反转这 2k 字符中的前 k 个字符。
 如果剩余字符少于 k 个，则将剩余字符全部反转。 如果剩余字符小于 2k 但大于或等于 k 个，则反转前 k 个字符，其余字符保持原样。 思路 # 代码 # class Solution { public void reversePart(char[] charArray, int left, int right) { while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left += 1; right -= 1; } } public String reverseStr(String s, int k) { char[] charArray = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</guid>
+      <description>559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
+最大深度是指从根节点到最远叶子节点的最长路径上的节点总数。
+思路 # 层序遍历 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public int maxDepth(Node root) { if (root == null) return 0; int depth = 0; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
     <item>
@@ -46,6 +68,16 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/</guid>
       <description>589. N-ary Tree Preorder Traversal # 题目 # 给定一个 n 叉树的根节点 root，返回其节点值的 前序遍历。
 思路 # 递归 迭代 代码 # 递归 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public void traversal(Node root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/</guid>
+      <description>590. N-ary Tree Postorder Traversal # 题目 # 给定一个 n 叉树的根节点 root，返回其节点值的 后序遍历。
+思路 # 递归 迭代 代码 # 递归 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public void traversal(Node root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; for (Node child: root.</description>
     </item>
     
   </channel>

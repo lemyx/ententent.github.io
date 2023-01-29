@@ -129,6 +129,18 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</guid>
+      <description>125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
+字母和数字都属于字母数字字符。
+给定字符串 s，判断其是否为 回文串。
+思路 # 代码 # class Solution { public boolean isPalindrome(String s) { int left = 0, right = s.length() - 1; while (left &amp;lt; right) { while (left &amp;lt; s.length() &amp;amp;&amp;amp; Character.isLetterOrDigit(s.charAt(left)) == false) left += 1; while (right &amp;gt;= 0 &amp;amp;&amp;amp; Character.isLetterOfDigit(s.charAt(right)) == false) right -= 1; if (left &amp;gt;= right) return true; if (Character.toLowerCase(s.charAt(left++)) != Character.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -137,6 +149,17 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
 设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
 思路 # x ^ x = 0、 x ^ 0 = x
 代码 # class Solution { public int singleNumber(int[] nums) { int result = 0; for (int num: nums) result = result ^ num; return result; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0137.-Single-Number-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0137.-Single-Number-ii/</guid>
+      <description>137. Single Number ii # 题目 # 给定整数数组 nums，除某个元素仅出现 一次 外，其余每个元素都恰出现 三次。找出并返回只出现了一次的元素。
+设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
+思路 # 位数统计 代码 # class Solution { public int singleNumber(int[] nums) { int[] count = new int[32]; for (int num: nums) { for (int i = 0; i &amp;lt; 32; i++) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) count[i] += 1; } } int ans = 0; for (int i = 0; i &amp;lt; 32; i++) { if (count[i] % 3 == 1) ans ^= (1 &amp;lt;&amp;lt; i); } return ans; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -260,6 +283,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</guid>
       <description>160. Intersection of Two Linked Lists # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回null。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</guid>
+      <description>169. Majority Element # 题目 # 给定一个大小为 n 的数组 nums，返回其中的多数元素。多数元素是指在数组中出现次数 大于 n/2 的元素。
+假定数组非空，且给定的数组总是存在多数元素。
+思路 # 摩尔投票法 代码 # class Solution { public int majorityElement(int[] nums) { int major = -1, count = 0; for (int num: nums) { if (count == 0) { major = num; count = 1; } else if (major == num) { count += 1; } else count -= 1; } return major; } } 致谢 # 田野吹吹风</description>
     </item>
     
     <item>

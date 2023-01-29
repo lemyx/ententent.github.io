@@ -25,8 +25,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</guid>
-      <description>203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeElements(ListNode head, int val) { if (head == null) return null; if (head.val == val) return removeElements(head.next, val); else { head.</description>
+      <description> 203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
+思路 # 代码 # class Solution { public void moveZeros(int[] nums) { int slow = 0, fast = 0; while (fast &amp;lt; nums.length) { if (nums[fast] != 0) nums[slow++] = nums[fast]; fast += 1; } while (slow &amp;lt; nums.length) nums[slow++] = 0; } } </description>
     </item>
     
     <item>
@@ -113,6 +113,17 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</guid>
       <description>268. Missing Number # 题目 # 给定一个包含 [0, n] 中 n 个数的数组 nums，找出 [0, n] 这个范围内没有出现在数组中的那个数。
 思路 # 数学: expectSum - actualSum 异或: x ^ x = 0，expect ^ actual 原地哈希: :question: 代码 # 数学 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } 异或 # class Solution { public int missingNumber(int[] nums) { int whole = 0; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</guid>
+      <description> 283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
+必须在不复制数组的情况下原地对数组进行操作。
+思路 # 代码 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } </description>
     </item>
     
   </channel>
