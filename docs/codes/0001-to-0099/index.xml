@@ -11,8 +11,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</guid>
-      <description>1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.</description>
+      <description>0001. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target。
+在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+假定每种输入只会对应一个答案。
+数组中同一个元素在答案里不能重复出现。
+思路 # 哈希 # 遍历数组，对于元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 HashMap 可实现对于 元素是否被访问过 的判断。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] ans = new int[2]; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.</description>
     </item>
     
     <item>
@@ -21,8 +24,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/</guid>
-      <description>2. Add Two Numbers # 题目 # 给定两个非空的链表，表示两个非负的整数。它们每位数字都是按照逆序的方式存储的，并且每个节点只能存储一位数字。 将两个数相加，并以相同形式返回一个表示和的链表。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode helper(ListNode l1, ListNode l2, int carry) { if (l1 == null &amp;amp;&amp;amp; l2 == null) { return carry != 0 ? new ListNode(carry, null) : null; } else if (l1 !</description>
+      <description>0002. Add Two Numbers # 题目 # 给定两个 非空 链表，表示两个非负整数。 每位数字均按 逆序 方式存储，每个节点只存储一位数字。 将两个数相加，并以相同形式返回一个表示和的链表。 假定除数字 0 之外，这两个数均不会以 0 开头。 解释 342 + 465 = 807
+思路 # 模拟 # 代码 # 模拟 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode recursive(ListNode l1, ListNode l2, int carry) { if (l1 == null &amp;amp;&amp;amp; l2 == null) { return carry !</description>
     </item>
     
     <item>
@@ -31,8 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</guid>
-      <description>19. Remove Nth Node from End of List # 题目 # 给定链表，要求删除链表的倒数第 n 个结点，并且返回链表的头结点。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeNthFromEnd(ListNode head, int n) { ListNode sentinel = new ListNode(-1, head); ListNode slow = sentinel, fast = slow; for (int i=0; i&amp;lt;n+1; i++) fast = fast.</description>
+      <description>0019. Remove Nth Node from End of List # 题目 # 删除给定链表的倒数第 n 个节点，并且返回头节点。 尝试使用一趟扫描实现。 思路 # 双指针 # 若要删除单链表的倒数第 n 个节点，需定位单链表的倒数第 n + 1 个节点。 考虑快慢指针，令快指针先走 n + 1步，之后双指针同步前进至快指针为空。 此时慢指针指向单链表的倒数第 n + 1 个节点。 设置哨兵节点有助于简化算法实现。 代码 # 双指针 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeNthFromEnd(ListNode head, int n) { ListNode sentinel = new ListNode(-1, head), slow = sentinel, fast = sentinel; for (int i=0; i&amp;lt;n+1; i++) fast = fast.</description>
     </item>
     
     <item>
@@ -41,9 +43,12 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</guid>
-      <description>20. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
+      <description>0020. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
 有效字符串需满足:
-左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 栈 # 可使用 栈 求解括号匹配问题 逢左括号入栈，逢右括号出栈 逢右括号 不匹配 / 遇栈空，或遍历结束时栈非空，则括号失配 代码 # 栈 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.</description>
+左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+每个右括号都有一个对应的相同类型的左括号。
+思路 # 栈 # 可使用 栈 求解括号匹配问题 逢左括号入栈，逢右括号出栈 逢右括号 不匹配 / 遇栈空，或遍历结束时栈非空，则括号失配 代码 # 栈 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.</description>
     </item>
     
     <item>
@@ -52,8 +57,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
-      <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeTwoLists(list1.</description>
+      <description>0021. Merge Two Sorted Lists # 题目 # 将两个升序链表合并为一个新的升序链表并返回。 新链表是通过拼接给定的两个链表的所有节点组成的。 思路 # 递归 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.</description>
     </item>
     
     <item>
@@ -62,9 +66,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</guid>
-      <description>23. 合并K个升序链表 # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
+      <description>23. Merge k Sorted Lists # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
 将所有链表合并到一个升序链表中，返回合并后的链表。
-思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.val = val; this.</description>
+思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.</description>
     </item>
     
     <item>

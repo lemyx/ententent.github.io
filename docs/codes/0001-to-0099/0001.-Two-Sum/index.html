@@ -3,22 +3,28 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map.">
+<meta name="description" content="0001. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target。
+在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+假定每种输入只会对应一个答案。
+数组中同一个元素在答案里不能重复出现。
+思路 # 哈希 # 遍历数组，对于元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 HashMap 可实现对于 元素是否被访问过 的判断。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] ans = new int[2]; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i = 0; i &lt; nums.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i=0; i&lt;nums.length; i&#43;&#43;) { if (map." />
+<meta property="og:description" content="0001. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target。
+在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+假定每种输入只会对应一个答案。
+数组中同一个元素在答案里不能重复出现。
+思路 # 哈希 # 遍历数组，对于元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 HashMap 可实现对于 元素是否被访问过 的判断。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] ans = new int[2]; Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;(); for (int i = 0; i &lt; nums." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-17T23:10:26+08:00" />
+<meta property="article:modified_time" content="2023-01-30T08:09:53+08:00" />
 <title>0001. Two Sum | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.f2c9aca5960e639d92a07bbc2f337f4b7abce7c487b70644337b0d14975472c1.js" integrity="sha256-8smspZYOY52SoHu8LzN/S3q858SHtwZEM3sNFJdUcsE=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d35d5b2e412c8f9166db7e95ee138c27d4ce464aab90d6224c72a4a17dcdd127.js" integrity="sha256-011bLkEsj5Fm236V7hOMJ9TORkqrkNYiTHKkoX3N0Sc=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -930,6 +936,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0200-to-0299/0263.-Ugly-Number/" class="">0263. Ugly Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0200-to-0299/0268.-Missing-Number/" class="">0268. Missing Number</a>
   
 
@@ -1194,6 +1213,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/" class="">0445. Add Two Numbers Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/" class="">0448. Find All Numbers Disappeared in an Arry</a>
   
 
         </li>
@@ -1556,6 +1588,32 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/" class="">0725. Split Linked List in Parts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0735.-Asteroid-Collision/" class="">0735. Asteroid Collision</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/" class="">0747. Largest Number at Least Twice of Others</a>
   
 
         </li>
@@ -1962,6 +2020,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/1400-to-1499/1480.-Running-Sum-of-1d-Array/" class="">1480. Running Sum of 1d Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/" class="">1486. Xor Operation in an Array</a>
   
 
@@ -1988,6 +2059,19 @@ https://github.com/alex-shpak/hugo-book
 
           
   <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/" class="">1614. Maximum Nesting Depth of the Parentheses</a>
+  
+
+        </li>
+      
     
       
         <li>
@@ -2805,16 +2889,29 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="1-two-sumhttpsleetcodecnproblemstwo-sum">
+  <article class="markdown"><h1 id="0001-two-sumhttpsleetcodecnproblemstwo-sum">
   
-  <a href="https://leetcode.cn/problems/two-sum">1. Two Sum</a>
-  <a class="anchor" href="#1-two-sumhttpsleetcodecnproblemstwo-sum">#</a>
+  <a href="https://leetcode.cn/problems/two-sum">0001. Two Sum</a>
+  <a class="anchor" href="#0001-two-sumhttpsleetcodecnproblemstwo-sum">#</a>
 </h1>
 <h2 id="题目">
   题目
   <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
 </h2>
-<p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> <code>target</code> 的 <strong>两个</strong> 整数，并返回它们的数组下标。</p>
+<ul>
+<li>
+<p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>。</p>
+</li>
+<li>
+<p>在该数组中找出 <strong>和为目标值</strong> <code>target</code> 的 <strong>两个</strong> 整数，并返回它们的数组下标。</p>
+</li>
+<li>
+<p>假定每种输入只会对应一个答案。</p>
+</li>
+<li>
+<p>数组中同一个元素在答案里不能重复出现。</p>
+</li>
+</ul>
 <h2 id="思路">
   思路
   <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
@@ -2824,9 +2921,9 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#%e5%93%88%e5%b8%8c">#</a>
 </h3>
 <ul>
-<li>遍历数组，每访问到一个数组元素 <code>x</code>，若 <code>target-x</code> 已被访问，则找到 <strong>和为目标值</strong> <code>target</code> 的两个整数。</li>
-<li>可使用 <code>HashSet</code> 实现对于 <strong>元素是否被访问过</strong> 的判断。</li>
-<li>由于题目要返回符合条件的两个整数的 <strong>下标</strong>，因此可在遍历数组时使用 <code>HashMap</code> 建立 <strong>数组元素</strong> 至 <strong>数组下标</strong> 的映射。</li>
+<li>遍历数组，对于元素 <code>x</code>，若 <code>target-x</code> 已被访问，则找到 <strong>和为目标值</strong> <code>target</code> 的两个整数。</li>
+<li>在遍历数组时使用 <code>HashMap</code> 建立 <strong>数组元素</strong> 至 <strong>数组下标</strong> 的映射。</li>
+<li><code>HashMap</code> 可实现对于 <strong>元素是否被访问过</strong> 的判断。</li>
 </ul>
 <h2 id="代码">
   代码
@@ -2838,16 +2935,17 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> <span style="color:#a6e22e">twoSum</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> nums<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> target<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> result <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[]{-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span><span style="color:#f92672">};</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> ans <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">int</span><span style="color:#f92672">[</span><span style="color:#ae81ff">2</span><span style="color:#f92672">];</span>
 </span></span><span style="display:flex;"><span>        Map<span style="color:#f92672">&lt;</span>Integer<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;</span> map <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;();</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> i<span style="color:#f92672">&lt;</span>nums<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">containsKey</span><span style="color:#f92672">(</span>target<span style="color:#f92672">-</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">])</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                result<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> map<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>target<span style="color:#f92672">-</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">]);</span>
-</span></span><span style="display:flex;"><span>                result<span style="color:#f92672">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> i<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span> i <span style="color:#f92672">&lt;</span> nums<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">;</span> i<span style="color:#f92672">++)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>map<span style="color:#f92672">.</span><span style="color:#a6e22e">containsKey</span><span style="color:#f92672">(</span>target <span style="color:#f92672">-</span> nums<span style="color:#f92672">[</span>i<span style="color:#f92672">])</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                ans<span style="color:#f92672">[</span><span style="color:#ae81ff">0</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> map<span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span>target <span style="color:#f92672">-</span> nums<span style="color:#f92672">[</span>i<span style="color:#f92672">]);</span>
+</span></span><span style="display:flex;"><span>                ans<span style="color:#f92672">[</span><span style="color:#ae81ff">1</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> i<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>                map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">],</span> i<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">else</span> map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span>nums<span style="color:#f92672">[</span>i<span style="color:#f92672">],</span> i<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ans<span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></article>
@@ -2859,9 +2957,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/f8ed462eb51eaa1a1ed03e94f70857eb4c6f40a9" title='Last modified by ententent | January 17, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/6713a9c64350a708d6dae1d5903990ad5a322e97" title='Last modified by ententent | January 30, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 17, 2023</span>
+      <span>January 30, 2023</span>
     </a>
   </div>
 

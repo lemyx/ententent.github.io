@@ -7,6 +7,23 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1600-to-1699/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</guid>
+      <description>1614. Maximum Nesting Depth of the Parentheses # 题目 # 有效括号字符串满足下列条件之一
+字符串是一个空字符串 &amp;quot;&amp;quot;，或者是一个不为 &amp;quot;(&amp;quot; 或 &amp;quot;)&amp;quot; 的单字符。
+字符串可以写为 AB（A 与 B 字符串连接），其中 A 和 B 都是 有效括号字符串 。
+字符串可以写为 (A)，其中 A 是一个 有效括号字符串 。
+有效括号字符串 S 的 嵌套深度 depth(S) 定义为：
+depth(&amp;quot;&amp;quot;) = 0
+depth(C) = 0，其中 C 是单个字符的字符串，且该字符不是 &amp;quot;(&amp;quot; 或者 &amp;quot;)&amp;quot;
+depth(A + B) = max(depth(A), depth(B))，其中 A 和 B 都是 有效括号字符串
+depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中 A 是一个 有效括号字符串</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

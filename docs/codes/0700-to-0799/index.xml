@@ -66,6 +66,29 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</guid>
+      <description>735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
+对于数组中的每一个元素，其绝对值表示行星的大小，正负表示行星的移动方向（正表示向右移动，负表示向左移动）。每一颗行星以相同的速度移动。
+找出碰撞后剩下的所有行星。碰撞规则：两个行星相互碰撞，较小的行星会爆炸。如果两颗行星大小相同，则两颗行星都会爆炸。两颗移动方向相同的行星，永远不会发生碰撞。
+思路 # 栈 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</guid>
+      <description>747. Largest Number At Least Twice of Others # 题目 # 给定整数数组 nums ，其中存在 唯一的 最大整数 。
+找出数组中的最大元素并检查它是否 至少是数组中每个其他数字的两倍 。如果是，则返回 最大元素的下标 ，否则返回 -1 。
+思路 # 双指针 # 代码 # 双指针 # class Solution { public int dominantIndex(int[] nums) { if (nums.length == 1) return 0; /** 双指针 */ int first = -1, second = -1; if (nums[0] &amp;gt;= nums[1]) { first = 0; second = 1; } else { first = 1; second = 0; } /** 遍历 */ for (int i = 2; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

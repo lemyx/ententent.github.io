@@ -123,8 +123,11 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0001.-Two-Sum/</guid>
-      <description>1. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target，请你在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
-思路 # 哈希 # 遍历数组，每访问到一个数组元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 可使用 HashSet 实现对于 元素是否被访问过 的判断。 由于题目要返回符合条件的两个整数的 下标，因此可在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] result = new int[]{-1, -1}; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;nums.length; i++) { if (map.</description>
+      <description>0001. Two Sum # 题目 # 给定一个整数数组 nums 和一个整数目标值 target。
+在该数组中找出 和为目标值 target 的 两个 整数，并返回它们的数组下标。
+假定每种输入只会对应一个答案。
+数组中同一个元素在答案里不能重复出现。
+思路 # 哈希 # 遍历数组，对于元素 x，若 target-x 已被访问，则找到 和为目标值 target 的两个整数。 在遍历数组时使用 HashMap 建立 数组元素 至 数组下标 的映射。 HashMap 可实现对于 元素是否被访问过 的判断。 代码 # 哈希 # class Solution { public int[] twoSum(int[] nums, int target) { int[] ans = new int[2]; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.</description>
     </item>
     
     <item>
@@ -133,8 +136,8 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/</guid>
-      <description>2. Add Two Numbers # 题目 # 给定两个非空的链表，表示两个非负的整数。它们每位数字都是按照逆序的方式存储的，并且每个节点只能存储一位数字。 将两个数相加，并以相同形式返回一个表示和的链表。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode helper(ListNode l1, ListNode l2, int carry) { if (l1 == null &amp;amp;&amp;amp; l2 == null) { return carry != 0 ? new ListNode(carry, null) : null; } else if (l1 !</description>
+      <description>0002. Add Two Numbers # 题目 # 给定两个 非空 链表，表示两个非负整数。 每位数字均按 逆序 方式存储，每个节点只存储一位数字。 将两个数相加，并以相同形式返回一个表示和的链表。 假定除数字 0 之外，这两个数均不会以 0 开头。 解释 342 + 465 = 807
+思路 # 模拟 # 代码 # 模拟 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode recursive(ListNode l1, ListNode l2, int carry) { if (l1 == null &amp;amp;&amp;amp; l2 == null) { return carry !</description>
     </item>
     
     <item>
@@ -143,8 +146,7 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</guid>
-      <description>19. Remove Nth Node from End of List # 题目 # 给定链表，要求删除链表的倒数第 n 个结点，并且返回链表的头结点。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeNthFromEnd(ListNode head, int n) { ListNode sentinel = new ListNode(-1, head); ListNode slow = sentinel, fast = slow; for (int i=0; i&amp;lt;n+1; i++) fast = fast.</description>
+      <description>0019. Remove Nth Node from End of List # 题目 # 删除给定链表的倒数第 n 个节点，并且返回头节点。 尝试使用一趟扫描实现。 思路 # 双指针 # 若要删除单链表的倒数第 n 个节点，需定位单链表的倒数第 n + 1 个节点。 考虑快慢指针，令快指针先走 n + 1步，之后双指针同步前进至快指针为空。 此时慢指针指向单链表的倒数第 n + 1 个节点。 设置哨兵节点有助于简化算法实现。 代码 # 双指针 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeNthFromEnd(ListNode head, int n) { ListNode sentinel = new ListNode(-1, head), slow = sentinel, fast = sentinel; for (int i=0; i&amp;lt;n+1; i++) fast = fast.</description>
     </item>
     
     <item>
@@ -153,9 +155,12 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0020.-Valid-Parentheses/</guid>
-      <description>20. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
+      <description>0020. Valid Parenthesis # 题目 # 给定一个只包括 &#39;(&#39;， &#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串 s，判断字符串是否有效。
 有效字符串需满足:
-左括号必须用相同类型的右括号闭合。 左括号必须以正确的顺序闭合。 每个右括号都有一个对应的相同类型的左括号。 思路 # 栈 # 可使用 栈 求解括号匹配问题 逢左括号入栈，逢右括号出栈 逢右括号 不匹配 / 遇栈空，或遍历结束时栈非空，则括号失配 代码 # 栈 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.</description>
+左括号必须用相同类型的右括号闭合。
+左括号必须以正确的顺序闭合。
+每个右括号都有一个对应的相同类型的左括号。
+思路 # 栈 # 可使用 栈 求解括号匹配问题 逢左括号入栈，逢右括号出栈 逢右括号 不匹配 / 遇栈空，或遍历结束时栈非空，则括号失配 代码 # 栈 # class Solution { public boolean isValid(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { /** 逢左括号入栈 */ char bracket = s.charAt(i); if (bracket == &amp;#39;{&amp;#39; || bracket == &amp;#39;(&amp;#39; || bracket == &amp;#39;[&amp;#39;) { stack.</description>
     </item>
     
     <item>
@@ -164,8 +169,7 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/</guid>
-      <description>21. 合并两个有序链表 # 题目 # 将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.val &amp;lt; list2.val) { list1.next = mergeTwoLists(list1.</description>
+      <description>0021. Merge Two Sorted Lists # 题目 # 将两个升序链表合并为一个新的升序链表并返回。 新链表是通过拼接给定的两个链表的所有节点组成的。 思路 # 递归 # 代码 # 递归 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeTwoLists(ListNode list1, ListNode list2) { if (list1 == null) return list2; if (list2 == null) return list1; if (list1.</description>
     </item>
     
     <item>
@@ -174,9 +178,9 @@ Follow the following steps:</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/</guid>
-      <description>23. 合并K个升序链表 # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
+      <description>23. Merge k Sorted Lists # 题目 # 给定一个链表数组，每个链表都已经按升序排列。
 将所有链表合并到一个升序链表中，返回合并后的链表。
-思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.val = val; this.</description>
+思路 # 构造大小为 K 的小根堆 建立堆结点和链表结点的映射 堆结点与链表结点共享变量 val 每次在堆中取最小值的结点，根据映射查找到相应链表节点，并加入到已有链表末尾。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { private class HeapNode implements Comparable&amp;lt;HeapNode&amp;gt; { public int val; public ListNode ptr; HeapNode(int val, ListNode ptr) { this.</description>
     </item>
     
     <item>
@@ -749,6 +753,18 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</guid>
+      <description> 263. Ugly Number # 题目 # 丑数 是只包含质因数 2、3 和 5 的正整数。
+给你一个整数 n ，请你判断 n 是否为 丑数 。如果是，返回 true ；否则，返回 false 。
+-2^31 &amp;lt;= n &amp;lt;= 2^31 - 1
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isUgly(int n) { if (n &amp;lt;= 0) return false; while (n % 2 == 0) n /= 2; while (n % 3 == 0) n /= 3; while (n % 5 == 0) n /= 5; return n == 1; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -943,6 +959,16 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
       <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</guid>
       <description>445. Add Two Numbers II # 题目 # 给定两个非空链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode l1, ListNode l2) { if (l1.next == null &amp;amp;&amp;amp; l2.next == null) { int carry = (l1.val + l2.val) / 10; l1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/</guid>
+      <description>448. Find All Numbers Disappeared in an Array # 题目 # 给定一个含 n 个整数的数组 nums，其中 nums[i] 在区间 [1, n] 内。找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。
+思路 # 原地哈希 代码 # class Solution { public List&amp;lt;Integer&amp;gt; findDisappearedNumbers(int[] nums) { for (int num: nums) { if (nums[Math.abs(num) - 1] &amp;gt; 0) nums[Math.abs(num) - 1] *= -1; } List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.length; i++) { if (nums[i] &amp;gt; 0) ans.</description>
     </item>
     
     <item>
@@ -1215,6 +1241,29 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</guid>
+      <description>735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
+对于数组中的每一个元素，其绝对值表示行星的大小，正负表示行星的移动方向（正表示向右移动，负表示向左移动）。每一颗行星以相同的速度移动。
+找出碰撞后剩下的所有行星。碰撞规则：两个行星相互碰撞，较小的行星会爆炸。如果两颗行星大小相同，则两颗行星都会爆炸。两颗移动方向相同的行星，永远不会发生碰撞。
+思路 # 栈 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</guid>
+      <description>747. Largest Number At Least Twice of Others # 题目 # 给定整数数组 nums ，其中存在 唯一的 最大整数 。
+找出数组中的最大元素并检查它是否 至少是数组中每个其他数字的两倍 。如果是，则返回 最大元素的下标 ，否则返回 -1 。
+思路 # 双指针 # 代码 # 双指针 # class Solution { public int dominantIndex(int[] nums) { if (nums.length == 1) return 0; /** 双指针 */ int first = -1, second = -1; if (nums[0] &amp;gt;= nums[1]) { first = 0; second = 1; } else { first = 1; second = 0; } /** 遍历 */ for (int i = 2; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1430,6 +1479,17 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1480.-Running-Sum-of-1d-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1480.-Running-Sum-of-1d-Array/</guid>
+      <description> 1480. Running Sum of 1d Array # 题目 # 数组「动态和」的计算公式为：runningSum[i] = sum(nums[0]…nums[i]) 。
+给定数组 nums 。返回 nums 的动态和。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] runningSum(int[] nums) { for (int i = 1; i &amp;lt; nums.length; i++) nums[i] += nums[i-1]; return nums; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1438,6 +1498,23 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
 数组 nums 定义为: nums[i] = start + 2*i （下标从0开始）且 n == nums.length。
 返回 nums 中所有元素按位异或 (XOR) 后得到的结果。
 思路 # 代码 # class Solution { public int xorOperation(int n, int start) { int xor = 0; for (int i = 0; i &amp;lt; n; i++) xor ^= start + 2 * i; return xor; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</guid>
+      <description>1614. Maximum Nesting Depth of the Parentheses # 题目 # 有效括号字符串满足下列条件之一
+字符串是一个空字符串 &amp;quot;&amp;quot;，或者是一个不为 &amp;quot;(&amp;quot; 或 &amp;quot;)&amp;quot; 的单字符。
+字符串可以写为 AB（A 与 B 字符串连接），其中 A 和 B 都是 有效括号字符串 。
+字符串可以写为 (A)，其中 A 是一个 有效括号字符串 。
+有效括号字符串 S 的 嵌套深度 depth(S) 定义为：
+depth(&amp;quot;&amp;quot;) = 0
+depth(C) = 0，其中 C 是单个字符的字符串，且该字符不是 &amp;quot;(&amp;quot; 或者 &amp;quot;)&amp;quot;
+depth(A + B) = max(depth(A), depth(B))，其中 A 和 B 都是 有效括号字符串
+depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中 A 是一个 有效括号字符串</description>
     </item>
     
     <item>

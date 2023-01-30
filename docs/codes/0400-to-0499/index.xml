@@ -51,6 +51,16 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/</guid>
+      <description>448. Find All Numbers Disappeared in an Array # 题目 # 给定一个含 n 个整数的数组 nums，其中 nums[i] 在区间 [1, n] 内。找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。
+思路 # 原地哈希 代码 # class Solution { public List&amp;lt;Integer&amp;gt; findDisappearedNumbers(int[] nums) { for (int num: nums) { if (nums[Math.abs(num) - 1] &amp;gt; 0) nums[Math.abs(num) - 1] *= -1; } List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.length; i++) { if (nums[i] &amp;gt; 0) ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0460.-LFU-Cache/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

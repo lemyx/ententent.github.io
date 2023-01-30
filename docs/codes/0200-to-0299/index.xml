@@ -107,6 +107,18 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</guid>
+      <description> 263. Ugly Number # 题目 # 丑数 是只包含质因数 2、3 和 5 的正整数。
+给你一个整数 n ，请你判断 n 是否为 丑数 。如果是，返回 true ；否则，返回 false 。
+-2^31 &amp;lt;= n &amp;lt;= 2^31 - 1
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isUgly(int n) { if (n &amp;lt;= 0) return false; while (n % 2 == 0) n /= 2; while (n % 3 == 0) n /= 3; while (n % 5 == 0) n /= 5; return n == 1; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0268.-Missing-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
