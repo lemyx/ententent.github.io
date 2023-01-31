@@ -30,6 +30,27 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0013.-Roman-to-Integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0013.-Roman-to-Integer/</guid>
+      <description>0013. Roman to Integer # 题目 # 罗马数字包含七种字符: I， V，X， L，C，D 和 M。
+字符 数值 I 1 V 5 X 10 L 50 C 100 D 500 M 1000 例如， 罗马数字 2 写做 II，12 写做 XII，27 写做 XXVII。
+罗马数字中小数字通常位于大数字的右侧，但存在以下六种特例
+I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。 X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。 给定一个罗马数字，将其转换为整数。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0014.-Longest-Common-Prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0014.-Longest-Common-Prefix/</guid>
+      <description> 0014. Longest Common Prefix # 题目 # 编写一个函数来查找字符串数组中的最长公共前缀。 若不存在公共前缀，返回空字符串 &amp;quot;&amp;quot;。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String longestCommonPrefix(String[] strs) { String ans = &amp;#34;&amp;#34;; int candidate = 0; while (true) { for (String str: strs) { if (candidate == str.length() || str.charAt(candidate) != strs[0].charAt(candidate)) return ans; } ans += Character.toString(strs[0].charAt(candidate++)); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -129,11 +150,20 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0058.-Length-of-Last-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0058.-Length-of-Last-Word/</guid>
+      <description> 0059. Length of Last Word # 题目 # 给定字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。 单词 是仅由字母组成，不包含任何空格字符的最大子字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int lengthOfLastWord(String s) { int start = -1, end = s.length() - 1; while (end &amp;gt; -1 &amp;amp;&amp;amp; s.charAt(end) == &amp;#39; &amp;#39;) end -= 1; if (end == -1) return 0; start = end; while (start &amp;gt; 0 &amp;amp;&amp;amp; s.charAt(start) != &amp;#39; &amp;#39;) start -= 1; return end - start; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</guid>
-      <description> 59. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
+      <description> 0059. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
 思路 # 对于n阶方阵，共有n/2个完整螺旋。
 若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
 对于第offset个螺旋，考虑四角元素的坐标，由左上顺时针分别为：

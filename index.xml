@@ -142,6 +142,27 @@ Follow the following steps:</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0013.-Roman-to-Integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0013.-Roman-to-Integer/</guid>
+      <description>0013. Roman to Integer # 题目 # 罗马数字包含七种字符: I， V，X， L，C，D 和 M。
+字符 数值 I 1 V 5 X 10 L 50 C 100 D 500 M 1000 例如， 罗马数字 2 写做 II，12 写做 XII，27 写做 XXVII。
+罗马数字中小数字通常位于大数字的右侧，但存在以下六种特例
+I 可以放在 V (5) 和 X (10) 的左边，来表示 4 和 9。 X 可以放在 L (50) 和 C (100) 的左边，来表示 40 和 90。 C 可以放在 D (500) 和 M (1000) 的左边，来表示 400 和 900。 给定一个罗马数字，将其转换为整数。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0014.-Longest-Common-Prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0014.-Longest-Common-Prefix/</guid>
+      <description> 0014. Longest Common Prefix # 题目 # 编写一个函数来查找字符串数组中的最长公共前缀。 若不存在公共前缀，返回空字符串 &amp;quot;&amp;quot;。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String longestCommonPrefix(String[] strs) { String ans = &amp;#34;&amp;#34;; int candidate = 0; while (true) { for (String str: strs) { if (candidate == str.length() || str.charAt(candidate) != strs[0].charAt(candidate)) return ans; } ans += Character.toString(strs[0].charAt(candidate++)); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -241,11 +262,20 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0058.-Length-of-Last-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0058.-Length-of-Last-Word/</guid>
+      <description> 0059. Length of Last Word # 题目 # 给定字符串 s，由若干单词组成，单词前后用一些空格字符隔开。返回字符串中 最后一个 单词的长度。 单词 是仅由字母组成，不包含任何空格字符的最大子字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int lengthOfLastWord(String s) { int start = -1, end = s.length() - 1; while (end &amp;gt; -1 &amp;amp;&amp;amp; s.charAt(end) == &amp;#39; &amp;#39;) end -= 1; if (end == -1) return 0; start = end; while (start &amp;gt; 0 &amp;amp;&amp;amp; s.charAt(start) != &amp;#39; &amp;#39;) start -= 1; return end - start; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/</guid>
-      <description> 59. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
+      <description> 0059. Spiral Matrix II # 题目 # 给定正整数n，生成一个包含1到n^2所有元素，且元素按顺时针顺序螺旋排列的nxn正方形矩阵matrix。
 思路 # 对于n阶方阵，共有n/2个完整螺旋。
 若n为奇数，则matrix[n/2][n/2]处存在独立元素n^2，不构成螺旋，应单独考虑。
 对于第offset个螺旋，考虑四角元素的坐标，由左上顺时针分别为：
@@ -919,11 +949,25 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</guid>
+      <description>0412. Fizz Buzz # 题目 # 给定整数 n ，找出 1 至 n 各个整数的 Fizz Buzz 表示，并用字符串数组 answer（下标从 1 开始）返回结果，其中：
+answer[i] == &amp;quot;FizzBuzz&amp;quot; 如果 i 同时是 3 和 5 的倍数。
+answer[i] == &amp;quot;Fizz&amp;quot; 如果 i 是 3 的倍数。
+answer[i] == &amp;quot;Buzz&amp;quot; 如果 i 是 5 的倍数。
+answer[i] == i （以字符串形式）如果上述条件全不满足。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;String&amp;gt; fizzBuzz(int n) { List&amp;lt;String&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); for (int i = 1; i &amp;lt;= n; i++) { if (i % 3 == 0 &amp;amp;&amp;amp; i % 5 == 0) ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</guid>
-      <description>429. N-ary Tree Level Order Traversal # 题目 # 给定一个 N 叉树，返回其节点的 层序遍历。
+      <description>0429. N-ary Tree Level Order Traversal # 题目 # 给定一个 N 叉树，返回其节点的 层序遍历。
 思路 # 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _ children; } } class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; levelOrder(Node root) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); if (root == null) return ans; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
     </item>
     
@@ -967,8 +1011,17 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/</guid>
-      <description>448. Find All Numbers Disappeared in an Array # 题目 # 给定一个含 n 个整数的数组 nums，其中 nums[i] 在区间 [1, n] 内。找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。
+      <description>0448. Find All Numbers Disappeared in an Array # 题目 # 给定一个含 n 个整数的数组 nums，其中 nums[i] 在区间 [1, n] 内。找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。
 思路 # 原地哈希 代码 # class Solution { public List&amp;lt;Integer&amp;gt; findDisappearedNumbers(int[] nums) { for (int num: nums) { if (nums[Math.abs(num) - 1] &amp;gt; 0) nums[Math.abs(num) - 1] *= -1; } List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.length; i++) { if (nums[i] &amp;gt; 0) ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0455.-Assign-Cookies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0455.-Assign-Cookies/</guid>
+      <description>0455. Assign Cookies # 题目 # 为孩子们分配饼干，每个孩子最多只能给一块饼干。 孩子 i 对应胃口值 g[i]。饼干 j 对应尺寸 s[j]。若 s[j] &amp;gt;= g[i]，则饼干 j 可以令孩子 i 满足。 尽可能满足最多数量的孩子，并返回这个最大数值。 思路 # 排序+双指针+贪心 代码 # 排序+双指针+贪心 # class Solution { public int findContentChildren(int[] g, int[] s) { Arrays.sort(g); Arrays.sort(s); int i = 0, j = 0; while (i &amp;lt; g.length &amp;amp;&amp;amp; j &amp;lt; s.length) { while (j &amp;lt; s.length &amp;amp;&amp;amp; g[i] &amp;gt; s[j]) j += 1; if (j++ &amp;lt; s.</description>
     </item>
     
     <item>
@@ -1299,6 +1352,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</guid>
+      <description>0859. Buddy Strings # 题目 # 给定两个字符串 s 和 goal，若可以通过交换 s 中的两个字母后得到与 goal 相同的结果，则认为 s 与 goal 是亲密字符串。 判断给定的两个字符串是否是亲密字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean buddyStrings(String s, String goal) { if (s.length() != goal.length()) return false; Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length; i++) { if (s.charAt(i) != goal.charAt(i)) stack.push(i); } if (stack.size() == 0) { int[] count = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0867.-Transpose-Matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1457,6 +1519,17 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</guid>
+      <description> 1446. Consecutive Characters # 题目 # 字符串的**「能量」**定义为：只包含一种字符的最长非空子字符串的长度。
+返回字符串 s 的 能量。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxPower(String s) { int maxPower = 1, power = 1; char ch = s.charAt(0); for (int i = 1; i &amp;lt; s.length(); i++) { if (s.charAt(i) == ch) { power += 1; maxPower = Math.max(power, maxPower); } else { power += 1; ch = s.charAt(i); } } return maxPower; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1519,6 +1592,20 @@ depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1629.-Slowest-Key/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1629.-Slowest-Key/</guid>
+      <description>1629. Slowest Key # 题目 # LeetCode 设计了一款新式键盘，正在测试其可用性。测试人员将会点击一系列键（总计 n 个），每次一个。
+给定长度为 n 的字符串 keysPressed ，其中 keysPressed[i] 表示测试序列中第 i 个被按下的键。releaseTimes 是一个升序排列的列表，其中 releaseTimes[i] 表示松开第 i 个键的时间。字符串和数组的 下标都从 0 开始 。第 0 个键在时间为 0 时被按下，接下来每个键都 恰好 在前一个键松开时被按下。
+测试人员想要找出按键 持续时间最长 的键。第 i 次按键的持续时间为 releaseTimes[i] - releaseTimes[i - 1] ，第 0 次按键的持续时间为 releaseTimes[0] 。
+注意，测试期间，同一个键可以在不同时刻被多次按下，而每次的持续时间都可能不同。
+返回单次按键 持续时间最长 的键，如果有多个这样的键，则返回 按字母顺序排列最大 的那个键。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public char slowestKey(int[] releaseTimes, String keyPressed) { char ans = keyPressed.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1550,6 +1637,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
       <description>1670. Design Front Middle Back Queue # 题目 # 请你设计一个队列，支持在前，中，后三个位置的 push 和 pop 操作。
 请你完成 FrontMiddleBack 类：
 FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到队列的 最前面 。 void pushMiddle(int val) 将 val 添加到队列的 正中间 。 void pushBack(int val) 将 val 添加到队里的 最后面 。 int popFront() 将 最前面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popMiddle() 将 正中间 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 int popBack() 将 最后面 的元素从队列中删除并返回值，如果删除之前队列为空，那么返回 -1 。 思路 # 代码 # class FrontMiddleBackQueue { private class ListNode { int val; ListNode prev; ListNode next; ListNode(int value, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1688.-Count-of-Matches-in-Tournament/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1688.-Count-of-Matches-in-Tournament/</guid>
+      <description>1688. Count of Matches in Tournament # 题目 # 给你一个整数 n ，表示比赛中的队伍数。比赛遵循一种独特的赛制： 如果当前队伍数是 偶数 ，那么每支队伍都会与另一支队伍配对。总共进行 n / 2 场比赛，且产生 n / 2 支队伍进入下一轮。 如果当前队伍数为 奇数 ，那么将会随机轮空并晋级一支队伍，其余的队伍配对。总共进行 (n - 1) / 2 场比赛，且产生 (n - 1) / 2 + 1 支队伍进入下一轮。 返回在比赛中进行的配对次数，直到决出获胜队伍为止。 思路 # 模拟 # 脑筋急转弯 # 共有 n 支队伍，每场比赛淘汰一支，最终剩下一支冠军队。 即有 n−1 支队伍需要通过 n−1 场比赛被淘汰。 代码 # 模拟 # class Solution { public int numberOfMatches(int n) { int ans = 0; while (n !</description>
     </item>
     
     <item>

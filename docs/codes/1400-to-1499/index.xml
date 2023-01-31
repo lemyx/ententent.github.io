@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1400-to-1499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</guid>
+      <description> 1446. Consecutive Characters # 题目 # 字符串的**「能量」**定义为：只包含一种字符的最长非空子字符串的长度。
+返回字符串 s 的 能量。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxPower(String s) { int maxPower = 1, power = 1; char ch = s.charAt(0); for (int i = 1; i &amp;lt; s.length(); i++) { if (s.charAt(i) == ch) { power += 1; maxPower = Math.max(power, maxPower); } else { power += 1; ch = s.charAt(i); } } return maxPower; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

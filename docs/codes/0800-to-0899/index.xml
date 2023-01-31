@@ -31,6 +31,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</guid>
+      <description>0859. Buddy Strings # 题目 # 给定两个字符串 s 和 goal，若可以通过交换 s 中的两个字母后得到与 goal 相同的结果，则认为 s 与 goal 是亲密字符串。 判断给定的两个字符串是否是亲密字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean buddyStrings(String s, String goal) { if (s.length() != goal.length()) return false; Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length; i++) { if (s.charAt(i) != goal.charAt(i)) stack.push(i); } if (stack.size() == 0) { int[] count = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0867.-Transpose-Matrix/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
