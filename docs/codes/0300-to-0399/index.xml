@@ -52,6 +52,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0345.-Reverse-Vowels-of-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0345.-Reverse-Vowels-of-a-String/</guid>
+      <description>0345. Reverse Vowels of a String # 题目 # 给定字符串 s，反转其中的所有元素字母，并返回字符串。 元音字母包含 &#39;a&#39;，&#39;e&#39;，&#39;i&#39;，&#39;o&#39;，&#39;u&#39; 及其大写形式。 思路 # 双指针 # 代码 # 双指针 （StringBuilder） # class Solution { boolean isVowel(Character ch) { if (ch == &amp;#39;a&amp;#39; || ch == &amp;#39;e&amp;#39; || ch == &amp;#39;i&amp;#39; || ch == &amp;#39;o&amp;#39; || ch == &amp;#39;u&amp;#39;) return true; if (ch == &amp;#39;A&amp;#39; || ch == &amp;#39;E&amp;#39; || ch == &amp;#39;I&amp;#39; || ch == &amp;#39;O&amp;#39; || ch == &amp;#39;U&amp;#39;) return true; return false; } public String reverseVowels(String s) { int i = 0, j = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

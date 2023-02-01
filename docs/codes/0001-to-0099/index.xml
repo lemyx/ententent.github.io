@@ -239,6 +239,15 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0088.-Merge-Sorted-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0088.-Merge-Sorted-Array/</guid>
+      <description>0088. Merge Sorted Array # 题目 # 给定两个按 非递减顺序 排列的整数数组 nums1 和 nums2，另有两个整数 m 和 n ，分别表示 nums1 和 nums2 中的元素数目。 合并 nums2 到 nums1 中，使合并后的数组同样按 非递减顺序 排列。 合并后的元素存储在数组 nums1 中。设置 nums1 的初始长度为 m + n，其中前 m 个元素表示应合并的元素，后 n 个元素为 0 ，应忽略。nums2 的长度为 n 。 思路 # 双指针 # 数组 nums1 和 nums2 是有序数组。 从前向后遍历时需要移动数组元素，从后向前遍历会简化过程。 代码 # 双指针 # class Solution { public void merge(int[] nums1, int m, int[] nums2, int n) { int ptr1 = m - 1, ptr2 = n - 1, ptr = m + n - 1; while (ptr1 &amp;gt; -1 &amp;amp;&amp;amp; ptr2 &amp;gt; -1) nums1[ptr--] = nums1[ptr1] &amp;gt;= nums2[ptr2] ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0900-to-0999/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/</guid>
+      <description> 0905. Sort Array by Parity # 题目 # 给定整数数组 nums，将 nums 中偶数元素移动到数组前面，奇数元素移动到数组末端。 返回满足此条件的 任一数组 作为答案。 思路 # 双指针 # 代码 # 双指针 # class Solution { boolean isEven(int num) { return num % 2 == 0; } boolean isOdd(int num) { return num % 2 == 1; } public int[] sortArrayByParity(int[] nums) { int i = 0, j = nums.length - 1; while (i &amp;lt; j) { if (isEven(nums[i])) i += 1; else if (isOdd(nums[j])) j -= 1; else if (isEven(nums[i]) == isOdd(nums[j])) { nums[i] ^= nums[j]; nums[j] ^= nums[i]; nums[i] ^= nums[j]; i += 1; j -= 1; } } return nums; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</guid>
+      <description>0917. Reverse Only Letters # 题目 # 给定字符串 s ，根据下述规则反转字符串： 所有非英文字母保留在原有位置。 所有英文字母（小写或大写）位置反转。 返回反转后的 s 。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseOnlyLetters(String s) { char[] charArray = s.toCharArray(); int i = 0, j = s.length() - 1; while (i &amp;lt; j) { if (Character.isLetter(s.charAt(i)) == false) i++; else if (Character.isLetter(s.charAt(j)) == false) j--; else { char ch = charArray[i]; charArray[i] = charArray[j]; charArray[j] = charArray[i]; i++; j--; } } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

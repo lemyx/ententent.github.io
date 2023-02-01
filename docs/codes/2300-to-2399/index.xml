@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2300-to-2399/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/</guid>
+      <description>2319. Check if Matrix Is X-Matrix # 题目 # X 矩阵 是满足下列条件的方阵 矩阵对角线上所有元素都 非零 非对角线元素均 为零 给定 n 阶方阵 grid，判断 grid 是否为 X 矩阵 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkXMatrix(int[][] grid) { boolean valid = true; for (int i = 0; i &amp;lt; grid.length; i++) { for (int j = 0; j &amp;lt; grid.length; j++) { if (i == j) valid &amp;amp;= grid[i][j] !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

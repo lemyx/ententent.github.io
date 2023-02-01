@@ -351,6 +351,15 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0088.-Merge-Sorted-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0088.-Merge-Sorted-Array/</guid>
+      <description>0088. Merge Sorted Array # 题目 # 给定两个按 非递减顺序 排列的整数数组 nums1 和 nums2，另有两个整数 m 和 n ，分别表示 nums1 和 nums2 中的元素数目。 合并 nums2 到 nums1 中，使合并后的数组同样按 非递减顺序 排列。 合并后的元素存储在数组 nums1 中。设置 nums1 的初始长度为 m + n，其中前 m 个元素表示应合并的元素，后 n 个元素为 0 ，应忽略。nums2 的长度为 n 。 思路 # 双指针 # 数组 nums1 和 nums2 是有序数组。 从前向后遍历时需要移动数组元素，从后向前遍历会简化过程。 代码 # 双指针 # class Solution { public void merge(int[] nums1, int m, int[] nums2, int n) { int ptr1 = m - 1, ptr2 = n - 1, ptr = m + n - 1; while (ptr1 &amp;gt; -1 &amp;amp;&amp;amp; ptr2 &amp;gt; -1) nums1[ptr--] = nums1[ptr1] &amp;gt;= nums2[ptr2] ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -727,6 +736,24 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0217.-Contains-Duplicate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0217.-Contains-Duplicate/</guid>
+      <description> 0217. Contains Duplicate # 题目 # 给定整数数组 nums 。 若存在出现 至少两次 的元素，返回 true ；否则返回 false 。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean containsDuplicate(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) if (set.contains(num) == true) return true; else set.add(num); return false; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0219.-Contains-Duplicate-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0219.-Contains-Duplicate-ii/</guid>
+      <description>0219. Contains Duplicate ii # 题目 # 给你一个整数数组 nums 和一个整数 k 判断数组中是否存在两个 不同的索引 i 和 j ，满足 nums[i] == nums[j] 且 abs(i - j) &amp;lt;= k 。 如果存在，返回 true ；否则，返回 false 。 思路 # 滑窗+哈希 # 代码 # 滑窗+哈希 # class Solution { public boolean containsNearbyDuplicate(int[] nums, int k) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.length; i++) { if (i &amp;gt; k) set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0226.-Invert-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -857,6 +884,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <description> 344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
 不要给另外的数组分配额外的空间，原地修改输入数组，使用 O(1) 的额外空间解决这一问题。
 思路 # 代码 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0345.-Reverse-Vowels-of-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0345.-Reverse-Vowels-of-a-String/</guid>
+      <description>0345. Reverse Vowels of a String # 题目 # 给定字符串 s，反转其中的所有元素字母，并返回字符串。 元音字母包含 &#39;a&#39;，&#39;e&#39;，&#39;i&#39;，&#39;o&#39;，&#39;u&#39; 及其大写形式。 思路 # 双指针 # 代码 # 双指针 （StringBuilder） # class Solution { boolean isVowel(Character ch) { if (ch == &amp;#39;a&amp;#39; || ch == &amp;#39;e&amp;#39; || ch == &amp;#39;i&amp;#39; || ch == &amp;#39;o&amp;#39; || ch == &amp;#39;u&amp;#39;) return true; if (ch == &amp;#39;A&amp;#39; || ch == &amp;#39;E&amp;#39; || ch == &amp;#39;I&amp;#39; || ch == &amp;#39;O&amp;#39; || ch == &amp;#39;U&amp;#39;) return true; return false; } public String reverseVowels(String s) { int i = 0, j = s.</description>
     </item>
     
     <item>
@@ -1394,6 +1430,24 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/</guid>
+      <description> 0905. Sort Array by Parity # 题目 # 给定整数数组 nums，将 nums 中偶数元素移动到数组前面，奇数元素移动到数组末端。 返回满足此条件的 任一数组 作为答案。 思路 # 双指针 # 代码 # 双指针 # class Solution { boolean isEven(int num) { return num % 2 == 0; } boolean isOdd(int num) { return num % 2 == 1; } public int[] sortArrayByParity(int[] nums) { int i = 0, j = nums.length - 1; while (i &amp;lt; j) { if (isEven(nums[i])) i += 1; else if (isOdd(nums[j])) j -= 1; else if (isEven(nums[i]) == isOdd(nums[j])) { nums[i] ^= nums[j]; nums[j] ^= nums[i]; nums[i] ^= nums[j]; i += 1; j -= 1; } } return nums; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</guid>
+      <description>0917. Reverse Only Letters # 题目 # 给定字符串 s ，根据下述规则反转字符串： 所有非英文字母保留在原有位置。 所有英文字母（小写或大写）位置反转。 返回反转后的 s 。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseOnlyLetters(String s) { char[] charArray = s.toCharArray(); int i = 0, j = s.length() - 1; while (i &amp;lt; j) { if (Character.isLetter(s.charAt(i)) == false) i++; else if (Character.isLetter(s.charAt(j)) == false) j--; else { char ch = charArray[i]; charArray[i] = charArray[j]; charArray[j] = charArray[i]; i++; j--; } } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1526,6 +1580,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <description> 1446. Consecutive Characters # 题目 # 字符串的**「能量」**定义为：只包含一种字符的最长非空子字符串的长度。
 返回字符串 s 的 能量。
 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxPower(String s) { int maxPower = 1, power = 1; char ch = s.charAt(0); for (int i = 1; i &amp;lt; s.length(); i++) { if (s.charAt(i) == ch) { power += 1; maxPower = Math.max(power, maxPower); } else { power += 1; ch = s.charAt(i); } } return maxPower; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1455.-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1455.-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence/</guid>
+      <description>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence # 题目 # 给定字符串 sentence 并指定检索词为 searchWord ，句子由 空格 分隔的单词组成。 检查检索词 searchWord 是否为句子 sentence 中任意单词的前缀。 如果 searchWord 是某一个单词的前缀，则返回句子 sentence 中该单词所对应的下标（下标从 1 开始）。 如果 searchWord 是多个单词的前缀，则返回匹配的第一个单词的下标（最小下标）。 如果 searchWord 不是任何单词的前缀，则返回 -1 。 字符串 s 的 前缀 是 s 的任何前导连续子字符串。 思路 # 双指针 # 代码 # 双指针 # class Solution { public int isPrefixOfWord(String sentence, String searchWord) { int ptr1 = 0, ans = 0; while (ptr1 &amp;lt; sentence.</description>
     </item>
     
     <item>
@@ -1834,6 +1897,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 添加：在光标处添加文本。 删除：在光标处删除文本。 移动：将光标往左或往右移动。 当删除文本时，只有光标左边的字符会被删除。光标会留在文本内，即任何时候 0 &amp;lt;= cursor.position &amp;lt;= currentText.length 都成立。
 请实现 TextEditor 类：
 TextEditor() 用空文本初始化对象。 void addText(String text) 将 text 添加到光标所在位置。添加完后光标在 text 的右边。 int deleteText(int k) 删除光标左边 k 个字符。返回实际删除的字符数目。 String cursorLeft(int k) 将光标向左移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 String cursorRight(int k) 将光标向右移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 思路 # 代码 # class TextEditor { private class ListNode { public char character; public ListNode prev; public ListNode next; ListNode (char character, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/</guid>
+      <description>2319. Check if Matrix Is X-Matrix # 题目 # X 矩阵 是满足下列条件的方阵 矩阵对角线上所有元素都 非零 非对角线元素均 为零 给定 n 阶方阵 grid，判断 grid 是否为 X 矩阵 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkXMatrix(int[][] grid) { boolean valid = true; for (int i = 0; i &amp;lt; grid.length; i++) { for (int j = 0; j &amp;lt; grid.length; j++) { if (i == j) valid &amp;amp;= grid[i][j] !</description>
     </item>
     
     <item>

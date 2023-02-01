@@ -51,6 +51,24 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0217.-Contains-Duplicate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0217.-Contains-Duplicate/</guid>
+      <description> 0217. Contains Duplicate # 题目 # 给定整数数组 nums 。 若存在出现 至少两次 的元素，返回 true ；否则返回 false 。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean containsDuplicate(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) if (set.contains(num) == true) return true; else set.add(num); return false; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0219.-Contains-Duplicate-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0219.-Contains-Duplicate-ii/</guid>
+      <description>0219. Contains Duplicate ii # 题目 # 给你一个整数数组 nums 和一个整数 k 判断数组中是否存在两个 不同的索引 i 和 j ，满足 nums[i] == nums[j] 且 abs(i - j) &amp;lt;= k 。 如果存在，返回 true ；否则，返回 false 。 思路 # 滑窗+哈希 # 代码 # 滑窗+哈希 # class Solution { public boolean containsNearbyDuplicate(int[] nums, int k) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; nums.length; i++) { if (i &amp;gt; k) set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0226.-Invert-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
