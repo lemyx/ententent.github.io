@@ -90,6 +90,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0232.-Implement-Queue-using-Stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0232.-Implement-Queue-using-Stacks/</guid>
+      <description>0255. Implement Queue using Stacks # 题目 # 使用两个栈实现一个先入先出的栈，支持普通队列的全部四种操作。 实现 MyQueue 类： void push(int x) 将元素 x 推到队列的末尾 int pop() 从队列的开头移除并返回元素 int peek() 返回队列开头的元素 boolean empty() 如果队列为空，返回 true；否则，返回 false 思路 # 使用两个栈实现队列 # 代码 # 使用两个栈实现队列 # class MyQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; public MyQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } public void push(int x) { this.inStack.push(x); } public int pop() { if (this.outStack.size() == 0) { while (this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -125,6 +134,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0255.-Implement-Stack-using-Queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0255.-Implement-Stack-using-Queues/</guid>
+      <description>0255. Implement Stack using Queues # 题目 # 使用两个队列实现一个后入先出的栈，支持普通栈的全部四种操作。 实现 MyStack 类： void push(int x) 将元素 x 压入栈顶。 int pop() 移除并返回栈顶元素。 int top() 返回栈顶元素。 boolean empty() 如果栈是空的，返回 true ；否则，返回 false 。 思路 # 使用两个队列实现栈 # 代码 # 使用两个队列实现栈 # class MyStack { private Queue&amp;lt;Integer&amp;gt; stack, queue; public MyStack() { this.stack = new LinkedList&amp;lt;&amp;gt;(); this.queue = new LinkedList&amp;lt;&amp;gt;(); } public void push(int x) { if (this.stack.size() == 0) this.stack.offer(x); else { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -147,6 +165,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0278.-First-Bad-Version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0278.-First-Bad-Version/</guid>
+      <description> 0035. Search Insert Position # 题目 # 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。 如果目标值不存在于数组中，返回它将会被按顺序插入的位置。 使用时间复杂度为 O(log n) 的算法。 思路 # 二分查找（左闭右开） # 令右指针指向已知大于目标值的最靠前位置，左指针指向已知不大于目标值的最靠后位置 当两指针相遇，所指向位置为元素的插入位置 代码 # 二分查找（左闭右开） # class Solution { public int searchInsert(int[] nums, int target) { int left = 0, right = nums.length; while (left &amp;lt; right) { int medium = left + (right - left) / 2; if (nums[medium] == target) return medium; else if (nums[medium] &amp;gt; target) right = medium; else left = medium + 1; } return right; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -154,6 +181,21 @@
       <description> 283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
 必须在不复制数组的情况下原地对数组进行操作。
 思路 # 代码 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0292.-Nim-Game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0292.-Nim-Game/</guid>
+      <description> 0292. Nim Game # 题目 # 两人玩 Nim 游戏
+桌子上有一堆石头。
+每一回合，轮到的人拿掉 1 - 3 块石头。
+拿掉最后一块石头的人就是获胜者。
+假设两人所走每一步都是最优解。
+编写函数，判断先手能否在给定石头数量为 n 的情况下赢得游戏。
+思路 # 博弈 # 若 n 不是 4 的幂，则在每回合先手总可以令后手面对总数为 4的若干次幂 的石头，直至令后手面对 4块石头。此时先手必胜。 同理，若 n 是 4 的幂，则先手必败。 代码 # 博弈 # class Solution { public boolean canWinNim(int n) { return n % 4 != 0; } } </description>
     </item>
     
   </channel>

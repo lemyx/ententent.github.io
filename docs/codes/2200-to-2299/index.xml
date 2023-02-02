@@ -18,6 +18,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2235.-Add-Two-Integers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2235.-Add-Two-Integers/</guid>
+      <description> 2235. Add Two Integers # 题目 # 给定两个整数 num1 和 num2，返回这两个整数的和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int sum(int num1, int num2) { return num1 + num2; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

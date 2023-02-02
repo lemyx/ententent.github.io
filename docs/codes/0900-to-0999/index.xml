@@ -31,7 +31,7 @@
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</guid>
       <description>933. Number of Recent Calls # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
 请你实现 RecentCounter 类：
-RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 代码 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.poll(); return queue.</description>
+RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 # 代码 # 队列 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.</description>
     </item>
     
     <item>
@@ -52,7 +52,7 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
       <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
-思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] sortedSquares(int[] nums) { int[] ans = new int[nums.length]; int i = 0, j = nums.length - 1, ptr = nums.length - 1; while (i &amp;lt;= j) { int num = Math.abs(nums[i]) &amp;gt; Math.abs(nums[j]) ? nums[i++] : nums[j--]; ans[ptr--] = num * num; } return ans; } } class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.</description>
     </item>
     
   </channel>

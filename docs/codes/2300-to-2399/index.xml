@@ -16,6 +16,18 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2325.-Decode-the-Message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2325.-Decode-the-Message/</guid>
+      <description>2325. Decode the Message # 题目 # 给定字符串 key 和 message ，分别表示 密钥 和 密文。解密步骤如下：
+使用 key 中 26 个英文小写字母第一次出现的顺序作为替换表中的字母 顺序 。 将替换表与普通英文字母表对齐，形成 对照表。 按照对照表 替换 message 中的每个字母。 空格 &#39; &#39; 保持不变。 例如，key = &amp;quot;happy boy&amp;quot;（实际的加密密钥会包含字母表中每个字母 至少一次），得到部分对照表（&#39;h&#39; -&amp;gt; &#39;a&#39;、&#39;a&#39; -&amp;gt; &#39;b&#39;、&#39;p&#39; -&amp;gt; &#39;c&#39;、&#39;y&#39; -&amp;gt; &#39;d&#39;、&#39;b&#39; -&amp;gt; &#39;e&#39;、&#39;o&#39; -&amp;gt; &#39;f&#39;）。
+返回解密后的消息。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public String decodeMessage(String key, String message) { Map&amp;lt;Character, Character&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); char charPoint = &amp;#39;a&amp;#39;; for (int i = 0; i &amp;lt; key.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

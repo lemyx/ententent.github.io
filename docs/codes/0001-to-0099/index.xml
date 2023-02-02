@@ -266,5 +266,14 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
 思路 # 代码 # 暴力解 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public void traversal(TreeNode root, List&amp;lt;Integer&amp;gt; ans) { if (root == null) return; traverse(root.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0098.-Validate-Binary-Search-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0098.-Validate-Binary-Search-Tree/</guid>
+      <description>0098. Validate Binary Search Tree # 题目 # 给定二叉树根节点 root，判断其是否是一个有效的 BST 有效 BST 定义如下 节点的左子树只包含 小于 当前节点的数 节点的右子树只包含 大于 当前节点的数 所有左子树和右子树自身也须是 BST 思路 # 中序遍历 # 代码 # 中序遍历+列表 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public void reverse(TreeNode root, List&amp;lt;Integer&amp;gt; values) { if (root == null) return; traverse(root.</description>
+    </item>
+    
   </channel>
 </rss>

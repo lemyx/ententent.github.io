@@ -73,6 +73,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</guid>
+      <description> 1672. Richest Customer Wealth # 题目 # 给定 m x n 的整数网格 accounts ，其中 accounts[i][j] 是第 i 位客户在第 j 家银行托管的资产数量。 客户的 资产总量 是其在各家银行托管的资产数量之和。最富有客户是 资产总量 最大的客户。 返回最富有客户所拥有的 资产总量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumWealth(int[][] accounts) { int ans = 0; for (int[] account: accounts) { int wealth = 0; for (int val: account) wealth += val; ans = Math.max(ans, wealth); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1688.-Count-of-Matches-in-Tournament/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

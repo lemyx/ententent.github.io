@@ -53,6 +53,15 @@ MAllk33</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.04.-%E5%8C%96%E6%A0%88%E4%B8%BA%E9%98%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.04.-%E5%8C%96%E6%A0%88%E4%B8%BA%E9%98%9F/</guid>
+      <description>面试题 03.04. 化栈为队 # 题目 # 实现一个 MyQueue 类，该类用两个栈实现一个队列。 思路 # 代码 # class MyQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; /** Initialize your data structure here. */ public MyQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } /** Push element x to the back of queue. */ public void push(int x) { this.inStack.push(x); } /** Removes the element from in front of queue and returns that element. */ public int pop() { if (this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

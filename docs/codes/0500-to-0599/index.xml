@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0500-to-0599/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0500.-Keyboard-Row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0500.-Keyboard-Row/</guid>
+      <description>0500. Keyboard Row # 题目 # 给定字符串数组 words ，返回可以使用在 美式键盘 同一行的字母打印出来的单词。 美式键盘 中： 第一行由字符 &amp;quot;qwertyuiop&amp;quot; 组成。 第二行由字符 &amp;quot;asdfghjkl&amp;quot; 组成。 第三行由字符 &amp;quot;zxcvbnm&amp;quot; 组成。 思路 # 模拟+打表 # 代码 # 模拟+打表 # class Solution { public void mapping (int[] qwerty) { qwerty[&amp;#39;q&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;w&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;e&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;r&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;t&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;y&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;u&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;i&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;o&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;p&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;a&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;s&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;d&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;f&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;g&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;h&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;j&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;k&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;l&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;z&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;x&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;c&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;v&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;b&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;n&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;m&amp;#39;-&amp;#39;a&amp;#39;] = 2; } public String[] findWords(String[] words) { int[] qwerty = new int[26]; mapping(qwerty); List&amp;lt;String&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;(); for (String word: words) { boolean ok = true; for (int i = 0; i &amp;lt; word.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -380,6 +380,15 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0098.-Validate-Binary-Search-Tree/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0098.-Validate-Binary-Search-Tree/</guid>
+      <description>0098. Validate Binary Search Tree # 题目 # 给定二叉树根节点 root，判断其是否是一个有效的 BST 有效 BST 定义如下 节点的左子树只包含 小于 当前节点的数 节点的右子树只包含 大于 当前节点的数 所有左子树和右子树自身也须是 BST 思路 # 中序遍历 # 代码 # 中序遍历+列表 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public void reverse(TreeNode root, List&amp;lt;Integer&amp;gt; values) { if (root == null) return; traverse(root.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0100.-Same-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -671,13 +680,31 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0189.-Rotate-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0189.-Rotate-Array/</guid>
+      <description>0189. Rotate Array # 题目 # 给定数组 nums，将数组中的元素向右轮转 k 个位置，k 为非负整数。 思路 # 翻转数组 # # visualization (k = 3) nums = &amp;#34;----&amp;gt;--&amp;gt;&amp;#34; result = &amp;#34;--&amp;gt;----&amp;gt;&amp;#34; reverse &amp;#34;----&amp;gt;--&amp;gt;&amp;#34; to &amp;#34;&amp;lt;--&amp;lt;----&amp;#34; reverse &amp;#34;&amp;lt;--&amp;#34; to &amp;#34;--&amp;gt;&amp;#34; reverse &amp;#34;&amp;lt;----&amp;#34; to &amp;#34;----&amp;gt;&amp;#34; finally get &amp;#34;--&amp;gt;----&amp;gt;&amp;#34; 代码 # 翻转数组 # public class Solution { public int hamingWeight(int n) { int numOnes = 0; for (int i = 31; i &amp;gt;= 0; i--) { if ( ((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1 ) numOnes += 1; } return numOnes;s } } 致谢 # 力扣官方题解</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/</guid>
-      <description> 191. Number of 1 Bits # 题目 # 编写一个函数，输入是一个无符号整数 (以二进制串的形式)，返回其二进制表达式中数字位数位 &#39;1&#39; 的个数，也称为 汉明重量。
+      <description> 0191. Number of 1 Bits # 题目 # 编写一个函数，输入是一个无符号整数 (以二进制串的形式)，返回其二进制表达式中数字位数位 &#39;1&#39; 的个数，也称为 汉明重量。
 在 Java 中，整数的表示有以下两个特点：
 没有无符号整数类型，输入和输出都将被指定为有符号整数类型。 编译器使用 二进制补码 表示有符号整数。 思路 # 代码 # public class Solution { public int hamingWeight(int n) { int numOnes = 0; for (int i = 31; i &amp;gt;= 0; i--) { if ( ((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 1 ) numOnes += 1; } return numOnes;s } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0198.-House-Robber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0198.-House-Robber/</guid>
+      <description>0198. House Robber # 题目 # 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。 给定一个代表每个房屋存放金额的非负整数数组，计算你 不触动警报装置的情况下 ，一夜之内能够偷窃到的最高金额。 思路 # 动态规划 # 代码 # 动态规划 # class Solution { public int rob(int[] nums) { int[] profits = new int[nums.length]; int ans = 1; for (int i = 0; i &amp;lt; nums.length; i++) { if (i == 0) profits[i] = nums[0]; else if (i == 1) profits[i] = Math.max(nums[0], nums[1]); else profits[i] = Math.max(profits[i-2] + nums[i], profits[i - 1]); ans = Math.</description>
     </item>
     
     <item>
@@ -775,6 +802,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0232.-Implement-Queue-using-Stacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0232.-Implement-Queue-using-Stacks/</guid>
+      <description>0255. Implement Queue using Stacks # 题目 # 使用两个栈实现一个先入先出的栈，支持普通队列的全部四种操作。 实现 MyQueue 类： void push(int x) 将元素 x 推到队列的末尾 int pop() 从队列的开头移除并返回元素 int peek() 返回队列开头的元素 boolean empty() 如果队列为空，返回 true；否则，返回 false 思路 # 使用两个栈实现队列 # 代码 # 使用两个栈实现队列 # class MyQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; public MyQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } public void push(int x) { this.inStack.push(x); } public int pop() { if (this.outStack.size() == 0) { while (this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -810,6 +846,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0255.-Implement-Stack-using-Queues/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0255.-Implement-Stack-using-Queues/</guid>
+      <description>0255. Implement Stack using Queues # 题目 # 使用两个队列实现一个后入先出的栈，支持普通栈的全部四种操作。 实现 MyStack 类： void push(int x) 将元素 x 压入栈顶。 int pop() 移除并返回栈顶元素。 int top() 返回栈顶元素。 boolean empty() 如果栈是空的，返回 true ；否则，返回 false 。 思路 # 使用两个队列实现栈 # 代码 # 使用两个队列实现栈 # class MyStack { private Queue&amp;lt;Integer&amp;gt; stack, queue; public MyStack() { this.stack = new LinkedList&amp;lt;&amp;gt;(); this.queue = new LinkedList&amp;lt;&amp;gt;(); } public void push(int x) { if (this.stack.size() == 0) this.stack.offer(x); else { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -832,6 +877,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0278.-First-Bad-Version/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0278.-First-Bad-Version/</guid>
+      <description> 0035. Search Insert Position # 题目 # 给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。 如果目标值不存在于数组中，返回它将会被按顺序插入的位置。 使用时间复杂度为 O(log n) 的算法。 思路 # 二分查找（左闭右开） # 令右指针指向已知大于目标值的最靠前位置，左指针指向已知不大于目标值的最靠后位置 当两指针相遇，所指向位置为元素的插入位置 代码 # 二分查找（左闭右开） # class Solution { public int searchInsert(int[] nums, int target) { int left = 0, right = nums.length; while (left &amp;lt; right) { int medium = left + (right - left) / 2; if (nums[medium] == target) return medium; else if (nums[medium] &amp;gt; target) right = medium; else left = medium + 1; } return right; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -839,6 +893,21 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <description> 283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
 必须在不复制数组的情况下原地对数组进行操作。
 思路 # 代码 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0292.-Nim-Game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0292.-Nim-Game/</guid>
+      <description> 0292. Nim Game # 题目 # 两人玩 Nim 游戏
+桌子上有一堆石头。
+每一回合，轮到的人拿掉 1 - 3 块石头。
+拿掉最后一块石头的人就是获胜者。
+假设两人所走每一步都是最优解。
+编写函数，判断先手能否在给定石头数量为 n 的情况下赢得游戏。
+思路 # 博弈 # 若 n 不是 4 的幂，则在每回合先手总可以令后手面对总数为 4的若干次幂 的石头，直至令后手面对 4块石头。此时先手必胜。 同理，若 n 是 4 的幂，则先手必败。 代码 # 博弈 # class Solution { public boolean canWinNim(int n) { return n % 4 != 0; } } </description>
     </item>
     
     <item>
@@ -925,6 +994,15 @@ Twitter() 初始化简易版推特对象 void postTweet(int userId, int tweetId)
       <description>369. Plus One Linked List # 题目 # 给定一个用 链表 表示的非负整数，然后将这个整数加一。
 最高位有效数字位于链表的首尾 head。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int helper(ListNode head, int carry) { if (head.next == null) { int result = (head.val + carry) / 10; head.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0374.-Guess-Number-Higher-or-Lower/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0374.-Guess-Number-Higher-or-Lower/</guid>
+      <description> 0374. Guess Number Higher or Lower # 题目 # 猜数字游戏 规则如下： 从 1 到 n 随机选择一个数字。 猜出被选择的这个数字。 guess 函数会返回所猜数字与所选数字的大小关系。 -1：所选数字小于所猜数字 1：所选数字大于所猜数字 0：所选数字等于所猜数字 返回所选数字。 思路 # 二分 # 代码 # 二分 # /** * Forward declaration of guess API. * @param num your guess * @return -1 if num is higher than the picked number *	1 if num is lower than the picked number * otherwise return 0 * int guess(int num); */ public class Solution extends GuessGame { public int guessNumber(int n) { int left = 1, right = n; while (left &amp;lt;= right) { int mid = left + (right - left) / 2; if (guess(mid) == 0) return mid; else if (guess(mid) == -1) right = mid - 1; else left = mid + 1; } return -1; } } </description>
     </item>
     
     <item>
@@ -1111,6 +1189,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 给你一个 非递减 的整数数组 timeSeries ，其中 timeSeries[i] 表示提莫在 timeSeries[i] 秒时对艾希发起攻击，以及一个表示中毒持续时间的整数 duration 。
 返回艾希处于中毒状态的 总 秒数。
 思路 # 代码 # class Solution { public int findPoisonedDuration(int[] timeSeries, int duration) { int lasting = 0; for (int i = 0; i &amp;lt; timeSeries.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0500.-Keyboard-Row/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0500.-Keyboard-Row/</guid>
+      <description>0500. Keyboard Row # 题目 # 给定字符串数组 words ，返回可以使用在 美式键盘 同一行的字母打印出来的单词。 美式键盘 中： 第一行由字符 &amp;quot;qwertyuiop&amp;quot; 组成。 第二行由字符 &amp;quot;asdfghjkl&amp;quot; 组成。 第三行由字符 &amp;quot;zxcvbnm&amp;quot; 组成。 思路 # 模拟+打表 # 代码 # 模拟+打表 # class Solution { public void mapping (int[] qwerty) { qwerty[&amp;#39;q&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;w&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;e&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;r&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;t&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;y&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;u&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;i&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;o&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;p&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;a&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;s&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;d&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;f&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;g&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;h&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;j&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;k&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;l&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;z&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;x&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;c&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;v&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;b&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;n&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;m&amp;#39;-&amp;#39;a&amp;#39;] = 2; } public String[] findWords(String[] words) { int[] qwerty = new int[26]; mapping(qwerty); List&amp;lt;String&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;(); for (String word: words) { boolean ok = true; for (int i = 0; i &amp;lt; word.</description>
     </item>
     
     <item>
@@ -1454,7 +1541,7 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</guid>
       <description>933. Number of Recent Calls # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
 请你实现 RecentCounter 类：
-RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 代码 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.poll(); return queue.</description>
+RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 # 代码 # 队列 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.</description>
     </item>
     
     <item>
@@ -1475,7 +1562,7 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
       <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
-思路 # 代码 # class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.length; int[] result = new int[sz]; if (nums[0] &amp;gt;= 0) for (int i=0; i&amp;lt;sz; i++) result[i] = nums[i] * nums[i]; else if (nums[sz-1] &amp;lt;= 0) for (int i=sz-1; i&amp;gt;=0; i--) result[sz-1] = nums[i] * nums[i]; else { int left=-1, right=nums.</description>
+思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] sortedSquares(int[] nums) { int[] ans = new int[nums.length]; int i = 0, j = nums.length - 1, ptr = nums.length - 1; while (i &amp;lt;= j) { int num = Math.abs(nums[i]) &amp;gt; Math.abs(nums[j]) ? nums[i++] : nums[j--]; ans[ptr--] = num * num; } return ans; } } class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.</description>
     </item>
     
     <item>
@@ -1704,6 +1791,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</guid>
+      <description> 1672. Richest Customer Wealth # 题目 # 给定 m x n 的整数网格 accounts ，其中 accounts[i][j] 是第 i 位客户在第 j 家银行托管的资产数量。 客户的 资产总量 是其在各家银行托管的资产数量之和。最富有客户是 资产总量 最大的客户。 返回最富有客户所拥有的 资产总量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumWealth(int[][] accounts) { int ans = 0; for (int[] account: accounts) { int wealth = 0; for (int val: account) wealth += val; ans = Math.max(ans, wealth); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1688.-Count-of-Matches-in-Tournament/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1867,6 +1963,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2235.-Add-Two-Integers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2235.-Add-Two-Integers/</guid>
+      <description> 2235. Add Two Integers # 题目 # 给定两个整数 num1 和 num2，返回这两个整数的和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int sum(int num1, int num2) { return num1 + num2; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1906,6 +2011,18 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
       
       <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/</guid>
       <description>2319. Check if Matrix Is X-Matrix # 题目 # X 矩阵 是满足下列条件的方阵 矩阵对角线上所有元素都 非零 非对角线元素均 为零 给定 n 阶方阵 grid，判断 grid 是否为 X 矩阵 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkXMatrix(int[][] grid) { boolean valid = true; for (int i = 0; i &amp;lt; grid.length; i++) { for (int j = 0; j &amp;lt; grid.length; j++) { if (i == j) valid &amp;amp;= grid[i][j] !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2325.-Decode-the-Message/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2325.-Decode-the-Message/</guid>
+      <description>2325. Decode the Message # 题目 # 给定字符串 key 和 message ，分别表示 密钥 和 密文。解密步骤如下：
+使用 key 中 26 个英文小写字母第一次出现的顺序作为替换表中的字母 顺序 。 将替换表与普通英文字母表对齐，形成 对照表。 按照对照表 替换 message 中的每个字母。 空格 &#39; &#39; 保持不变。 例如，key = &amp;quot;happy boy&amp;quot;（实际的加密密钥会包含字母表中每个字母 至少一次），得到部分对照表（&#39;h&#39; -&amp;gt; &#39;a&#39;、&#39;a&#39; -&amp;gt; &#39;b&#39;、&#39;p&#39; -&amp;gt; &#39;c&#39;、&#39;y&#39; -&amp;gt; &#39;d&#39;、&#39;b&#39; -&amp;gt; &#39;e&#39;、&#39;o&#39; -&amp;gt; &#39;f&#39;）。
+返回解密后的消息。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public String decodeMessage(String key, String message) { Map&amp;lt;Character, Character&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); char charPoint = &amp;#39;a&amp;#39;; for (int i = 0; i &amp;lt; key.</description>
     </item>
     
     <item>
@@ -2044,12 +2161,39 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/041.-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/041.-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC/</guid>
+      <description>剑指 Offer II 041. 滑动窗口的平均值 # 题目 # 给定一个整数数据流和一个窗口大小，根据该滑动窗口的大小，计算滑动窗口里所有数字的平均值。 实现 MovingAverage 类： MovingAverage(int size) 用窗口大小 size 初始化对象。 double next(int val) 成员函数 next 每次调用的时候都会往滑动窗口增加一个整数，请计算并返回数据流中最后 size 个值的移动平均值，即滑动窗口里所有数字的平均值。 思路 # 队列 # 代码 # 队列 # class MovingAverage { private Queue&amp;lt;Integer&amp;gt; queue; private int capacity; private int sum; public MovingAverage(int size) { this.queue = new LinkedList&amp;lt;&amp;gt;(); this.capacity = size; this.sum = 0; } public double next(int val) { if (this.queue.size() == this.capacity) this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/042.-%E6%9C%80%E8%BF%91%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/042.-%E6%9C%80%E8%BF%91%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/</guid>
+      <description>剑指 Offer II 042. 最近请求次数 # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。 请你实现 RecentCounter 类： RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 # 代码 # 队列 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while(queue.peek() &amp;lt; t - 3000) queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/06.-%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/06.-%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/</guid>
       <description>剑指 Offer 06. 从尾到头打印链表 # 题目 # 输入一个链表的头节点，从尾到头反过来返回每个节点的值（用数组返回）。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public void helper(ListNode head, List&amp;lt;Integer&amp;gt; resultList) { if (head == null) return; else if (head.next == null) resultList.add(head.val); else { helper(head.next, resultList); resultList.add(head.val); } } public int[] reversePrint(ListNode head) { List&amp;lt;Integer&amp;gt; resultList = new ArrayList&amp;lt;&amp;gt;(); helper(head, resultList); int[] result = new int[resultList.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/09.-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/09.-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</guid>
+      <description>剑指 Offer 09. 用两个栈实现队列 # 题目 # 用两个栈实现一个队列。 队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。 (若队列中没有元素，deleteHead 操作返回 -1 ) 思路 # 代码 # class CQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; public CQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } public void appendTail(int value) { this.inStack.push(value); } public int deleteHead() { if (this.outStack.size() == 0 &amp;amp;&amp;amp; this.inStack.size() == 0) return -1; if (this.outStack.size() == 0) { while (this.inStack.size() != 0) { this.</description>
     </item>
     
     <item>
@@ -2080,6 +2224,15 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
       <description>剑指 Offer 22. 对称的二叉树 # 题目 # 请实现一个函数，用来判断一棵二叉树是否是对称的。如果一棵二叉树和它的镜像一样，那么它是对称的。
 思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public boolean isTwoSymmetric(TreeNode root1, TreeNode root2) { if (root1 == null) return root2 == null; if (root2 == null) return false; return (root1.val == root2.val) &amp;amp; isTwoSymmetric(root1.left, root2.right) &amp;amp; isTwoSymmetric(root1.right, root2.left); } public boolean isSymmetric(TreeNode root) { if (root == null) return true; return isTwoSymmetric(root.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/32.-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/32.-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</guid>
+      <description>剑指 Offer 32. 从上到下打印二叉树 # 题目 # 从上到下打印出二叉树的每个节点，同一层的节点按照从左到右的顺序打印。 思路 # 层序遍历 # 代码 # 层序遍历 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } } class Solution { public int[] levelOrder(TreeNode root) { List&amp;lt;Integer&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;(); Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); if (root != null) queue.offer(root); while (queue.size() != 0) { int layerSize = queue.size(); for (int i = 0; i &amp;lt; layerSize; i++) { TreeNode node = queue.</description>
     </item>
     
     <item>
@@ -2136,6 +2289,15 @@ MAllk33</description>
       <description>面试题 03.03. 堆盘子 # 题目 # 堆盘子。设想有一堆盘子，堆太高可能会倒下来。因此，在现实生活中，盘子堆到一定高度时，就会堆另外一堆盘子。实现数据结构 SetOfStacks，模拟这种行为。SetOfStacks 应该由多个栈组成，并在在前一个栈填满时新建一个栈。此外，SetOfStacks.push()和 SetOfStacks.pop() 应该与普通栈的操作方法相同 (即，pop 的返回值应该与只有一个栈时的情况一致)。此外，实现 popAt(int index) 方法，根据指定的子栈，执行 pop 操作。
 当某个栈为空时，应删除该栈。当栈中没有元素或不存在该栈时，pop，popAt 应返回 -1。
 思路 # 代码 # class StackOfPlates { private class stackNode { public int val; public stackNode next; stackNode(int val, stackNode next) { this.val = val; this.next = next; } } private class Stack { private int size; private int capacity; private stackNode sentinel; Stack(int capacity) { this.size = 0; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.04.-%E5%8C%96%E6%A0%88%E4%B8%BA%E9%98%9F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.04.-%E5%8C%96%E6%A0%88%E4%B8%BA%E9%98%9F/</guid>
+      <description>面试题 03.04. 化栈为队 # 题目 # 实现一个 MyQueue 类，该类用两个栈实现一个队列。 思路 # 代码 # class MyQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; /** Initialize your data structure here. */ public MyQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } /** Push element x to the back of queue. */ public void push(int x) { this.inStack.push(x); } /** Removes the element from in front of queue and returns that element. */ public int pop() { if (this.</description>
     </item>
     
     <item>

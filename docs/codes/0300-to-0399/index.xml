@@ -93,6 +93,15 @@ Twitter() 初始化简易版推特对象 void postTweet(int userId, int tweetId)
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0374.-Guess-Number-Higher-or-Lower/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0374.-Guess-Number-Higher-or-Lower/</guid>
+      <description> 0374. Guess Number Higher or Lower # 题目 # 猜数字游戏 规则如下： 从 1 到 n 随机选择一个数字。 猜出被选择的这个数字。 guess 函数会返回所猜数字与所选数字的大小关系。 -1：所选数字小于所猜数字 1：所选数字大于所猜数字 0：所选数字等于所猜数字 返回所选数字。 思路 # 二分 # 代码 # 二分 # /** * Forward declaration of guess API. * @param num your guess * @return -1 if num is higher than the picked number *	1 if num is lower than the picked number * otherwise return 0 * int guess(int num); */ public class Solution extends GuessGame { public int guessNumber(int n) { int left = 1, right = n; while (left &amp;lt;= right) { int mid = left + (right - left) / 2; if (guess(mid) == 0) return mid; else if (guess(mid) == -1) right = mid - 1; else left = mid + 1; } return -1; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0379.-Design-Phone-Directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
