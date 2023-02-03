@@ -156,5 +156,14 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
 思路 # 代码 # class Solution { public char findTheDifference(String s, String t) { char res = 0; for (int i = 0; i &amp;lt; s.length(); i++) res ^= s.charAt(i); for (int i = 0; i &amp;lt; t.length(); i++) res ^= t.charAt(i); return res; } } </description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</guid>
+      <description> 0392. Is Subsequence # 题目 # 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。 （例如，&amp;quot;ace&amp;quot;是&amp;quot;abcde&amp;quot;的一个子序列，而&amp;quot;aec&amp;quot;不是）。 思路 # 代码 # class Solution { public boolean isSubsequence(String s, String t) { int i = 0, j = 0; while (i &amp;lt; s.length() &amp;amp;&amp;amp; j &amp;lt; t.length()) { if (s.charAt(i) == t.charAt(j)) i++; j++; } return i == s.length(); } } </description>
+    </item>
+    
   </channel>
 </rss>

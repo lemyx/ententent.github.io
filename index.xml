@@ -491,7 +491,7 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0116.-Populating-Next-Right-Pointers-in-Each-Node/</guid>
-      <description>116. Populating Next Right Pointers in Each Node # 题目 # 给定一个 完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。
+      <description>0116. Populating Next Right Pointers in Each Node # 题目 # 给定一个 完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。
 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
 初始状态下，所有 next 指针都被设置为 NULL。
 思路 # 层序遍历 代码 # 层序遍历 # class Node { public int val; public Node left; public Node right; public Node next; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, Node _left, Node _right, Node _next) { val = _val; left = _left; right = _right; next = _next; } } class Solution { public Node connect(Node root) { if (root == null) return null; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
@@ -503,7 +503,7 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/</guid>
-      <description>116. Populating Next Right Pointers in Each Node II # 题目 # 给定一个二叉树
+      <description>0117. Populating Next Right Pointers in Each Node II # 题目 # 给定一个二叉树
 struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
 初始状态下，所有 next 指针都被设置为 NULL。
 思路 # 层序遍历 代码 # 层序遍历 # class Node { public int val; public Node left; public Node right; public Node next; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, Node _left, Node _right, Node _next) { val = _val; left = _left; right = _right; next = _next; } } class Solution { public Node connect(Node root) { if (root == null) return null; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
@@ -515,7 +515,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</guid>
-      <description>125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
+      <description>0125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
 字母和数字都属于字母数字字符。
 给定字符串 s，判断其是否为 回文串。
 思路 # 代码 # class Solution { public boolean isPalindrome(String s) { int left = 0, right = s.length() - 1; while (left &amp;lt; right) { while (left &amp;lt; s.length() &amp;amp;&amp;amp; Character.isLetterOrDigit(s.charAt(left)) == false) left += 1; while (right &amp;gt;= 0 &amp;amp;&amp;amp; Character.isLetterOfDigit(s.charAt(right)) == false) right -= 1; if (left &amp;gt;= right) return true; if (Character.toLowerCase(s.charAt(left++)) != Character.</description>
@@ -527,7 +527,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</guid>
-      <description> 136. Single Number # 题目 # 给定一个 非空 整数数组 nums，除了某个元素只出现一次之外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+      <description> 0136. Single Number # 题目 # 给定一个 非空 整数数组 nums，除了某个元素只出现一次之外，其余每个元素均出现两次。找出那个只出现了一次的元素。
 设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
 思路 # x ^ x = 0、 x ^ 0 = x
 代码 # class Solution { public int singleNumber(int[] nums) { int result = 0; for (int num: nums) result = result ^ num; return result; } } </description>
@@ -550,7 +550,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</guid>
-      <description>138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+      <description>0138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
 构造这个链表的 深拷贝。
 思路 # 通过两次遍历实现深拷贝。
 第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&amp;lt;Node, Node&amp;gt; correspond = new HashMap&amp;lt;Node, Node&amp;gt;(); while (ptrOld.</description>
@@ -651,7 +651,7 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0150.-Evaluate-Reverse-Polish-Notation/</guid>
-      <description>150. Evaluate Reverse Polish Notation # 题目 # 给定字符串数组 tokens，表示一个根据 逆波兰表示法 表示的算术表达式。
+      <description>0150. Evaluate Reverse Polish Notation # 题目 # 给定字符串数组 tokens，表示一个根据 逆波兰表示法 表示的算术表达式。
 返回表达式的值。
 注意：
 有效的算符为 &#39;+&#39;、&#39;-&#39;、&#39;*&#39; 和 &#39;/&#39; 。 每个操作数（运算对象）都可以是一个整数或者另一个表达式。 两个整数之间的除法总是 向零截断 。 表达式中不含除零运算。 输入是一个根据逆波兰表示法表示的算术表达式。 答案及所有中间计算结果可以用 32 位 整数表示。 思路 # 逆波兰表达式主要有以下两个优点： 去掉括号后表达式无歧义。 适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中 代码 # class Solution { public int evalRPN(String[] tokens) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for(String token: tokens) { switch (token) { case &amp;#34;+&amp;#34; : stack.push(stack.pop() + stack.pop()); break; case &amp;#34;-&amp;#34; : int operand_2 = stack.</description>
@@ -665,6 +665,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</guid>
       <description>160. Intersection of Two Linked Lists # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回null。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/</guid>
+      <description>0167. Two Sum II - Input Array Is Sorted # 题目 # 给定一个下标从 1 开始的整数数组 numbers ，该数组已按 非递减顺序排列 从数组中找出满足相加之和等于目标数 target 的两个数的下标。 如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 &amp;lt;= index1 &amp;lt; index2 &amp;lt;= numbers.length 。 以长度为 2 的整数数组 [index1, index2] 的形式返回这两个整数的下标 index1 和 index2。 假设每个输入 只对应唯一的答案 ，且 不可以 重复使用相同的元素。 所设计的解决方案必须只使用常量级的额外空间。 思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] twoSum(int[] numbers, int target) { int[] ans = new int[2]; int left = 0, right = numbers.</description>
     </item>
     
     <item>
@@ -739,6 +748,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/</guid>
       <description> 203. Remove Linked List Elements # 题目 # 给定链表头节点head和一个整数val，删除链表中所有满足Node.val == val的节点，并返回新的头节点。
 思路 # 代码 # class Solution { public void moveZeros(int[] nums) { int slow = 0, fast = 0; while (fast &amp;lt; nums.length) { if (nums[fast] != 0) nums[slow++] = nums[fast]; fast += 1; } while (slow &amp;lt; nums.length) nums[slow++] = 0; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0205.-Isomorphic-Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0205.-Isomorphic-Strings/</guid>
+      <description>0205. Isomorphic Strings # 题目 # 给定两个字符串 s 和 t ，判断它们是否是同构的。 如果 s 中的字符可以按某种映射关系替换得到 t ，那么这两个字符串是同构的。 要求每个出现的字符都映射到另一个字符，同时不改变字符的顺序。不同字符不能映射到同一个字符上，相同字符只能映射到同一个字符上，字符可以映射到自己本身。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean isIsomorphic(String s, String t) { if (s.length() != t.length()) return false; Map&amp;lt;Character, Character&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) { if (map.containsKey(s.charAt(i)) &amp;amp;&amp;amp; map.get(s.charAt(i)) != t.charAt(i)) return false; if (map.containsKey(s.charAt(i)) == false &amp;amp;&amp;amp; map.</description>
     </item>
     
     <item>
@@ -890,9 +908,18 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0283.-Move-Zeros/</guid>
-      <description> 283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
+      <description> 0283. Move Zeros # 题目 # 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末位，同时保持非零元素的相对顺序。
 必须在不复制数组的情况下原地对数组进行操作。
-思路 # 代码 # class Solution { public int missingNumber(int[] nums) { int n = nums.length; int expected = n * (n + 1) / 2; int actual = 0; for (int num: nums) actual += num; return exptected - actual; } } </description>
+思路 # 代码 # class Solution { public void moveZeros(int[] nums) { int slow = 0, fast = 0; while (fast &amp;lt; nums.length) { if (nums[fast] != 0) nums[slow++] = nums[fast]; fast++; } while (slow &amp;lt; nums.length) nums[slow++] = 0; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0290.-Word-Pattern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0290.-Word-Pattern/</guid>
+      <description>0290. Word Pattern # 题目 # 给定一种规律 pattern 和一个字符串 s ，判断 s 是否遵循相同的规律。 这里的 遵循 指完全匹配，例如， pattern 里的每个字母和字符串 s 中的每个非空单词之间存在着双向连接的对应规律。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean wordPattern(String pattern, String s) { String[] words = s.split(&amp;#34; &amp;#34;); if (pattern.length() != words.length) return false; Map&amp;lt;Character, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; pattern.length(); i++) { char pat = pattern.charAt(i); String word = words[i]; if (map.</description>
     </item>
     
     <item>
@@ -1063,6 +1090,15 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</guid>
+      <description> 0392. Is Subsequence # 题目 # 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。 （例如，&amp;quot;ace&amp;quot;是&amp;quot;abcde&amp;quot;的一个子序列，而&amp;quot;aec&amp;quot;不是）。 思路 # 代码 # class Solution { public boolean isSubsequence(String s, String t) { int i = 0, j = 0; while (i &amp;lt; s.length() &amp;amp;&amp;amp; j &amp;lt; t.length()) { if (s.charAt(i) == t.charAt(j)) i++; j++; } return i == s.length(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1107,6 +1143,15 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
 实现 AllOne 类：
 AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计数增加 1 。如果数据结构中尚不存在 key ，那么插入计数为 1 的 key 。 dec(String key) 字符串 key 的计数减少 1 。如果 key 的计数在减少后为 0 ，那么需要将这个 key 从数据结构中删除。测试用例保证：在减少计数前，key 存在于数据结构中。 getMaxKey() 返回任意一个计数最大的字符串。如果没有元素存在，返回一个空字符串 &amp;quot;&amp;quot; 。 getMinKey() 返回任意一个计数最小的字符串。如果没有元素存在，返回一个空字符串 &amp;quot;&amp;quot; 。 **注意：**每个函数都应当满足 O(1) 平均时间复杂度。
 思路 # 采用 双向链表 + 哈希表 的方式实现。 链表结点记录 频率 以及 该频率对应的字符串集合，以 Max &amp;lt;&amp;ndash;&amp;gt; Min 的顺序存储。 HashSet 可以在 O(1) 的时间复杂度内实现 add 和 remove 操作。 代码 # class AllOne { private class ListNode { public int count; public Set&amp;lt;String&amp;gt; collection; public ListNode prev; public ListNode next; ListNode(int count, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/</guid>
+      <description> 0434. Number of Segments in a String # 题目 # 统计字符串中的单词个数，这里的单词指的是连续的非空格的字符。 假定字符串不包括任何不可打印的字符。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countSegments(String s) { if (s.length() == 0) return 0; int ans = s.charAt(0) == &amp;#39; &amp;#39; ? 0 : 1, ptr = 0; while (ptr &amp;lt; s.length() - 1) { if (s.charAt(ptr) == &amp;#39; &amp;#39; &amp;amp;&amp;amp; s.charAt(ptr + 1) != &amp;#39; &amp;#39;) { ans++; ptr += 2; } else ptr++; } return ans; } } </description>
     </item>
     
     <item>
@@ -1173,8 +1218,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <description> 476. Number Complement # 题目 # 对整数的二进制表示取反 (0 变 1，1 变 0) 后，再转换为十进制表示，可以得到这个整数的补数。
 如整数 5 的二进制表示是 &amp;quot;101&amp;quot;，取反后得到 &amp;quot;010&amp;quot;，再转回十进制表示得到补数 2。
 给定一个整数，输出其补数。
-注: 1 &amp;lt;= num &amp;lt; 2^31}
+注: 1 &amp;lt;= num &amp;lt; 2^31
 思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/</guid>
+      <description> 0485. Max Consecutive Ones # 题目 # 给定二进制数组 nums，计算其中最大连续 1 的个数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findMaxConsecutiveOnes(int[] nums) { int ans = 0, cnt = 0; for (int num: nums) { if (num == 0) cnt = 0; else ans = Math.max(ans, ++cnt); } return ans; } } </description>
     </item>
     
     <item>
@@ -1223,6 +1277,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0520.-Detect-Capital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0520.-Detect-Capital/</guid>
+      <description>0520. Detect Capital # 题目 # 定义单词的大写用法的正确使用情景为：
+全部字母都是大写，比如 &amp;quot;USA&amp;quot; 。 单词中所有字母都不是大写，比如 &amp;quot;leetcode&amp;quot; 。 如果单词不只含有一个字母，只有首字母大写， 比如 &amp;quot;Google&amp;quot; 。 给定字符串 word 。如果大写用法正确，返回 true ；否则，返回 false 。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean detectCapitalUse(String word) { int cnt = 0; for (int i = 0; i &amp;lt; word.length(); i++) { if (Character.isUpperCase(word.charAt(i))) cnt++; } return cnt == word.length() || cnt == 0 || (cnt == 1 &amp;amp;&amp;amp; Character.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1233,13 +1298,43 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/</guid>
+      <description>0551. Student Attendance Record I # 题目 # 给定表示学生出勤记录的字符串 s ，每个字符用于标记当天的出勤情况。
+记录中只含下面三种字符：
+&#39;A&#39;：Absent，缺勤 &#39;L&#39;：Late，迟到 &#39;P&#39;：Present，到场 如果学生能够 同时 满足下面两个条件，则可以获得出勤奖励：
+按 总出勤 计，学生缺勤（&#39;A&#39;）严格 少于两天。 学生 不会 存在 连续 3 天或 连续 3 天以上的迟到（&#39;L&#39;）记录。 如果学生可以获得出勤奖励，返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkRecord(String s) { int numAbsent = 0, numLate = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/</guid>
+      <description>0557. Reverse Words in a String iii # 题目 # 给定字符串 s，反转字符串中每个单词的字符顺序，同时保留空格和单词的初始顺序。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseWords(String s) { String[] words = s.split(&amp;#34; &amp;#34;); for (int i = 0; i &amp;lt; words.length; i++) { char[] charArray = words[i].toCharArray(); int left = 0, right = charArray.length - 1; while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left++; right--; } words[i] = String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</guid>
-      <description>559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
+      <description>0559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
 最大深度是指从根节点到最远叶子节点的最长路径上的节点总数。
 思路 # 层序遍历 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public int maxDepth(Node root) { if (root == null) return 0; int depth = 0; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/</guid>
+      <description>0563. Binary Tree Tilt # 题目 # 给定二叉树根节点 root ，计算并返回 整个树 的坡度 。 一个树的 节点的坡度 定义为，该节点左子树的节点之和和右子树节点之和的 差的绝对值 。如果没有左子树的话，左子树的节点之和为 0 ；没有右子树的话也是一样。空结点的坡度是 0 。 整个树 的坡度是其所有节点的坡度之和。 思路 # 递归 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int sum(TreeNode root, List&amp;lt;Integer&amp;gt; tilt) { if (root == null) return 0; int leftSum = sum(root.</description>
     </item>
     
     <item>

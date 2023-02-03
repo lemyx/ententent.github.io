@@ -37,6 +37,17 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0520.-Detect-Capital/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0520.-Detect-Capital/</guid>
+      <description>0520. Detect Capital # 题目 # 定义单词的大写用法的正确使用情景为：
+全部字母都是大写，比如 &amp;quot;USA&amp;quot; 。 单词中所有字母都不是大写，比如 &amp;quot;leetcode&amp;quot; 。 如果单词不只含有一个字母，只有首字母大写， 比如 &amp;quot;Google&amp;quot; 。 给定字符串 word 。如果大写用法正确，返回 true ；否则，返回 false 。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean detectCapitalUse(String word) { int cnt = 0; for (int i = 0; i &amp;lt; word.length(); i++) { if (Character.isUpperCase(word.charAt(i))) cnt++; } return cnt == word.length() || cnt == 0 || (cnt == 1 &amp;amp;&amp;amp; Character.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -47,13 +58,43 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/</guid>
+      <description>0551. Student Attendance Record I # 题目 # 给定表示学生出勤记录的字符串 s ，每个字符用于标记当天的出勤情况。
+记录中只含下面三种字符：
+&#39;A&#39;：Absent，缺勤 &#39;L&#39;：Late，迟到 &#39;P&#39;：Present，到场 如果学生能够 同时 满足下面两个条件，则可以获得出勤奖励：
+按 总出勤 计，学生缺勤（&#39;A&#39;）严格 少于两天。 学生 不会 存在 连续 3 天或 连续 3 天以上的迟到（&#39;L&#39;）记录。 如果学生可以获得出勤奖励，返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkRecord(String s) { int numAbsent = 0, numLate = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/</guid>
+      <description>0557. Reverse Words in a String iii # 题目 # 给定字符串 s，反转字符串中每个单词的字符顺序，同时保留空格和单词的初始顺序。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseWords(String s) { String[] words = s.split(&amp;#34; &amp;#34;); for (int i = 0; i &amp;lt; words.length; i++) { char[] charArray = words[i].toCharArray(); int left = 0, right = charArray.length - 1; while (left &amp;lt; right) { char temp = charArray[left]; charArray[left] = charArray[right]; charArray[right] = temp; left++; right--; } words[i] = String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/</guid>
-      <description>559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
+      <description>0559. Maximum Depth of N-ary Tree # 题目 # 给定一个 n 叉树，找到其最大深度。
 最大深度是指从根节点到最远叶子节点的最长路径上的节点总数。
 思路 # 层序遍历 代码 # class Node { public int val; public List&amp;lt;Node&amp;gt; children; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, List&amp;lt;Node&amp;gt; _children) { val = _val; children = _children; } } class Solution { public int maxDepth(Node root) { if (root == null) return 0; int depth = 0; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/</guid>
+      <description>0563. Binary Tree Tilt # 题目 # 给定二叉树根节点 root ，计算并返回 整个树 的坡度 。 一个树的 节点的坡度 定义为，该节点左子树的节点之和和右子树节点之和的 差的绝对值 。如果没有左子树的话，左子树的节点之和为 0 ；没有右子树的话也是一样。空结点的坡度是 0 。 整个树 的坡度是其所有节点的坡度之和。 思路 # 递归 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int sum(TreeNode root, List&amp;lt;Integer&amp;gt; tilt) { if (root == null) return 0; int leftSum = sum(root.</description>
     </item>
     
     <item>

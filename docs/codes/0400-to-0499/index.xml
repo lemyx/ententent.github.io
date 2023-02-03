@@ -55,6 +55,15 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/</guid>
+      <description> 0434. Number of Segments in a String # 题目 # 统计字符串中的单词个数，这里的单词指的是连续的非空格的字符。 假定字符串不包括任何不可打印的字符。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countSegments(String s) { if (s.length() == 0) return 0; int ans = s.charAt(0) == &amp;#39; &amp;#39; ? 0 : 1, ptr = 0; while (ptr &amp;lt; s.length() - 1) { if (s.charAt(ptr) == &amp;#39; &amp;#39; &amp;amp;&amp;amp; s.charAt(ptr + 1) != &amp;#39; &amp;#39;) { ans++; ptr += 2; } else ptr++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -117,8 +126,17 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <description> 476. Number Complement # 题目 # 对整数的二进制表示取反 (0 变 1，1 变 0) 后，再转换为十进制表示，可以得到这个整数的补数。
 如整数 5 的二进制表示是 &amp;quot;101&amp;quot;，取反后得到 &amp;quot;010&amp;quot;，再转回十进制表示得到补数 2。
 给定一个整数，输出其补数。
-注: 1 &amp;lt;= num &amp;lt; 2^31}
+注: 1 &amp;lt;= num &amp;lt; 2^31
 思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/</guid>
+      <description> 0485. Max Consecutive Ones # 题目 # 给定二进制数组 nums，计算其中最大连续 1 的个数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findMaxConsecutiveOnes(int[] nums) { int ans = 0, cnt = 0; for (int num: nums) { if (num == 0) cnt = 0; else ans = Math.max(ans, ++cnt); } return ans; } } </description>
     </item>
     
     <item>

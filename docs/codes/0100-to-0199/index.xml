@@ -109,7 +109,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0116.-Populating-Next-Right-Pointers-in-Each-Node/</guid>
-      <description>116. Populating Next Right Pointers in Each Node # 题目 # 给定一个 完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。
+      <description>0116. Populating Next Right Pointers in Each Node # 题目 # 给定一个 完美二叉树，其所有叶子节点都在同一层，每个父节点都有两个子节点。
 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
 初始状态下，所有 next 指针都被设置为 NULL。
 思路 # 层序遍历 代码 # 层序遍历 # class Node { public int val; public Node left; public Node right; public Node next; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, Node _left, Node _right, Node _next) { val = _val; left = _left; right = _right; next = _next; } } class Solution { public Node connect(Node root) { if (root == null) return null; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
@@ -121,7 +121,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/</guid>
-      <description>116. Populating Next Right Pointers in Each Node II # 题目 # 给定一个二叉树
+      <description>0117. Populating Next Right Pointers in Each Node II # 题目 # 给定一个二叉树
 struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个 next 指针，让这个指针指向其下一个右侧节点。如果找不到下一个右侧节点，则将 next 指针设置为 NULL。
 初始状态下，所有 next 指针都被设置为 NULL。
 思路 # 层序遍历 代码 # 层序遍历 # class Node { public int val; public Node left; public Node right; public Node next; public Node() {} public Node(int _val) { val = _val; } public Node(int _val, Node _left, Node _right, Node _next) { val = _val; left = _left; right = _right; next = _next; } } class Solution { public Node connect(Node root) { if (root == null) return null; Queue&amp;lt;Node&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
@@ -133,7 +133,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</guid>
-      <description>125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
+      <description>0125. Valid Palindrome # 题目 # 如果在将所有大写字符转换为小写字符、并移除所有非字母数字字符之后，短语正着读和反着读都一样，则可以认为该短语是一个 回文串。
 字母和数字都属于字母数字字符。
 给定字符串 s，判断其是否为 回文串。
 思路 # 代码 # class Solution { public boolean isPalindrome(String s) { int left = 0, right = s.length() - 1; while (left &amp;lt; right) { while (left &amp;lt; s.length() &amp;amp;&amp;amp; Character.isLetterOrDigit(s.charAt(left)) == false) left += 1; while (right &amp;gt;= 0 &amp;amp;&amp;amp; Character.isLetterOfDigit(s.charAt(right)) == false) right -= 1; if (left &amp;gt;= right) return true; if (Character.toLowerCase(s.charAt(left++)) != Character.</description>
@@ -145,7 +145,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0136.-Single-Number/</guid>
-      <description> 136. Single Number # 题目 # 给定一个 非空 整数数组 nums，除了某个元素只出现一次之外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+      <description> 0136. Single Number # 题目 # 给定一个 非空 整数数组 nums，除了某个元素只出现一次之外，其余每个元素均出现两次。找出那个只出现了一次的元素。
 设计并实现线性时间复杂度的算法来解决此问题，且算法只使用常量额外空间。
 思路 # x ^ x = 0、 x ^ 0 = x
 代码 # class Solution { public int singleNumber(int[] nums) { int result = 0; for (int num: nums) result = result ^ num; return result; } } </description>
@@ -168,7 +168,7 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/</guid>
-      <description>138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+      <description>0138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
 构造这个链表的 深拷贝。
 思路 # 通过两次遍历实现深拷贝。
 第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&amp;lt;Node, Node&amp;gt; correspond = new HashMap&amp;lt;Node, Node&amp;gt;(); while (ptrOld.</description>
@@ -269,7 +269,7 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0150.-Evaluate-Reverse-Polish-Notation/</guid>
-      <description>150. Evaluate Reverse Polish Notation # 题目 # 给定字符串数组 tokens，表示一个根据 逆波兰表示法 表示的算术表达式。
+      <description>0150. Evaluate Reverse Polish Notation # 题目 # 给定字符串数组 tokens，表示一个根据 逆波兰表示法 表示的算术表达式。
 返回表达式的值。
 注意：
 有效的算符为 &#39;+&#39;、&#39;-&#39;、&#39;*&#39; 和 &#39;/&#39; 。 每个操作数（运算对象）都可以是一个整数或者另一个表达式。 两个整数之间的除法总是 向零截断 。 表达式中不含除零运算。 输入是一个根据逆波兰表示法表示的算术表达式。 答案及所有中间计算结果可以用 32 位 整数表示。 思路 # 逆波兰表达式主要有以下两个优点： 去掉括号后表达式无歧义。 适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中 代码 # class Solution { public int evalRPN(String[] tokens) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for(String token: tokens) { switch (token) { case &amp;#34;+&amp;#34; : stack.push(stack.pop() + stack.pop()); break; case &amp;#34;-&amp;#34; : int operand_2 = stack.</description>
@@ -283,6 +283,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/</guid>
       <description>160. Intersection of Two Linked Lists # 题目 # 给定两个单链表的头节点headA和headB，找出并返回两个单链表相交的起始节点。如果两个链表不存在相交节点，返回null。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode(int x) { val = x; next = null; } } public class Solution { public ListNode getIntersectionNode(ListNode headA, ListNode headB) { if (headA == null || headB == null) return null; ListNode ptrA = headA, ptrB = headB; while (ptrA != ptrB) { ptrA = ptrA.next; ptrB = ptrB.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/</guid>
+      <description>0167. Two Sum II - Input Array Is Sorted # 题目 # 给定一个下标从 1 开始的整数数组 numbers ，该数组已按 非递减顺序排列 从数组中找出满足相加之和等于目标数 target 的两个数的下标。 如果设这两个数分别是 numbers[index1] 和 numbers[index2] ，则 1 &amp;lt;= index1 &amp;lt; index2 &amp;lt;= numbers.length 。 以长度为 2 的整数数组 [index1, index2] 的形式返回这两个整数的下标 index1 和 index2。 假设每个输入 只对应唯一的答案 ，且 不可以 重复使用相同的元素。 所设计的解决方案必须只使用常量级的额外空间。 思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] twoSum(int[] numbers, int target) { int[] ans = new int[2]; int left = 0, right = numbers.</description>
     </item>
     
     <item>

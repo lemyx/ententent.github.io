@@ -3,26 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+<meta name="description" content="0138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
 构造这个链表的 深拷贝。
 思路 # 通过两次遍历实现深拷贝。
 第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&lt;Node, Node&gt; correspond = new HashMap&lt;Node, Node&gt;(); while (ptrOld.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content="138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
+<meta property="og:description" content="0138. Copy List with Random Pointer # 题目 # 给定长度为 n 的链表，每个节点包含一个额外增加的随机指针 random，该指针可以指向链表中的任何节点或空节点。
 构造这个链表的 深拷贝。
 思路 # 通过两次遍历实现深拷贝。
 第一趟遍历，为新链表逐个生成节点，并构建新旧链表节点之间的对应关系。 第二趟遍历，为新链表深复制随机指针。 代码 # class Node { int val; Node next; Node random; public Node(int val) { this.val = val; this.next = null; this.random = null; } } class Solution { public Node copyRandomList(Node head) { Node sentinelOld = new Node(-1); sentinelOld.next = head; Node sentinelNew = new Node(-1); Node ptrOld = sentinelOld, ptrNew = sentinelNew; HashMap&lt;Node, Node&gt; correspond = new HashMap&lt;Node, Node&gt;(); while (ptrOld." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-07T15:51:38+08:00" />
+<meta property="article:modified_time" content="2023-02-03T08:44:09+08:00" />
 <title>0138. Copy List With Random Pointer | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.63e2e28cec928870fd027c6101866ab76c004e94a81434f30cc3c870b8ad4c7e.js" integrity="sha256-Y&#43;LijOySiHD9AnxhAYZqt2wATpSoFDTzDMPIcLitTH4=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.c8b9db33696747bf4440dd4f8499d23f23126055febccc675a1ee08ae491d9b3.js" integrity="sha256-yLnbM2lnR79EQN1PhJnSPyMSYFX&#43;vMxnWh7giuSR2bM=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -822,6 +822,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/" class="">0167. Two Sum Ii Input Array Is Sorted</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0100-to-0199/0169.-Majority-Element/" class="">0169. Majority Element</a>
   
 
@@ -922,6 +935,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/" class="">0203. Remove Linked List Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0205.-Isomorphic-Strings/" class="">0205. Isomorphic Strings</a>
   
 
         </li>
@@ -1117,6 +1143,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0200-to-0299/0283.-Move-Zeros/" class="">0283. Move Zeros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0290.-Word-Pattern/" class="">0290. Word Pattern</a>
   
 
         </li>
@@ -1338,6 +1377,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0392.-Is-Subsequence/" class="">0392. Is Subsequence</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -1406,6 +1458,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0400-to-0499/0432.-All-O1-Data-Structure/" class="">0432. All O(1) Data Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/" class="">0434. Number of Segments in a String</a>
   
 
         </li>
@@ -1496,6 +1561,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/" class="">0485. Max Consecutive Ones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0400-to-0499/0495.-Teemo-Attacking/" class="">0495. Teemo Attacking</a>
   
 
@@ -1569,6 +1647,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0500-to-0599/0520.-Detect-Capital/" class="">0520. Detect Capital</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0500-to-0599/0541.-Reverse-String-ii/" class="">0541. Reverse String Ii</a>
   
 
@@ -1582,7 +1673,46 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/" class="">0551. Student Attendance Record I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/" class="">0557. Reverse Words in a String Iii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/" class="">0559. Maximum Depth of N Ary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/" class="">0563. Binary Tree Tilt</a>
   
 
         </li>
@@ -3329,10 +3459,10 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="138-copy-list-with-random-pointerhttpsleetcodecnproblemscopy-list-with-random-pointer">
+  <article class="markdown"><h1 id="0138-copy-list-with-random-pointerhttpsleetcodecnproblemscopy-list-with-random-pointer">
   
-  <a href="https://leetcode.cn/problems/copy-list-with-random-pointer">138. Copy List with Random Pointer</a>
-  <a class="anchor" href="#138-copy-list-with-random-pointerhttpsleetcodecnproblemscopy-list-with-random-pointer">#</a>
+  <a href="https://leetcode.cn/problems/copy-list-with-random-pointer">0138. Copy List with Random Pointer</a>
+  <a class="anchor" href="#0138-copy-list-with-random-pointerhttpsleetcodecnproblemscopy-list-with-random-pointer">#</a>
 </h1>
 <h2 id="题目">
   题目
@@ -3399,9 +3529,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/d715b818774d79da9f67dde6e45b433b79846acb" title='Last modified by ententent | January 7, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/ac215c52dfc296dbbc31179813307da24bc4e8ef" title='Last modified by ententent | February 3, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 7, 2023</span>
+      <span>February 3, 2023</span>
     </a>
   </div>
 
