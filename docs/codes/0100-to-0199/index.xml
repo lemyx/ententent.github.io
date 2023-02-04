@@ -129,6 +129,18 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</guid>
+      <description> 0121. Best Time to Buy and Sell Stock # 题目 # 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+思路 # 贪心 # 代码 # 贪心 # class Solution { public int maxProfit(int[] prices) { int ans = 0, minPrice = prices[0]; for (int price: prices) { minPrice = Math.min(minPrice, price); ans = Math.max(ans, price - minPrice); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -31,11 +31,29 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/</guid>
+      <description>0844. Backspace String Compare # 题目 # 给定 s 和 t 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 true。# 代表退格字符。 对空文本输入退格字符，文本继续为空。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean backspaceCompare(String s, String t) { int ptrS = s.length() - 1, ptrT = t.length() - 1; int cntS = 0, cntT = 0; while (ptrS &amp;gt;= 0 &amp;amp;&amp;amp; ptrT &amp;gt;= 0) { while (ptrS &amp;gt;= 0) { if (s.charAt(ptrS) == &amp;#39;#&amp;#39;) { cntS++; ptrS--; } else if (cntS &amp;gt; 0) { cntS--; ptrS--; } else break; } while (ptrT &amp;gt;= 0) { if (t.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</guid>
       <description>0859. Buddy Strings # 题目 # 给定两个字符串 s 和 goal，若可以通过交换 s 中的两个字母后得到与 goal 相同的结果，则认为 s 与 goal 是亲密字符串。 判断给定的两个字符串是否是亲密字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean buddyStrings(String s, String goal) { if (s.length() != goal.length()) return false; Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length; i++) { if (s.charAt(i) != goal.charAt(i)) stack.push(i); } if (stack.size() == 0) { int[] count = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0860.-Lemonade-Change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0860.-Lemonade-Change/</guid>
+      <description> 0860. Lemonade Change # 题目 # 在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，一次购买一杯。 每位顾客支付 5 美元、10美元或20美元。必须为每名顾客正确找零，即净交易额为每名顾客支付5美元。 一开始手头没有任何零钱。 给定整数数组bills，其中bills[i]是第i位顾客付的账。 如果能给每位顾客正确找零，返回true，否则返回false。 思路 # 贪心 # 代码 # 贪心 # class Solution { public boolean lemonadeChange(int[] bills) { int five = 0, ten = 0; for (int bill: bills) { if (bill == 5) five++; else if (bill == 10) { if (--five &amp;lt; 0) return false; ten++; } else { if (ten &amp;gt; 0) { ten--; if (--five &amp;lt; 0) return false; } else { five -= 3; if (five &amp;lt; 0) return false; } } } return true; } } 致谢 # </description>
     </item>
     
     <item>

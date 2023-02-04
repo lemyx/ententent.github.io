@@ -3,28 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content=" 566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。
-给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。
-重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。
-如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
-思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &lt; r; i&#43;&#43;) { for (int j = 0; j &lt; c; j&#43;&#43;) { int index = i * c &#43; j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } ">
+<meta name="description" content=" 0566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。 给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。 重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。 如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。 思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &lt; r; i&#43;&#43;) { for (int j = 0; j &lt; c; j&#43;&#43;) { int index = i * c &#43; j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } ">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
-<meta property="og:description" content=" 566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。
-给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。
-重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。
-如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
-思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &lt; r; i&#43;&#43;) { for (int j = 0; j &lt; c; j&#43;&#43;) { int index = i * c &#43; j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } " />
+<meta property="og:description" content=" 0566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。 给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。 重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。 如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。 思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &lt; r; i&#43;&#43;) { for (int j = 0; j &lt; c; j&#43;&#43;) { int index = i * c &#43; j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-01-27T00:07:46+08:00" />
+<meta property="article:modified_time" content="2023-02-04T19:20:17+08:00" />
 <title>0566. Reshape the Matrix | LeetCode Recipe</title>
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
   <script defer src="/flexsearch.min.js"></script>
-  <script defer src="/en.search.min.c8b9db33696747bf4440dd4f8499d23f23126055febccc675a1ee08ae491d9b3.js" integrity="sha256-yLnbM2lnR79EQN1PhJnSPyMSYFX&#43;vMxnWh7giuSR2bM=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.32aeb2bcd4a6978e3a8d7436e18951883e7aeee59dc4cb926f81e947a2ef60ac.js" integrity="sha256-Mq6yvNSml446jXQ24YlRiD567uWdxMuSb4HpR6LvYKw=" crossorigin="anonymous"></script>
 
   <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
 <!--
@@ -630,6 +622,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/" class="">0117. Populating Next Right Pointers in Each Node Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/" class="">0121. Best Time to Buy Ans Sell Stock</a>
   
 
         </li>
@@ -1485,6 +1490,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0400-to-0499/0441.-Arranging-Coins/" class="">0441. Arranging Coins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/" class="">0445. Add Two Numbers Ii</a>
   
 
@@ -1740,6 +1758,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0500-to-0599/0575.-Distribute-Candies/" class="">0575. Distribute Candies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/" class="">0589. N Ary Tree Preorder Traversal</a>
   
 
@@ -1839,7 +1870,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/" class="">0643. Maximum Average Subarray I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0600-to-0699/0645.-Set-Mismatch/" class="">0645. Set Mismatch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/" class="">0657. Robot Return to Origin</a>
   
 
         </li>
@@ -1938,7 +1995,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0700-to-0799/0709.-To-Lower-Case/" class="">0709. to Lower Case</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0700-to-0799/0716.-Max-Stack/" class="">0716. Max Stack</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/" class="">0724. Find Pivot Index</a>
   
 
         </li>
@@ -1977,6 +2060,19 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/" class="">0744. Find Smallest Letter Greater Than Target</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/" class="">0747. Largest Number at Least Twice of Others</a>
   
 
@@ -1991,6 +2087,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/" class="">0762. Prime Number of Set Bits in Binary Representation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/" class="">0771. Jewels and Stones</a>
   
 
         </li>
@@ -2050,7 +2159,33 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <a href="/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/" class="">0844. Backspace String Compare</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <a href="/docs/codes/0800-to-0899/0859.-Buddy-Strings/" class="">0859. Buddy Strings</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0860.-Lemonade-Change/" class="">0860. Lemonade Change</a>
   
 
         </li>
@@ -2686,6 +2821,40 @@ https://github.com/alex-shpak/hugo-book
   
 
   
+    <input type="checkbox" id="section-ead4ec45db718fe5afad43e67d7db0f0" class="toggle"  />
+    <label for="section-ead4ec45db718fe5afad43e67d7db0f0" class="flex justify-between">
+      <a role="button" class="">1900 to 1999</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/" class="">1991. Find the Middle Index in Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
     <input type="checkbox" id="section-3e201d992afa23525d93fd88b6f14424" class="toggle"  />
     <label for="section-3e201d992afa23525d93fd88b6f14424" class="flex justify-between">
       <a role="button" class="">2000 to 2099</a>
@@ -3172,6 +3341,19 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/058.-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="">058. 左旋转字符串</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -3266,6 +3448,19 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/" class="">面试题 04.03. 特定深度节点链表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.04.-%E6%A3%80%E6%9F%A5%E5%B9%B3%E8%A1%A1%E6%80%A7/" class="">面试题 04.04. 检查平衡性</a>
   
 
         </li>
@@ -3461,19 +3656,21 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><h1 id="566-reshape-the-matrixhttpsleetcodecnproblemsreshape-the-matrix">
+  <article class="markdown"><h1 id="0566-reshape-the-matrixhttpsleetcodecnproblemsreshape-the-matrix">
   
-  <a href="https://leetcode.cn/problems/reshape-the-matrix/">566. Reshape the Matrix</a>
-  <a class="anchor" href="#566-reshape-the-matrixhttpsleetcodecnproblemsreshape-the-matrix">#</a>
+  <a href="https://leetcode.cn/problems/reshape-the-matrix/">0566. Reshape the Matrix</a>
+  <a class="anchor" href="#0566-reshape-the-matrixhttpsleetcodecnproblemsreshape-the-matrix">#</a>
 </h1>
 <h2 id="题目">
   题目
   <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
 </h2>
-<p>在 <code>MATLAB</code> 中，有一个非常有用的函数 <code>reshape</code> ，它可以将一个 <code>m x n</code> 矩阵重塑为另一个大小不同<code>（r x c）</code>的新矩阵，但保留其原始数据。</p>
-<p>给你一个由二维数组 <code>mat</code> 表示的 <code>m x n</code> 矩阵，以及两个正整数 <code>r</code> 和 <code>c</code> ，分别表示想要的重构的矩阵的行数和列数。</p>
-<p>重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。</p>
-<p>如果具有给定参数的 <code>reshape</code> 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。</p>
+<ul>
+<li>在 <code>MATLAB</code> 中，有一个非常有用的函数 <code>reshape</code> ，它可以将一个 <code>m x n</code> 矩阵重塑为另一个大小不同<code>（r x c）</code>的新矩阵，但保留其原始数据。</li>
+<li>给你一个由二维数组 <code>mat</code> 表示的 <code>m x n</code> 矩阵，以及两个正整数 <code>r</code> 和 <code>c</code> ，分别表示想要的重构的矩阵的行数和列数。</li>
+<li>重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。</li>
+<li>如果具有给定参数的 <code>reshape</code> 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。</li>
+</ul>
 <h2 id="思路">
   思路
   <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
@@ -3506,9 +3703,9 @@ https://github.com/alex-shpak/hugo-book
   <div class="flex flex-wrap justify-between">
 
 
-  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/a2ef4852daead26914edf92e65475ff8ba3a4f75" title='Last modified by ententent | January 27, 2023' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/ententent/ententent.github.io/commit/c5150c77a1ba4c8ffc889627eccc7b82ae34a743" title='Last modified by ententent | February 4, 2023' target="_blank" rel="noopener">
       <img src="/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>January 27, 2023</span>
+      <span>February 4, 2023</span>
     </a>
   </div>
 

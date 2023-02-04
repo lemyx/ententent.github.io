@@ -511,6 +511,18 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</guid>
+      <description> 0121. Best Time to Buy and Sell Stock # 题目 # 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0 。
+思路 # 贪心 # 代码 # 贪心 # class Solution { public int maxProfit(int[] prices) { int ans = 0, minPrice = prices[0]; for (int price: prices) { minPrice = Math.min(minPrice, price); ans = Math.max(ans, price - minPrice); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0125.-Valid-Palindrome/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1156,6 +1168,15 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0441.-Arranging-Coins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0441.-Arranging-Coins/</guid>
+      <description> 0441. Arranging Coins # 题目 # 共有 n 枚硬币，将它们按阶梯状排列。 对于一个由 k 行组成的阶梯，其第 i 行必须正好有 i 枚硬币。阶梯的最后一行 可能 是不完整的。 给定数字 n，计算并返回可形成 完整阶梯行 的总行数。 1 &amp;lt;= n &amp;lt;= 2^31 - 1 思路 # 二分查找 # 代码 # 二分查找 # class Solution { public long capacity(int k) { return (long) k * (k + 1) / 2; } public int arrangeCoins(int n) { /** left 表示已知能填充满的最大行数, right 是已知不能填充满的最小行数 */ int left = 1, right = n; while (left &amp;lt; right - 1) { int mid = left + (right - left) / 2; if (capacity(mid) == n) return mid; else if (capacity(mid) &amp;gt; n) right = mid; else left = mid; } return left; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1343,11 +1364,16 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/</guid>
-      <description> 566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。
-给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。
-重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。
-如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。
-思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &amp;lt; r; i++) { for (int j = 0; j &amp;lt; c; j++) { int index = i * c + j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } </description>
+      <description> 0566. Reshape the Matrix # 题目 # 在 MATLAB 中，有一个非常有用的函数 reshape ，它可以将一个 m x n 矩阵重塑为另一个大小不同（r x c）的新矩阵，但保留其原始数据。 给你一个由二维数组 mat 表示的 m x n 矩阵，以及两个正整数 r 和 c ，分别表示想要的重构的矩阵的行数和列数。 重构后的矩阵需要将原始矩阵的所有元素以相同的 行遍历顺序 填充。 如果具有给定参数的 reshape 操作是可行且合理的，则输出新的重塑矩阵；否则，输出原始矩阵。 思路 # 代码 # class Solution { public int[][] matrixReshape(int[][] mat, int r, int c) { int M = mat.length, N = mat[0].length; if (M * N != r * c) return mat; int[][] ans = new int[r][c]; for (int i = 0; i &amp;lt; r; i++) { for (int j = 0; j &amp;lt; c; j++) { int index = i * c + j; int mIndex = index / N, nIndex = index % N; ans[i][j] = mat[mIndex][nIndex]; } } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0575.-Distribute-Candies/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0575.-Distribute-Candies/</guid>
+      <description> 0575. Distribute Candies # 题目 # Alice 有 n 枚糖，其中第 i 枚糖的类型为 candyType[i] 。Alice 注意到她的体重正在增长，所以前去拜访了一位医生。 医生建议 Alice 要少摄入糖分，只吃掉她所有糖的 n / 2 即可（n 是一个偶数）。Alice 非常喜欢这些糖，她想要在遵循医生建议的情况下，尽可能吃到最多不同种类的糖。 给你一个长度为 n 的整数数组 candyType，返回： Alice 在仅吃掉 n / 2 枚糖的情况下，可以吃到糖的 最多 种类数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int distributeCandies(int[] candyType) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for(int type: candyType) set.add(type); return Math.min(set.size(), candyType.length / 2); } } </description>
     </item>
     
     <item>
@@ -1419,6 +1445,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/</guid>
+      <description>0643. Maximum Average Subarray i # 题目 # 给你一个由 n 个元素组成的整数数组 nums 和一个整数 k 。 请你找出平均数最大且 长度为 k 的连续子数组，并输出该最大平均数。 任何误差小于 10^-5 的答案都将被视为正确答案。 思路 # 模拟 # 代码 # 模拟 # class Solution { public double findMaxAverage(int[] nums, int k) { int ans = 0, windowSum = 0; for (int i = 0; i &amp;lt; k; i++) windowSum += nums[i]; ans = windowSum; int left = 0, right = k - 1; while (right &amp;lt;= nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1427,6 +1462,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
 给定数组 nums 代表集合 s 发生错误后的结果。
 先找出重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。
 思路 # 代码 # class Solution { public int[] findErrorNums(int[] nums) { int[] ans = new int[2]; /** 另 1~n 与 nums 进行异或操作，返回值为 missing ^ duplicate */ int xor = 0; int[] appearance = new int[nums.length]; for (int i = 0; i &amp;lt; nums.length; i++) { xor ^= (i + 1) ^ nums[i]; appearance[nums[i] - 1] += 1; if (appearance[nums[i] - 1] == 2) ans[0] = nums[i]; } /** missing = missing ^ duplicate ^ duplicate */ ans[1] = xor ^ ans[0]; return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/</guid>
+      <description>0657. Robot Return to Origin # 题目 # 在二维平面上，有一个机器人从原点 (0, 0) 开始。给出它的移动顺序，判断这个机器人在完成移动后是否在 (0, 0) 处结束。 移动顺序由字符串 moves 表示。字符 move[i] 表示其第 i 次移动。机器人的有效动作有 R（右），L（左），U（上）和 D（下）。 如果机器人在完成所有动作后返回原点，则返回 true。否则，返回 false。 注意：机器人“面朝”的方向无关紧要。 “R” 将始终使机器人向右移动一次，“L” 将始终向左移动等。此外，假设每次移动机器人的移动幅度相同。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean judgeCircle(String moves) { if (moves.length() % 2 == 1) return false; int L = 0, R = 0, U = 0, D = 0; for (int i = 0; i &amp;lt; moves.</description>
     </item>
     
     <item>
@@ -1488,6 +1532,15 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0709.-To-Lower-Case/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0709.-To-Lower-Case/</guid>
+      <description>0709. To Lower Case # 题目 # 给定字符串 s，将该字符串中的大写字母转成相同的小写字母，返回新的字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String toLowerCase(String s) { char[] charArray = s.toCharArray(); for (int i = 0; i &amp;lt; charArray.length; i++) { if (Character.isLetter(charArray[i]) &amp;amp;&amp;amp; charArray[i] &amp;lt; &amp;#39;a&amp;#39;) charArray[i] |= 1 &amp;lt;&amp;lt; 5; } return Stirng.valueOf(charArray); } } 致谢 # 疯子</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1495,6 +1548,15 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <description>716. Max Stack # 题目 # 设计一个最大栈数据结构，既支持栈操作，又支持查找栈中最大元素。
 实现 MaxStack 类：
 MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop() 移除栈顶元素并返回这个元素 int top() 返回栈顶元素，无需移除 int peekMax() 检索并返回栈中最大元素，无需移除 int popMax() 检索并返回栈中最大元素，并将其移除。如果有多个最大元素，移除 最靠近栈顶 的那个 思路 # Explicit Better Than Implicit 代码 # class MaxStack { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int index; public int val; public ListNode prev; public ListNode next; ListNode(int index, int val, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/</guid>
+      <description> 0724. Find Pivot Index # 题目 # 给定整数数组 nums ，计算数组的 中心下标 。 数组 中心下标 是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。 如果中心下标位于数组最左端，那么左侧数之和视为 0 ，因为在下标的左侧不存在元素。这一点对于中心下标位于数组最右端同样适用。 如果数组有多个中心下标，应该返回 最靠近左边 的那一个。如果数组不存在中心下标，返回 -1 。 思路 # 前缀和 # 代码 # 前缀和 # class Solution { public int pivotIndex(int[] nums) { int total = 0; for (int num: nums) total += num; int prefix = 0; for (int i = 0; i &amp;lt; nums.length; i++) { if (prefix == total - prefix - nums[i]) return i; prefix += nums[i]; } return -1; } } </description>
     </item>
     
     <item>
@@ -1516,10 +1578,21 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</guid>
-      <description>735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
+      <description>0735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
 对于数组中的每一个元素，其绝对值表示行星的大小，正负表示行星的移动方向（正表示向右移动，负表示向左移动）。每一颗行星以相同的速度移动。
 找出碰撞后剩下的所有行星。碰撞规则：两个行星相互碰撞，较小的行星会爆炸。如果两颗行星大小相同，则两颗行星都会爆炸。两颗移动方向相同的行星，永远不会发生碰撞。
-思路 # 栈 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+思路 # 栈 # 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/</guid>
+      <description>0744. Find Smallest Letter Greater Than Target # 题目 # 给定按非递减顺序排序的字符数组 letters 以及一个字符 target。letters 里至少有两个不同的字符。
+返回 letters 中大于 target 的最小的字符。如果不存在这样的字符，则返回 letters 的第一个字符。
+思路 # 二分 # 代码 # 二分 # class Solution { public char nextGreatestLetter(char[] letters, char target) { int left = 0, right = letters.length; while (left &amp;lt; right) { int mid = left + (right - left) / 2; if (letters[mid] &amp;gt; target) right = mid; else left = mid + 1; } return right == letters.</description>
     </item>
     
     <item>
@@ -1542,6 +1615,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description> 762. Prime Number of Set Bits in Binary Representation # 题目 # 给定两个整数 left 和 right，在闭区间 [left, right] 范围内，统计并返回 计算置位位数为质数 的整数个数。
 计算置位位数 就是二进制表示中 1 的个数。
 思路 # 代码 # class Solution { public boolean isPrime(int num) { if (num == 1) return false; for (int i = 2; i &amp;lt;= Math.sqrt(num); i++) { if (num % i == 0) return false; } return true; } public int count(int num) { int count = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) count += 1; } return count; } public int countPrimeSetBits(int left, int right) { int numPrime = 0; for (int i = left; i &amp;lt;= right; i++) { int num = count(i); if (isPrime(num) == true) numPrime += 1; } return numPrime; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/</guid>
+      <description> 0771. Jewels and Stones # 题目 # 给定字符串 jewels 代表石头中宝石的类型，另有一个字符串 stones 代表你拥有的石头。 stones 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。 字母区分大小写，因此 &amp;quot;a&amp;quot; 和 &amp;quot;A&amp;quot; 是不同类型的石头。 思路 # 哈希 # 代码 # 哈希 # class Solution { public int numJewelsInStones(String jewels, String stones) { Set&amp;lt;Character&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; jewels.length(); i++) set.add(jewels.charAt(i)); int ans = 0; for (int i = 0; i &amp;lt; stones.length(); i++) if (set.contains(stones.charAt(i))) ans++; return ans; } } </description>
     </item>
     
     <item>
@@ -1570,11 +1652,29 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/</guid>
+      <description>0844. Backspace String Compare # 题目 # 给定 s 和 t 两个字符串，当它们分别被输入到空白的文本编辑器后，如果两者相等，返回 true。# 代表退格字符。 对空文本输入退格字符，文本继续为空。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean backspaceCompare(String s, String t) { int ptrS = s.length() - 1, ptrT = t.length() - 1; int cntS = 0, cntT = 0; while (ptrS &amp;gt;= 0 &amp;amp;&amp;amp; ptrT &amp;gt;= 0) { while (ptrS &amp;gt;= 0) { if (s.charAt(ptrS) == &amp;#39;#&amp;#39;) { cntS++; ptrS--; } else if (cntS &amp;gt; 0) { cntS--; ptrS--; } else break; } while (ptrT &amp;gt;= 0) { if (t.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0859.-Buddy-Strings/</guid>
       <description>0859. Buddy Strings # 题目 # 给定两个字符串 s 和 goal，若可以通过交换 s 中的两个字母后得到与 goal 相同的结果，则认为 s 与 goal 是亲密字符串。 判断给定的两个字符串是否是亲密字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean buddyStrings(String s, String goal) { if (s.length() != goal.length()) return false; Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length; i++) { if (s.charAt(i) != goal.charAt(i)) stack.push(i); } if (stack.size() == 0) { int[] count = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0860.-Lemonade-Change/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0860.-Lemonade-Change/</guid>
+      <description> 0860. Lemonade Change # 题目 # 在柠檬水摊上，每一杯柠檬水的售价为 5 美元。顾客排队购买你的产品，一次购买一杯。 每位顾客支付 5 美元、10美元或20美元。必须为每名顾客正确找零，即净交易额为每名顾客支付5美元。 一开始手头没有任何零钱。 给定整数数组bills，其中bills[i]是第i位顾客付的账。 如果能给每位顾客正确找零，返回true，否则返回false。 思路 # 贪心 # 代码 # 贪心 # class Solution { public boolean lemonadeChange(int[] bills) { int five = 0, ten = 0; for (int bill: bills) { if (bill == 5) five++; else if (bill == 10) { if (--five &amp;lt; 0) return false; ten++; } else { if (ten &amp;gt; 0) { ten--; if (--five &amp;lt; 0) return false; } else { five -= 3; if (five &amp;lt; 0) return false; } } } return true; } } 致谢 # </description>
     </item>
     
     <item>
@@ -1950,6 +2050,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/</guid>
+      <description>1999. Find the Middle Index in Array # 题目 # 给定下标从 0 开始的整数数组 nums ，请你找到 最左边 的中间位置 middleIndex （即所有可能中间位置下标最小的一个）。 中间位置 middleIndex 是满足 nums[0] + nums[1] + ... + nums[middleIndex-1] == nums[middleIndex+1] + nums[middleIndex+2] + ... + nums[nums.length-1] 的数组下标。 如果 middleIndex == 0 ，左边部分的和定义为 0 。类似的，如果 middleIndex == nums.length - 1 ，右边部分的和定义为 0 。 返回满足上述条件 最左边 的 middleIndex ，若不存在这样的中间位置，返回 -1 。 思路 # 前缀和 # 代码 # 前缀和 # class Solution { public int findMiddleIndex(int[] nums) { int total = 0; for(int num: nums) total += num; int prefix = 0; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2274,6 +2383,15 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/058.-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/058.-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/</guid>
+      <description>剑指 Offer II 058. 左旋转字符串 # 题目 # 字符串的左旋转操作是把字符串前面的若干个字符转移到字符串的尾部。 请定义一个函数实现字符串左旋转操作的功能。 比如，输入字符串&amp;quot;abcdefg&amp;quot;和数字2，该函数将返回左旋转两位得到的结果&amp;quot;cdefgab&amp;quot;。 思路 # 三次翻转 # 代码 # 三次翻转 # class Solution { public void swap(char[] charArray, int i, int j) { char temp = charArray[i]; charArray[i] = charArray[j]; charArray[j] = temp; } public String reverseLeftWords(String s, int n) { char[] charArray = s.toCharArray(); for (int i = 0, j = charArray.length - 1; i &amp;lt; j; i++, j--) swap(charArray, i, j); for (int i = 0, j = charArray.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/06.-%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2404,6 +2522,15 @@ MAllk33</description>
       <description>面试题 04.03. 特定深度节点链表 # 题目 # 给定一棵二叉树，设计一个算法，创建含有某一深度上所有节点的链表。
 返回一个包含所有深度的链表的数组。
 思路 # 层序遍历变体 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { val = x; } } public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } } class Solution { public ListNode[] listOfDepth(TreeNode tree) { /* 用queue存储单链表头节点，而后将queue转为ListNode[] */ Queue&amp;lt;ListNode&amp;gt; ansQueue = new LinkedList&amp;lt;&amp;gt;(); /* 二叉树的层序遍历 */ Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.04.-%E6%A3%80%E6%9F%A5%E5%B9%B3%E8%A1%A1%E6%80%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.04.-%E6%A3%80%E6%9F%A5%E5%B9%B3%E8%A1%A1%E6%80%A7/</guid>
+      <description>面试题 04.04. 检查平衡性 # 题目 # 检查二叉树是否平衡 平衡二叉树的定义为: 任取一个节点，其两棵子树的高度差不超过 1 思路 # 递归 # 代码 # 递归 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode(int x) { this.val = x; } } class Solution { public int depth(TreeNode root) { if (root == null) return 0; int leftDepth = depth(root.left); if (leftDepth == -1) return -1; int rightDepth = depth(root.right); if (rightDepth == -1) return -1; if (Math.</description>
     </item>
     
     <item>

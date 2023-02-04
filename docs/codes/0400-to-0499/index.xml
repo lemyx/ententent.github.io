@@ -64,6 +64,15 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0441.-Arranging-Coins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0441.-Arranging-Coins/</guid>
+      <description> 0441. Arranging Coins # 题目 # 共有 n 枚硬币，将它们按阶梯状排列。 对于一个由 k 行组成的阶梯，其第 i 行必须正好有 i 枚硬币。阶梯的最后一行 可能 是不完整的。 给定数字 n，计算并返回可形成 完整阶梯行 的总行数。 1 &amp;lt;= n &amp;lt;= 2^31 - 1 思路 # 二分查找 # 代码 # 二分查找 # class Solution { public long capacity(int k) { return (long) k * (k + 1) / 2; } public int arrangeCoins(int n) { /** left 表示已知能填充满的最大行数, right 是已知不能填充满的最小行数 */ int left = 1, right = n; while (left &amp;lt; right - 1) { int mid = left + (right - left) / 2; if (capacity(mid) == n) return mid; else if (capacity(mid) &amp;gt; n) right = mid; else left = mid; } return left; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

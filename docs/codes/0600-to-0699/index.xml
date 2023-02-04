@@ -54,6 +54,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/</guid>
+      <description>0643. Maximum Average Subarray i # 题目 # 给你一个由 n 个元素组成的整数数组 nums 和一个整数 k 。 请你找出平均数最大且 长度为 k 的连续子数组，并输出该最大平均数。 任何误差小于 10^-5 的答案都将被视为正确答案。 思路 # 模拟 # 代码 # 模拟 # class Solution { public double findMaxAverage(int[] nums, int k) { int ans = 0, windowSum = 0; for (int i = 0; i &amp;lt; k; i++) windowSum += nums[i]; ans = windowSum; int left = 0, right = k - 1; while (right &amp;lt;= nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0645.-Set-Mismatch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -62,6 +71,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
 给定数组 nums 代表集合 s 发生错误后的结果。
 先找出重复出现的整数，再找到丢失的整数，将它们以数组的形式返回。
 思路 # 代码 # class Solution { public int[] findErrorNums(int[] nums) { int[] ans = new int[2]; /** 另 1~n 与 nums 进行异或操作，返回值为 missing ^ duplicate */ int xor = 0; int[] appearance = new int[nums.length]; for (int i = 0; i &amp;lt; nums.length; i++) { xor ^= (i + 1) ^ nums[i]; appearance[nums[i] - 1] += 1; if (appearance[nums[i] - 1] == 2) ans[0] = nums[i]; } /** missing = missing ^ duplicate ^ duplicate */ ans[1] = xor ^ ans[0]; return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/</guid>
+      <description>0657. Robot Return to Origin # 题目 # 在二维平面上，有一个机器人从原点 (0, 0) 开始。给出它的移动顺序，判断这个机器人在完成移动后是否在 (0, 0) 处结束。 移动顺序由字符串 moves 表示。字符 move[i] 表示其第 i 次移动。机器人的有效动作有 R（右），L（左），U（上）和 D（下）。 如果机器人在完成所有动作后返回原点，则返回 true。否则，返回 false。 注意：机器人“面朝”的方向无关紧要。 “R” 将始终使机器人向右移动一次，“L” 将始终向左移动等。此外，假设每次移动机器人的移动幅度相同。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean judgeCircle(String moves) { if (moves.length() % 2 == 1) return false; int L = 0, R = 0, U = 0, D = 0; for (int i = 0; i &amp;lt; moves.</description>
     </item>
     
     <item>

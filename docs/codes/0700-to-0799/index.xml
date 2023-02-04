@@ -42,6 +42,15 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0709.-To-Lower-Case/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0709.-To-Lower-Case/</guid>
+      <description>0709. To Lower Case # 题目 # 给定字符串 s，将该字符串中的大写字母转成相同的小写字母，返回新的字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String toLowerCase(String s) { char[] charArray = s.toCharArray(); for (int i = 0; i &amp;lt; charArray.length; i++) { if (Character.isLetter(charArray[i]) &amp;amp;&amp;amp; charArray[i] &amp;lt; &amp;#39;a&amp;#39;) charArray[i] |= 1 &amp;lt;&amp;lt; 5; } return Stirng.valueOf(charArray); } } 致谢 # 疯子</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0716.-Max-Stack/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -49,6 +58,15 @@ get(index)：获取链表中第 index 个节点的值。如果索引无效，则
       <description>716. Max Stack # 题目 # 设计一个最大栈数据结构，既支持栈操作，又支持查找栈中最大元素。
 实现 MaxStack 类：
 MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop() 移除栈顶元素并返回这个元素 int top() 返回栈顶元素，无需移除 int peekMax() 检索并返回栈中最大元素，无需移除 int popMax() 检索并返回栈中最大元素，并将其移除。如果有多个最大元素，移除 最靠近栈顶 的那个 思路 # Explicit Better Than Implicit 代码 # class MaxStack { private class ListNode implements Comparable&amp;lt;ListNode&amp;gt; { public int index; public int val; public ListNode prev; public ListNode next; ListNode(int index, int val, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/</guid>
+      <description> 0724. Find Pivot Index # 题目 # 给定整数数组 nums ，计算数组的 中心下标 。 数组 中心下标 是数组的一个下标，其左侧所有元素相加的和等于右侧所有元素相加的和。 如果中心下标位于数组最左端，那么左侧数之和视为 0 ，因为在下标的左侧不存在元素。这一点对于中心下标位于数组最右端同样适用。 如果数组有多个中心下标，应该返回 最靠近左边 的那一个。如果数组不存在中心下标，返回 -1 。 思路 # 前缀和 # 代码 # 前缀和 # class Solution { public int pivotIndex(int[] nums) { int total = 0; for (int num: nums) total += num; int prefix = 0; for (int i = 0; i &amp;lt; nums.length; i++) { if (prefix == total - prefix - nums[i]) return i; prefix += nums[i]; } return -1; } } </description>
     </item>
     
     <item>
@@ -70,10 +88,21 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0735.-Asteroid-Collision/</guid>
-      <description>735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
+      <description>0735. Asteroid Collision # 题目 # 给定一个整数数组 asteroids，表示在同一行的行星。
 对于数组中的每一个元素，其绝对值表示行星的大小，正负表示行星的移动方向（正表示向右移动，负表示向左移动）。每一颗行星以相同的速度移动。
 找出碰撞后剩下的所有行星。碰撞规则：两个行星相互碰撞，较小的行星会爆炸。如果两颗行星大小相同，则两颗行星都会爆炸。两颗移动方向相同的行星，永远不会发生碰撞。
-思路 # 栈 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+思路 # 栈 # 代码 # 栈 # class Solution { public int[] asteroidCollision(int[] asteroids) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int asteroid: asteroids) { boolean isExist = true; if (stack.size() == 0) stack.push(asteroid); else if (stack.peek() * asteroid &amp;gt; 0) stack.push(asteroid); else if (stack.peek() &amp;lt; 0 &amp;amp;&amp;amp; asteroid &amp;gt; 0) stack.push(asteroid); else while (isExist == true) { if (stack.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/</guid>
+      <description>0744. Find Smallest Letter Greater Than Target # 题目 # 给定按非递减顺序排序的字符数组 letters 以及一个字符 target。letters 里至少有两个不同的字符。
+返回 letters 中大于 target 的最小的字符。如果不存在这样的字符，则返回 letters 的第一个字符。
+思路 # 二分 # 代码 # 二分 # class Solution { public char nextGreatestLetter(char[] letters, char target) { int left = 0, right = letters.length; while (left &amp;lt; right) { int mid = left + (right - left) / 2; if (letters[mid] &amp;gt; target) right = mid; else left = mid + 1; } return right == letters.</description>
     </item>
     
     <item>
@@ -96,6 +125,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description> 762. Prime Number of Set Bits in Binary Representation # 题目 # 给定两个整数 left 和 right，在闭区间 [left, right] 范围内，统计并返回 计算置位位数为质数 的整数个数。
 计算置位位数 就是二进制表示中 1 的个数。
 思路 # 代码 # class Solution { public boolean isPrime(int num) { if (num == 1) return false; for (int i = 2; i &amp;lt;= Math.sqrt(num); i++) { if (num % i == 0) return false; } return true; } public int count(int num) { int count = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) count += 1; } return count; } public int countPrimeSetBits(int left, int right) { int numPrime = 0; for (int i = left; i &amp;lt;= right; i++) { int num = count(i); if (isPrime(num) == true) numPrime += 1; } return numPrime; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/</guid>
+      <description> 0771. Jewels and Stones # 题目 # 给定字符串 jewels 代表石头中宝石的类型，另有一个字符串 stones 代表你拥有的石头。 stones 中每个字符代表了一种你拥有的石头的类型，你想知道你拥有的石头中有多少是宝石。 字母区分大小写，因此 &amp;quot;a&amp;quot; 和 &amp;quot;A&amp;quot; 是不同类型的石头。 思路 # 哈希 # 代码 # 哈希 # class Solution { public int numJewelsInStones(String jewels, String stones) { Set&amp;lt;Character&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; jewels.length(); i++) set.add(jewels.charAt(i)); int ans = 0; for (int i = 0; i &amp;lt; stones.length(); i++) if (set.contains(stones.charAt(i))) ans++; return ans; } } </description>
     </item>
     
   </channel>
