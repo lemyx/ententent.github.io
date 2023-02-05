@@ -21,6 +21,15 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/</guid>
+      <description>0414. Third Maximum Number # 题目 # 给定一个非空数组，返回该数组中 第三大的数。 如果不存在，则返回数组中最大的数。 注: 要求返回第三大的数，是指在所有不同数字中排第三大的数。 思路 # 模拟 + 哈希 # 代码 # 模拟 + 哈希 # class Solution { public int thirdMax(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE, third = Integer.MIN_VALUE; for (int num: nums) { if (set.contains(num) == false) { if (set.size() == 0) first = num; else if (set.size() == 1) { second = first &amp;gt; num ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -137,6 +146,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 给定一个整数，输出其补数。
 注: 1 &amp;lt;= num &amp;lt; 2^31
 思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0482.-License-Key-Formatting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0482.-License-Key-Formatting/</guid>
+      <description>0482. License Key Formatting # 题目 # 给定许可密钥字符串 s，仅由字母、数字字符和破折号组成。字字符串由 n 个破折号分成 n+1组。 给定整数 k 以重新格式化字符串，使每一组包含 k 个字符。 第一组可以比 k 短，但仍必须包含至少一个字符。 两组之间需要插入破折号，且应该将所有小写字母转换为大写字母。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String licenseKeyFormatting(String s, int k) { /** 遍历 s, 确定格式化后的密钥长度 */ int numLetterOrDigits = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (Character.isLetterOrDigit(s.charAt(i))) numLetterOrDigits++; } int sz = numLetterOrDigits; if (sz == 0) return &amp;#34;&amp;#34;; sz += numLetterOrDigits % k == 0 ?</description>
     </item>
     
     <item>

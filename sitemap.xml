@@ -263,6 +263,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/</loc>
     <lastmod>2023-02-03T08:44:09+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0118.-Pascals-Triangle/</loc>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</loc>
     <lastmod>2023-02-04T19:20:17+08:00</lastmod>
   </url><url>
@@ -434,6 +437,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/</loc>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>
   </url><url>
@@ -466,6 +472,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0476.-Number-Complement/</loc>
     <lastmod>2023-02-03T08:44:09+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0482.-License-Key-Formatting/</loc>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/</loc>
     <lastmod>2023-02-03T08:44:09+08:00</lastmod>
@@ -578,6 +587,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</loc>
     <lastmod>2023-01-09T17:36:24+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</loc>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</loc>
     <lastmod>2023-01-27T00:07:46+08:00</lastmod>
   </url><url>
@@ -619,6 +631,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</loc>
     <lastmod>2023-01-16T10:22:54+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</loc>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</loc>
     <lastmod>2023-02-04T19:20:17+08:00</lastmod>
@@ -818,7 +833,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-02-04T19:20:17+08:00</lastmod>
+    <lastmod>2023-02-05T08:37:20+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>

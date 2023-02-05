@@ -129,6 +129,15 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0118.-Pascals-Triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0118.-Pascals-Triangle/</guid>
+      <description>0118. Pascal&amp;rsquo;s Triangle # 题目 # 给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。 「杨辉三角」中，每个数是它左上方和右上方的数之和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; generate(int numRows) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); ans.add(new LinkedList&amp;lt;&amp;gt;()); ans.get(0).add(1); if (numRows == 1) return ans; for (int i = 1; i &amp;lt; numRows; i++) { ans.add(new LinkedList&amp;lt;&amp;gt;()); ans.get(i).add(1); for (int j = 0; j &amp;lt; ans.get(i - 1).size() - 1; j++) { ans.get(i).add(ans.get(i - 1).</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

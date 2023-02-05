@@ -511,6 +511,15 @@ struct Node { int val; Node *left; Node *right; Node *next; } 填充它的每个
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0118.-Pascals-Triangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0118.-Pascals-Triangle/</guid>
+      <description>0118. Pascal&amp;rsquo;s Triangle # 题目 # 给定一个非负整数 numRows，生成「杨辉三角」的前 numRows 行。 「杨辉三角」中，每个数是它左上方和右上方的数之和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; generate(int numRows) { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); ans.add(new LinkedList&amp;lt;&amp;gt;()); ans.get(0).add(1); if (numRows == 1) return ans; for (int i = 1; i &amp;lt; numRows; i++) { ans.add(new LinkedList&amp;lt;&amp;gt;()); ans.get(i).add(1); for (int j = 0; j &amp;lt; ans.get(i - 1).size() - 1; j++) { ans.get(i).add(ans.get(i - 1).</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1125,6 +1134,15 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/</guid>
+      <description>0414. Third Maximum Number # 题目 # 给定一个非空数组，返回该数组中 第三大的数。 如果不存在，则返回数组中最大的数。 注: 要求返回第三大的数，是指在所有不同数字中排第三大的数。 思路 # 模拟 + 哈希 # 代码 # 模拟 + 哈希 # class Solution { public int thirdMax(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); int first = Integer.MIN_VALUE, second = Integer.MIN_VALUE, third = Integer.MIN_VALUE; for (int num: nums) { if (set.contains(num) == false) { if (set.size() == 0) first = num; else if (set.size() == 1) { second = first &amp;gt; num ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1241,6 +1259,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 给定一个整数，输出其补数。
 注: 1 &amp;lt;= num &amp;lt; 2^31
 思路 # 代码 # class Solution { public int findComplement(int num) { if (num == 0) return 1; boolean flag = false; for (int i = 30; i &amp;gt;= 0; i--) { if (((num &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) flag = true; if (flag == true) { num ^= 1 &amp;lt;&amp;lt; i; } } return num; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0482.-License-Key-Formatting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0482.-License-Key-Formatting/</guid>
+      <description>0482. License Key Formatting # 题目 # 给定许可密钥字符串 s，仅由字母、数字字符和破折号组成。字字符串由 n 个破折号分成 n+1组。 给定整数 k 以重新格式化字符串，使每一组包含 k 个字符。 第一组可以比 k 短，但仍必须包含至少一个字符。 两组之间需要插入破折号，且应该将所有小写字母转换为大写字母。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String licenseKeyFormatting(String s, int k) { /** 遍历 s, 确定格式化后的密钥长度 */ int numLetterOrDigits = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (Character.isLetterOrDigit(s.charAt(i))) numLetterOrDigits++; } int sz = numLetterOrDigits; if (sz == 0) return &amp;#34;&amp;#34;; sz += numLetterOrDigits % k == 0 ?</description>
     </item>
     
     <item>
@@ -1639,6 +1666,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</guid>
+      <description>0821. Shortest Distance to a Character # 题目 # 给定字符串 s 和一个字符 c，且 c 是 s 中出现过的字符。 返回整数数组 answer，其中 answer.length == s.length 且 answer[i] 是 s 中从下标 i 到离他 最近 的字符 c 的距离。 两个下标 i 和 j 之间的 距离 为 abs(i - j)，其中 abs 是绝对值函数。 思路 # 双向遍历 # BFS # 代码 # 双向遍历 # class Solution { public int[] shortestToChar(String s, char c) { /** 双向扫描数组 */ int[] ans = new int[s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1782,6 +1818,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
 在 S 上反复执行重复项删除操作，直至无法继续删除。
 在完成所有重复项删除操作后返回最终的字符串。
 思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</guid>
+      <description>1089. Duplicate Zeros # 题目 # 给定长度固定的整数数组 arr，将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。 注：不要在超过该数组长度的位置写入元素。对输入数组 原地 修改，不要从函数返回任何值。 思路 # 双指针 # 代码 # 双指针 # class Solution { public void duplicateZeros(int[] arr) { /** 1. 由于复写零的存在，只需要不超过arr.length个原始数组元素即可将arr填满，首先确定需要多少个元素将arr填满 */ int sum = 0, ptr = -1; while (sum &amp;lt; arr.length) { ptr++; if (arr[ptr] == 0) sum += 2; else dum += 1; } /** 2. sum的最终取值存在arr.length和arr.length+1两种情况 */ /** 3. 从后向前填充数组 */ for (int i = arr.length - 1; ptr &amp;gt; -1; ) { if (arr[ptr] == 0 &amp;amp;&amp;amp; sum &amp;lt;= arr.</description>
     </item>
     
     <item>

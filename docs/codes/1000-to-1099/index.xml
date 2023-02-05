@@ -29,5 +29,14 @@
 思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</guid>
+      <description>1089. Duplicate Zeros # 题目 # 给定长度固定的整数数组 arr，将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。 注：不要在超过该数组长度的位置写入元素。对输入数组 原地 修改，不要从函数返回任何值。 思路 # 双指针 # 代码 # 双指针 # class Solution { public void duplicateZeros(int[] arr) { /** 1. 由于复写零的存在，只需要不超过arr.length个原始数组元素即可将arr填满，首先确定需要多少个元素将arr填满 */ int sum = 0, ptr = -1; while (sum &amp;lt; arr.length) { ptr++; if (arr[ptr] == 0) sum += 2; else dum += 1; } /** 2. sum的最终取值存在arr.length和arr.length+1两种情况 */ /** 3. 从后向前填充数组 */ for (int i = arr.length - 1; ptr &amp;gt; -1; ) { if (arr[ptr] == 0 &amp;amp;&amp;amp; sum &amp;lt;= arr.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -18,6 +18,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</guid>
+      <description>0821. Shortest Distance to a Character # 题目 # 给定字符串 s 和一个字符 c，且 c 是 s 中出现过的字符。 返回整数数组 answer，其中 answer.length == s.length 且 answer[i] 是 s 中从下标 i 到离他 最近 的字符 c 的距离。 两个下标 i 和 j 之间的 距离 为 abs(i - j)，其中 abs 是绝对值函数。 思路 # 双向遍历 # BFS # 代码 # 双向遍历 # class Solution { public int[] shortestToChar(String s, char c) { /** 双向扫描数组 */ int[] ans = new int[s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
