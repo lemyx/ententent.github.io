@@ -960,11 +960,20 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0326.-Power-of-Three/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0326.-Power-of-Three/</guid>
+      <description>0326. Power of Three # 题目 # 给定整数 n，判断它是否为 3 的幂次方。 -2^31 &amp;lt;= n &amp;lt;= 2^31 - 1 思路 # 素因数分解 + 考虑输入范围 # 1162261467 是输入范围 -2^31 &amp;lt;= n &amp;lt;= 2^31 - 1 内最大的 3 的幂次方。 只需判断 n 能否整除 1162261467 即可得知它是否为 3 的幂次方。 1162261467 该值可以通过循环来确定。 代码 # 素因数分解 + 考虑输入范围 # class Solution { public boolean isPowerOfThree(int n) { if (n &amp;lt;= 0) return false; return 1162261467 % n == 0; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</guid>
-      <description>328. Odd Even Linked List # 题目 # 给定单链表头节点head，将所有索引为奇数的节点和所有索引为偶数的节点分别组合在一起，然后返回重新排序的链表。
+      <description>0328. Odd Even Linked List # 题目 # 给定单链表头节点head，将所有索引为奇数的节点和所有索引为偶数的节点分别组合在一起，然后返回重新排序的链表。
 第一个节点的索引被认为是奇数，第二个节点的索引被认为是偶数，以此类推。
 偶数组和奇数组内部的相对顺序应该与输入时保持一致。
 需要在O(1)的额外空间复杂度和O(n)的时间复杂度下解决这个问题。
@@ -998,9 +1007,9 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</guid>
-      <description> 344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
+      <description> 0344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
 不要给另外的数组分配额外的空间，原地修改输入数组，使用 O(1) 的额外空间解决这一问题。
-思路 # 代码 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
+思路 # 双指针 # 代码 # 双指针 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
     </item>
     
     <item>
@@ -1624,6 +1633,18 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0746.-Min-Cost-Climbing-Stairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0746.-Min-Cost-Climbing-Stairs/</guid>
+      <description>0746. Min Cost Climbing Stairs # 题目 # 给定整数数组 cost，其中 cost[i] 是从楼梯第 i 个台阶向上爬需要支付的费用。一旦支付此费用，即可选择向上爬一个或两个台阶。
+可以选择从下标为 0 或 下标为 1 的台阶开始爬楼梯。
+计算并返回到达楼梯顶部的最低花费。
+思路 # 动态规划 # 定义状态 costs[i] 为由下标为 i 的台阶到达楼梯顶的最小花费。 代码 # 动态规划 # class Solution { public int minCostClimbingStairs(int[] cost) { int nStairs = cost.length; int[] costs = new int[nStairs]; costs[nStairs - 1] = cost[nStairs - 1]; costs[nStairs - 2] = cost[nStairs - 2]; for (int i = nStairs - 3; i &amp;gt; -1; i--) { costs[i] = cost[i] + Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1662,6 +1683,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <description>0817. Linked List Components # 题目 # 给定链表头结点 head，该链表上的每个结点都有一个 唯一的整型值。同时给定列表 nums，该列表是上述链表中整型值的一个子集。
 返回列表 nums 中组件的个数，这里对组件的定义为：链表中一段最长连续结点的值（该值必须在列表 nums 中）构成的集合。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public int numComponents(ListNode head, int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for(int x: nums) set.add(x); boolean flag = false; int num = 0; ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</guid>
+      <description>0819. Most Common Word # 题目 # 给定一个段落 (paragraph) 和一个禁用单词列表 (banned)。返回出现次数最多，同时不再禁用列表中的单词。 题目保证至少有一个词不在禁用列表中，且答案唯一。 禁用列表中的单词用小写字母表示，不含标点符号。段落中的单词不区分大小写。答案都是小写字母。 paragraph 只包含字母、空格和下列标点符号!?&#39;,;. 单词里只包含字母，不会出现省略号或者其他标点符号。 不存在没有连字符或者带有连字符的单词。 思路 # 哈希 # 代码 # 哈希 # class Solution { public String mostCommonWord (String paragraph, String[] banned) { Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (String ban: banned) set.add(ban); Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int maxCnt = 0; String maxWord = &amp;#34;&amp;#34;; Character[] punctuations = new Character[]{&amp;#39;!&amp;#39;, &amp;#39;?&amp;#39;, &amp;#39;\&amp;#39;&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;;&amp;#39;, &amp;#39;.</description>
     </item>
     
     <item>
@@ -1831,6 +1861,17 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</guid>
+      <description>1154. Day of the Year # 题目 # 给定字符串 date，按YYYY-MM-DD格式表示一个现行公元年法日期。
+返回该日期是当年的第几天。
+思路 # 模拟 # 打表 # 代码 # 模拟 # class Solution { public boolean isLeapYear(int year) { /** 能被4整除但不能被100整除的是闰年 * 能被400整除的是闰年 */ return (year % 4 == 0 &amp;amp;&amp;amp; year % 100 != 0) || year % 400 == 0; } public int dayOfYear(String date) { int year = Integer.parseInt(date.split(&amp;#34;-&amp;#34;)[0]); int month = Integer.parseInt(date.split(&amp;#34;-&amp;#34;)[1]); int day = Integer.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1873,6 +1914,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/</guid>
       <description>1290. Convert Binary Number in A Linked List to Integer # 题目 # 给定单链表头节点head，已知此链表是一个整数数字的二进制表示形式，链表中每个节点的值非0即1。返回链表所表示数字的十进制值。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null, cur = head, next = head.next; while(cur != null) { cur.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1295.-Find-Numbers-with-Even-Number-of-Digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1295.-Find-Numbers-with-Even-Number-of-Digits/</guid>
+      <description>1295. Find Numbers with Even Number of Digits # 题目 # 给定整数数组 nums，返回其中位数为 偶数 的数字的个数。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int count(int num) { int ans = 0; while (num &amp;gt; 0) { ans++; num /= 10; } return ans; } public int findNumbers(int[] nums) { int ans = 0; for (int num: nums) ans += ocunt(num) % 2 == 0 ?</description>
     </item>
     
     <item>

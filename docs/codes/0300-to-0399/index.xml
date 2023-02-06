@@ -7,11 +7,20 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0300-to-0399/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0326.-Power-of-Three/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0326.-Power-of-Three/</guid>
+      <description>0326. Power of Three # 题目 # 给定整数 n，判断它是否为 3 的幂次方。 -2^31 &amp;lt;= n &amp;lt;= 2^31 - 1 思路 # 素因数分解 + 考虑输入范围 # 1162261467 是输入范围 -2^31 &amp;lt;= n &amp;lt;= 2^31 - 1 内最大的 3 的幂次方。 只需判断 n 能否整除 1162261467 即可得知它是否为 3 的幂次方。 1162261467 该值可以通过循环来确定。 代码 # 素因数分解 + 考虑输入范围 # class Solution { public boolean isPowerOfThree(int n) { if (n &amp;lt;= 0) return false; return 1162261467 % n == 0; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/</guid>
-      <description>328. Odd Even Linked List # 题目 # 给定单链表头节点head，将所有索引为奇数的节点和所有索引为偶数的节点分别组合在一起，然后返回重新排序的链表。
+      <description>0328. Odd Even Linked List # 题目 # 给定单链表头节点head，将所有索引为奇数的节点和所有索引为偶数的节点分别组合在一起，然后返回重新排序的链表。
 第一个节点的索引被认为是奇数，第二个节点的索引被认为是偶数，以此类推。
 偶数组和奇数组内部的相对顺序应该与输入时保持一致。
 需要在O(1)的额外空间复杂度和O(n)的时间复杂度下解决这个问题。
@@ -45,9 +54,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0344.-Reverse-String/</guid>
-      <description> 344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
+      <description> 0344. Reverse String # 题目 # 编写一个函数，将输入的字符串翻转过来。字符串以字符数组 s 的形式给出。
 不要给另外的数组分配额外的空间，原地修改输入数组，使用 O(1) 的额外空间解决这一问题。
-思路 # 代码 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
+思路 # 双指针 # 代码 # 双指针 # class Solution { public void reverseString(char[] s) { for (int i=0, j=s.length-1; i&amp;lt;j; i++, j--) { char temp = s[i]; s[i] = s[j]; s[j] = temp; } } } </description>
     </item>
     
     <item>

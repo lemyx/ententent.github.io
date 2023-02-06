@@ -40,5 +40,14 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode reverseList(ListNode head) { ListNode prev = null, cur = head, next = head.next; while(cur != null) { cur.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1295.-Find-Numbers-with-Even-Number-of-Digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1295.-Find-Numbers-with-Even-Number-of-Digits/</guid>
+      <description>1295. Find Numbers with Even Number of Digits # 题目 # 给定整数数组 nums，返回其中位数为 偶数 的数字的个数。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int count(int num) { int ans = 0; while (num &amp;gt; 0) { ans++; num /= 10; } return ans; } public int findNumbers(int[] nums) { int ans = 0; for (int num: nums) ans += ocunt(num) % 2 == 0 ?</description>
+    </item>
+    
   </channel>
 </rss>

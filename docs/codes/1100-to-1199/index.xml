@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1100-to-1199/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</guid>
+      <description>1154. Day of the Year # 题目 # 给定字符串 date，按YYYY-MM-DD格式表示一个现行公元年法日期。
+返回该日期是当年的第几天。
+思路 # 模拟 # 打表 # 代码 # 模拟 # class Solution { public boolean isLeapYear(int year) { /** 能被4整除但不能被100整除的是闰年 * 能被400整除的是闰年 */ return (year % 4 == 0 &amp;amp;&amp;amp; year % 100 != 0) || year % 400 == 0; } public int dayOfYear(String date) { int year = Integer.parseInt(date.split(&amp;#34;-&amp;#34;)[0]); int month = Integer.parseInt(date.split(&amp;#34;-&amp;#34;)[1]); int day = Integer.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

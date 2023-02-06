@@ -18,6 +18,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</guid>
+      <description>0819. Most Common Word # 题目 # 给定一个段落 (paragraph) 和一个禁用单词列表 (banned)。返回出现次数最多，同时不再禁用列表中的单词。 题目保证至少有一个词不在禁用列表中，且答案唯一。 禁用列表中的单词用小写字母表示，不含标点符号。段落中的单词不区分大小写。答案都是小写字母。 paragraph 只包含字母、空格和下列标点符号!?&#39;,;. 单词里只包含字母，不会出现省略号或者其他标点符号。 不存在没有连字符或者带有连字符的单词。 思路 # 哈希 # 代码 # 哈希 # class Solution { public String mostCommonWord (String paragraph, String[] banned) { Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (String ban: banned) set.add(ban); Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int maxCnt = 0; String maxWord = &amp;#34;&amp;#34;; Character[] punctuations = new Character[]{&amp;#39;!&amp;#39;, &amp;#39;?&amp;#39;, &amp;#39;\&amp;#39;&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;;&amp;#39;, &amp;#39;.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

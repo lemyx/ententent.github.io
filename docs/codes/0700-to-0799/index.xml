@@ -107,6 +107,18 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0746.-Min-Cost-Climbing-Stairs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0746.-Min-Cost-Climbing-Stairs/</guid>
+      <description>0746. Min Cost Climbing Stairs # 题目 # 给定整数数组 cost，其中 cost[i] 是从楼梯第 i 个台阶向上爬需要支付的费用。一旦支付此费用，即可选择向上爬一个或两个台阶。
+可以选择从下标为 0 或 下标为 1 的台阶开始爬楼梯。
+计算并返回到达楼梯顶部的最低花费。
+思路 # 动态规划 # 定义状态 costs[i] 为由下标为 i 的台阶到达楼梯顶的最小花费。 代码 # 动态规划 # class Solution { public int minCostClimbingStairs(int[] cost) { int nStairs = cost.length; int[] costs = new int[nStairs]; costs[nStairs - 1] = cost[nStairs - 1]; costs[nStairs - 2] = cost[nStairs - 2]; for (int i = nStairs - 3; i &amp;gt; -1; i--) { costs[i] = cost[i] + Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
