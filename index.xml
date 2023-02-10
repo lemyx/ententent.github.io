@@ -1771,9 +1771,27 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</guid>
-      <description>876. Middle of the Linked List # 题目 # 给定一个头结点为head的非空单链表，返回链表的中间结点。
+      <description>0876. Middle of the Linked List # 题目 # 给定一个头结点为head的非空单链表，返回链表的中间结点。
 如果有两个中间结点，则返回第二个中间结点。
-思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode middleNode(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast != null &amp;amp;&amp;amp; fast.</description>
+思路 # 双指针 # 代码 # 双指针 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode middleNode(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode middle = sentinel, fast = sentinel; while (fast !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0888.-Fair-Candy-Swap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0888.-Fair-Candy-Swap/</guid>
+      <description>0888. Fair Candy Swap # 题目 # 爱丽丝和鲍勃拥有不同总数量的糖果。给你两个数组 aliceSizes 和 bobSizes ，aliceSizes[i] 是爱丽丝拥有的第 i 盒糖果中的糖果数量，bobSizes[j] 是鲍勃拥有的第 j 盒糖果中的糖果数量。 两人想要互相交换一盒糖果，这样在交换之后，他们就可以拥有相同总数量的糖果。一个人拥有的糖果总数量是他们每盒糖果数量的总和。 返回一个整数数组 answer，其中 answer[0] 是爱丽丝必须交换的糖果盒中的糖果的数目，answer[1] 是鲍勃必须交换的糖果盒中的糖果的数目。如果存在多个答案，你可以返回其中 任何一个 。题目测试用例保证存在与输入对应的答案。 思路 # 哈希 # 代码 # 哈希 # class Solution { public int[] fairCandySwap(int[] aliceSizes, int[] bobSizes) { /** 设发生交换时，Alice和Bob拿出的糖果数量分别为x和y * sumAlice - x + y = sumBob - y + x * 成为两数之和问题 */ int nAlice = 0, nBob = 0; for (int num: aliceSizes) nAlice += num; for (int num: bobSizes) nBob += num; Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: aliceSizes) set.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0896.-Monotonic-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0896.-Monotonic-Array/</guid>
+      <description> 0896. Monotonic Array # 题目 # 如果数组是单调递减或单调递增的，那么它是单调的。 如果对于所有 i &amp;lt;= j，nums[i] &amp;lt;= nums[j]，那么数组 nums 是单调递增的。 如果对于所有 i &amp;lt;= j，nums[i]&amp;gt; = nums[j]，那么数组 nums 是单调递减的。 当给定的数组 nums 是单调数组时返回 true，否则返回 false。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isMonotonic(int[] nums) { int monotonicity = 0; for (int i = 0; i &amp;lt; nums.length - 1; i++) { if (nums[i] == nums[i + 1]) continue; else if (monotonicity == 0) monotonicity = num[i] - nums[i + 1]; else if ((nums[i] - nums[i + 1]) * monotonicity &amp;lt; 0) return false; } return true; } } </description>
     </item>
     
     <item>
@@ -1840,6 +1858,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1037.-Valid-Boomerang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1037.-Valid-Boomerang/</guid>
+      <description>1037. Valid Boomerang # 题目 # 给定一个数组 points ，其中 points[i] = [xi, yi] 表示 X-Y 平面上的一个点，如果这些点构成一个 回旋镖 则返回 true 。 回旋镖 定义为一组三个点，这些点 各不相同 且 不在一条直线上 。 思路 # 斜率 # 向量叉积 # 代码 # 斜率 # class Solution { public boolean isSame(int[] p, int[] q) { return p[0] == q[0] &amp;amp;&amp;amp; p[1] == q[1]; } public boolean isColinear(int[] p, int[] q, int[] r) { if (p[0] == q[0]) return p[0] == r[0]; return ((double)q[1] - p[1])) / (q[0] - p[0]) == ((double)r[1] - p[1]) / (r[0] - p[0]); } public boolean isBoomerang(int[][] points) { int[] p0 = points[0], p1 = points[1], p2 = points[2]; if (isSame(p0, p1) || isSame(p0, p2) || isSame(p1, p2)) return false; return isColinear(p0, p1, p2) == false; } } 向量叉积 # 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1857,6 +1884,17 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</guid>
       <description>1089. Duplicate Zeros # 题目 # 给定长度固定的整数数组 arr，将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。 注：不要在超过该数组长度的位置写入元素。对输入数组 原地 修改，不要从函数返回任何值。 思路 # 双指针 # 代码 # 双指针 # class Solution { public void duplicateZeros(int[] arr) { /** 1. 由于复写零的存在，只需要不超过arr.length个原始数组元素即可将arr填满，首先确定需要多少个元素将arr填满 */ int sum = 0, ptr = -1; while (sum &amp;lt; arr.length) { ptr++; if (arr[ptr] == 0) sum += 2; else dum += 1; } /** 2. sum的最终取值存在arr.length和arr.length+1两种情况 */ /** 3. 从后向前填充数组 */ for (int i = arr.length - 1; ptr &amp;gt; -1; ) { if (arr[ptr] == 0 &amp;amp;&amp;amp; sum &amp;lt;= arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1108.-Defanging-an-IP-Address/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1108.-Defanging-an-IP-Address/</guid>
+      <description>1108. Defanging an IP Address # 题目 # 给定一个有效的IPV4地址address，返回这个IP地址的无效化版本。
+无效化IP地址，就是用&amp;quot;[.]&amp;quot;代替了每个&amp;quot;.&amp;quot;。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public String defangIPaddr(String address) { char[] and = new char[address.length() + 6]; int ptrAns = 0, ptrAddress = 0; while (ptrAns &amp;lt; ans.length) { if (address.charAt(ptrAddress) != &amp;#39;.&amp;#39;) { ans[ptrAns++] = address.charAt(ptrAddress); } else { ans[ptrAns++] = &amp;#39;[&amp;#39;; ans[ptrAns++] = &amp;#39;.&amp;#39;; ans[ptrAns+=] = &amp;#39;]&amp;#39;; } ptrAddress++; } return String.</description>
     </item>
     
     <item>
@@ -1970,6 +2008,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1470.-Shuffle-the-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1470.-Shuffle-the-Array/</guid>
+      <description> 1470. Shuffle the Array # 题目 # 给定数组 nums，数组中有 2n 个元素，按[x1,x2,...,xn,y1,y2,...,yn] 的格式排列。 将数组按 [x1,y1,x2,y2,...,xn,yn] 格式重新排列，返回重排后的数组。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] shuffle(int[] nums, int n) { int[] ans = new int[nums.length]; for (int i = 0; i &amp;lt; n; i++) { ans[2*i] = nums[i]; ans[2*i+1] = nums[i+n]; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2015,6 +2062,24 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/</guid>
+      <description>1491. Average Salary Excluding the Minimum and Maximum Salary # 题目 # 给定整数数组 salary，数组中每个数都是唯一的，其中 salary[i] 是第 i 个员工的工资。 返回去掉最低工资和最高工资后，剩下员工工资的平均值。 思路 # 模拟 # 代码 # 模拟 # class Solution { public double average(int[] salary) { int minSalary = Integer.MAX_VALUE, maxSalary = Integer.MIN_VALUE, sum = 0; for (int num: salary) { minSalary = Math.min(minSalary, num); maxSalary = Math.max(maxSalary, num); sum += num; } return (double)(sum - minSalary - maxSalary) / (salary.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/</guid>
+      <description>1576. Replace All ?&amp;rsquo;s to Avoid Consecutive Repeating Characters # 题目 # 给定一个仅包含小写英文字母和 &#39;?&#39; 字符的字符串 s，将所有的 &#39;?&#39; 转换为若干小写字母，使最终的字符串不包含任何 连续重复 的字符。 不能 修改非 &#39;?&#39; 字符。 除 &#39;?&#39; 字符 之外，不存在连续重复的字符。 在完成所有转换（可能无需转换）后返回最终的字符串。如果有多个解决方案，请返回其中任何一个。 思路 # 模拟 # 代码 # 模拟 # class Solution { private Random random = new Random(); public Character findCandidate(Character ban1, Character ban2) { Character ans = &amp;#39;a&amp;#39;; while (ans == ban1 || ans == ban2) { ans = (char)(&amp;#39;a&amp;#39; + this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2055,6 +2120,15 @@ depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中
 coefficient： 该项的系数 power：该项的指数 next：指向下一个结点的指针，如果当前结点为链表的最后一个结点则为 null 多项式链表是标准形式的，即多项式 严格 按指数 power 的递减顺序排列。系数 coefficient 为 0 的项需要省略。
 给定两个多项式链表的头结点 poly1 和 poly2，返回它们的和的头结点。
 思路 # 代码 # class PolyNode { int coefficient, power; PolyNode next = null; PolyNode() {} PolyNode(int x, int y) { this.coefficient = x; this.power = y; } PolyNode(int x, int y, PolyNode next) { this.coefficient = x; this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</guid>
+      <description>1662. Check If Two String Arrays are Equivalent # 题目 # 给定两个字符串数组word1和word2。如果两个数组表示的字符串相同，返回true，否则返回false。 数组表示的字符串 是由数组中的所有元素 按顺序 连接形成的字符串。 思路 # 模拟 # 代码 # 模拟-双指针 # class Solution { public boolean arrayStringsAreEqual(String[] word1, String[] word2) { int i = 0, p = 0; int j = 0, q = 0; while (i &amp;lt; word1.length &amp;amp;&amp;amp; j &amp;lt; word2.length) { if (word1[i].charAt(p++) != word2[j].charAt(q++)) return false; if (p == word1[i].length()) { i++; p = 0; } if (q == word2[j].</description>
     </item>
     
     <item>
@@ -2135,6 +2209,33 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</guid>
+      <description>1748. Sum of Unique Elements # 题目 # 给定整数数组 nums，数组中唯一元素是那些只出现 恰好一次 的元素。 返回 nums 中唯一元素的 和。 1 &amp;lt;= nums[i] &amp;lt;= 100 思路 # 哈希 # 代码 # 哈希 # class Solution { public int sumOfUnique(int[] nums) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: nums) { if (map.containsKey(num) == false) map.put(num, 1); else map.put(num, map.get(num) + 1); } int ans = 0; for (int num: nums) { if (map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</guid>
+      <description>1790. Check if One String Swap Can Make Strings Equal # 题目 # 给定长度相等的两个字符串 s1 和 s2。 一次字符串交换操作的步骤为：选出某个字符串中的两个下标，并交换这两个下标对应的字符。 如果对其中一个字符串执行最多一次字符串交换就可以使两个字符串相等，返回true；否则返回false 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean areAlmostEqual(String s1, String s2) { if (s1.length() != s2.length()) return false; int left = -1, right = -1; for (int i = 0; i &amp;lt; s1.length(); i++) { if (s1.charAt(i) != s2.charAt(i)) { if (left == -1) left = i; else if (right == -1) right = i; else return false; } } if (left == -1) return true; if (right == -1) return false; return s1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</guid>
+      <description>1822. Sign of the Product of an Array # 题目 # 给定整数数组 nums，令product为数组nums中所有元素值的乘积。 返回乘积的符号。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int arraySign(int[] nums) { int ans = 1; for (int num: nums) { if (num == 0) return 0; else if (num &amp;lt; 0) ans *= -1; } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2150,6 +2251,42 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/</guid>
       <description>1999. Find the Middle Index in Array # 题目 # 给定下标从 0 开始的整数数组 nums ，请你找到 最左边 的中间位置 middleIndex （即所有可能中间位置下标最小的一个）。 中间位置 middleIndex 是满足 nums[0] + nums[1] + ... + nums[middleIndex-1] == nums[middleIndex+1] + nums[middleIndex+2] + ... + nums[nums.length-1] 的数组下标。 如果 middleIndex == 0 ，左边部分的和定义为 0 。类似的，如果 middleIndex == nums.length - 1 ，右边部分的和定义为 0 。 返回满足上述条件 最左边 的 middleIndex ，若不存在这样的中间位置，返回 -1 。 思路 # 前缀和 # 代码 # 前缀和 # class Solution { public int findMiddleIndex(int[] nums) { int total = 0; for(int num: nums) total += num; int prefix = 0; for (int i = 0; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2000.-Reverse-Prefix-of-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2000.-Reverse-Prefix-of-Word/</guid>
+      <description>2000. Reverse Prefix of Word # 题目 # 给定下标从 0 开始的字符串 word 和一个字符 ch。 找出 ch 第一次出现的下标 i，反转 word 中从下标 0 开始、直到下标 i 结束的字符段。 若 word 中不存在字符 ch，无需进行任何操作。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String reversePrefix(String word, char ch) { int ptr = 0; while (ptr &amp;lt; word.length() &amp;amp;&amp;amp; word.charAt(ptr) != ch) ptr++; if (ptr == word.length()) return word; char[] charArray = word.toCharArray(); for (int i = 0, j = ptr; i &amp;lt; j; i++, j--) { Character temp = charArray[i]; charArray[i] = charArray[j]; charArray[j] = temp; } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2006.-Count-Number-of-Pairs-With-Absolute-Difference-K/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2006.-Count-Number-of-Pairs-With-Absolute-Difference-K/</guid>
+      <description>2000. Reverse Prefix of Word # 题目 # 给定整数数组 nums 和一个整数 k。 返回数对 (i, j) 的数目，满足 i &amp;lt; j 且 |nums[i] - nums[j]| == k。 1 &amp;lt;= nums[i] &amp;lt;= 100 1 &amp;lt;= k &amp;lt;= 99 思路 # 哈希 # 代码 # 哈希 # class Solution { public int countKDifference(int[] nums, int k) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int ans = 0; for (int num: nums) { ans += map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2016.-Maximum-Difference-Between-Increasing-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2016.-Maximum-Difference-Between-Increasing-Elements/</guid>
+      <description>2016. Maximum Difference Between Increasing Elements # 题目 # 给定下标从 0 开始的整数数组 nums，该数组的大小为 n。 计算 nums[j] - nums[i] 能求得的最大差值，其中 0 &amp;lt;= i &amp;lt; j &amp;lt; n 且 nums[i] &amp;lt; nums[j]。 返回 最大差值。如果不存在满足要求的 i 和 j，返回 -1。 思路 # 模拟 # 类似 买卖股票的最佳时机 代码 # 模拟 # class Solution { public int maximumDifference(int[] nums) { int ans = -1, maxVal = nums[0]; for (int num: nums) { minVal = Math.min(minVal, num); ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2022.-Convert-1D-Array-into-2D-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2022.-Convert-1D-Array-into-2D-Array/</guid>
+      <description> 2022. Convert 1D Array into 2D Array # 题目 # 给定下标从 0 开始的一维整数数组 original 和两个整数 m 和 n。 使用original中所有元素创建一个m行n列的二维数组。 根据上述过程返回一个 m x n 的二维数组。如果无法构成这样的二维数组，返回一个空的二维数组。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[][] construct2DArray(int[] original, int m, int n) { if (original.length != m * n) return new int[0][0]; int[][] ans = new int[m][n]; for (int i = 0; i &amp;lt; original.length; i++0) { int row = i / n, col = i % n; ans[row][col] = original[i]; } return ans; } } </description>
     </item>
     
     <item>
@@ -2347,6 +2484,15 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
 如果节点是个叶子节点，那么节点的 值 为它本身，即 true 或 false。 否则，计算 两个孩子的节点值，然后将该节点的运算符对两个孩子值进行 运算。 返回根节点 root 的不二运算值。
 完整二叉树 是每个节点有 0 个或者 2 个孩子的二叉树。
 思路 # 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</guid>
+      <description>2460. Apply Operations to an Array # 题目 # 给你一个下标从 0 开始的数组 nums ，数组大小为 n ，且由 非负 整数组成。 对数组执行 n - 1 步操作，其中第 i 步操作（从 0 开始计数）要求对 nums 中第 i 个元素执行下述指令： 如果 nums[i] == nums[i + 1] ，则 nums[i] 的值变成原来的 2 倍，nums[i + 1] 的值变成 0 。否则，跳过这步操作。 在执行完 全部 操作后，将所有 0 移动 到数组的 末尾 。 例如，数组 [1,0,2,0,0,1] 将所有 0 移动到末尾后变为 [1,2,1,0,0,0] 。 返回结果数组。 注意 操作应当 依次有序 执行，而不是一次性全部执行。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] moveZeros(int[] nums) { int left = 0, right = 0; while (right &amp;lt; nums.</description>
     </item>
     
     <item>
@@ -2564,6 +2710,15 @@ s[i] 仅包含小写字母。
 如果不使用额外的数据结构，会很加分。
 思路 # 哈希 位运算 代码 # 哈希 # class Solution { public boolean isUnique(String astr) { int[] record = new int[26]; for (int i = 0; i &amp;lt; astr.length(); i++) if (++record[astr.charAt(i) - &amp;#39;a&amp;#39;] == 2) return false; return true; } } 致谢 # 珍珠好好吃
 MAllk33</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.02.-%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.02.-%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/</guid>
+      <description>面试题 01.02. 判定是否互为字符重排 # 题目 # 给定两个由小写字母组成的字符串s1和s2。 判断其中一个字符串的字符经重排后能否变成另一个字符串。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean CheckPermutation(String s1, String s2) { if (s1.length() != s2.length()) return false; char[] charArray1 = new char[26], charArray2 = new char[26]; for (int i = 0; i &amp;lt; s1.length(); i++) { charArray1[s1.charAt(i) - &amp;#39;a&amp;#39;] += 1; charArray2[s2.charAt(i) - &amp;#39;a&amp;#39;] += 1; } for (int i = 0; i &amp;lt; charArray1.</description>
     </item>
     
     <item>

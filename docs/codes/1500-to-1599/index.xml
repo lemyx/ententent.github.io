@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1500-to-1599/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/</guid>
+      <description>1576. Replace All ?&amp;rsquo;s to Avoid Consecutive Repeating Characters # 题目 # 给定一个仅包含小写英文字母和 &#39;?&#39; 字符的字符串 s，将所有的 &#39;?&#39; 转换为若干小写字母，使最终的字符串不包含任何 连续重复 的字符。 不能 修改非 &#39;?&#39; 字符。 除 &#39;?&#39; 字符 之外，不存在连续重复的字符。 在完成所有转换（可能无需转换）后返回最终的字符串。如果有多个解决方案，请返回其中任何一个。 思路 # 模拟 # 代码 # 模拟 # class Solution { private Random random = new Random(); public Character findCandidate(Character ban1, Character ban2) { Character ans = &amp;#39;a&amp;#39;; while (ans == ban1 || ans == ban2) { ans = (char)(&amp;#39;a&amp;#39; + this.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -51,6 +51,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</guid>
+      <description>1662. Check If Two String Arrays are Equivalent # 题目 # 给定两个字符串数组word1和word2。如果两个数组表示的字符串相同，返回true，否则返回false。 数组表示的字符串 是由数组中的所有元素 按顺序 连接形成的字符串。 思路 # 模拟 # 代码 # 模拟-双指针 # class Solution { public boolean arrayStringsAreEqual(String[] word1, String[] word2) { int i = 0, p = 0; int j = 0, q = 0; while (i &amp;lt; word1.length &amp;amp;&amp;amp; j &amp;lt; word2.length) { if (word1[i].charAt(p++) != word2[j].charAt(q++)) return false; if (p == word1[i].length()) { i++; p = 0; } if (q == word2[j].</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

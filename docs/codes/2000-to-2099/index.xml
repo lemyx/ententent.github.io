@@ -7,6 +7,42 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2000-to-2099/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2000.-Reverse-Prefix-of-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2000.-Reverse-Prefix-of-Word/</guid>
+      <description>2000. Reverse Prefix of Word # 题目 # 给定下标从 0 开始的字符串 word 和一个字符 ch。 找出 ch 第一次出现的下标 i，反转 word 中从下标 0 开始、直到下标 i 结束的字符段。 若 word 中不存在字符 ch，无需进行任何操作。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String reversePrefix(String word, char ch) { int ptr = 0; while (ptr &amp;lt; word.length() &amp;amp;&amp;amp; word.charAt(ptr) != ch) ptr++; if (ptr == word.length()) return word; char[] charArray = word.toCharArray(); for (int i = 0, j = ptr; i &amp;lt; j; i++, j--) { Character temp = charArray[i]; charArray[i] = charArray[j]; charArray[j] = temp; } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2006.-Count-Number-of-Pairs-With-Absolute-Difference-K/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2006.-Count-Number-of-Pairs-With-Absolute-Difference-K/</guid>
+      <description>2000. Reverse Prefix of Word # 题目 # 给定整数数组 nums 和一个整数 k。 返回数对 (i, j) 的数目，满足 i &amp;lt; j 且 |nums[i] - nums[j]| == k。 1 &amp;lt;= nums[i] &amp;lt;= 100 1 &amp;lt;= k &amp;lt;= 99 思路 # 哈希 # 代码 # 哈希 # class Solution { public int countKDifference(int[] nums, int k) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int ans = 0; for (int num: nums) { ans += map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2016.-Maximum-Difference-Between-Increasing-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2016.-Maximum-Difference-Between-Increasing-Elements/</guid>
+      <description>2016. Maximum Difference Between Increasing Elements # 题目 # 给定下标从 0 开始的整数数组 nums，该数组的大小为 n。 计算 nums[j] - nums[i] 能求得的最大差值，其中 0 &amp;lt;= i &amp;lt; j &amp;lt; n 且 nums[i] &amp;lt; nums[j]。 返回 最大差值。如果不存在满足要求的 i 和 j，返回 -1。 思路 # 模拟 # 类似 买卖股票的最佳时机 代码 # 模拟 # class Solution { public int maximumDifference(int[] nums) { int ans = -1, maxVal = nums[0]; for (int num: nums) { minVal = Math.min(minVal, num); ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2022.-Convert-1D-Array-into-2D-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2022.-Convert-1D-Array-into-2D-Array/</guid>
+      <description> 2022. Convert 1D Array into 2D Array # 题目 # 给定下标从 0 开始的一维整数数组 original 和两个整数 m 和 n。 使用original中所有元素创建一个m行n列的二维数组。 根据上述过程返回一个 m x n 的二维数组。如果无法构成这样的二维数组，返回一个空的二维数组。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[][] construct2DArray(int[] original, int m, int n) { if (original.length != m * n) return new int[0][0]; int[][] ans = new int[m][n]; for (int i = 0; i &amp;lt; original.length; i++0) { int row = i / n, col = i % n; ans[row][col] = original[i]; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

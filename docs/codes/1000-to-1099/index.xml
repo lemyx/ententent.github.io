@@ -19,6 +19,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1037.-Valid-Boomerang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1037.-Valid-Boomerang/</guid>
+      <description>1037. Valid Boomerang # 题目 # 给定一个数组 points ，其中 points[i] = [xi, yi] 表示 X-Y 平面上的一个点，如果这些点构成一个 回旋镖 则返回 true 。 回旋镖 定义为一组三个点，这些点 各不相同 且 不在一条直线上 。 思路 # 斜率 # 向量叉积 # 代码 # 斜率 # class Solution { public boolean isSame(int[] p, int[] q) { return p[0] == q[0] &amp;amp;&amp;amp; p[1] == q[1]; } public boolean isColinear(int[] p, int[] q, int[] r) { if (p[0] == q[0]) return p[0] == r[0]; return ((double)q[1] - p[1])) / (q[0] - p[0]) == ((double)r[1] - p[1]) / (r[0] - p[0]); } public boolean isBoomerang(int[][] points) { int[] p0 = points[0], p1 = points[1], p2 = points[2]; if (isSame(p0, p1) || isSame(p0, p2) || isSame(p1, p2)) return false; return isColinear(p0, p1, p2) == false; } } 向量叉积 # 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

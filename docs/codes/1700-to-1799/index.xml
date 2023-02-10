@@ -41,5 +41,23 @@
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution{ public ListNode locateForward(ListNode head, int k) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; for (int i=0; i&amp;lt;k; i++) ptr = ptr.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</guid>
+      <description>1748. Sum of Unique Elements # 题目 # 给定整数数组 nums，数组中唯一元素是那些只出现 恰好一次 的元素。 返回 nums 中唯一元素的 和。 1 &amp;lt;= nums[i] &amp;lt;= 100 思路 # 哈希 # 代码 # 哈希 # class Solution { public int sumOfUnique(int[] nums) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: nums) { if (map.containsKey(num) == false) map.put(num, 1); else map.put(num, map.get(num) + 1); } int ans = 0; for (int num: nums) { if (map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</guid>
+      <description>1790. Check if One String Swap Can Make Strings Equal # 题目 # 给定长度相等的两个字符串 s1 和 s2。 一次字符串交换操作的步骤为：选出某个字符串中的两个下标，并交换这两个下标对应的字符。 如果对其中一个字符串执行最多一次字符串交换就可以使两个字符串相等，返回true；否则返回false 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean areAlmostEqual(String s1, String s2) { if (s1.length() != s2.length()) return false; int left = -1, right = -1; for (int i = 0; i &amp;lt; s1.length(); i++) { if (s1.charAt(i) != s2.charAt(i)) { if (left == -1) left = i; else if (right == -1) right = i; else return false; } } if (left == -1) return true; if (right == -1) return false; return s1.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -20,6 +20,15 @@ MAllk33</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.02.-%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.02.-%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/</guid>
+      <description>面试题 01.02. 判定是否互为字符重排 # 题目 # 给定两个由小写字母组成的字符串s1和s2。 判断其中一个字符串的字符经重排后能否变成另一个字符串。 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean CheckPermutation(String s1, String s2) { if (s1.length() != s2.length()) return false; char[] charArray1 = new char[26], charArray2 = new char[26]; for (int i = 0; i &amp;lt; s1.length(); i++) { charArray1[s1.charAt(i) - &amp;#39;a&amp;#39;] += 1; charArray2[s2.charAt(i) - &amp;#39;a&amp;#39;] += 1; } for (int i = 0; i &amp;lt; charArray1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

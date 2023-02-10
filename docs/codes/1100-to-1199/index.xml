@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1100-to-1199/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1108.-Defanging-an-IP-Address/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1108.-Defanging-an-IP-Address/</guid>
+      <description>1108. Defanging an IP Address # 题目 # 给定一个有效的IPV4地址address，返回这个IP地址的无效化版本。
+无效化IP地址，就是用&amp;quot;[.]&amp;quot;代替了每个&amp;quot;.&amp;quot;。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public String defangIPaddr(String address) { char[] and = new char[address.length() + 6]; int ptrAns = 0, ptrAddress = 0; while (ptrAns &amp;lt; ans.length) { if (address.charAt(ptrAddress) != &amp;#39;.&amp;#39;) { ans[ptrAns++] = address.charAt(ptrAddress); } else { ans[ptrAns++] = &amp;#39;[&amp;#39;; ans[ptrAns++] = &amp;#39;.&amp;#39;; ans[ptrAns+=] = &amp;#39;]&amp;#39;; } ptrAddress++; } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

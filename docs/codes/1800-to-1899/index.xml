@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1800-to-1899/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</guid>
+      <description>1822. Sign of the Product of an Array # 题目 # 给定整数数组 nums，令product为数组nums中所有元素值的乘积。 返回乘积的符号。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int arraySign(int[] nums) { int ans = 1; for (int num: nums) { if (num == 0) return 0; else if (num &amp;lt; 0) ans *= -1; } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

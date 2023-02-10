@@ -27,6 +27,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1470.-Shuffle-the-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1470.-Shuffle-the-Array/</guid>
+      <description> 1470. Shuffle the Array # 题目 # 给定数组 nums，数组中有 2n 个元素，按[x1,x2,...,xn,y1,y2,...,yn] 的格式排列。 将数组按 [x1,y1,x2,y2,...,xn,yn] 格式重新排列，返回重排后的数组。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] shuffle(int[] nums, int n) { int[] ans = new int[nums.length]; for (int i = 0; i &amp;lt; n; i++) { ans[2*i] = nums[i]; ans[2*i+1] = nums[i+n]; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1472.-Design-Browser-History/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -68,6 +77,15 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
 数组 nums 定义为: nums[i] = start + 2*i （下标从0开始）且 n == nums.length。
 返回 nums 中所有元素按位异或 (XOR) 后得到的结果。
 思路 # 代码 # class Solution { public int xorOperation(int n, int start) { int xor = 0; for (int i = 0; i &amp;lt; n; i++) xor ^= start + 2 * i; return xor; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/</guid>
+      <description>1491. Average Salary Excluding the Minimum and Maximum Salary # 题目 # 给定整数数组 salary，数组中每个数都是唯一的，其中 salary[i] 是第 i 个员工的工资。 返回去掉最低工资和最高工资后，剩下员工工资的平均值。 思路 # 模拟 # 代码 # 模拟 # class Solution { public double average(int[] salary) { int minSalary = Integer.MAX_VALUE, maxSalary = Integer.MIN_VALUE, sum = 0; for (int num: salary) { minSalary = Math.min(minSalary, num); maxSalary = Math.max(maxSalary, num); sum += num; } return (double)(sum - minSalary - maxSalary) / (salary.</description>
     </item>
     
   </channel>
