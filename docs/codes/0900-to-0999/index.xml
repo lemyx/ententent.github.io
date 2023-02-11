@@ -51,8 +51,17 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
-      <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
+      <description>0977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
 思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] sortedSquares(int[] nums) { int[] ans = new int[nums.length]; int i = 0, j = nums.length - 1, ptr = nums.length - 1; while (i &amp;lt;= j) { int num = Math.abs(nums[i]) &amp;gt; Math.abs(nums[j]) ? nums[i++] : nums[j--]; ans[ptr--] = num * num; } return ans; } } class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/</guid>
+      <description> 0997. Find the Town Judge # 题目 # 小镇中有n个人，按从1到n的顺序编号。传言称，这些人中有一个暗地里是小镇法官。 如果小镇法官真的存在，那么： 小镇法官不会信任任何人。 每个人（除了小镇法官）都信任这位小镇法官。 只有一个人同时满足前两条。 给定数组trust，其中 trust[i] = [ai, bi] 表示编号为 ai 的人信任编号为 bi 的人。 如果小镇法官存在，请返回该法官的编号。否则返回-1。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findJudge(int n, int[][] trust) { int[] cntMyTrust = new int[n + 1], cntTrustMe = new int[n + 1]; for (int[] pair: trust) { cntMyTrust[pair[0]]++; cntTrustMe[pair[1]]++; } for (int i = 1; i &amp;lt;= n; i++) { if (cntMyTrust[i] == 0 &amp;amp;&amp;amp; cntTrustMe[i] == n - 1) return i; } return -1; } } </description>
     </item>
     
   </channel>

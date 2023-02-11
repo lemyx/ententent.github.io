@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1800-to-1899/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</guid>
+      <description>1816. Truncate Sentence # 题目 # 句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。 例如，&amp;quot;Hello World&amp;quot;、&amp;quot;HELLO&amp;quot; 和 &amp;quot;hello world hello world&amp;quot; 都是句子。 给你一个句子 s 和一个整数 k ，请你将 s 截断 ，使截断后的句子仅含 前 k 个单词。返回 截断 s** 后得到的句子*。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String truncateSentence (String s, int k) { char[] charArray = s.toCharArray(); String ans = &amp;#34;&amp;#34;; for (int i = 0, cnt = 0; i &amp;lt; charArray.length &amp;amp;&amp;amp; cnt &amp;lt; k; i++) { if (charArray[i] == &amp;#39; &amp;#39; &amp;amp;&amp;amp; ++cnt == k) return ans; ans += String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

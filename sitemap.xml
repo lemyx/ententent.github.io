@@ -440,6 +440,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</loc>
     <lastmod>2023-02-03T08:44:09+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</loc>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>
   </url><url>
@@ -642,7 +645,10 @@
     <lastmod>2023-01-25T09:26:03+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</loc>
-    <lastmod>2023-02-02T15:39:16+08:00</lastmod>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/</loc>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/</loc>
     <lastmod>2023-01-05T10:55:55+08:00</lastmod>
@@ -737,6 +743,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/</loc>
     <lastmod>2023-01-27T23:02:57+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</loc>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</loc>
     <lastmod>2023-01-21T23:49:39+08:00</lastmod>
   </url><url>
@@ -748,6 +757,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</loc>
     <lastmod>2023-02-09T07:50:58+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</loc>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/</loc>
     <lastmod>2023-02-09T07:50:58+08:00</lastmod>
@@ -901,7 +913,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-02-10T08:02:41+08:00</lastmod>
+    <lastmod>2023-02-11T08:39:27+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>

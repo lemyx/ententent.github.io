@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0400-to-0499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</guid>
+      <description>0405. Convert a Number to Hexadecimal # 题目 # 给定一个整数，将这个数转换为十六进制数。 对于负整数，通常使用补码运算方式。 十六进制中所有字母(a-f)都必须是小写。 十六进制字符串中不能包含多余的前导零。如果要转化的数为0，那么以单个字符&#39;0&#39;来表示；对于其他情况，十六进制字符串中的第一个字符将不会是0字符。 给定的数确保在32位有符号整数范围内。 不能使用任何由库提供的将数字直接转换或格式化为十六进制的方法。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String int2hex(int num) { switch (num) { case 0x00000000 : return &amp;#34;0&amp;#34;; case 0x10000000 : return &amp;#34;1&amp;#34;; case 0x20000000 : return &amp;#34;2&amp;#34;; case 0x30000000 : return &amp;#34;3&amp;#34;; case 0x40000000 : return &amp;#34;4&amp;#34;; case 0x50000000 : return &amp;#34;5&amp;#34;; case 0x60000000 : return &amp;#34;6&amp;#34;; case 0x70000000 : return &amp;#34;7&amp;#34;; case 0x80000000 : return &amp;#34;8&amp;#34;; case 0x90000000 : return &amp;#34;9&amp;#34;; case 0xa0000000 : return &amp;#34;a&amp;#34;; case 0xb0000000 : return &amp;#34;b&amp;#34;; case 0xc0000000 : return &amp;#34;c&amp;#34;; case 0xd0000000 : return &amp;#34;d&amp;#34;; case 0xe0000000 : return &amp;#34;e&amp;#34;; case 0xf0000000 : return &amp;#34;f&amp;#34;; } return &amp;#34;&amp;#34;; } public String toHex(int num) { if (num == 0) return &amp;#34;0&amp;#34;; boolean flag = false; String ans = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; 8; i++) { int and = num &amp;amp; 0xf0000000; if (and !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -1129,6 +1129,15 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</guid>
+      <description>0405. Convert a Number to Hexadecimal # 题目 # 给定一个整数，将这个数转换为十六进制数。 对于负整数，通常使用补码运算方式。 十六进制中所有字母(a-f)都必须是小写。 十六进制字符串中不能包含多余的前导零。如果要转化的数为0，那么以单个字符&#39;0&#39;来表示；对于其他情况，十六进制字符串中的第一个字符将不会是0字符。 给定的数确保在32位有符号整数范围内。 不能使用任何由库提供的将数字直接转换或格式化为十六进制的方法。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String int2hex(int num) { switch (num) { case 0x00000000 : return &amp;#34;0&amp;#34;; case 0x10000000 : return &amp;#34;1&amp;#34;; case 0x20000000 : return &amp;#34;2&amp;#34;; case 0x30000000 : return &amp;#34;3&amp;#34;; case 0x40000000 : return &amp;#34;4&amp;#34;; case 0x50000000 : return &amp;#34;5&amp;#34;; case 0x60000000 : return &amp;#34;6&amp;#34;; case 0x70000000 : return &amp;#34;7&amp;#34;; case 0x80000000 : return &amp;#34;8&amp;#34;; case 0x90000000 : return &amp;#34;9&amp;#34;; case 0xa0000000 : return &amp;#34;a&amp;#34;; case 0xb0000000 : return &amp;#34;b&amp;#34;; case 0xc0000000 : return &amp;#34;c&amp;#34;; case 0xd0000000 : return &amp;#34;d&amp;#34;; case 0xe0000000 : return &amp;#34;e&amp;#34;; case 0xf0000000 : return &amp;#34;f&amp;#34;; } return &amp;#34;&amp;#34;; } public String toHex(int num) { if (num == 0) return &amp;#34;0&amp;#34;; boolean flag = false; String ans = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; 8; i++) { int and = num &amp;amp; 0xf0000000; if (and !</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0412.-Fizz-Buzz/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1840,8 +1849,17 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/</guid>
-      <description>977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
+      <description>0977. Squares of A Sorted Array # 题目 # 给定按 非递减顺序 排序的整型数组 nums，返回 每个数字的平方 组成的新数组，要求新数组也按 非递减顺序 排序。
 思路 # 双指针 # 代码 # 双指针 # class Solution { public int[] sortedSquares(int[] nums) { int[] ans = new int[nums.length]; int i = 0, j = nums.length - 1, ptr = nums.length - 1; while (i &amp;lt;= j) { int num = Math.abs(nums[i]) &amp;gt; Math.abs(nums[j]) ? nums[i++] : nums[j--]; ans[ptr--] = num * num; } return ans; } } class Solution { public int[] sortedSquares(int[] nums) { if (nums == null) return null; int sz = nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/</guid>
+      <description> 0997. Find the Town Judge # 题目 # 小镇中有n个人，按从1到n的顺序编号。传言称，这些人中有一个暗地里是小镇法官。 如果小镇法官真的存在，那么： 小镇法官不会信任任何人。 每个人（除了小镇法官）都信任这位小镇法官。 只有一个人同时满足前两条。 给定数组trust，其中 trust[i] = [ai, bi] 表示编号为 ai 的人信任编号为 bi 的人。 如果小镇法官存在，请返回该法官的编号。否则返回-1。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findJudge(int n, int[][] trust) { int[] cntMyTrust = new int[n + 1], cntTrustMe = new int[n + 1]; for (int[] pair: trust) { cntMyTrust[pair[0]]++; cntTrustMe[pair[1]]++; } for (int i = 1; i &amp;lt;= n; i++) { if (cntMyTrust[i] == 0 &amp;amp;&amp;amp; cntTrustMe[i] == n - 1) return i; } return -1; } } </description>
     </item>
     
     <item>
@@ -2185,6 +2203,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</guid>
+      <description> 1716. Calculate Money in Leetcode Bank # 题目 # Hercy 想要为购买第一辆车存钱。他每天都往力扣银行里存钱。 最开始，他在周一的时候存入1块钱。从周二到周日，他每天都比前一天多存入1块钱。在接下来每一个周一，他都会比前一个周一多存入1块钱。 给定n，返回在第n天结束的时候他在力扣银行总共存了多少块钱。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int totalMoney(int n) { int N = n / 7, r = n % 7; int a1 = (1 + 7) * 7 / 2; int an = (N + N + 6) * 7 / 2; int ans = N * (a1 + an) / 2; if (r &amp;gt; 0) ans += (N + 1 + N + 1 + r - 1) * r / 2; return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2223,6 +2250,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</guid>
       <description>1790. Check if One String Swap Can Make Strings Equal # 题目 # 给定长度相等的两个字符串 s1 和 s2。 一次字符串交换操作的步骤为：选出某个字符串中的两个下标，并交换这两个下标对应的字符。 如果对其中一个字符串执行最多一次字符串交换就可以使两个字符串相等，返回true；否则返回false 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean areAlmostEqual(String s1, String s2) { if (s1.length() != s2.length()) return false; int left = -1, right = -1; for (int i = 0; i &amp;lt; s1.length(); i++) { if (s1.charAt(i) != s2.charAt(i)) { if (left == -1) left = i; else if (right == -1) right = i; else return false; } } if (left == -1) return true; if (right == -1) return false; return s1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</guid>
+      <description>1816. Truncate Sentence # 题目 # 句子 是一个单词列表，列表中的单词之间用单个空格隔开，且不存在前导或尾随空格。每个单词仅由大小写英文字母组成（不含标点符号）。 例如，&amp;quot;Hello World&amp;quot;、&amp;quot;HELLO&amp;quot; 和 &amp;quot;hello world hello world&amp;quot; 都是句子。 给你一个句子 s 和一个整数 k ，请你将 s 截断 ，使截断后的句子仅含 前 k 个单词。返回 截断 s** 后得到的句子*。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String truncateSentence (String s, int k) { char[] charArray = s.toCharArray(); String ans = &amp;#34;&amp;#34;; for (int i = 0, cnt = 0; i &amp;lt; charArray.length &amp;amp;&amp;amp; cnt &amp;lt; k; i++) { if (charArray[i] == &amp;#39; &amp;#39; &amp;amp;&amp;amp; ++cnt == k) return ans; ans += String.</description>
     </item>
     
     <item>
