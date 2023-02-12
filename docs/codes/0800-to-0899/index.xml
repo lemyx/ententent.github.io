@@ -7,6 +7,19 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0800-to-0899/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/</guid>
+      <description>0804. Unique Morse Code Words # 题目 # 国际摩尔斯密码定义一种标准编码方式，将每个字母对应于一个由一系列点和短线组成的字符串， 比如:
+&#39;a&#39; 对应 &amp;quot;.-&amp;quot; ， &#39;b&#39; 对应 &amp;quot;-...&amp;quot; ， &#39;c&#39; 对应 &amp;quot;-.-.&amp;quot; ，以此类推。 为了方便，所有 26 个英文字母的摩尔斯密码表如下：
+[&amp;#34;.-&amp;#34;,&amp;#34;-...&amp;#34;,&amp;#34;-.-.&amp;#34;,&amp;#34;-..&amp;#34;,&amp;#34;.&amp;#34;,&amp;#34;..-.&amp;#34;,&amp;#34;--.&amp;#34;,&amp;#34;....&amp;#34;,&amp;#34;..&amp;#34;,&amp;#34;.---&amp;#34;,&amp;#34;-.-&amp;#34;,&amp;#34;.-..&amp;#34;,&amp;#34;--&amp;#34;,&amp;#34;-.&amp;#34;,&amp;#34;---&amp;#34;,&amp;#34;.--.&amp;#34;,&amp;#34;--.-&amp;#34;,&amp;#34;.-.&amp;#34;,&amp;#34;...&amp;#34;,&amp;#34;-&amp;#34;,&amp;#34;..-&amp;#34;,&amp;#34;...-&amp;#34;,&amp;#34;.--&amp;#34;,&amp;#34;-..-&amp;#34;,&amp;#34;-.--&amp;#34;,&amp;#34;--..&amp;#34;] 给你一个字符串数组 words ，每个单词可以写成每个字母对应摩尔斯密码的组合。
+例如，&amp;quot;cab&amp;quot; 可以写成 &amp;quot;-.-..--...&amp;quot; ，(即 &amp;quot;-.-.&amp;quot; + &amp;quot;.-&amp;quot; + &amp;quot;-...&amp;quot; 字符串的结合)。我们将这样一个连接过程称作 单词翻译 。 对 words 中所有单词进行单词翻译，返回不同 单词翻译 的数量。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public String charToString(Character ch) { switch (ch) { case &amp;#39;a&amp;#39; : return &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -18,10 +31,10 @@
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0819.-Most-Common-Word/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0819.-Most-Common-Word/</guid>
       <description>0819. Most Common Word # 题目 # 给定一个段落 (paragraph) 和一个禁用单词列表 (banned)。返回出现次数最多，同时不再禁用列表中的单词。 题目保证至少有一个词不在禁用列表中，且答案唯一。 禁用列表中的单词用小写字母表示，不含标点符号。段落中的单词不区分大小写。答案都是小写字母。 paragraph 只包含字母、空格和下列标点符号!?&#39;,;. 单词里只包含字母，不会出现省略号或者其他标点符号。 不存在没有连字符或者带有连字符的单词。 思路 # 哈希 # 代码 # 哈希 # class Solution { public String mostCommonWord (String paragraph, String[] banned) { Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (String ban: banned) set.add(ban); Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int maxCnt = 0; String maxWord = &amp;#34;&amp;#34;; Character[] punctuations = new Character[]{&amp;#39;!&amp;#39;, &amp;#39;?&amp;#39;, &amp;#39;\&amp;#39;&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;;&amp;#39;, &amp;#39;.</description>
     </item>
     

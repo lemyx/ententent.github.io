@@ -1322,11 +1322,20 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0507.-Perfect-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0507.-Perfect-Number/</guid>
+      <description>0507. Perfect Number # 题目 # 对于一个 正整数，如果它除了和它自身以外的所有 正因子 之和相等，称它为 「完美数」。 给定一个 整数 n，如果是完美数，返回 true；否则返回 false。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkPerfectNumber (int num) { if (num == 1) return false; int sum = 1; for (int i = 2; i &amp;lt; Math.sqrt((double) num); i++) { if (num % i == 0) { sum += i == num / i ? i : i + num / i; } } return sum == num; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</guid>
-      <description>513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
+      <description>0513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
 假定二叉树至少有一个节点。
 思路 # 层数遍历 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int findBottomLeftValue(TreeNode root) { int ans = root.</description>
     </item>
@@ -1685,6 +1694,19 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/</guid>
+      <description>0804. Unique Morse Code Words # 题目 # 国际摩尔斯密码定义一种标准编码方式，将每个字母对应于一个由一系列点和短线组成的字符串， 比如:
+&#39;a&#39; 对应 &amp;quot;.-&amp;quot; ， &#39;b&#39; 对应 &amp;quot;-...&amp;quot; ， &#39;c&#39; 对应 &amp;quot;-.-.&amp;quot; ，以此类推。 为了方便，所有 26 个英文字母的摩尔斯密码表如下：
+[&amp;#34;.-&amp;#34;,&amp;#34;-...&amp;#34;,&amp;#34;-.-.&amp;#34;,&amp;#34;-..&amp;#34;,&amp;#34;.&amp;#34;,&amp;#34;..-.&amp;#34;,&amp;#34;--.&amp;#34;,&amp;#34;....&amp;#34;,&amp;#34;..&amp;#34;,&amp;#34;.---&amp;#34;,&amp;#34;-.-&amp;#34;,&amp;#34;.-..&amp;#34;,&amp;#34;--&amp;#34;,&amp;#34;-.&amp;#34;,&amp;#34;---&amp;#34;,&amp;#34;.--.&amp;#34;,&amp;#34;--.-&amp;#34;,&amp;#34;.-.&amp;#34;,&amp;#34;...&amp;#34;,&amp;#34;-&amp;#34;,&amp;#34;..-&amp;#34;,&amp;#34;...-&amp;#34;,&amp;#34;.--&amp;#34;,&amp;#34;-..-&amp;#34;,&amp;#34;-.--&amp;#34;,&amp;#34;--..&amp;#34;] 给你一个字符串数组 words ，每个单词可以写成每个字母对应摩尔斯密码的组合。
+例如，&amp;quot;cab&amp;quot; 可以写成 &amp;quot;-.-..--...&amp;quot; ，(即 &amp;quot;-.-.&amp;quot; + &amp;quot;.-&amp;quot; + &amp;quot;-...&amp;quot; 字符串的结合)。我们将这样一个连接过程称作 单词翻译 。 对 words 中所有单词进行单词翻译，返回不同 单词翻译 的数量。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public String charToString(Character ch) { switch (ch) { case &amp;#39;a&amp;#39; : return &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Linked-List-Components/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1696,10 +1718,10 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
-      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</link>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0819.-Most-Common-Word/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0817.-Most-Common-Word/</guid>
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0819.-Most-Common-Word/</guid>
       <description>0819. Most Common Word # 题目 # 给定一个段落 (paragraph) 和一个禁用单词列表 (banned)。返回出现次数最多，同时不再禁用列表中的单词。 题目保证至少有一个词不在禁用列表中，且答案唯一。 禁用列表中的单词用小写字母表示，不含标点符号。段落中的单词不区分大小写。答案都是小写字母。 paragraph 只包含字母、空格和下列标点符号!?&#39;,;. 单词里只包含字母，不会出现省略号或者其他标点符号。 不存在没有连字符或者带有连字符的单词。 思路 # 哈希 # 代码 # 哈希 # class Solution { public String mostCommonWord (String paragraph, String[] banned) { Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (String ban: banned) set.add(ban); Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); int maxCnt = 0; String maxWord = &amp;#34;&amp;#34;; Character[] punctuations = new Character[]{&amp;#39;!&amp;#39;, &amp;#39;?&amp;#39;, &amp;#39;\&amp;#39;&amp;#39;, &amp;#39;,&amp;#39;, &amp;#39;;&amp;#39;, &amp;#39;.</description>
     </item>
     
@@ -2006,6 +2028,17 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</guid>
+      <description>1436. Destination City # 题目 # 给你一份旅游线路图，该线路图中的旅行线路用数组 paths 表示，其中 paths[i] = [cityAi, cityBi] 表示该线路将会从 cityAi 直接前往 cityBi 。请你找出这次旅行的终点站，即没有任何可以通往其他城市的线路的城市*。*
+题目数据保证线路图会形成一条不存在循环的线路，因此恰有一个旅行终点站。
+思路 # 模拟+哈希 # 代码 # 模拟+哈希 # class Solution { public String destCity (List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; paths) { Set&amp;lt;String&amp;gt; start = new HashSet&amp;lt;&amp;gt;(); Set&amp;lt;String&amp;gt; end = new HashSet&amp;lt;&amp;gt;(); for (List&amp;lt;String&amp;gt; path: paths) { /** consider start */ start.add(path.get(0)); if (end.contains(path.get(0))) end.remove(path.get(0)); /** consider end */ if (start.contains(path.get(1)) == false) end.add(path.get(1)); else if (end.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2085,6 +2118,15 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/</guid>
       <description>1491. Average Salary Excluding the Minimum and Maximum Salary # 题目 # 给定整数数组 salary，数组中每个数都是唯一的，其中 salary[i] 是第 i 个员工的工资。 返回去掉最低工资和最高工资后，剩下员工工资的平均值。 思路 # 模拟 # 代码 # 模拟 # class Solution { public double average(int[] salary) { int minSalary = Integer.MAX_VALUE, maxSalary = Integer.MIN_VALUE, sum = 0; for (int num: salary) { minSalary = Math.min(minSalary, num); maxSalary = Math.max(maxSalary, num); sum += num; } return (double)(sum - minSalary - maxSalary) / (salary.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</guid>
+      <description>1518. Water Bottles # 题目 # 超市正在促销，你可以用 numExchange 个空水瓶从超市兑换一瓶水。最开始，你一共购入了 numBottles 瓶水。 如果喝掉了水瓶中的水，那么水瓶就会变成空的。 给你两个整数 numBottles 和 numExchange ，返回你 最多 可以喝到多少瓶水。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int numWaterBottles(int numBottles, int numExchange) { int drink = numBottles, empty = numBottles; while (empty / numExchange != 0) { drink += empty / numExchange; empty = empty / numExchange + empty % numExchange; } return drink; } } 数学 # 致谢 # 宫水三叶</description>
     </item>
     
     <item>

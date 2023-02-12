@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1400-to-1499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</guid>
+      <description>1436. Destination City # 题目 # 给你一份旅游线路图，该线路图中的旅行线路用数组 paths 表示，其中 paths[i] = [cityAi, cityBi] 表示该线路将会从 cityAi 直接前往 cityBi 。请你找出这次旅行的终点站，即没有任何可以通往其他城市的线路的城市*。*
+题目数据保证线路图会形成一条不存在循环的线路，因此恰有一个旅行终点站。
+思路 # 模拟+哈希 # 代码 # 模拟+哈希 # class Solution { public String destCity (List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; paths) { Set&amp;lt;String&amp;gt; start = new HashSet&amp;lt;&amp;gt;(); Set&amp;lt;String&amp;gt; end = new HashSet&amp;lt;&amp;gt;(); for (List&amp;lt;String&amp;gt; path: paths) { /** consider start */ start.add(path.get(0)); if (end.contains(path.get(0))) end.remove(path.get(0)); /** consider end */ if (start.contains(path.get(1)) == false) end.add(path.get(1)); else if (end.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1446.-Consecutive-Characters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

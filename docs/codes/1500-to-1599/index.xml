@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1500-to-1599/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</guid>
+      <description>1518. Water Bottles # 题目 # 超市正在促销，你可以用 numExchange 个空水瓶从超市兑换一瓶水。最开始，你一共购入了 numBottles 瓶水。 如果喝掉了水瓶中的水，那么水瓶就会变成空的。 给你两个整数 numBottles 和 numExchange ，返回你 最多 可以喝到多少瓶水。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int numWaterBottles(int numBottles, int numExchange) { int drink = numBottles, empty = numBottles; while (empty / numExchange != 0) { drink += empty / numExchange; empty = empty / numExchange + empty % numExchange; } return drink; } } 数学 # 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

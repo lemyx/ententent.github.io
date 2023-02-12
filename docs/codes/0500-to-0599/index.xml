@@ -16,11 +16,20 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0507.-Perfect-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0507.-Perfect-Number/</guid>
+      <description>0507. Perfect Number # 题目 # 对于一个 正整数，如果它除了和它自身以外的所有 正因子 之和相等，称它为 「完美数」。 给定一个 整数 n，如果是完美数，返回 true；否则返回 false。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkPerfectNumber (int num) { if (num == 1) return false; int sum = 1; for (int i = 2; i &amp;lt; Math.sqrt((double) num); i++) { if (num % i == 0) { sum += i == num / i ? i : i + num / i; } } return sum == num; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/</guid>
-      <description>513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
+      <description>0513. Find Bottom Left Tree Value # 题目 # 给定一棵二叉树的 根节点 root，找出该二叉树的 最底层 最左边 节点的值。
 假定二叉树至少有一个节点。
 思路 # 层数遍历 代码 # public class TreeNode { int val; TreeNode left; TreeNode right; TreeNode() {} TreeNode(int val) { this.val = val; } TreeNode(int val, TreeNode left, TreeNode right) { this.val = val; this.left = left; this.right = right; } } class Solution { public int findBottomLeftValue(TreeNode root) { int ans = root.</description>
     </item>
