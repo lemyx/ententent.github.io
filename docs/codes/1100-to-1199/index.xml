@@ -38,5 +38,17 @@
 思路 # 考察第 k 个链表结点，判断其是否位于某个 零子序列 中，只需通过检查第 k-1 个结点的前缀和在 &amp;gt;=k 结点处是否再次出现。 可以通过两次遍历链表，借助 HashMap 实现这一需求 第一趟遍历，计算每个结点的前缀和，并构建前缀和与最远结点的映射关系 第二趟遍历，从哨兵结点开始，从映射中查找当前前缀和对应的结点，若找到则移除之间的结点。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeZeroSumSublists(ListNode head) { ListNode sentinel = new ListNode(0, head); Map&amp;lt;Integer, ListNode&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); map.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1185.-Day-of-the-Week/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1185.-Day-of-the-Week/</guid>
+      <description>1185. Day of the Week # 题目 # 给你一个日期，请你设计一个算法来判断它是对应一周中的哪一天。
+输入为三个整数：day、month 和 year，分别表示日、月、年。
+您返回的结果必须是这几个值中的一个 {&amp;quot;Sunday&amp;quot;, &amp;quot;Monday&amp;quot;, &amp;quot;Tuesday&amp;quot;, &amp;quot;Wednesday&amp;quot;, &amp;quot;Thursday&amp;quot;, &amp;quot;Friday&amp;quot;, &amp;quot;Saturday&amp;quot;}。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isLeapYear(int year) { return (year % 4 == 0 &amp;amp;&amp;amp; year % 100 != 0) || year % 400 == 0; } public int[] dayOfMonths (int year) { int[] days = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; if (isLeapYear(year)) days[1]++; return days; } public String dayOfTheWeek(int day, int month, int year) { /** 1971/01/01 is Friday.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1809,6 +1809,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/</guid>
+      <description>0884. Uncommon Words from Two Sentences # 题目 # 句子 是一串由空格分隔的单词。每个 单词 仅由小写字母组成。 如果某个单词在其中一个句子中恰好出现一次，在另一个句子中却 没有出现 ，那么这个单词就是 不常见的 。 给你两个 句子 s1 和 s2 ，返回所有 不常用单词 的列表。返回列表中单词可以按 任意顺序 组织。 思路 # 哈希 # 代码 # 哈希 # class Solution { public String[] uncommonFromSentences(String s1, String s2) { String[] s1Array = s1.split(&amp;#34; &amp;#34;), s2Array = s2.split(&amp;#34; &amp;#34;); Map&amp;lt;String, Integer&amp;gt; s1Map = new HashMap&amp;lt;&amp;gt;(), s2Map = new HashMap&amp;lt;&amp;gt;(); for (String str: s1Array) s1Map.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0888.-Fair-Candy-Swap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1957,6 +1966,18 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       <description>1171. Remove Zero Sum Consecutive Nodes from Linked List # 题目 # 给定链表头节点 head ，反复删去链表中由 总和 值为 0 的连续节点组成的序列，直到不存在这样的序列为止。
 删除完毕后，返回最终结果链表的头节点。
 思路 # 考察第 k 个链表结点，判断其是否位于某个 零子序列 中，只需通过检查第 k-1 个结点的前缀和在 &amp;gt;=k 结点处是否再次出现。 可以通过两次遍历链表，借助 HashMap 实现这一需求 第一趟遍历，计算每个结点的前缀和，并构建前缀和与最远结点的映射关系 第二趟遍历，从哨兵结点开始，从映射中查找当前前缀和对应的结点，若找到则移除之间的结点。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode removeZeroSumSublists(ListNode head) { ListNode sentinel = new ListNode(0, head); Map&amp;lt;Integer, ListNode&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1185.-Day-of-the-Week/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1185.-Day-of-the-Week/</guid>
+      <description>1185. Day of the Week # 题目 # 给你一个日期，请你设计一个算法来判断它是对应一周中的哪一天。
+输入为三个整数：day、month 和 year，分别表示日、月、年。
+您返回的结果必须是这几个值中的一个 {&amp;quot;Sunday&amp;quot;, &amp;quot;Monday&amp;quot;, &amp;quot;Tuesday&amp;quot;, &amp;quot;Wednesday&amp;quot;, &amp;quot;Thursday&amp;quot;, &amp;quot;Friday&amp;quot;, &amp;quot;Saturday&amp;quot;}。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isLeapYear(int year) { return (year % 4 == 0 &amp;amp;&amp;amp; year % 100 != 0) || year % 400 == 0; } public int[] dayOfMonths (int year) { int[] days = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; if (isLeapYear(year)) days[1]++; return days; } public String dayOfTheWeek(int day, int month, int year) { /** 1971/01/01 is Friday.</description>
     </item>
     
     <item>
@@ -2184,6 +2205,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</guid>
+      <description>1646. Get Maximum in Generated Array # 题目 # 给定一个整数n，按下述规则生成一个长度为n+1的数组nums： nums[0] = 0 num[1] = 1 当 2 &amp;lt;= 2 * i &amp;lt;= n 时，nums[2 * i] = nums[i] 当 2 &amp;lt;= 2 * i + 1 &amp;lt;= n 时，nums[2 * i + 1] = nums[i] + nums[i + 1] 返回生成数组 nums 中的最大值。 思路 # 模拟 # 打表 # 代码 # 模拟 # class Solution { public int getMaximumGenerated(int n) { if (n == 0) return 0; int[] array = new int[n + 1]; for (int i = 2; i &amp;lt;= n; i++) { if (i % 2 == 0) array[i] = array[i/2]; else array[i] = array[(i-1)/2] + array[(i-1)/2+1]; } int ans = -1; for (int num: array) ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2220,6 +2250,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</guid>
       <description> 1672. Richest Customer Wealth # 题目 # 给定 m x n 的整数网格 accounts ，其中 accounts[i][j] 是第 i 位客户在第 j 家银行托管的资产数量。 客户的 资产总量 是其在各家银行托管的资产数量之和。最富有客户是 资产总量 最大的客户。 返回最富有客户所拥有的 资产总量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumWealth(int[][] accounts) { int ans = 0; for (int[] account: accounts) { int wealth = 0; for (int val: account) wealth += val; ans = Math.max(ans, wealth); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/</guid>
+      <description>1684. Count the Number of Consistent Strings # 题目 # 给你一个由不同字符组成的字符串 allowed 和一个字符串数组 words 。如果一个字符串的每一个字符都在 allowed 中，就称这个字符串是 一致字符串 。 请你返回 words 数组中 一致字符串 的数目。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countConsistentStrings(String allowed, String[] words) { Set&amp;lt;Character&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; sllowed.length(); i++) set.add(allowed.charAt(i)); int cnt = 0; for (String word: words) { cnt++; for (int i = 0; i &amp;lt; word.</description>
     </item>
     
     <item>

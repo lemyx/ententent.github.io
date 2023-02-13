@@ -51,6 +51,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</guid>
+      <description>1646. Get Maximum in Generated Array # 题目 # 给定一个整数n，按下述规则生成一个长度为n+1的数组nums： nums[0] = 0 num[1] = 1 当 2 &amp;lt;= 2 * i &amp;lt;= n 时，nums[2 * i] = nums[i] 当 2 &amp;lt;= 2 * i + 1 &amp;lt;= n 时，nums[2 * i + 1] = nums[i] + nums[i + 1] 返回生成数组 nums 中的最大值。 思路 # 模拟 # 打表 # 代码 # 模拟 # class Solution { public int getMaximumGenerated(int n) { if (n == 0) return 0; int[] array = new int[n + 1]; for (int i = 2; i &amp;lt;= n; i++) { if (i % 2 == 0) array[i] = array[i/2]; else array[i] = array[(i-1)/2] + array[(i-1)/2+1]; } int ans = -1; for (int num: array) ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -87,6 +96,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/</guid>
       <description> 1672. Richest Customer Wealth # 题目 # 给定 m x n 的整数网格 accounts ，其中 accounts[i][j] 是第 i 位客户在第 j 家银行托管的资产数量。 客户的 资产总量 是其在各家银行托管的资产数量之和。最富有客户是 资产总量 最大的客户。 返回最富有客户所拥有的 资产总量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumWealth(int[][] accounts) { int ans = 0; for (int[] account: accounts) { int wealth = 0; for (int val: account) wealth += val; ans = Math.max(ans, wealth); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/</guid>
+      <description>1684. Count the Number of Consistent Strings # 题目 # 给你一个由不同字符组成的字符串 allowed 和一个字符串数组 words 。如果一个字符串的每一个字符都在 allowed 中，就称这个字符串是 一致字符串 。 请你返回 words 数组中 一致字符串 的数目。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countConsistentStrings(String allowed, String[] words) { Set&amp;lt;Character&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; sllowed.length(); i++) set.add(allowed.charAt(i)); int cnt = 0; for (String word: words) { cnt++; for (int i = 0; i &amp;lt; word.</description>
     </item>
     
     <item>
