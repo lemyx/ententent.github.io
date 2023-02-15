@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/002.-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/002.-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95/</guid>
+      <description>剑指 Offer II 002. 二进制加法 # 题目 # 给定两个01字符串a和b，计算它们的和，并以二进制字符串的形式输出。 输入为非空字符串且只包含数字1和0。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String addBinary(String a, String b) { String longer = a.length() &amp;gt; b.length() ? a : b, shorter = a.length() &amp;gt; b.length() ? b : a; int ptrLonger = longer.length() - 1, ptrShorter = shorter.length() - 1; char[] ans = longer.toCharArray(); int sum = 0, carry = 0; while (ptrShorter &amp;gt;= 0) { sum = longer.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/041.-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

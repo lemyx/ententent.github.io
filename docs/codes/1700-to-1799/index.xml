@@ -52,6 +52,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/</guid>
+      <description>1725. Number Of Rectangles That Can Form The Largest Square # 题目 # 给你一个数组 rectangles ，其中 rectangles[i] = [li, wi] 表示第 i 个矩形的长度为 li 、宽度为 wi 。 如果存在 k 同时满足 k &amp;lt;= li 和 k &amp;lt;= wi ，就可以将第 i 个矩形切成边长为 k 的正方形。例如，矩形 [4,6] 可以切成边长最大为 4 的正方形。 设 maxLen 为可以从矩形数组 rectangles 切分得到的 最大正方形 的边长。 请你统计有多少个矩形能够切出边长为 maxLen 的正方形，并返回矩形 数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countGoodRectangles(int[][] rectangles) { int maxLen = 0, ans = 0; for (int[] rectangle: rectangles) { int width = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -61,11 +70,29 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</guid>
+      <description>1768. Merge Strings Alternatively # 题目 # 给你两个字符串 word1 和 word2 。请你从 word1 开始，通过交替添加字母来合并字符串。如果一个字符串比另一个字符串长，就将多出来的字母追加到合并后字符串的末尾。 返回 合并后的字符串 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mergeAlternatively(String word1, String word2) { char[] arr = new char[word1.length() + word2.length()]; int ptr1 = 0, ptr2 = 0, ptr = 0; while (ptr &amp;lt; arr.length) { if (ptr1 == word1.length()) arr[ptr++] = word2.charAt(ptr2++); else if (ptr2 == word2.length()) arr[ptr++] = word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</guid>
       <description>1790. Check if One String Swap Can Make Strings Equal # 题目 # 给定长度相等的两个字符串 s1 和 s2。 一次字符串交换操作的步骤为：选出某个字符串中的两个下标，并交换这两个下标对应的字符。 如果对其中一个字符串执行最多一次字符串交换就可以使两个字符串相等，返回true；否则返回false 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean areAlmostEqual(String s1, String s2) { if (s1.length() != s2.length()) return false; int left = -1, right = -1; for (int i = 0; i &amp;lt; s1.length(); i++) { if (s1.charAt(i) != s2.charAt(i)) { if (left == -1) left = i; else if (right == -1) right = i; else return false; } } if (left == -1) return true; if (right == -1) return false; return s1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1791.-Find-Center-of-Star-Graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1791.-Find-Center-of-Star-Graph/</guid>
+      <description>1791. Find Center of Star Graph # 题目 # 有一个无向的 星型 图，由 n 个编号从 1 到 n 的节点组成。星型图有一个 中心 节点，并且恰有 n - 1 条边将中心节点与其他每个节点连接起来。 给你一个二维整数数组 edges ，其中 edges[i] = [ui, vi] 表示在节点 ui 和 vi 之间存在一条边。请你找出并返回 edges 所表示星型图的中心节点。 思路 # 模拟 # 欧拉回路 # 代码 # 模拟 # class Solution { public int findCenter(int[][] edges) { int[] edge1 = edges[0], edge2 = edges[1]; if (edge2[0] == edge1[0] || edge2[0] == edge1[1]) return edge2[0]; return edge2[1]; } } 欧拉回路 # 致谢 # 宫水三叶</description>
     </item>
     
   </channel>

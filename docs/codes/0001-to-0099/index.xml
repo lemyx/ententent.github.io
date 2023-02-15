@@ -188,10 +188,19 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</guid>
-      <description>66. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+      <description>0066. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
 最高位数字存放在数组的首位，数组中每个数字只存储 单个 数字。
 可以假定除整数 0 之外，这个整数不会以零开头。
 思路 # 代码 # class Solution { public int[] plusOne(int[] digits) { int carry = 1; for (int i = digits.length - 1; i &amp;gt;= 0; i--) { int newDigit = (digits[i] + carry) % 0; carry = (digits[i] + carry) / 10; digits[i] = newDigit; } if (carry == 0) return digits; int[] ans = new int[digits.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0067.-Add-Binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0067.-Add-Binary/</guid>
+      <description>0067. Add Binary # 题目 # 给定两个二进制字符串a和b，以二进制字符串的形式返回它们的和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String addBinary(String a, String b) { String longer = a.length() &amp;gt; b.length() ? a : b; int ptrLonger = longer.length() - 1; String shorter = a.length() &amp;gt; b.length() ? b : a; int ptrShorter = shorter.length() - 1; char[] ans = longer.toCharArray(); int sum = 0, carry = 0; while (ptrShorter &amp;gt;= 0) { sum = longer.</description>
     </item>
     
     <item>

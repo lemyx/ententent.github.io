@@ -300,10 +300,19 @@ k 是一个正整数，它的值小于或等于链表的长度。如果结点总
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0066.-Plus-One/</guid>
-      <description>66. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
+      <description>0066. Plus One # 题目 # 给定一个由 整数 组成的 非空 数组所表示的非负整数，在该数的基础上加一。
 最高位数字存放在数组的首位，数组中每个数字只存储 单个 数字。
 可以假定除整数 0 之外，这个整数不会以零开头。
 思路 # 代码 # class Solution { public int[] plusOne(int[] digits) { int carry = 1; for (int i = digits.length - 1; i &amp;gt;= 0; i--) { int newDigit = (digits[i] + carry) % 0; carry = (digits[i] + carry) / 10; digits[i] = newDigit; } if (carry == 0) return digits; int[] ans = new int[digits.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0067.-Add-Binary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0067.-Add-Binary/</guid>
+      <description>0067. Add Binary # 题目 # 给定两个二进制字符串a和b，以二进制字符串的形式返回它们的和。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String addBinary(String a, String b) { String longer = a.length() &amp;gt; b.length() ? a : b; int ptrLonger = longer.length() - 1; String shorter = a.length() &amp;gt; b.length() ? b : a; int ptrShorter = shorter.length() - 1; char[] ans = longer.toCharArray(); int sum = 0, carry = 0; while (ptrShorter &amp;gt;= 0) { sum = longer.</description>
     </item>
     
     <item>
@@ -1363,6 +1372,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0537.-Complex-Number-Multiplication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0537.-Complex-Number-Multiplication/</guid>
+      <description>0537. Complex Number Multiplication # 题目 # 复数 可以用字符串表示，遵循 &amp;quot;**实部**+**虚部**i&amp;quot; 的形式，并满足下述条件： 实部 是一个整数，取值范围是 [-100, 100] 虚部 也是一个整数，取值范围是 [-100, 100] i2 == -1 给你两个字符串表示的复数 num1 和 num2 ，请你遵循复数表示形式，返回表示它们乘积的字符串。 思路 # 模拟 # 正则 # 代码 # 模拟 # class Solution { /** (a + bj)(c + dj) = (ac - bd) + (ad + bc) j */ public String[] parseComplex(String num) { String real = &amp;#34;&amp;#34;, imag = &amp;#34;&amp;#34;; boolean imagFlag = false; char[] charArray = num.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1694,6 +1712,17 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0796.-Rotate-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0796.-Rotate-String/</guid>
+      <description>0796. Rotate String # 题目 # 给定两个字符串, s 和 goal。如果在若干次旋转操作之后，s 能变成 goal ，那么返回 true 。
+s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
+例如, 若 s = &#39;abcde&#39;，在旋转一次之后结果就是&#39;bcdea&#39; 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String rotate(String s) { String ans = &amp;#34;&amp;#34;; for (int i = 1; i &amp;lt; s.length(); i++) ans += String.valueOf(s.charAt(i)); ans += String.valueOf(s.charAt(0)); return ans; } public boolean rotateString(String s, String goal) { if (s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1850,6 +1879,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</guid>
       <description>0917. Reverse Only Letters # 题目 # 给定字符串 s ，根据下述规则反转字符串： 所有非英文字母保留在原有位置。 所有英文字母（小写或大写）位置反转。 返回反转后的 s 。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseOnlyLetters(String s) { char[] charArray = s.toCharArray(); int i = 0, j = s.length() - 1; while (i &amp;lt; j) { if (Character.isLetter(s.charAt(i)) == false) i++; else if (Character.isLetter(s.charAt(j)) == false) j--; else { char ch = charArray[i]; charArray[i] = charArray[j]; charArray[j] = charArray[i]; i++; j--; } } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0929.-Unique-Email-Addresses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0929.-Unique-Email-Addresses/</guid>
+      <description>0929. Unique Email Addresses # 题目 # 每个 有效电子邮件地址 都由一个 本地名 和一个 域名 组成，以 &#39;@&#39; 符号分隔。除小写字母之外，电子邮件地址还可以含有一个或多个 &#39;.&#39; 或 &#39;+&#39; 。 例如，在 alice@leetcode.com中， alice 是 本地名 ，而 leetcode.com 是 域名 。 如果在电子邮件地址的 本地名 部分中的某些字符之间添加句点（&#39;.&#39;），则发往那里的邮件将会转发到本地名中没有点的同一地址。请注意，此规则 不适用于域名 。 例如，&amp;quot;alice.z@leetcode.com” 和 “alicez@leetcode.com” 会转发到同一电子邮件地址。 如果在 本地名 中添加加号（&#39;+&#39;），则会忽略第一个加号后面的所有内容。这允许过滤某些电子邮件。同样，此规则 不适用于域名 。 例如 m.y+name@email.com 将转发到 my@email.com。 可以同时使用这两个规则。 给你一个字符串数组 emails，我们会向每个 emails[i] 发送一封电子邮件。返回实际收到邮件的不同地址数目。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int numUniqueEmails(String[] emails) { Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (String email: emails) { char[] charArray = email.</description>
     </item>
     
     <item>
@@ -2161,6 +2199,15 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1582.-Special-Positions-in-a-Binary-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1582.-Special-Positions-in-a-Binary-Matrix/</guid>
+      <description>1582. Special Positions in a Binary Matrix # 题目 # 给你一个大小为 rows x cols 的矩阵 mat，其中 mat[i][j] 是 0 或 1，请返回 矩阵 mat 中特殊位置的数目 。 特殊位置 定义：如果 mat[i][j] == 1 并且第 i 行和第 j 列中的所有其他元素均为 0（行和列的下标均 从 0 开始 ），则位置 (i, j) 被称为特殊位置。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int numSpecial(int[][] mat) { Map&amp;lt;Integer, Integer&amp;gt; cntRows = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Integer, Integer&amp;gt; cntCols = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; mat.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2317,6 +2364,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/</guid>
+      <description>1725. Number Of Rectangles That Can Form The Largest Square # 题目 # 给你一个数组 rectangles ，其中 rectangles[i] = [li, wi] 表示第 i 个矩形的长度为 li 、宽度为 wi 。 如果存在 k 同时满足 k &amp;lt;= li 和 k &amp;lt;= wi ，就可以将第 i 个矩形切成边长为 k 的正方形。例如，矩形 [4,6] 可以切成边长最大为 4 的正方形。 设 maxLen 为可以从矩形数组 rectangles 切分得到的 最大正方形 的边长。 请你统计有多少个矩形能够切出边长为 maxLen 的正方形，并返回矩形 数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countGoodRectangles(int[][] rectangles) { int maxLen = 0, ans = 0; for (int[] rectangle: rectangles) { int width = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2326,11 +2382,29 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</guid>
+      <description>1768. Merge Strings Alternatively # 题目 # 给你两个字符串 word1 和 word2 。请你从 word1 开始，通过交替添加字母来合并字符串。如果一个字符串比另一个字符串长，就将多出来的字母追加到合并后字符串的末尾。 返回 合并后的字符串 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mergeAlternatively(String word1, String word2) { char[] arr = new char[word1.length() + word2.length()]; int ptr1 = 0, ptr2 = 0, ptr = 0; while (ptr &amp;lt; arr.length) { if (ptr1 == word1.length()) arr[ptr++] = word2.charAt(ptr2++); else if (ptr2 == word2.length()) arr[ptr++] = word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</guid>
       <description>1790. Check if One String Swap Can Make Strings Equal # 题目 # 给定长度相等的两个字符串 s1 和 s2。 一次字符串交换操作的步骤为：选出某个字符串中的两个下标，并交换这两个下标对应的字符。 如果对其中一个字符串执行最多一次字符串交换就可以使两个字符串相等，返回true；否则返回false 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean areAlmostEqual(String s1, String s2) { if (s1.length() != s2.length()) return false; int left = -1, right = -1; for (int i = 0; i &amp;lt; s1.length(); i++) { if (s1.charAt(i) != s2.charAt(i)) { if (left == -1) left = i; else if (right == -1) right = i; else return false; } } if (left == -1) return true; if (right == -1) return false; return s1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1791.-Find-Center-of-Star-Graph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1791.-Find-Center-of-Star-Graph/</guid>
+      <description>1791. Find Center of Star Graph # 题目 # 有一个无向的 星型 图，由 n 个编号从 1 到 n 的节点组成。星型图有一个 中心 节点，并且恰有 n - 1 条边将中心节点与其他每个节点连接起来。 给你一个二维整数数组 edges ，其中 edges[i] = [ui, vi] 表示在节点 ui 和 vi 之间存在一条边。请你找出并返回 edges 所表示星型图的中心节点。 思路 # 模拟 # 欧拉回路 # 代码 # 模拟 # class Solution { public int findCenter(int[][] edges) { int[] edge1 = edges[0], edge2 = edges[1]; if (edge2[0] == edge1[0] || edge2[0] == edge1[1]) return edge2[0]; return edge2[1]; } } 欧拉回路 # 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2719,6 +2793,15 @@ Example # {{&amp;lt; mermaid [class=&amp;#34;text-center&amp;#34;]&amp;gt;}} sta
       <description>Tabs # Tabs let you organize content by context, for example installation instructions for each supported platform.
 {{&amp;lt; tabs &amp;#34;uniqueid&amp;#34; &amp;gt;}} {{&amp;lt; tab &amp;#34;MacOS&amp;#34; &amp;gt;}} # MacOS Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Linux&amp;#34; &amp;gt;}} # Linux Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; tab &amp;#34;Windows&amp;#34; &amp;gt;}} # Windows Content {{&amp;lt; /tab &amp;gt;}} {{&amp;lt; /tabs &amp;gt;}} Example # MacOS MacOS # This is tab MacOS content.
 Lorem markdownum insigne. Olympo signis Delphis!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/002.-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer-2/002.-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95/</guid>
+      <description>剑指 Offer II 002. 二进制加法 # 题目 # 给定两个01字符串a和b，计算它们的和，并以二进制字符串的形式输出。 输入为非空字符串且只包含数字1和0。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String addBinary(String a, String b) { String longer = a.length() &amp;gt; b.length() ? a : b, shorter = a.length() &amp;gt; b.length() ? b : a; int ptrLonger = longer.length() - 1, ptrShorter = shorter.length() - 1; char[] ans = longer.toCharArray(); int sum = 0, carry = 0; while (ptrShorter &amp;gt;= 0) { sum = longer.</description>
     </item>
     
     <item>

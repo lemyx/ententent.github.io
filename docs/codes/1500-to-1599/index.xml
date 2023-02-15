@@ -23,5 +23,14 @@
       <description>1576. Replace All ?&amp;rsquo;s to Avoid Consecutive Repeating Characters # 题目 # 给定一个仅包含小写英文字母和 &#39;?&#39; 字符的字符串 s，将所有的 &#39;?&#39; 转换为若干小写字母，使最终的字符串不包含任何 连续重复 的字符。 不能 修改非 &#39;?&#39; 字符。 除 &#39;?&#39; 字符 之外，不存在连续重复的字符。 在完成所有转换（可能无需转换）后返回最终的字符串。如果有多个解决方案，请返回其中任何一个。 思路 # 模拟 # 代码 # 模拟 # class Solution { private Random random = new Random(); public Character findCandidate(Character ban1, Character ban2) { Character ans = &amp;#39;a&amp;#39;; while (ans == ban1 || ans == ban2) { ans = (char)(&amp;#39;a&amp;#39; + this.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1582.-Special-Positions-in-a-Binary-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1582.-Special-Positions-in-a-Binary-Matrix/</guid>
+      <description>1582. Special Positions in a Binary Matrix # 题目 # 给你一个大小为 rows x cols 的矩阵 mat，其中 mat[i][j] 是 0 或 1，请返回 矩阵 mat 中特殊位置的数目 。 特殊位置 定义：如果 mat[i][j] == 1 并且第 i 行和第 j 列中的所有其他元素均为 0（行和列的下标均 从 0 开始 ），则位置 (i, j) 被称为特殊位置。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int numSpecial(int[][] mat) { Map&amp;lt;Integer, Integer&amp;gt; cntRows = new HashMap&amp;lt;&amp;gt;(); Map&amp;lt;Integer, Integer&amp;gt; cntCols = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; mat.</description>
+    </item>
+    
   </channel>
 </rss>

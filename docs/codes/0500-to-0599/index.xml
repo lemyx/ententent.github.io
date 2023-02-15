@@ -57,6 +57,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0537.-Complex-Number-Multiplication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0537.-Complex-Number-Multiplication/</guid>
+      <description>0537. Complex Number Multiplication # 题目 # 复数 可以用字符串表示，遵循 &amp;quot;**实部**+**虚部**i&amp;quot; 的形式，并满足下述条件： 实部 是一个整数，取值范围是 [-100, 100] 虚部 也是一个整数，取值范围是 [-100, 100] i2 == -1 给你两个字符串表示的复数 num1 和 num2 ，请你遵循复数表示形式，返回表示它们乘积的字符串。 思路 # 模拟 # 正则 # 代码 # 模拟 # class Solution { /** (a + bj)(c + dj) = (ac - bd) + (ad + bc) j */ public String[] parseComplex(String num) { String real = &amp;#34;&amp;#34;, imag = &amp;#34;&amp;#34;; boolean imagFlag = false; char[] charArray = num.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0541.-Reverse-String-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
