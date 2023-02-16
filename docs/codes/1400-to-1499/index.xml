@@ -7,6 +7,18 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1400-to-1499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1417.-Reformat-The-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1417.-Reformat-The-String/</guid>
+      <description>1417. Reformat The String # 题目 # 给你一个混合了数字和字母的字符串 s，其中的字母均为小写英文字母。
+请你将该字符串重新格式化，使得任意两个相邻字符的类型都不同。也就是说，字母后面应该跟着数字，而数字后面应该跟着字母。
+请你返回 重新格式化后 的字符串；如果无法按要求重新格式化，则返回一个 空字符串 。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public String reformat(String s) { LinkedList&amp;lt;Character&amp;gt; charList = new LinkedList&amp;lt;&amp;gt;(), digitList = new LinkedList&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) { char ch = s.charAt(i); if (Character.isDigit(ch)) digitList.add(ch); else charList.add(ch); } if (Math.abs(charList.size() - digitList.size()) &amp;gt; 1) return &amp;#34;&amp;#34;; List&amp;lt;Character&amp;gt; Long = charList.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

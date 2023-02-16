@@ -61,6 +61,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</guid>
+      <description>1736. Latest Time by Replacing Hidden Digits # 题目 # 给你一个字符串 time ，格式为 hh:mm（小时：分钟），其中某几位数字被隐藏（用 ? 表示）。 有效的时间为 00:00 到 23:59 之间的所有时间，包括 00:00 和 23:59 。 替换 time 中隐藏的数字，返回你可以得到的最晚有效时间。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String maximumTime(String time) { char[] ans = time.toCharArray(); if (ans[0] == &amp;#39;?&amp;#39;) ans[0] = ans[1] == &amp;#39;?&amp;#39; || ans[1] &amp;lt; &amp;#39;4&amp;#39; ? &amp;#39;2&amp;#39; : &amp;#39;1&amp;#39;; if (ans[1] == &amp;#39;?&amp;#39;) ans[1] = ans[0] == &amp;#39;2&amp;#39; ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -75,6 +84,15 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</guid>
       <description>1768. Merge Strings Alternatively # 题目 # 给你两个字符串 word1 和 word2 。请你从 word1 开始，通过交替添加字母来合并字符串。如果一个字符串比另一个字符串长，就将多出来的字母追加到合并后字符串的末尾。 返回 合并后的字符串 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mergeAlternatively(String word1, String word2) { char[] arr = new char[word1.length() + word2.length()]; int ptr1 = 0, ptr2 = 0, ptr = 0; while (ptr &amp;lt; arr.length) { if (ptr1 == word1.length()) arr[ptr++] = word2.charAt(ptr2++); else if (ptr2 == word2.length()) arr[ptr++] = word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</guid>
+      <description>1773. Count Items Mathcing a Rule # 题目 # 给你一个数组 items ，其中 items[i] = [typei, colori, namei] ，描述第 i 件物品的类型、颜色以及名称。 另给你一条由两个字符串 ruleKey 和 ruleValue 表示的检索规则。 如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则 匹配 ： ruleKey == &amp;quot;type&amp;quot; 且 ruleValue == typei 。 ruleKey == &amp;quot;color&amp;quot; 且 ruleValue == colori 。 ruleKey == &amp;quot;name&amp;quot; 且 ruleValue == namei 。 统计并返回 匹配检索规则的物品数量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countMatches(List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; items, String ruleKey, String ruleValue) { int count = 0; for (List&amp;lt;String&amp;gt; item: items) { switch (ruleKey) { case &amp;#34;type&amp;#34; : if (item.</description>
     </item>
     
     <item>

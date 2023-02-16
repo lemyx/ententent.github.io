@@ -2008,6 +2008,18 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1184.-Distance-Between-Bus-Stops/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1184.-Distance-Between-Bus-Stops/</guid>
+      <description>1184. Distance Between Bus Stops # 题目 # 环形公交路线上有 n 个站，按次序从 0 到 n - 1 进行编号。我们已知每一对相邻公交站之间的距离，distance[i] 表示编号为 i 的车站和编号为 (i + 1) % n 的车站之间的距离。
+环线上的公交车都可以按顺时针和逆时针的方向行驶。
+返回乘客从出发点 start 到目的地 destination 之间的最短距离。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int distanceBetweenBusStops(int[] distance, int start, int destination) { int res1 = 0, totalDist = 0; for (int i = Math.min(start, destination); i &amp;lt; Math.max(start, destination); i++) res1 += distance[i]; for (int dist: distance) totalDist += dist; return Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1185.-Day-of-the-Week/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2083,6 +2095,18 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
 给定整数数组 arr，从中找出并返回一个幸运数。
 若数组中存在多个幸运数，则返回最大的那个。若数组中不含幸运数，返回 -1。
 思路 # 代码 # class Solution { public int findLucky(int[] arr) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: arr) map.put(num, map.getOrDefault(num, 0) + 1); int maxLucky = -1; for (Integer x: map.keySet()) if (map.get(x) == x) maxLucky = Math.max(x, maxLucky); return maxLucky; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1417.-Reformat-The-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1417.-Reformat-The-String/</guid>
+      <description>1417. Reformat The String # 题目 # 给你一个混合了数字和字母的字符串 s，其中的字母均为小写英文字母。
+请你将该字符串重新格式化，使得任意两个相邻字符的类型都不同。也就是说，字母后面应该跟着数字，而数字后面应该跟着字母。
+请你返回 重新格式化后 的字符串；如果无法按要求重新格式化，则返回一个 空字符串 。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public String reformat(String s) { LinkedList&amp;lt;Character&amp;gt; charList = new LinkedList&amp;lt;&amp;gt;(), digitList = new LinkedList&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) { char ch = s.charAt(i); if (Character.isDigit(ch)) digitList.add(ch); else charList.add(ch); } if (Math.abs(charList.size() - digitList.size()) &amp;gt; 1) return &amp;#34;&amp;#34;; List&amp;lt;Character&amp;gt; Long = charList.</description>
     </item>
     
     <item>
@@ -2373,6 +2397,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</guid>
+      <description>1736. Latest Time by Replacing Hidden Digits # 题目 # 给你一个字符串 time ，格式为 hh:mm（小时：分钟），其中某几位数字被隐藏（用 ? 表示）。 有效的时间为 00:00 到 23:59 之间的所有时间，包括 00:00 和 23:59 。 替换 time 中隐藏的数字，返回你可以得到的最晚有效时间。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String maximumTime(String time) { char[] ans = time.toCharArray(); if (ans[0] == &amp;#39;?&amp;#39;) ans[0] = ans[1] == &amp;#39;?&amp;#39; || ans[1] &amp;lt; &amp;#39;4&amp;#39; ? &amp;#39;2&amp;#39; : &amp;#39;1&amp;#39;; if (ans[1] == &amp;#39;?&amp;#39;) ans[1] = ans[0] == &amp;#39;2&amp;#39; ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2387,6 +2420,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</guid>
       <description>1768. Merge Strings Alternatively # 题目 # 给你两个字符串 word1 和 word2 。请你从 word1 开始，通过交替添加字母来合并字符串。如果一个字符串比另一个字符串长，就将多出来的字母追加到合并后字符串的末尾。 返回 合并后的字符串 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mergeAlternatively(String word1, String word2) { char[] arr = new char[word1.length() + word2.length()]; int ptr1 = 0, ptr2 = 0, ptr = 0; while (ptr &amp;lt; arr.length) { if (ptr1 == word1.length()) arr[ptr++] = word2.charAt(ptr2++); else if (ptr2 == word2.length()) arr[ptr++] = word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</guid>
+      <description>1773. Count Items Mathcing a Rule # 题目 # 给你一个数组 items ，其中 items[i] = [typei, colori, namei] ，描述第 i 件物品的类型、颜色以及名称。 另给你一条由两个字符串 ruleKey 和 ruleValue 表示的检索规则。 如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则 匹配 ： ruleKey == &amp;quot;type&amp;quot; 且 ruleValue == typei 。 ruleKey == &amp;quot;color&amp;quot; 且 ruleValue == colori 。 ruleKey == &amp;quot;name&amp;quot; 且 ruleValue == namei 。 统计并返回 匹配检索规则的物品数量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countMatches(List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; items, String ruleKey, String ruleValue) { int count = 0; for (List&amp;lt;String&amp;gt; item: items) { switch (ruleKey) { case &amp;#34;type&amp;#34; : if (item.</description>
     </item>
     
     <item>
