@@ -40,6 +40,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/</guid>
+      <description>1078. Occurrences After Bigram # 题目 # 给出第一个词 first 和第二个词 second，考虑在某些文本 text 中可能以 &amp;quot;first second third&amp;quot; 形式出现的情况，其中 second 紧随 first 出现，third 紧随 second 出现。 对于每种这样的情况，将第三个词 &amp;ldquo;third&amp;rdquo; 添加到答案中，并返回答案。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String[] findOcurrences(String text, String first, String second) { List&amp;lt;String&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); String[] words = text.split(&amp;#34; &amp;#34;); for (int i = 0; i &amp;lt; words.length - 2; i++) { if (words[i].</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

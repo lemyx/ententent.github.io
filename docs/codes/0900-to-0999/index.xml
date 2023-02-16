@@ -45,6 +45,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</guid>
+      <description>0953. Verifying an Alien Dictionary # 题目 # 某种外星语也使用英文小写字母，但可能顺序 order 不同。字母表的顺序（order）是一些小写字母的排列。 给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外星语中按字典序排列时，返回 true；否则，返回 false。 思路 # 模拟 # 自定义排序 # 代码 # 模拟 # class Solution { public boolean compareWords(String word1, String word2, Map&amp;lt;Character, Integer&amp;gt; map) { int ptr1 = 0, ptr2 = 0; while (ptr1 &amp;lt; word1.length() &amp;amp;&amp;amp; ptr2 &amp;lt; word2.length()) { int order1 = map.get(word1.charAt(ptr1)), order2 = map.get(word2.charAt(ptr2)); if (order1 &amp;gt; order2) return false; if (order1 &amp;lt; order2) return true; ptr1++; ptr2++; } return ptr1 == word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

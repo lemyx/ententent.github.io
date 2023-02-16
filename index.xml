@@ -1903,6 +1903,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</guid>
+      <description>0953. Verifying an Alien Dictionary # 题目 # 某种外星语也使用英文小写字母，但可能顺序 order 不同。字母表的顺序（order）是一些小写字母的排列。 给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外星语中按字典序排列时，返回 true；否则，返回 false。 思路 # 模拟 # 自定义排序 # 代码 # 模拟 # class Solution { public boolean compareWords(String word1, String word2, Map&amp;lt;Character, Integer&amp;gt; map) { int ptr1 = 0, ptr2 = 0; while (ptr1 &amp;lt; word1.length() &amp;amp;&amp;amp; ptr2 &amp;lt; word2.length()) { int order1 = map.get(word1.charAt(ptr1)), order2 = map.get(word2.charAt(ptr2)); if (order1 &amp;gt; order2) return false; if (order1 &amp;lt; order2) return true; ptr1++; ptr2++; } return ptr1 == word1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1962,6 +1971,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
 在 S 上反复执行重复项删除操作，直至无法继续删除。
 在完成所有重复项删除操作后返回最终的字符串。
 思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/</guid>
+      <description>1078. Occurrences After Bigram # 题目 # 给出第一个词 first 和第二个词 second，考虑在某些文本 text 中可能以 &amp;quot;first second third&amp;quot; 形式出现的情况，其中 second 紧随 first 出现，third 紧随 second 出现。 对于每种这样的情况，将第三个词 &amp;ldquo;third&amp;rdquo; 添加到答案中，并返回答案。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String[] findOcurrences(String text, String first, String second) { List&amp;lt;String&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); String[] words = text.split(&amp;#34; &amp;#34;); for (int i = 0; i &amp;lt; words.length - 2; i++) { if (words[i].</description>
     </item>
     
     <item>
@@ -2083,6 +2101,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <description>1342. Number of Steps to Reduce a Number to Zero # 题目 # 给你一个非负整数 nums，返回将它变为 0 所需要的步数。
 如果当前数字是偶数，则将它除以 2，否则减去 1。
 思路 # 模拟 数学 + 位运算 可从如下角度考虑模拟过程: 若 nums 最低位非 1，则进行右移 若 nums 最低位为 1，则消减最低位的 1 总操作次数等于: 最高位 1 的右移次数 + nums 的二进制表示中 1 的个数 代码 # 模拟 # class Solution { public int numberOfSteps(int num) { int step = 0; while (num != 0 &amp;amp;&amp;amp; ++step &amp;gt; 0) num = (num &amp;amp; 1 == 0) ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1374.-Generate-a-String-With-Characters-That-Have-Odd-Counts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1374.-Generate-a-String-With-Characters-That-Have-Odd-Counts/</guid>
+      <description>1374. Generate a String With Characters That Have Odd Counts # 题目 # 给你一个整数 n，请你返回一个含 n 个字符的字符串，其中每种字符在该字符串中都恰好出现 奇数次 。 返回的字符串必须只含小写英文字母。如果存在多个满足题目要求的字符串，则返回其中任意一个即可。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String generateTheString(int n) { String ans = &amp;#34;&amp;#34;; if (n % 2 == 0) { for (int i = 0; i &amp;lt; n - 1; i++) ans += &amp;#34;a&amp;#34;; ans += &amp;#34;b&amp;#34;; } else { for (int i = 0; i &amp;lt; n; i++) ans += &amp;#34;a&amp;#34;; } return ans; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2245,6 +2272,17 @@ depth(&amp;quot;&amp;quot;) = 0
 depth(C) = 0，其中 C 是单个字符的字符串，且该字符不是 &amp;quot;(&amp;quot; 或者 &amp;quot;)&amp;quot;
 depth(A + B) = max(depth(A), depth(B))，其中 A 和 B 都是 有效括号字符串
 depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中 A 是一个 有效括号字符串</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1624.-Largest-Substring-Between-Two-Equal-Characters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1624.-Largest-Substring-Between-Two-Equal-Characters/</guid>
+      <description>1624. Largest Substring Between Two Equal Characters # 题目 # 给你一个字符串 s，请你返回 两个相同字符之间的最长子字符串的长度 *，*计算长度时不含这两个字符。如果不存在这样的子字符串，返回 -1 。
+子字符串 是字符串中的一个连续字符序列。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxLengthBetweenEqualCharacters(String s) { int[] pos = new int[26]; Arrays.fill(pos, -1); int ans = -1; for (int i = 0; i &amp;lt; s.length(); i++) { Character ch = s.charAt(i); if (pos[ch-&amp;#39;a&amp;#39;] == -1) pos[ch-&amp;#39;a&amp;#39;] = i; else ans = Math.</description>
     </item>
     
     <item>
