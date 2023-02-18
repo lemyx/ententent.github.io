@@ -27,6 +27,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1380.-Lucky-Numbers-in-a-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1380.-Lucky-Numbers-in-a-Matrix/</guid>
+      <description>1380. Lucky Numbers in a Matrix # 题目 # 给你一个 m * n 的矩阵，矩阵中的数字 各不相同 。请你按 任意 顺序返回矩阵中的所有幸运数。 幸运数 是指矩阵中满足同时下列两个条件的元素： 在同一行的所有元素中最小 在同一列的所有元素中最大 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;Integer&amp;gt; luckyNumbers (int[][] matrix) { List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); int M = matrix.length, N = matrix[0].length; int[] minimumRow = new int[M], maximumCol = new int[N]; Arrays.fill(minimumRow, Integer.MAX_VALUE); Arrays.fill(maximumCol, Integer.MIN_VALUE); for (int i = 0; i &amp;lt; M; i++) { for (int j = 0; j &amp;lt; N; j++) { minimumRow[i] = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1394.-Find-Lucky-Integer-in-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

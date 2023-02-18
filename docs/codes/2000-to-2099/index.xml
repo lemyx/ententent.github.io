@@ -53,6 +53,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2047.-Number-of-Valid-Words-in-a-Sentence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2047.-Number-of-Valid-Words-in-a-Sentence/</guid>
+      <description>2047. Number of Valid Words in a Sentence # 题目 # 句子仅由小写字母（&#39;a&#39; 到 &#39;z&#39;）、数字（&#39;0&#39; 到 &#39;9&#39;）、连字符（&#39;-&#39;）、标点符号（&#39;!&#39;、&#39;.&#39; 和 &#39;,&#39;）以及空格（&#39; &#39;）组成。每个句子可以根据空格分解成 一个或者多个 token ，这些 token 之间由一个或者多个空格 &#39; &#39; 分隔。 如果一个 token 同时满足下述条件，则认为这个 token 是一个有效单词： 仅由小写字母、连字符和/或标点（不含数字）组成。 至多一个 连字符 &#39;-&#39; 。如果存在，连字符两侧应当都存在小写字母（&amp;quot;a-b&amp;quot; 是一个有效单词，但 &amp;quot;-ab&amp;quot; 和 &amp;quot;ab-&amp;quot; 不是有效单词）。 至多一个 标点符号。如果存在，标点符号应当位于 token 的 末尾 。 这里给出几个有效单词的例子：&amp;quot;a-b.&amp;quot;、&amp;quot;afad&amp;quot;、&amp;quot;ba-c&amp;quot;、&amp;quot;a!&amp;quot; 和 &amp;quot;!&amp;quot; 。 给你一个字符串 sentence ，请你找出并返回 sentence 中 有效单词的数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isValid(String token) { if (token.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -62,5 +62,16 @@
 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isLeapYear(int year) { return (year % 4 == 0 &amp;amp;&amp;amp; year % 100 != 0) || year % 400 == 0; } public int[] dayOfMonths (int year) { int[] days = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; if (isLeapYear(year)) days[1]++; return days; } public String dayOfTheWeek(int day, int month, int year) { /** 1971/01/01 is Friday.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1189.-Maximum-Number-of-Balloons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1189.-Maximum-Number-of-Balloons/</guid>
+      <description>1189. Maximum Number of Balloons # 题目 # 给你一个字符串 text，你需要使用 text 中的字母来拼凑尽可能多的单词 &amp;ldquo;balloon&amp;rdquo;（气球）。
+字符串 text 中的每个字母最多只能被使用一次。请你返回最多可以拼凑出多少个单词 &amp;ldquo;balloon&amp;rdquo;。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxNumberOfBalloons(String text) { /** balon */ int[] count = new int[5]; for (int i = 0; i &amp;lt; text.length(); i++) { switch (text.charAt(i)) { case &amp;#39;b&amp;#39; : count[0]++; break; case &amp;#39;a&amp;#39; : count[1]++; break; case &amp;#39;l&amp;#39; : count[2]++; break; case &amp;#39;o&amp;#39; : count[3]++; break; case &amp;#39;n&amp;#39; : count[4]++; break; } } int ans = Math.</description>
+    </item>
+    
   </channel>
 </rss>

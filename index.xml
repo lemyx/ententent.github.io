@@ -1470,6 +1470,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0599.-Minimum-Index-Sum-of-Two-Lists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0599.-Minimum-Index-Sum-of-Two-Lists/</guid>
+      <description>0599. Minimum Index Sum of Two Lists # 题目 # 假设 Andy 和 Doris 想在晚餐时选择一家餐厅，并且他们都有一个表示最喜爱餐厅的列表，每个餐厅的名字用字符串表示。 你需要帮助他们用最少的索引和找出他们共同喜爱的餐厅。 如果答案不止一个，则输出所有答案并且不考虑顺序。 你可以假设答案总是存在。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String[] findRestaurant(String[] list1, String[] list2) { int indexSum = Integer.MAX_VALUE; List&amp;lt;String&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); Map&amp;lt;String, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; list1.length; i++) map.put(list1[i], i); for (int i = 0; i &amp;lt; list2.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2050,6 +2059,17 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1189.-Maximum-Number-of-Balloons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1189.-Maximum-Number-of-Balloons/</guid>
+      <description>1189. Maximum Number of Balloons # 题目 # 给你一个字符串 text，你需要使用 text 中的字母来拼凑尽可能多的单词 &amp;ldquo;balloon&amp;rdquo;（气球）。
+字符串 text 中的每个字母最多只能被使用一次。请你返回最多可以拼凑出多少个单词 &amp;ldquo;balloon&amp;rdquo;。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxNumberOfBalloons(String text) { /** balon */ int[] count = new int[5]; for (int i = 0; i &amp;lt; text.length(); i++) { switch (text.charAt(i)) { case &amp;#39;b&amp;#39; : count[0]++; break; case &amp;#39;a&amp;#39; : count[1]++; break; case &amp;#39;l&amp;#39; : count[2]++; break; case &amp;#39;o&amp;#39; : count[3]++; break; case &amp;#39;n&amp;#39; : count[4]++; break; } } int ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2110,6 +2130,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1374.-Generate-a-String-With-Characters-That-Have-Odd-Counts/</guid>
       <description>1374. Generate a String With Characters That Have Odd Counts # 题目 # 给你一个整数 n，请你返回一个含 n 个字符的字符串，其中每种字符在该字符串中都恰好出现 奇数次 。 返回的字符串必须只含小写英文字母。如果存在多个满足题目要求的字符串，则返回其中任意一个即可。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String generateTheString(int n) { String ans = &amp;#34;&amp;#34;; if (n % 2 == 0) { for (int i = 0; i &amp;lt; n - 1; i++) ans += &amp;#34;a&amp;#34;; ans += &amp;#34;b&amp;#34;; } else { for (int i = 0; i &amp;lt; n; i++) ans += &amp;#34;a&amp;#34;; } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1380.-Lucky-Numbers-in-a-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1380.-Lucky-Numbers-in-a-Matrix/</guid>
+      <description>1380. Lucky Numbers in a Matrix # 题目 # 给你一个 m * n 的矩阵，矩阵中的数字 各不相同 。请你按 任意 顺序返回矩阵中的所有幸运数。 幸运数 是指矩阵中满足同时下列两个条件的元素： 在同一行的所有元素中最小 在同一列的所有元素中最大 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;Integer&amp;gt; luckyNumbers (int[][] matrix) { List&amp;lt;Integer&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); int M = matrix.length, N = matrix[0].length; int[] minimumRow = new int[M], maximumCol = new int[N]; Arrays.fill(minimumRow, Integer.MAX_VALUE); Arrays.fill(maximumCol, Integer.MIN_VALUE); for (int i = 0; i &amp;lt; M; i++) { for (int j = 0; j &amp;lt; N; j++) { minimumRow[i] = Math.</description>
     </item>
     
     <item>
@@ -2568,6 +2597,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</guid>
       <description>2046. Sort Linked List Already Sorted Using absolute Values # 题目 # 给定链表头结点 head，该链表根据结点的 绝对值 进行 升序 排序，返回重新根据 结点的值 进行 升序 排序的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode sortLinkedList(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2047.-Number-of-Valid-Words-in-a-Sentence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2047.-Number-of-Valid-Words-in-a-Sentence/</guid>
+      <description>2047. Number of Valid Words in a Sentence # 题目 # 句子仅由小写字母（&#39;a&#39; 到 &#39;z&#39;）、数字（&#39;0&#39; 到 &#39;9&#39;）、连字符（&#39;-&#39;）、标点符号（&#39;!&#39;、&#39;.&#39; 和 &#39;,&#39;）以及空格（&#39; &#39;）组成。每个句子可以根据空格分解成 一个或者多个 token ，这些 token 之间由一个或者多个空格 &#39; &#39; 分隔。 如果一个 token 同时满足下述条件，则认为这个 token 是一个有效单词： 仅由小写字母、连字符和/或标点（不含数字）组成。 至多一个 连字符 &#39;-&#39; 。如果存在，连字符两侧应当都存在小写字母（&amp;quot;a-b&amp;quot; 是一个有效单词，但 &amp;quot;-ab&amp;quot; 和 &amp;quot;ab-&amp;quot; 不是有效单词）。 至多一个 标点符号。如果存在，标点符号应当位于 token 的 末尾 。 这里给出几个有效单词的例子：&amp;quot;a-b.&amp;quot;、&amp;quot;afad&amp;quot;、&amp;quot;ba-c&amp;quot;、&amp;quot;a!&amp;quot; 和 &amp;quot;!&amp;quot; 。 给你一个字符串 sentence ，请你找出并返回 sentence 中 有效单词的数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isValid(String token) { if (token.</description>
     </item>
     
     <item>
