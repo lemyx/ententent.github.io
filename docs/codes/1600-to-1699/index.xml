@@ -127,5 +127,14 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       <description>1688. Count of Matches in Tournament # 题目 # 给你一个整数 n ，表示比赛中的队伍数。比赛遵循一种独特的赛制： 如果当前队伍数是 偶数 ，那么每支队伍都会与另一支队伍配对。总共进行 n / 2 场比赛，且产生 n / 2 支队伍进入下一轮。 如果当前队伍数为 奇数 ，那么将会随机轮空并晋级一支队伍，其余的队伍配对。总共进行 (n - 1) / 2 场比赛，且产生 (n - 1) / 2 + 1 支队伍进入下一轮。 返回在比赛中进行的配对次数，直到决出获胜队伍为止。 思路 # 模拟 # 脑筋急转弯 # 共有 n 支队伍，每场比赛淘汰一支，最终剩下一支冠军队。 即有 n−1 支队伍需要通过 n−1 场比赛被淘汰。 代码 # 模拟 # class Solution { public int numberOfMatches(int n) { int ans = 0; while (n !</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1694.-Reformat-Phone-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1694.-Reformat-Phone-Number/</guid>
+      <description>1694. Reformat Phone Number # 题目 # 给你一个字符串形式的电话号码 number 。number 由数字、空格 &#39; &#39;、和破折号 &#39;-&#39; 组成。 请你按下述方式重新格式化电话号码。 首先，删除 所有的空格和破折号。 其次，将数组从左到右 每 3 个一组 分块，直到 剩下 4 个或更少数字。剩下的数字将按下述规定再分块： 2 个数字：单个含 2 个数字的块。 3 个数字：单个含 3 个数字的块。 4 个数字：两个分别含 2 个数字的块。 最后用破折号将这些块连接起来。注意，重新格式化过程中 不应该 生成仅含 1 个数字的块，并且 最多 生成两个含 2 个数字的块。 返回格式化后的电话号码。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String reformatNumber(String number) { String ans = &amp;#34;&amp;#34;; String digits = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; number.</description>
+    </item>
+    
   </channel>
 </rss>

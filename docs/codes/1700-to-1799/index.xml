@@ -61,6 +61,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1732.-Find-the-Highest-Altitude/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1732.-Find-the-Highest-Altitude/</guid>
+      <description>1732. Find the Highest Altitude # 题目 # 有一个自行车手打算进行一场公路骑行，这条路线总共由 n + 1 个不同海拔的点组成。自行车手从海拔为 0 的点 0 开始骑行。 给你一个长度为 n 的整数数组 gain ，其中 gain[i] 是点 i 和点 i + 1 的 净海拔高度差（0 &amp;lt;= i &amp;lt; n）。请你返回 最高点的海拔 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int largestAltitude(int[] gain) { int altitude = 0, maximum = 0; for (int diff: gain) { altitude += diff; maximum = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

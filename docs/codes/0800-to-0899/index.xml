@@ -49,6 +49,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0824.-Goat-Latin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0824.-Goat-Latin/</guid>
+      <description>0824. Goat Latin # 题目 # 给你一个由若干单词组成的句子 sentence ，单词间由空格分隔。每个单词仅由大写和小写英文字母组成。 请你将句子转换为 “山羊拉丁文（Goat Latin）”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。山羊拉丁文的规则如下： 如果单词以元音开头，在单词后添加&amp;quot;ma&amp;quot; 例如，单词 &amp;quot;apple&amp;quot; 变为 &amp;quot;applema&amp;quot; 。 如果单词以辅音字母开头（即，非元音字母），移除第一个字符并将它放到末尾，之后再添加&amp;quot;ma&amp;quot; 例如，单词 &amp;quot;goat&amp;quot; 变为 &amp;quot;oatgma&amp;quot; 。 根据单词在句子中的索引，在单词最后添加与索引相同数量的字母a，索引从1开始。 例如，在第一个单词后添加 &amp;quot;a&amp;quot; ，在第二个单词后添加 &amp;quot;aa&amp;quot; ，以此类推。 返回将 sentence 转换为山羊拉丁文后的句子。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isVowel(Character ch) { switch (Character.toLowerCase(ch)) { case &amp;#39;a&amp;#39;: case &amp;#39;e&amp;#39;: case &amp;#39;i&amp;#39;: case &amp;#39;o&amp;#39;: case &amp;#39;u&amp;#39;: return true; default: return false; } } public String toGoatLatin(String sentence) { String[] words = sentence.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

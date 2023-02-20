@@ -18,6 +18,18 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1137.-N-th-Tribonacci-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1137.-N-th-Tribonacci-Number/</guid>
+      <description>1137. N-th Tribonacci Number # 题目 # 泰波那契序列 Tn 定义如下：
+T0 = 0, T1 = 1, T2 = 1, 且在 n &amp;gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+2
+给你整数 n，请返回第 n 个泰波那契数 Tn 的值。
+模拟 # 代码 # 模拟 # class Solution { public int tribonacci(int n) { if (n == 0) return 0; if (n == 1) return 1; if (n == 2) return 1; int[] mem = new int[n+1]; mem[0] = 0; mem[1] = mem[2] = 1; for (int i = 3; i &amp;lt;= n; i++) mem[i] = mem[i-1]+mem[i-2]+mem[i-3]; return mem[n]; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1154.-Day-of-the-Year/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

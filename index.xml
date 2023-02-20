@@ -1470,6 +1470,24 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0594.-Longest-Harmonious-Subsequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0594.-Longest-Harmonious-Subsequence/</guid>
+      <description>0594. Longest Harmonious Subsequence # 题目 # 和谐数组是指一个数组里元素的最大值和最小值之间的差别 正好是 1 。 现在，给你一个整数数组 nums ，请你在所有可能的子序列中找到最长的和谐子序列的长度。 数组的子序列是一个由数组派生出来的序列，它可以通过删除一些元素或不删除元素、且不改变其余元素的顺序而得到。 思路 # 模拟 # 滑动窗口 # 代码 # 模拟 # class Solution { public int findLHS(int[] nums) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: nums) map.put(num, map.getOrDefault(num, 0) + 1); int ans = 0; for (int num: nums) { if (map.containsKey(num-1)) ans=Math.max(ans, map.get(num-1)+map.get(num)); } return ans; } } 迭代 # 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0598.-Range-Addition-II/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0598.-Range-Addition-II/</guid>
+      <description>0598. Range Addition II # 题目 # 给你一个 m x n 的矩阵 M ，初始化时所有的 0 和一个操作数组 op ，其中 ops[i] = [ai, bi] 意味着当所有的 0 &amp;lt;= x &amp;lt; ai 和 0 &amp;lt;= y &amp;lt; bi 时， M[x][y] 应该加 1。 在 执行完所有操作后 ，计算并返回 矩阵中最大整数的个数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxCount(int m, int n, int[][] ops) { int[] ans = new int[]{m, n}; for (int[] op: ops) { ans[0] = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0599.-Minimum-Index-Sum-of-Two-Lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1774,6 +1792,15 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0824.-Goat-Latin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0824.-Goat-Latin/</guid>
+      <description>0824. Goat Latin # 题目 # 给你一个由若干单词组成的句子 sentence ，单词间由空格分隔。每个单词仅由大写和小写英文字母组成。 请你将句子转换为 “山羊拉丁文（Goat Latin）”（一种类似于 猪拉丁文 - Pig Latin 的虚构语言）。山羊拉丁文的规则如下： 如果单词以元音开头，在单词后添加&amp;quot;ma&amp;quot; 例如，单词 &amp;quot;apple&amp;quot; 变为 &amp;quot;applema&amp;quot; 。 如果单词以辅音字母开头（即，非元音字母），移除第一个字符并将它放到末尾，之后再添加&amp;quot;ma&amp;quot; 例如，单词 &amp;quot;goat&amp;quot; 变为 &amp;quot;oatgma&amp;quot; 。 根据单词在句子中的索引，在单词最后添加与索引相同数量的字母a，索引从1开始。 例如，在第一个单词后添加 &amp;quot;a&amp;quot; ，在第二个单词后添加 &amp;quot;aa&amp;quot; ，以此类推。 返回将 sentence 转换为山羊拉丁文后的句子。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isVowel(Character ch) { switch (Character.toLowerCase(ch)) { case &amp;#39;a&amp;#39;: case &amp;#39;e&amp;#39;: case &amp;#39;i&amp;#39;: case &amp;#39;o&amp;#39;: case &amp;#39;u&amp;#39;: return true; default: return false; } } public String toGoatLatin(String sentence) { String[] words = sentence.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0832.-Flipping-an-Image/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1963,6 +1990,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1021.-Remove-Outermost-Parentheses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1021.-Remove-Outermost-Parentheses/</guid>
+      <description>1021. Remove Outermost Parentheses # 题目 # 有效括号字符串为空 &amp;quot;&amp;quot;、&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot; 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。 例如，&amp;quot;&amp;quot;，&amp;quot;()&amp;quot;，&amp;quot;(())()&amp;quot; 和 &amp;quot;(()(()))&amp;quot; 都是有效的括号字符串。 如果有效字符串 s 非空，且不存在将其拆分为 s = A + B 的方法，我们称其为原语（primitive），其中 A 和 B 都是非空有效括号字符串。 给出一个非空有效字符串 s，考虑将其进行原语化分解，使得：s = P_1 + P_2 + ... + P_k，其中 P_i 是有效括号字符串原语。 对 s 进行原语化分解，删除分解中每个原语字符串的最外层括号，返回 s 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String removeOuterParentheses(String s) { String ans = &amp;#34;&amp;#34;; int left = 0, right = 0; for (int i = 0, j = 0; j &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1037.-Valid-Boomerang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2009,6 +2045,18 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
       <description>1108. Defanging an IP Address # 题目 # 给定一个有效的IPV4地址address，返回这个IP地址的无效化版本。
 无效化IP地址，就是用&amp;quot;[.]&amp;quot;代替了每个&amp;quot;.&amp;quot;。
 思路 # 模拟 # 代码 # 模拟 # class Solution { public String defangIPaddr(String address) { char[] and = new char[address.length() + 6]; int ptrAns = 0, ptrAddress = 0; while (ptrAns &amp;lt; ans.length) { if (address.charAt(ptrAddress) != &amp;#39;.&amp;#39;) { ans[ptrAns++] = address.charAt(ptrAddress); } else { ans[ptrAns++] = &amp;#39;[&amp;#39;; ans[ptrAns++] = &amp;#39;.&amp;#39;; ans[ptrAns+=] = &amp;#39;]&amp;#39;; } ptrAddress++; } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1137.-N-th-Tribonacci-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1100-to-1199/1137.-N-th-Tribonacci-Number/</guid>
+      <description>1137. N-th Tribonacci Number # 题目 # 泰波那契序列 Tn 定义如下：
+T0 = 0, T1 = 1, T2 = 1, 且在 n &amp;gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+2
+给你整数 n，请返回第 n 个泰波那契数 Tn 的值。
+模拟 # 代码 # 模拟 # class Solution { public int tribonacci(int n) { if (n == 0) return 0; if (n == 1) return 1; if (n == 2) return 1; int[] mem = new int[n+1]; mem[0] = 0; mem[1] = mem[2] = 1; for (int i = 3; i &amp;lt;= n; i++) mem[i] = mem[i-1]+mem[i-2]+mem[i-3]; return mem[n]; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2167,6 +2215,17 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1422.-Maximum-Score-After-Splitting-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1422.-Maximum-Score-After-Splitting-a-String/</guid>
+      <description>1422. Maximum Score After Splitting a String # 题目 # 给你一个由若干 0 和 1 组成的字符串 s ，请你计算并返回将该字符串分割成两个 非空 子字符串（即 左 子字符串和 右 子字符串）所能获得的最大得分。
+「分割字符串的得分」为 左 子字符串中 0 的数量加上 右 子字符串中 1 的数量。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxScore(String s) { int N = s.length(); /** 令zeros[i]记录截止下标i处字符串中共出现了多少个0 */ int[] zeros = new int[N], ones = new int[N]; for (int i = 0; i &amp;lt; N; i++) { switch (s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1436.-Destination-City/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2194,6 +2253,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1455.-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence/</guid>
       <description>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence # 题目 # 给定字符串 sentence 并指定检索词为 searchWord ，句子由 空格 分隔的单词组成。 检查检索词 searchWord 是否为句子 sentence 中任意单词的前缀。 如果 searchWord 是某一个单词的前缀，则返回句子 sentence 中该单词所对应的下标（下标从 1 开始）。 如果 searchWord 是多个单词的前缀，则返回匹配的第一个单词的下标（最小下标）。 如果 searchWord 不是任何单词的前缀，则返回 -1 。 字符串 s 的 前缀 是 s 的任何前导连续子字符串。 思路 # 双指针 # 代码 # 双指针 # class Solution { public int isPrefixOfWord(String sentence, String searchWord) { int ptr1 = 0, ans = 0; while (ptr1 &amp;lt; sentence.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1464.-Maximum-Product-of-Two-Elements-in-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1464.-Maximum-Product-of-Two-Elements-in-an-Array/</guid>
+      <description>1464. Maximum Product of Two Elements in an Array # 题目 # 给定一个整数数组nums，选择数组的两个不同下表i和j，使(nums[i]-1)*(nums[j]-1)取得最大值。 计算并返回该式的最大值。 2 &amp;lt;= nums.length &amp;lt;= 500 1 &amp;lt;= nums[i] &amp;lt;= 10^3 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxProduct(int[] nums) { int[] ans = new int[2]; for (int num: nums) { if (ans[0] == 0) ans[0] = num; else { if (num &amp;gt;= ans[0]) { ans[1] = ans[0]; ans[0] = num; } else if (num &amp;gt;= ans[1]) ans[1] = num; } } return (ans[0] - 1) * (ans[1] - 1); } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2410,6 +2478,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1694.-Reformat-Phone-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1694.-Reformat-Phone-Number/</guid>
+      <description>1694. Reformat Phone Number # 题目 # 给你一个字符串形式的电话号码 number 。number 由数字、空格 &#39; &#39;、和破折号 &#39;-&#39; 组成。 请你按下述方式重新格式化电话号码。 首先，删除 所有的空格和破折号。 其次，将数组从左到右 每 3 个一组 分块，直到 剩下 4 个或更少数字。剩下的数字将按下述规定再分块： 2 个数字：单个含 2 个数字的块。 3 个数字：单个含 3 个数字的块。 4 个数字：两个分别含 2 个数字的块。 最后用破折号将这些块连接起来。注意，重新格式化过程中 不应该 生成仅含 1 个数字的块，并且 最多 生成两个含 2 个数字的块。 返回格式化后的电话号码。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String reformatNumber(String number) { String ans = &amp;#34;&amp;#34;; String digits = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; number.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2460,6 +2537,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/</guid>
       <description>1725. Number Of Rectangles That Can Form The Largest Square # 题目 # 给你一个数组 rectangles ，其中 rectangles[i] = [li, wi] 表示第 i 个矩形的长度为 li 、宽度为 wi 。 如果存在 k 同时满足 k &amp;lt;= li 和 k &amp;lt;= wi ，就可以将第 i 个矩形切成边长为 k 的正方形。例如，矩形 [4,6] 可以切成边长最大为 4 的正方形。 设 maxLen 为可以从矩形数组 rectangles 切分得到的 最大正方形 的边长。 请你统计有多少个矩形能够切出边长为 maxLen 的正方形，并返回矩形 数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countGoodRectangles(int[][] rectangles) { int maxLen = 0, ans = 0; for (int[] rectangle: rectangles) { int width = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1732.-Find-the-Highest-Altitude/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1732.-Find-the-Highest-Altitude/</guid>
+      <description>1732. Find the Highest Altitude # 题目 # 有一个自行车手打算进行一场公路骑行，这条路线总共由 n + 1 个不同海拔的点组成。自行车手从海拔为 0 的点 0 开始骑行。 给你一个长度为 n 的整数数组 gain ，其中 gain[i] 是点 i 和点 i + 1 的 净海拔高度差（0 &amp;lt;= i &amp;lt; n）。请你返回 最高点的海拔 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int largestAltitude(int[] gain) { int altitude = 0, maximum = 0; for (int diff: gain) { altitude += diff; maximum = Math.</description>
     </item>
     
     <item>
@@ -2966,6 +3052,17 @@ Lorem markdownum insigne. Olympo signis Delphis!</description>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/09.-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/</guid>
       <description>剑指 Offer 09. 用两个栈实现队列 # 题目 # 用两个栈实现一个队列。 队列的声明如下，请实现它的两个函数 appendTail 和 deleteHead ，分别完成在队列尾部插入整数和在队列头部删除整数的功能。 (若队列中没有元素，deleteHead 操作返回 -1 ) 思路 # 代码 # class CQueue { Stack&amp;lt;Integer&amp;gt; inStack, outStack; public CQueue() { this.inStack = new Stack&amp;lt;&amp;gt;(); this.outStack = new Stack&amp;lt;&amp;gt;(); } public void appendTail(int value) { this.inStack.push(value); } public int deleteHead() { if (this.outStack.size() == 0 &amp;amp;&amp;amp; this.inStack.size() == 0) return -1; if (this.outStack.size() == 0) { while (this.inStack.size() != 0) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/10.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E5%89%91%E6%8C%87-Offer/10.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/</guid>
+      <description> 剑指 Offer 10-I. 斐波那契数列 # 题目 # 写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）。斐波那契数列的定义如下：
+F(0) = 0, F(1) = 1 F(N) = F(N - 1) + F(N - 2), 其中 N &amp;gt; 1. 斐波那契数列由 0 和 1 开始，之后的斐波那契数就是由之前的两数相加而得出。 答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
+思路 # 迭代 # 代码 # 迭代 # class Solution { public int fib(int n) { if (n == 0) return 0; if (n == 1) return 1; int one = 0, two = 1; for (int i = 2; i &amp;lt;= n; i++) { int temp = one % 1000000007 + two % 1000000007; one = two; two = temp; } return two % 1000000007; } } </description>
     </item>
     
     <item>
