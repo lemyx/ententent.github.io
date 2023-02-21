@@ -84,6 +84,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0661.-Image-Smoother/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0661.-Image-Smoother/</guid>
+      <description>0661. Image Smoother # 题目 # 图像平滑器 是大小为 3 x 3 的过滤器，用于对图像的每个单元格平滑处理，平滑处理后单元格的值为该单元格的平均灰度。 每个单元格的 平均灰度 定义为：该单元格自身及其周围的 8 个单元格的平均值，结果需向下取整。（即，需要计算蓝色平滑器中 9 个单元格的平均值）。 如果一个单元格周围存在单元格缺失的情况，则计算平均灰度时不考虑缺失的单元格（即，需要计算红色平滑器中 4 个单元格的平均值）。 思路 # 模拟 # 前缀和 # 代码 # 模拟 # class Solution { public int conv(int i, int j, int[][] img) { int M = img.length, N = img[0].length; int numerator = 0, denominator = 0; for (int row = i-1; row &amp;lt;= i+1; row++) { for (int col = j-1; col &amp;lt;= j+1; col++) { if (0 &amp;lt;= row &amp;amp;&amp;amp; row &amp;lt; M &amp;amp;&amp;amp; 0 &amp;lt;= col &amp;amp;&amp;amp; col &amp;lt; N) { numerator += img[row][col]; denominator++; } } } return numerator / denominator; } public int[][] imageSmoother(int[][] img) { int M = img.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0682.-Baseball-Game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -1574,6 +1574,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0661.-Image-Smoother/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0661.-Image-Smoother/</guid>
+      <description>0661. Image Smoother # 题目 # 图像平滑器 是大小为 3 x 3 的过滤器，用于对图像的每个单元格平滑处理，平滑处理后单元格的值为该单元格的平均灰度。 每个单元格的 平均灰度 定义为：该单元格自身及其周围的 8 个单元格的平均值，结果需向下取整。（即，需要计算蓝色平滑器中 9 个单元格的平均值）。 如果一个单元格周围存在单元格缺失的情况，则计算平均灰度时不考虑缺失的单元格（即，需要计算红色平滑器中 4 个单元格的平均值）。 思路 # 模拟 # 前缀和 # 代码 # 模拟 # class Solution { public int conv(int i, int j, int[][] img) { int M = img.length, N = img[0].length; int numerator = 0, denominator = 0; for (int row = i-1; row &amp;lt;= i+1; row++) { for (int col = j-1; col &amp;lt;= j+1; col++) { if (0 &amp;lt;= row &amp;amp;&amp;amp; row &amp;lt; M &amp;amp;&amp;amp; 0 &amp;lt;= col &amp;amp;&amp;amp; col &amp;lt; N) { numerator += img[row][col]; denominator++; } } } return numerator / denominator; } public int[][] imageSmoother(int[][] img) { int M = img.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0682.-Baseball-Game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2203,6 +2212,18 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1413.-Minimum-Value-to-Get-Positive-Step-by-Step-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1413.-Minimum-Value-to-Get-Positive-Step-by-Step-Sum/</guid>
+      <description>1413. Minimum Value to Get Positive Step by Step Sum # 题目 # 给你一个整数数组 nums 。你可以选定任意的 正数 startValue 作为初始值。
+你需要从左到右遍历 nums 数组，并将 startValue 依次累加上 nums 数组中的值。
+请你在确保累加和始终大于等于 1 的前提下，选出一个最小的 正数 作为 startValue 。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int minStartValue(int[] nums) { int ans = 1, prefixSum = 1; for (int num: nums) { prefixSum += num; if (prefixSum &amp;lt; 1) { ans += 1 - prefixSum; prefixSum = 1; } } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1417.-Reformat-The-String/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2356,6 +2377,18 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1608.-Special-Array-With-X-Elements-Greater-Than-or-Equal-X/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1608.-Special-Array-With-X-Elements-Greater-Than-or-Equal-X/</guid>
+      <description>1608. Special Array With X Elements Greater Than or Equal X # 题目 # 给你一个非负整数数组 nums 。如果存在一个数 x ，使得 nums 中恰好有 x 个元素 大于或者等于 x ，那么就称 nums 是一个 特殊数组 ，而 x 是该数组的 特征值 。
+注意： x 不必 是 nums 的中的元素。
+如果数组 nums 是一个 特殊数组 ，请返回它的特征值 x 。否则，返回 -1 。可以证明的是，如果 nums 是特殊数组，那么其特征值 x 是 唯一的 。
+思路 # 排序 # 代码 # 排序 # class Solution { public int specialArray(int[] nums) { Arrays.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2416,6 +2449,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</guid>
       <description>1646. Get Maximum in Generated Array # 题目 # 给定一个整数n，按下述规则生成一个长度为n+1的数组nums： nums[0] = 0 num[1] = 1 当 2 &amp;lt;= 2 * i &amp;lt;= n 时，nums[2 * i] = nums[i] 当 2 &amp;lt;= 2 * i + 1 &amp;lt;= n 时，nums[2 * i + 1] = nums[i] + nums[i + 1] 返回生成数组 nums 中的最大值。 思路 # 模拟 # 打表 # 代码 # 模拟 # class Solution { public int getMaximumGenerated(int n) { if (n == 0) return 0; int[] array = new int[n + 1]; for (int i = 2; i &amp;lt;= n; i++) { if (i % 2 == 0) array[i] = array[i/2]; else array[i] = array[(i-1)/2] + array[(i-1)/2+1]; } int ans = -1; for (int num: array) ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1652.-Defuse-the-Bomb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1652.-Defuse-the-Bomb/</guid>
+      <description>1652. Defuse the Bomb # 题目 # 你有一个炸弹需要拆除，时间紧迫！你的情报员会给你一个长度为 n 的 循环 数组 code 以及一个密钥 k 。 为了获得正确的密码，你需要替换掉每一个数字。所有数字会 同时 被替换。 如果 k &amp;gt; 0 ，将第 i 个数字用 接下来 k 个数字之和替换。 如果 k &amp;lt; 0 ，将第 i 个数字用 之前 k 个数字之和替换。 如果 k == 0 ，将第 i 个数字用 0 替换。 由于 code 是循环的， code[n-1] 下一个元素是 code[0] ，且 code[0] 前一个元素是 code[n-1] 。 给你 循环 数组 code 和整数密钥 k ，请你返回解密后的结果来拆除炸弹！ 思路 # 模拟 # 前缀和 # 代码 # 模拟 # class Solution { public int[] decrypt(int[] code, int k) { int[] ans = new int[code.</description>
     </item>
     
     <item>
