@@ -1331,6 +1331,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0506.-Relative-Ranks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0506.-Relative-Ranks/</guid>
+      <description>0506. Relative Ranks # 题目 # 给你一个长度为 n 的整数数组 score ，其中 score[i] 是第 i 位运动员在比赛中的得分。所有得分都 互不相同 。 运动员将根据得分 决定名次 ，其中名次第 1 的运动员得分最高，名次第 2 的运动员得分第 2 高，依此类推。运动员的名次决定了他们的获奖情况： 名次第 1 的运动员获金牌 &amp;quot;Gold Medal&amp;quot; 。 名次第 2 的运动员获银牌 &amp;quot;Silver Medal&amp;quot; 。 名次第 3 的运动员获铜牌 &amp;quot;Bronze Medal&amp;quot; 。 从名次第 4 到第 n 的运动员，只能获得他们的名次编号（即，名次第 x 的运动员获得编号 &amp;quot;x&amp;quot;）。 使用长度为 n 的数组 answer 返回获奖，其中 answer[i] 是第 i 位运动员的获奖情况。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String[] findRelativeRanks(int[] score) { String[] ans = new String[score.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0507.-Perfect-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2377,6 +2386,24 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1592.-Rearrange-Spaces-Between-Words/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1592.-Rearrange-Spaces-Between-Words/</guid>
+      <description>1592. Rearrange Spaces Between Words # 题目 # 给你一个字符串 text ，该字符串由若干被空格包围的单词组成。每个单词由一个或者多个小写英文字母组成，并且两个单词之间至少存在一个空格。题目测试用例保证 text 至少包含一个单词 。 请你重新排列空格，使每对相邻单词之间的空格数目都 相等 ，并尽可能 最大化 该数目。如果不能重新平均分配所有空格，请 将多余的空格放置在字符串末尾 ，这也意味着返回的字符串应当与原 text 字符串的长度相等。 返回 重新排列空格后的字符串 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String reorderSpaces(String text) { int numLetters = 0; List&amp;lt;String&amp;gt; words = new LinkedList&amp;lt;&amp;gt;(); String word = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; text.length(); i++) { if (Character.isLetter(text.charAt(i))) word += text.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1598.-Crawler-Log-Folder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1598.-Crawler-Log-Folder/</guid>
+      <description>1598. Crawler Log Folder # 题目 # 每当用户执行变更文件夹操作时，LeetCode 文件系统都会保存一条日志记录。下面给出对变更操作的说明： &amp;quot;../&amp;quot; ：移动到当前文件夹的父文件夹。如果已经在主文件夹下，则 继续停留在当前文件夹 。 &amp;quot;./&amp;quot; ：继续停留在当前文件夹**。** &amp;quot;x/&amp;quot; ：移动到名为 x 的子文件夹中。题目数据 保证总是存在文件夹 x 。 给你一个字符串列表 logs ，其中 logs[i] 是用户在 ith 步执行的操作。 文件系统启动时位于主文件夹，然后执行 logs 中的操作。 执行完所有变更文件夹操作后，请你找出 返回主文件夹所需的最小步数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minOperations(String[] logs) { int ans = 0; for (String log: logs) { switch (log) { case &amp;#34;../&amp;#34;: if (ans &amp;gt; 0) ans -= 1; break; case &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1608.-Special-Array-With-X-Elements-Greater-Than-or-Equal-X/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2624,6 +2651,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</guid>
       <description>1773. Count Items Mathcing a Rule # 题目 # 给你一个数组 items ，其中 items[i] = [typei, colori, namei] ，描述第 i 件物品的类型、颜色以及名称。 另给你一条由两个字符串 ruleKey 和 ruleValue 表示的检索规则。 如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则 匹配 ： ruleKey == &amp;quot;type&amp;quot; 且 ruleValue == typei 。 ruleKey == &amp;quot;color&amp;quot; 且 ruleValue == colori 。 ruleKey == &amp;quot;name&amp;quot; 且 ruleValue == namei 。 统计并返回 匹配检索规则的物品数量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countMatches(List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; items, String ruleKey, String ruleValue) { int count = 0; for (List&amp;lt;String&amp;gt; item: items) { switch (ruleKey) { case &amp;#34;type&amp;#34; : if (item.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/</guid>
+      <description>1784. Check if Binary String Has at Most One Segment of Ones # 题目 # 给你一个二进制字符串 s ，该字符串 不含前导零 。 如果 s 包含 零个或一个由连续的 &#39;1&#39; 组成的字段 ，返回 true 。否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkOnesSegment(String s) { boolean warning = false; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.charAt(i) == &amp;#39;0&amp;#39;) warning = true; else if (warning) return false; } return true; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>

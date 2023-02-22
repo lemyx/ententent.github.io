@@ -106,6 +106,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/</guid>
+      <description>1784. Check if Binary String Has at Most One Segment of Ones # 题目 # 给你一个二进制字符串 s ，该字符串 不含前导零 。 如果 s 包含 零个或一个由连续的 &#39;1&#39; 组成的字段 ，返回 true 。否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkOnesSegment(String s) { boolean warning = false; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.charAt(i) == &amp;#39;0&amp;#39;) warning = true; else if (warning) return false; } return true; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
