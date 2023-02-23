@@ -903,6 +903,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0258.-Add-Digits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0258.-Add-Digits/</guid>
+      <description>0258. Add Digits # 题目 # 给定一个非负整数 num，反复将各个位上的数字相加，直到结果为一位数。返回这个结果。 思路 # 模拟 # 数字根 # 代码 # 模拟 # class Solution { public int foo(int num) { int ans = 0; while (num &amp;gt; 0) { ans += num % 10; num /= 10; } return ans; } public int addDigits(int num) { while (num &amp;gt; 9) { num = foo(num); } return num; } } 致谢 # windliang</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0200-to-0299/0263.-Ugly-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2180,6 +2189,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</guid>
+      <description>1331. Rank Transform of an Array # 题目 # 给你一个整数数组 arr ，请你将数组中的每个元素替换为它们排序后的序号。 序号代表了一个元素有多大。序号编号的规则如下： 序号从 1 开始编号。 一个元素越大，那么序号越大。如果两个元素相等，那么它们的序号相同。 每个数字的序号都应该尽可能地小。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] arrayRankTransform(int[] arr) { Map&amp;lt;Integer, Queue&amp;lt;Integer&amp;gt;&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; arr.length; i++) { if (map.containsKey(arr[i]) == false) map.put(arr[i], new LinkedList&amp;lt;&amp;gt;()); map.get(arr[i]).offer(i); } Arrays.sort(arr); int[] ans = new int[arr.length]; Map&amp;lt;Integer, Integer&amp;gt; record = new HashMap&amp;lt;&amp;gt;(); int rank = 0; for (int i = 0; i &amp;lt; ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2529,6 +2547,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1678.-Goal-Parser-Interpretation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1678.-Goal-Parser-Interpretation/</guid>
+      <description>1678. Goal Parser Interpretation # 题目 # 请你设计一个可以解释字符串 command 的 Goal 解析器 。command 由 &amp;quot;G&amp;quot;、&amp;quot;()&amp;quot; 和/或 &amp;quot;(al)&amp;quot; 按某种顺序组成。Goal 解析器会将 &amp;quot;G&amp;quot; 解释为字符串 &amp;quot;G&amp;quot;、&amp;quot;()&amp;quot; 解释为字符串 &amp;quot;o&amp;quot; ，&amp;quot;(al)&amp;quot; 解释为字符串 &amp;quot;al&amp;quot; 。然后，按原顺序将经解释得到的字符串连接成一个字符串。 给你字符串 command ，返回 Goal 解析器 对 command 的解释结果。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String interpret(String command) { String ans = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; command.length(); ) { switch (command.charAt(i++)) { case &amp;#39;G&amp;#39;: ans += &amp;#34;G&amp;#34;; break; case &amp;#39;(&amp;#39;: if (command.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2564,6 +2591,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 餐厅里三明治的数量与学生的数量相同。所有三明治都放在一个 栈 里，每一轮：
 如果队列最前面的学生 喜欢 栈顶的三明治，那么会 拿走它 并离开队列。 否则，这名学生会 放弃这个三明治 并回到队列的尾部。 这个过程会一直持续到队列里所有学生都不喜欢栈顶的三明治为止。 给你两个整数数组 students 和 sandwiches ，其中 sandwiches[i] 是栈里面第 i 个三明治的类型（i = 0 是栈的顶部）， students[j] 是初始队列里第 j 名学生对三明治的喜好（j = 0 是队列的最开始位置）。请你返回无法吃午餐的学生数量。
 思路 # 模拟 计数 代码 # 模拟 # class Solution { public int countStudents(int[] students, int[] sandwiches) { /** 初始化三明治 */ Stack&amp;lt;Integer&amp;gt; sandwichesStack = new Stack&amp;lt;&amp;gt;(); for (int i = sandwiches.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1704.-Determine-if-String-Halves-Are-Alike/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1704.-Determine-if-String-Halves-Are-Alike/</guid>
+      <description>1704. Determine if String Halves Are Alike # 题目 # 给你一个偶数长度的字符串 s 。将其拆分成长度相同的两半，前一半为 a ，后一半为 b 。 两个字符串 相似 的前提是它们都含有相同数目的元音（&#39;a&#39;，&#39;e&#39;，&#39;i&#39;，&#39;o&#39;，&#39;u&#39;，&#39;A&#39;，&#39;E&#39;，&#39;I&#39;，&#39;O&#39;，&#39;U&#39;）。注意，s 可能同时含有大写和小写字母。 如果 a 和 b 相似，返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean halvesAreAlike(String s) { int numVowelFront = 0, numVowelBack = 0; for(int i = 0; i &amp;lt; s.length() / 2; i++) { if (&amp;#34;aeiouAEIOU&amp;#34;.contains(String.valueOf(s.charAt(i)))) numVowelFront++; } for(int i = s.</description>
     </item>
     
     <item>

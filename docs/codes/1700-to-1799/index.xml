@@ -19,6 +19,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1704.-Determine-if-String-Halves-Are-Alike/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1704.-Determine-if-String-Halves-Are-Alike/</guid>
+      <description>1704. Determine if String Halves Are Alike # 题目 # 给你一个偶数长度的字符串 s 。将其拆分成长度相同的两半，前一半为 a ，后一半为 b 。 两个字符串 相似 的前提是它们都含有相同数目的元音（&#39;a&#39;，&#39;e&#39;，&#39;i&#39;，&#39;o&#39;，&#39;u&#39;，&#39;A&#39;，&#39;E&#39;，&#39;I&#39;，&#39;O&#39;，&#39;U&#39;）。注意，s 可能同时含有大写和小写字母。 如果 a 和 b 相似，返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean halvesAreAlike(String s) { int numVowelFront = 0, numVowelBack = 0; for(int i = 0; i &amp;lt; s.length() / 2; i++) { if (&amp;#34;aeiouAEIOU&amp;#34;.contains(String.valueOf(s.charAt(i)))) numVowelFront++; } for(int i = s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

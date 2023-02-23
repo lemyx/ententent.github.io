@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1300-to-1399/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</guid>
+      <description>1331. Rank Transform of an Array # 题目 # 给你一个整数数组 arr ，请你将数组中的每个元素替换为它们排序后的序号。 序号代表了一个元素有多大。序号编号的规则如下： 序号从 1 开始编号。 一个元素越大，那么序号越大。如果两个元素相等，那么它们的序号相同。 每个数字的序号都应该尽可能地小。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] arrayRankTransform(int[] arr) { Map&amp;lt;Integer, Queue&amp;lt;Integer&amp;gt;&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; arr.length; i++) { if (map.containsKey(arr[i]) == false) map.put(arr[i], new LinkedList&amp;lt;&amp;gt;()); map.get(arr[i]).offer(i); } Arrays.sort(arr); int[] ans = new int[arr.length]; Map&amp;lt;Integer, Integer&amp;gt; record = new HashMap&amp;lt;&amp;gt;(); int rank = 0; for (int i = 0; i &amp;lt; ans.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
