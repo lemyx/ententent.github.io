@@ -317,6 +317,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0168.-Excel-Sheet-Column-Title/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0168.-Excel-Sheet-Column-Title/</guid>
+      <description>0168. Excel Sheet Column Title # 题目 # 给你一个整数 columnNumber ，返回它在 Excel 表中相对应的列名称。
+例如
+A -&amp;gt; 1 B -&amp;gt; 2 C -&amp;gt; 3 ... Z -&amp;gt; 26 AA -&amp;gt; 27 AB -&amp;gt; 28 ... 思路 # 模拟 # 代码 # 模拟 # class Solution { public String convertToTitle(int columnNumber) { String ans = &amp;#34;&amp;#34;; while (--columnNumber &amp;gt;= 0) { ans = String.valueOf((char)(&amp;#39;A&amp;#39; + columnNumber % 26)) + ans; columnNumber /= 26; } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0169.-Majority-Element/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -324,6 +335,17 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
       <description>169. Majority Element # 题目 # 给定一个大小为 n 的数组 nums，返回其中的多数元素。多数元素是指在数组中出现次数 大于 n/2 的元素。
 假定数组非空，且给定的数组总是存在多数元素。
 思路 # 摩尔投票法 代码 # class Solution { public int majorityElement(int[] nums) { int major = -1, count = 0; for (int num: nums) { if (count == 0) { major = num; count = 1; } else if (major == num) { count += 1; } else count -= 1; } return major; } } 致谢 # 田野吹吹风</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0171.-Excel-Sheet-Column-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0171.-Excel-Sheet-Column-Number/</guid>
+      <description>0171. Excel Sheet Column Number # 题目 # 给你一个整数 columnTitle ，表示 Excel 表格中的列名称。返回 该列名称对应的列序号 。
+例如
+A -&amp;gt; 1 B -&amp;gt; 2 C -&amp;gt; 3 ... Z -&amp;gt; 26 AA -&amp;gt; 27 AB -&amp;gt; 28 ... 思路 # 模拟 # 代码 # 模拟 # class Solution { public int titleToNumber(String columnTitle) { int ans = 0; char[] arr = columnTitle.toCharArray(); for (int i = 0; i &amp;lt; arr.length; i++) { ans += Math.</description>
     </item>
     
     <item>

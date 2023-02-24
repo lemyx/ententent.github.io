@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1400-to-1499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1408.-String-Matching-in-an-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1408.-String-Matching-in-an-Array/</guid>
+      <description>1408. String Matching in an Array # 题目 # 给你一个字符串数组 words ，数组中的每个字符串都可以看作是一个单词。请你按 任意 顺序返回 words 中是其他单词的子字符串的所有单词。
+如果你可以删除 words[j] 最左侧和/或最右侧的若干字符得到 words[i] ，那么字符串 words[i] 就是 words[j] 的一个子字符串。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;String&amp;gt; stringMatching(String[] words) { Set&amp;lt;String&amp;gt; ans = new HashSet(); for (int i = 0; i &amp;lt; words.length; i++) { for (int j = 0; j &amp;lt; words.length; j++) { if (j == i) continue; if (words[j].</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1413.-Minimum-Value-to-Get-Positive-Step-by-Step-Sum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -69,6 +80,15 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1455.-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence/</guid>
       <description>1455. Check If a Word Occurs As a Prefix of Any Word in a Sentence # 题目 # 给定字符串 sentence 并指定检索词为 searchWord ，句子由 空格 分隔的单词组成。 检查检索词 searchWord 是否为句子 sentence 中任意单词的前缀。 如果 searchWord 是某一个单词的前缀，则返回句子 sentence 中该单词所对应的下标（下标从 1 开始）。 如果 searchWord 是多个单词的前缀，则返回匹配的第一个单词的下标（最小下标）。 如果 searchWord 不是任何单词的前缀，则返回 -1 。 字符串 s 的 前缀 是 s 的任何前导连续子字符串。 思路 # 双指针 # 代码 # 双指针 # class Solution { public int isPrefixOfWord(String sentence, String searchWord) { int ptr1 = 0, ans = 0; while (ptr1 &amp;lt; sentence.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1460.-Make-Two-Arrays-Equal-by-Reversing-Subarrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1460.-Make-Two-Arrays-Equal-by-Reversing-Subarrays/</guid>
+      <description>1460. Make Two Arrays Equal by Reversing Subarrays # 题目 # 给你两个长度相同的整数数组 target 和 arr 。每一步中，你可以选择 arr 的任意 非空子数组 并将它翻转。你可以执行此过程任意次。 如果你能让 arr 变得与 target 相同，返回 True；否则，返回 False 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean canBeEqual(int[] target, int[] arr) { int[] record = new int[1001]; for (int num: arr) record[num]++; for (int num: target) record[num]--; for (int num: record) if (num &amp;gt; 0) return false; return true; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
