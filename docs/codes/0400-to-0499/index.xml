@@ -177,6 +177,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0492.-Construct-the-Rectangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0492.-Construct-the-Rectangle/</guid>
+      <description>0492. Construct the Rectangle # 题目 # 作为一位web开发者， 懂得怎样去规划一个页面的尺寸是很重要的。 所以，现给定一个具体的矩形页面面积，你的任务是设计一个长度为 L 和宽度为 W 且满足以下要求的矩形的页面。要求： 你设计的矩形页面必须等于给定的目标面积。 宽度 W 不应大于长度 L ，换言之，要求 L &amp;gt;= W 。 长度 L 和宽度 W 之间的差距应当尽可能小。 返回一个 数组 [L, W]，其中 L 和 W 是你按照顺序设计的网页的长度和宽度。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] constructRectangle(int area) { int[] ans = new int[2]; for (int w = 1; w &amp;lt;= Math.sqrt(area); w++) { if (area % w == 0) { ans[0] = area / w; ans[1] = w; } } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

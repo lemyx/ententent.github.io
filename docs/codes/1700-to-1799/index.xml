@@ -97,6 +97,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1758.-Minimum-Changes-To-Make-Alternating-Binary-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1758.-Minimum-Changes-To-Make-Alternating-Binary-String/</guid>
+      <description>1758. Minimum Changes To Make Alternating Binary String # 题目 # 给你一个仅由字符 &#39;0&#39; 和 &#39;1&#39; 组成的字符串 s 。一步操作中，你可以将任一 &#39;0&#39; 变成 &#39;1&#39; ，或者将 &#39;1&#39; 变成 &#39;0&#39; 。 交替字符串 定义为：如果字符串中不存在相邻两个字符相等的情况，那么该字符串就是交替字符串。例如，字符串 &amp;quot;010&amp;quot; 是交替字符串，而字符串 &amp;quot;0100&amp;quot; 不是。 返回使 s 变成 交替字符串 所需的 最少 操作数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minOperations(String s) { char[] arr = s.toCharArray(); int zeroStart = 0, oneStart = 0; for (int i = 0; i &amp;lt; arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

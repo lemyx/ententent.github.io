@@ -1339,6 +1339,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0492.-Construct-the-Rectangle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0492.-Construct-the-Rectangle/</guid>
+      <description>0492. Construct the Rectangle # 题目 # 作为一位web开发者， 懂得怎样去规划一个页面的尺寸是很重要的。 所以，现给定一个具体的矩形页面面积，你的任务是设计一个长度为 L 和宽度为 W 且满足以下要求的矩形的页面。要求： 你设计的矩形页面必须等于给定的目标面积。 宽度 W 不应大于长度 L ，换言之，要求 L &amp;gt;= W 。 长度 L 和宽度 W 之间的差距应当尽可能小。 返回一个 数组 [L, W]，其中 L 和 W 是你按照顺序设计的网页的长度和宽度。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] constructRectangle(int area) { int[] ans = new int[2]; for (int w = 1; w &amp;lt;= Math.sqrt(area); w++) { if (area % w == 0) { ans[0] = area / w; ans[1] = w; } } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0495.-Teemo-Attacking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1358,6 +1367,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0500.-Keyboard-Row/</guid>
       <description>0500. Keyboard Row # 题目 # 给定字符串数组 words ，返回可以使用在 美式键盘 同一行的字母打印出来的单词。 美式键盘 中： 第一行由字符 &amp;quot;qwertyuiop&amp;quot; 组成。 第二行由字符 &amp;quot;asdfghjkl&amp;quot; 组成。 第三行由字符 &amp;quot;zxcvbnm&amp;quot; 组成。 思路 # 模拟+打表 # 代码 # 模拟+打表 # class Solution { public void mapping (int[] qwerty) { qwerty[&amp;#39;q&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;w&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;e&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;r&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;t&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;y&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;u&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;i&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;o&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;p&amp;#39;-&amp;#39;a&amp;#39;] = 0; qwerty[&amp;#39;a&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;s&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;d&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;f&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;g&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;h&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;j&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;k&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;l&amp;#39;-&amp;#39;a&amp;#39;] = 1; qwerty[&amp;#39;z&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;x&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;c&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;v&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;b&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;n&amp;#39;-&amp;#39;a&amp;#39;] = 2; qwerty[&amp;#39;m&amp;#39;-&amp;#39;a&amp;#39;] = 2; } public String[] findWords(String[] words) { int[] qwerty = new int[26]; mapping(qwerty); List&amp;lt;String&amp;gt; ans = new ArrayList&amp;lt;&amp;gt;(); for (String word: words) { boolean ok = true; for (int i = 0; i &amp;lt; word.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0504.-Base-7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0504.-Base-7/</guid>
+      <description>0504. Base 7 # 题目 # 给定一个整数 num，将其转化为 7 进制，并以字符串形式输出。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String convertToBase7(int num) { if (num == 0) return &amp;#34;0&amp;#34;; int base = Math.abs(num); String ans = &amp;#34;&amp;#34;; while (base &amp;gt; 0) { ans = String.valueOf(base % 7) + ans; base /= 7; } return num &amp;gt; 0 ? ans : &amp;#34;-&amp;#34;+ans; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2715,6 +2733,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1758.-Minimum-Changes-To-Make-Alternating-Binary-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1758.-Minimum-Changes-To-Make-Alternating-Binary-String/</guid>
+      <description>1758. Minimum Changes To Make Alternating Binary String # 题目 # 给你一个仅由字符 &#39;0&#39; 和 &#39;1&#39; 组成的字符串 s 。一步操作中，你可以将任一 &#39;0&#39; 变成 &#39;1&#39; ，或者将 &#39;1&#39; 变成 &#39;0&#39; 。 交替字符串 定义为：如果字符串中不存在相邻两个字符相等的情况，那么该字符串就是交替字符串。例如，字符串 &amp;quot;010&amp;quot; 是交替字符串，而字符串 &amp;quot;0100&amp;quot; 不是。 返回使 s 变成 交替字符串 所需的 最少 操作数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minOperations(String s) { char[] arr = s.toCharArray(); int zeroStart = 0, oneStart = 0; for (int i = 0; i &amp;lt; arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2784,6 +2811,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/</guid>
       <description>1836. Remove Duplicates from An Unsorted Linked List # 题目 # 给定链表头节点 head，找到链表中所有出现 多于一次 的元素，并删除这些元素所在的节点。返回删除后的链表。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteDuplicatesUnsorted(ListNode head) { Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); ListNode ptr = head; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1893.-Check-if-All-the-Integers-in-a-Range-Are-Covered/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1893.-Check-if-All-the-Integers-in-a-Range-Are-Covered/</guid>
+      <description>1893. Check if All the Integers in a Range Are Covered # 题目 # 给你一个二维整数数组 ranges 和两个整数 left 和 right 。每个 ranges[i] = [starti, endi] 表示一个从 starti 到 endi 的 闭区间 。 如果闭区间 [left, right] 内每个整数都被 ranges 中 至少一个 区间覆盖，那么请你返回 true ，否则返回 false 。 已知区间 ranges[i] = [starti, endi] ，如果整数 x 满足 starti &amp;lt;= x &amp;lt;= endi ，那么我们称整数x 被覆盖了。 思路 # 模拟 # 树状数组 # 线段树 # 代码 # 模拟 # class Solution { public boolean isCovered(int[][] ranges, int left, int right) { int[] mark = new int[51]; for (int[] range: ranges) { for (int k = range[0]; k &amp;lt;= range[1]; k++) { mark[k] = 1; } } for (int i = left; i &amp;lt;= right; i++) { if (mark[i] == 0) return false; } return true; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
