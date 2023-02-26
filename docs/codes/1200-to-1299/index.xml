@@ -21,6 +21,15 @@ bool search(int target)：返回 target 是否存在于跳表中。 void add(int
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/</guid>
+      <description>1252. Cells with Odd Values in a Matrix # 题目 # 给你一个 m x n 的矩阵，最开始的时候，每个单元格中的值都是 0。 另有一个二维索引数组 indices，indices[i] = [ri, ci] 指向矩阵中的某个位置，其中 ri 和 ci 分别表示指定的行和列（从 0 开始编号）。 对 indices[i] 所指向的每个位置，应同时执行下述增量操作： ri 行上的所有单元格，加 1 。 ci 列上的所有单元格，加 1 。 给你 m、n 和 indices 。请你在执行完所有 indices 指定的增量操作后，返回矩阵中 奇数值单元格 的数目。 思路 # 暴力模拟 # 代码 # 暴力模拟 # class Solution { public int oddCells(int m, int n, int[][] indices) { int[][] arr = new int[m][n]; for (int[] indice: indices) { for (int j = 0; j &amp;lt; n; j++) arr[indice[0]][j]++; for (int i = 0; i &amp;lt; m; i++) arr[i][indice[1]]++; } int ans = 0; for (int i = 0; i &amp;lt; m; i++) { for (int j = 0; j &amp;lt; n; j++) { if (arr[i][j] % 2 == 1) ans++; } } return ans; } } 优化 (一) # class Solution { public int oddCells(int m, int n, int[][] indices) { int[] row = new int[m], col = new int[n]; for(int[] indice: indices) { row[indice[0]]++; col[indice[1]]++; } /** 对于point[i][j], 其数值等于row[i]+col[j] */ int ans = 0; for (int i = 0; i &amp;lt; m; i++) { for (int j = 0; j &amp;lt; n; j++) { if ((row[i]+col[j]) % 2 == 1) ans++; } } return ans; } } 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

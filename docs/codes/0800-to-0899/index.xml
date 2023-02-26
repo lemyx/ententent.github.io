@@ -131,6 +131,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/</guid>
+      <description>0883. Projection Area of 3D Shapes # 题目 # 在 n x n 的网格 grid 中，我们放置了一些与 x，y，z 三轴对齐的 1 x 1 x 1 立方体。 每个值 v = grid[i][j] 表示 v 个正方体叠放在单元格 (i, j) 上。 现在，我们查看这些立方体在 xy 、yz 和 zx 平面上的投影 投影 就像影子，将 三维 形体映射到一个 二维 平面上。从顶部、前面和侧面看立方体时，我们会看到“影子”。 返回 所有三个投影的总面积 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int projectionArea(int[][] grid) { int area = 0; for (int i = 0; i &amp;lt; grid.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -45,6 +45,19 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/</guid>
+      <description>0944. Delete Columns to Make Sorted # 题目 # 给你由 n 个小写字母字符串组成的数组 strs，其中每个字符串长度相等。
+这些字符串可以每个一行，排成一个网格。例如，strs = [&amp;quot;abc&amp;quot;, &amp;quot;bce&amp;quot;, &amp;quot;cae&amp;quot;] 可以排列为：
+abc bce cae 你需要找出并删除 不是按字典序升序排列的 列。在上面的例子（下标从 0 开始）中，列 0（&#39;a&#39;, &#39;b&#39;, &#39;c&#39;）和列 2（&#39;c&#39;, &#39;e&#39;, &#39;e&#39;）都是按升序排列的，而列 1（&#39;b&#39;, &#39;c&#39;, &#39;a&#39;）不是，所以要删除列 1 。
+返回你需要删除的列数。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int minDeletionSize(String[] strs) { int ans = 0; for (int i = 0; i &amp;lt; strs[0].length(); i++) { char ch = strs[0].</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

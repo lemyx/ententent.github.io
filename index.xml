@@ -1941,6 +1941,15 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/</guid>
+      <description>0883. Projection Area of 3D Shapes # 题目 # 在 n x n 的网格 grid 中，我们放置了一些与 x，y，z 三轴对齐的 1 x 1 x 1 立方体。 每个值 v = grid[i][j] 表示 v 个正方体叠放在单元格 (i, j) 上。 现在，我们查看这些立方体在 xy 、yz 和 zx 平面上的投影 投影 就像影子，将 三维 形体映射到一个 二维 平面上。从顶部、前面和侧面看立方体时，我们会看到“影子”。 返回 所有三个投影的总面积 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int projectionArea(int[][] grid) { int area = 0; for (int i = 0; i &amp;lt; grid.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2002,6 +2011,19 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
       <description>933. Number of Recent Calls # 题目 # 写一个 RecentCounter 类来计算特定时间范围内最近的请求。
 请你实现 RecentCounter 类：
 RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时间 t 添加一个新请求，其中 t 表示以毫秒为单位的某个时间，并返回过去 3000 毫秒内发生的所有请求数（包括新请求）。确切地说，返回在 [t-3000, t] 内发生的请求数。 每次对 ping 的调用都使用比之前更大的 t 值。 思路 # 队列 # 代码 # 队列 # class RecentCounter { private Queue&amp;lt;Integer&amp;gt; queue; public RecentCounter() { this.queue = new LinkedList&amp;lt;&amp;gt;(); } public int ping(int t) { queue.offer(t); while (queue.peek() &amp;lt; t - 3000) queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/</guid>
+      <description>0944. Delete Columns to Make Sorted # 题目 # 给你由 n 个小写字母字符串组成的数组 strs，其中每个字符串长度相等。
+这些字符串可以每个一行，排成一个网格。例如，strs = [&amp;quot;abc&amp;quot;, &amp;quot;bce&amp;quot;, &amp;quot;cae&amp;quot;] 可以排列为：
+abc bce cae 你需要找出并删除 不是按字典序升序排列的 列。在上面的例子（下标从 0 开始）中，列 0（&#39;a&#39;, &#39;b&#39;, &#39;c&#39;）和列 2（&#39;c&#39;, &#39;e&#39;, &#39;e&#39;）都是按升序排列的，而列 1（&#39;b&#39;, &#39;c&#39;, &#39;a&#39;）不是，所以要删除列 1 。
+返回你需要删除的列数。
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int minDeletionSize(String[] strs) { int ans = 0; for (int i = 0; i &amp;lt; strs[0].length(); i++) { char ch = strs[0].</description>
     </item>
     
     <item>
@@ -2083,6 +2105,15 @@ RecentCounter() 初始化计数器，请求数为 0 。 int ping(int t) 在时�
 在 S 上反复执行重复项删除操作，直至无法继续删除。
 在完成所有重复项删除操作后返回最终的字符串。
 思路 # 代码 # class Solution { public String removeDuplicates(String s) { Stack&amp;lt;Character&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); for (int i=0; i&amp;lt;s.length(); i++) { char item = s.charAt(i); if (stack.empty() == false &amp;amp;&amp;amp; stack.peek() == item) stack.pop(); else stack.push(item); } char[] unique = new char[stack.size()]; for (int i=unique.length-1; i&amp;gt;=0; i--) unique[i] = stack.pop(); return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1051.-Height-Checker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1051.-Height-Checker/</guid>
+      <description>1051. Height Checker # 题目 # 学校打算为全体学生拍一张年度纪念照。根据要求，学生需要按照 非递减 的高度顺序排成一行。 排序后的高度情况用整数数组 expected 表示，其中 expected[i] 是预计排在这一行中第 i 位的学生的高度（下标从 0 开始）。 给你一个整数数组 heights ，表示 当前学生站位 的高度情况。heights[i] 是这一行中第 i 位学生的高度（下标从 0 开始）。 返回满足 heights[i] != expected[i] 的 下标数量 。 思路 # 快排 # 计数排序 # 代码 # 快排 # class Solution { public int heightChecker(int[] heights) { int ans = 0; int[] expected = heights.clone(); Arrays.sort(expected); for(int i = 0; i &amp;lt; heights.length; i++) { if (expected[i] !</description>
     </item>
     
     <item>
@@ -2195,6 +2226,15 @@ T0 = 0, T1 = 1, T2 = 1, 且在 n &amp;gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+
 本题的设计应该包含以下函数：
 bool search(int target)：返回 target 是否存在于跳表中。 void add(int num)：插入一个元素到跳表。 bool erase(int num)：在跳表中删除一个值，如果 num 不存在，直接返回 false。如果存在多个 num，删除其中任意一个即可。 Tips 跳表中可能存在多个相同的值，所设计的跳表需要处理这种情况。
 思路 # 代码 # class Skiplist { private int MAX_LEVEL = 10; private class SkipNode { public int val; public SkipNode[] next; SkipNode(int val) { this.val = val; this.next = new SkipNode[this.MAX_LEVEL]; } } private SkipNode sentinel; private Random random; public Skiplist() { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/</guid>
+      <description>1252. Cells with Odd Values in a Matrix # 题目 # 给你一个 m x n 的矩阵，最开始的时候，每个单元格中的值都是 0。 另有一个二维索引数组 indices，indices[i] = [ri, ci] 指向矩阵中的某个位置，其中 ri 和 ci 分别表示指定的行和列（从 0 开始编号）。 对 indices[i] 所指向的每个位置，应同时执行下述增量操作： ri 行上的所有单元格，加 1 。 ci 列上的所有单元格，加 1 。 给你 m、n 和 indices 。请你在执行完所有 indices 指定的增量操作后，返回矩阵中 奇数值单元格 的数目。 思路 # 暴力模拟 # 代码 # 暴力模拟 # class Solution { public int oddCells(int m, int n, int[][] indices) { int[][] arr = new int[m][n]; for (int[] indice: indices) { for (int j = 0; j &amp;lt; n; j++) arr[indice[0]][j]++; for (int i = 0; i &amp;lt; m; i++) arr[i][indice[1]]++; } int ans = 0; for (int i = 0; i &amp;lt; m; i++) { for (int j = 0; j &amp;lt; n; j++) { if (arr[i][j] % 2 == 1) ans++; } } return ans; } } 优化 (一) # class Solution { public int oddCells(int m, int n, int[][] indices) { int[] row = new int[m], col = new int[n]; for(int[] indice: indices) { row[indice[0]]++; col[indice[1]]++; } /** 对于point[i][j], 其数值等于row[i]+col[j] */ int ans = 0; for (int i = 0; i &amp;lt; m; i++) { for (int j = 0; j &amp;lt; n; j++) { if ((row[i]+col[j]) % 2 == 1) ans++; } } return ans; } } 致谢 # 宫水三叶</description>
     </item>
     
     <item>
@@ -2401,6 +2441,15 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
       <description>1472. Design Browser History # 题目 # 给定链表头结点 head 和两个整数 m 和 n，遍历该链表并按照如下方式删除结点：
 开始时以头结点作为当前结点 保留以当前结点开始的前 m 个结点 删除接下来的 n 个结点 重复步骤 2 和 3，直到到达链表结尾 在删除了指定结点之后，返回修改过后的链表头结点。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } LIstNOde(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode deleteNodes(ListNode head, int m, int n) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1475.-Final-Prices-With-a-Special-Discount-in-a-Shop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1475.-Final-Prices-With-a-Special-Discount-in-a-Shop/</guid>
+      <description>1475. Final Prices With a Special Discount in a Shop # 题目 # 给你一个数组 prices ，其中 prices[i] 是商店里第 i 件商品的价格。 商店里正在进行促销活动，如果你要买第 i 件商品，那么你可以得到与 prices[j] 相等的折扣，其中 j 是满足 j &amp;gt; i 且 prices[j] &amp;lt;= prices[i] 的 最小下标 ，如果没有满足条件的 j ，你将没有任何折扣。 请你返回一个数组，数组中第 i 个元素是折扣后你购买商品 i 最终需要支付的价格。 思路 # 模拟 # 单调栈 # 代码 # 模拟 # class Solution { public int[] finalPrices(int[] prices) { int[] finalPrices = prices.clone(); for (int i = 0; i &amp;lt; prices.</description>
     </item>
     
     <item>

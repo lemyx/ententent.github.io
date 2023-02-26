@@ -674,6 +674,9 @@
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/</loc>
     <lastmod>2023-02-08T07:39:24+08:00</lastmod>
   </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/</loc>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
+  </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/</loc>
     <lastmod>2023-02-13T08:03:17+08:00</lastmod>
   </url><url>
@@ -694,6 +697,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/</loc>
     <lastmod>2023-02-02T15:39:16+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/</loc>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/</loc>
     <lastmod>2023-02-17T07:42:42+08:00</lastmod>
@@ -717,7 +723,10 @@
     <lastmod>2023-02-08T07:39:24+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/</loc>
-    <lastmod>2023-01-16T10:22:54+08:00</lastmod>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1051.-Height-Checker/</loc>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/</loc>
     <lastmod>2023-02-17T07:42:42+08:00</lastmod>
@@ -748,6 +757,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</loc>
     <lastmod>2023-01-15T20:14:10+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/</loc>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/</loc>
     <lastmod>2023-01-10T14:30:41+08:00</lastmod>
@@ -808,6 +820,9 @@
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1474.-Delete-N-Nodes-After-M-Nodes-of-A-Linked-List/</loc>
     <lastmod>2023-01-11T10:10:53+08:00</lastmod>
+  </url><url>
+    <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1475.-Final-Prices-With-a-Special-Discount-in-a-Shop/</loc>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/codes/1400-to-1499/1480.-Running-Sum-of-1d-Array/</loc>
     <lastmod>2023-01-30T08:09:53+08:00</lastmod>
@@ -1088,7 +1103,7 @@
     <lastmod>2023-01-02T10:07:13+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/docs/</loc>
-    <lastmod>2023-02-25T08:56:38+08:00</lastmod>
+    <lastmod>2023-02-26T17:27:45+08:00</lastmod>
   </url><url>
     <loc>https://leetcode.akaeecs.com/</loc>
     <lastmod>2023-01-31T10:42:36+08:00</lastmod>
