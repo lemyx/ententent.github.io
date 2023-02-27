@@ -2037,6 +2037,15 @@ abc bce cae 你需要找出并删除 不是按字典序升序排列的 列。在
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0961.-N-Repeated-Element-in-Size-2N-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0961.-N-Repeated-Element-in-Size-2N-Array/</guid>
+      <description>0961. N-Repeated Element in Size 2N Array # 题目 # 给你一个整数数组 nums ，该数组具有以下属性： nums.length == 2 * n. nums 包含 n + 1 个 不同的 元素 nums 中恰有一个元素重复 n 次 找出并返回重复了 n 次的那个元素。 2 &amp;lt;= n &amp;lt;= 5000 nums.length == 2 * n 0 &amp;lt;= nums[i] &amp;lt;= 104 nums 由 n + 1 个 不同的 元素组成，且其中一个元素恰好重复 n 次 思路 # 哈希 # 隔板 # 设重复元素为 x, 则有结论: 存在一对相邻的 x, 二者间隔的非 x 元素数目不超过 2 证明: 若任取一对相邻的 x, 所间隔的非 x 元素数目均超过 2, 则所需要的元素总数大于 n + 2*(n-1) = 3n-2, 即 2n &amp;gt; 3n-2, 有 n &amp;lt; 2, 与题设矛盾 代码 # 哈希 # class Solution { public int repeatedNTimes(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) { if (set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2598,6 +2607,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1640.-Check-Array-Formation-Through-Concatenation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1640.-Check-Array-Formation-Through-Concatenation/</guid>
+      <description>1640. Check Array Formation Through Concatenation # 题目 # 给你一个整数数组 arr ，数组中的每个整数 互不相同 。另有一个由整数数组构成的数组 pieces，其中的整数也 互不相同 。请你以 任意顺序 连接 pieces 中的数组以形成 arr 。但是，不允许 对每个数组 pieces[i] 中的整数重新排序。 如果可以连接 pieces 中的数组形成 arr ，返回 true ；否则，返回 false 。 1 &amp;lt;= pieces.length &amp;lt;= arr.length &amp;lt;= 100 sum(pieces[i].length) == arr.length 1 &amp;lt;= pieces[i].length &amp;lt;= arr.length 1 &amp;lt;= arr[i], pieces[i][j] &amp;lt;= 100 arr 中的整数 互不相同 pieces 中的整数 互不相同（也就是说，如果将 pieces 扁平化成一维数组，数组中的所有整数互不相同） 思路 # 哈希 # 排序+二分 # 代码 # 哈希 # class Solution { public boolean canFormArray(int[] arr, int[][] pieces) { boolean[] visited = new boolean[arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2612,6 +2630,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1652.-Defuse-the-Bomb/</guid>
       <description>1652. Defuse the Bomb # 题目 # 你有一个炸弹需要拆除，时间紧迫！你的情报员会给你一个长度为 n 的 循环 数组 code 以及一个密钥 k 。 为了获得正确的密码，你需要替换掉每一个数字。所有数字会 同时 被替换。 如果 k &amp;gt; 0 ，将第 i 个数字用 接下来 k 个数字之和替换。 如果 k &amp;lt; 0 ，将第 i 个数字用 之前 k 个数字之和替换。 如果 k == 0 ，将第 i 个数字用 0 替换。 由于 code 是循环的， code[n-1] 下一个元素是 code[0] ，且 code[0] 前一个元素是 code[n-1] 。 给你 循环 数组 code 和整数密钥 k ，请你返回解密后的结果来拆除炸弹！ 思路 # 模拟 # 前缀和 # 代码 # 模拟 # class Solution { public int[] decrypt(int[] code, int k) { int[] ans = new int[code.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1656.-Design-an-Ordered-Stream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1656.-Design-an-Ordered-Stream/</guid>
+      <description>1656. Design an Ordered Stream # 题目 # 有 n 个 (id, value) 对，其中 id 是 1 到 n 之间的一个整数，value 是一个字符串。不存在 id 相同的两个 (id, value) 对。 设计一个流，以 任意 顺序获取 n 个 (id, value) 对，并在多次调用时 按 id 递增的顺序 返回一些值。 实现 OrderedStream 类： OrderedStream(int n) 构造一个能接收 n 个值的流，并将当前指针 ptr 设为 1 。 String[] insert(int id, String value) 向流中存储新的 (id, value) 对。存储后： 如果流存储有 id = ptr 的 (id, value) 对，则找出从 id = ptr 开始的 最长 id 连续递增序列 ，并 按顺序 返回与这些 id 关联的值的列表。然后，将 ptr 更新为最后那个 id + 1 。 否则，返回一个空列表。 思路 # 模拟 # 代码 # 模拟 # class OrderedStream { private Map&amp;lt;Integer, String&amp;gt; map; private int ptr; public OrderedStream(int n) { this.</description>
     </item>
     
     <item>
@@ -2769,6 +2796,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/</guid>
       <description>1736. Latest Time by Replacing Hidden Digits # 题目 # 给你一个字符串 time ，格式为 hh:mm（小时：分钟），其中某几位数字被隐藏（用 ? 表示）。 有效的时间为 00:00 到 23:59 之间的所有时间，包括 00:00 和 23:59 。 替换 time 中隐藏的数字，返回你可以得到的最晚有效时间。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String maximumTime(String time) { char[] ans = time.toCharArray(); if (ans[0] == &amp;#39;?&amp;#39;) ans[0] = ans[1] == &amp;#39;?&amp;#39; || ans[1] &amp;lt; &amp;#39;4&amp;#39; ? &amp;#39;2&amp;#39; : &amp;#39;1&amp;#39;; if (ans[1] == &amp;#39;?&amp;#39;) ans[1] = ans[0] == &amp;#39;2&amp;#39; ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1742.-Maximum-Number-of-Balls-in-a-Box/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1742.-Maximum-Number-of-Balls-in-a-Box/</guid>
+      <description>1742. Maximum Number of Balls in a Box # 题目 # 你在一家生产小球的玩具厂工作，有 n 个小球，编号从 lowLimit 开始，到 highLimit 结束（包括 lowLimit 和 highLimit ，即 n == highLimit - lowLimit + 1）。另有无限数量的盒子，编号从 1 到 infinity 。 你的工作是将每个小球放入盒子中，其中盒子的编号应当等于小球编号上每位数字的和。例如，编号 321 的小球应当放入编号 3 + 2 + 1 = 6 的盒子，而编号 10 的小球应当放入编号 1 + 0 = 1 的盒子。 给你两个整数 lowLimit 和 highLimit ，返回放有最多小球的盒子中的小球数量*。*如果有多个盒子都满足放有最多小球，只需返回其中任一盒子的小球数量。 1 &amp;lt;= lowLimit &amp;lt;= highLimit &amp;lt;= 10^5 思路 # 模拟 # 代码 # 模拟 # class Solution { public int foo(int num) { int ans = 0; while (num &amp;gt; 0) { ans += num % 10; num /= 10; } return ans; } public int countBalls(int lowLimit, int highLimit) { int[] count = new int[46]; for (int i = lowLimit; i &amp;lt;= highLimit; i++) { count[foo(i)]++; } int ans = 0; for (int cnt:count) ans = Math.</description>
     </item>
     
     <item>

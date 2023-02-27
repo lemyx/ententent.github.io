@@ -67,6 +67,15 @@ abc bce cae 你需要找出并删除 不是按字典序升序排列的 列。在
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0961.-N-Repeated-Element-in-Size-2N-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0961.-N-Repeated-Element-in-Size-2N-Array/</guid>
+      <description>0961. N-Repeated Element in Size 2N Array # 题目 # 给你一个整数数组 nums ，该数组具有以下属性： nums.length == 2 * n. nums 包含 n + 1 个 不同的 元素 nums 中恰有一个元素重复 n 次 找出并返回重复了 n 次的那个元素。 2 &amp;lt;= n &amp;lt;= 5000 nums.length == 2 * n 0 &amp;lt;= nums[i] &amp;lt;= 104 nums 由 n + 1 个 不同的 元素组成，且其中一个元素恰好重复 n 次 思路 # 哈希 # 隔板 # 设重复元素为 x, 则有结论: 存在一对相邻的 x, 二者间隔的非 x 元素数目不超过 2 证明: 若任取一对相邻的 x, 所间隔的非 x 元素数目均超过 2, 则所需要的元素总数大于 n + 2*(n-1) = 3n-2, 即 2n &amp;gt; 3n-2, 有 n &amp;lt; 2, 与题设矛盾 代码 # 哈希 # class Solution { public int repeatedNTimes(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) { if (set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

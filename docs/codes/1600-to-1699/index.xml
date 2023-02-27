@@ -74,6 +74,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1640.-Check-Array-Formation-Through-Concatenation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1640.-Check-Array-Formation-Through-Concatenation/</guid>
+      <description>1640. Check Array Formation Through Concatenation # 题目 # 给你一个整数数组 arr ，数组中的每个整数 互不相同 。另有一个由整数数组构成的数组 pieces，其中的整数也 互不相同 。请你以 任意顺序 连接 pieces 中的数组以形成 arr 。但是，不允许 对每个数组 pieces[i] 中的整数重新排序。 如果可以连接 pieces 中的数组形成 arr ，返回 true ；否则，返回 false 。 1 &amp;lt;= pieces.length &amp;lt;= arr.length &amp;lt;= 100 sum(pieces[i].length) == arr.length 1 &amp;lt;= pieces[i].length &amp;lt;= arr.length 1 &amp;lt;= arr[i], pieces[i][j] &amp;lt;= 100 arr 中的整数 互不相同 pieces 中的整数 互不相同（也就是说，如果将 pieces 扁平化成一维数组，数组中的所有整数互不相同） 思路 # 哈希 # 排序+二分 # 代码 # 哈希 # class Solution { public boolean canFormArray(int[] arr, int[][] pieces) { boolean[] visited = new boolean[arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -88,6 +97,15 @@ coefficient： 该项的系数 power：该项的指数 next：指向下一个结
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1652.-Defuse-the-Bomb/</guid>
       <description>1652. Defuse the Bomb # 题目 # 你有一个炸弹需要拆除，时间紧迫！你的情报员会给你一个长度为 n 的 循环 数组 code 以及一个密钥 k 。 为了获得正确的密码，你需要替换掉每一个数字。所有数字会 同时 被替换。 如果 k &amp;gt; 0 ，将第 i 个数字用 接下来 k 个数字之和替换。 如果 k &amp;lt; 0 ，将第 i 个数字用 之前 k 个数字之和替换。 如果 k == 0 ，将第 i 个数字用 0 替换。 由于 code 是循环的， code[n-1] 下一个元素是 code[0] ，且 code[0] 前一个元素是 code[n-1] 。 给你 循环 数组 code 和整数密钥 k ，请你返回解密后的结果来拆除炸弹！ 思路 # 模拟 # 前缀和 # 代码 # 模拟 # class Solution { public int[] decrypt(int[] code, int k) { int[] ans = new int[code.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1656.-Design-an-Ordered-Stream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1656.-Design-an-Ordered-Stream/</guid>
+      <description>1656. Design an Ordered Stream # 题目 # 有 n 个 (id, value) 对，其中 id 是 1 到 n 之间的一个整数，value 是一个字符串。不存在 id 相同的两个 (id, value) 对。 设计一个流，以 任意 顺序获取 n 个 (id, value) 对，并在多次调用时 按 id 递增的顺序 返回一些值。 实现 OrderedStream 类： OrderedStream(int n) 构造一个能接收 n 个值的流，并将当前指针 ptr 设为 1 。 String[] insert(int id, String value) 向流中存储新的 (id, value) 对。存储后： 如果流存储有 id = ptr 的 (id, value) 对，则找出从 id = ptr 开始的 最长 id 连续递增序列 ，并 按顺序 返回与这些 id 关联的值的列表。然后，将 ptr 更新为最后那个 id + 1 。 否则，返回一个空列表。 思路 # 模拟 # 代码 # 模拟 # class OrderedStream { private Map&amp;lt;Integer, String&amp;gt; map; private int ptr; public OrderedStream(int n) { this.</description>
     </item>
     
     <item>
