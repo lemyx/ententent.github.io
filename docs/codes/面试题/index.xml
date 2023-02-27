@@ -41,6 +41,15 @@ MAllk33</description>
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.08.-%E9%9B%B6%E7%9F%A9%E9%98%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.08.-%E9%9B%B6%E7%9F%A9%E9%98%B5/</guid>
+      <description>面试题 01.08. 零矩阵 # 题目 # 编写一种算法，若M × N矩阵中某个元素为0，则将其所在的行与列清零。 思路 # 模拟 # 代码 # 模拟 # class Solution { public void setZeroes(int[][] matrix) { Set&amp;lt;Integer&amp;gt; row = new HashSet&amp;lt;&amp;gt;(), col = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; matrix.length; i++) { for (int j = 0; j &amp;lt; matrix[0].length; j++) { if (matrix[i][j] == 0) { row.add(i); col.add(j); } } } for (int r: row) { for (int j = 0; j &amp;lt; matrix[0].</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

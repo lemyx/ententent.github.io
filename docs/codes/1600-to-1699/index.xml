@@ -36,6 +36,17 @@ depth(&amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;) = 1 + depth(A)，其中
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1619.-Mean-of-Array-After-Removing-Some-Elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1619.-Mean-of-Array-After-Removing-Some-Elements/</guid>
+      <description>1614. Maximum Nesting Depth of the Parentheses # 题目 # 给你一个整数数组 arr ，请你删除最小 5% 的数字和最大 5% 的数字后，剩余数字的平均值。
+与 标准答案 误差在 10-5 的结果都被视为正确结果。
+思路 # 堆 # 排序 # 代码 # 栈 # class Solution { public double trimMean(int[] arr) { Queue&amp;lt;Integer&amp;gt; minimum = new PriorityQueue&amp;lt;&amp;gt;((o1, o2) -&amp;gt; o2-o1); Queue&amp;lt;Integer&amp;gt; maximum = new PriorityQueue&amp;lt;&amp;gt;(); int sum = 0; for (int num: arr) { sum += num; if (minimum.size() == 0.05 * arr.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1624.-Largest-Substring-Between-Two-Equal-Characters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

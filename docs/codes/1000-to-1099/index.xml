@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1000-to-1099/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1005.-Maximize-Sum-Of-Array-After-K-Negations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1005.-Maximize-Sum-Of-Array-After-K-Negations/</guid>
+      <description>1005. Maximize Sum Of Array After K Negations # 题目 # 给你一个整数数组 nums 和一个整数 k ，按以下方法修改该数组： 选择某个下标 i 并将 nums[i] 替换为 -nums[i] 。 重复这个过程恰好 k 次。可以多次选择同一个下标 i 。 以这种方式修改数组后，返回数组 可能的最大和 。 思路 # 模拟 # 按照数组中负数个数 numNeg 与 k 之间的大小关系进行讨论 numNeg &amp;gt;= k, 翻转最小的 k 个负数 numNeg &amp;lt; k 且 k - numNeg 为偶数, 则将所有负数翻转 numNeg &amp;lt; k 且 k - numNeg 为奇数, 则等同于 k = numNeg + 1 的情况 若minPos为0, 则可以将负号吸收 比较 minPos 和 -maxNeg 的相对大小 代码 # class Solution { public int largestSumAfterKNegations(int[] nums, int k) { Arrays.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
