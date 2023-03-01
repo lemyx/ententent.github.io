@@ -91,6 +91,15 @@ AllOne() 初始化数据结构的对象。 inc(String key) 字符串 key 的计�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0443.-String-Compression/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0443.-String-Compression/</guid>
+      <description>443. String Compression # 题目 # 给你一个字符数组 chars ，请使用下述算法压缩： 从一个空字符串 s 开始。对于 chars 中的每组 连续重复字符 ： 如果这一组长度为 1 ，则将字符追加到 s 中。 否则，需要向 s 追加字符，后跟这一组的长度。 压缩后得到的字符串 s 不应该直接返回 ，需要转储到字符数组 chars 中。需要注意的是，如果组长度为 10 或 10 以上，则在 chars 数组中会被拆分为多个字符。 请在 修改完输入数组后 ，返回该数组的新长度。 你必须设计并实现一个只使用常量额外空间的算法来解决此问题。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int compress(char[] chars) { int ans = 0; char cur = chars[0]; int cnt = 0, ptr = 0; for (char ch: chars) { if (ch == cur) cnt++; else { chars[ptr++] = cur; ans++; if (cnt &amp;gt; 1) { char[] arr = String.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -142,6 +151,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
 给定两个整数 x 和 y，计算并返回它们之间的汉明距离。
 思路 # 异或 + 统计 1 的数目
 代码 # 汉明距离 # class Solution { public int hammingDistance(int x, int y) { int sum = x ^ y; int hammingDistance = 0; for (int i=31; i&amp;gt;=0; i--) { if (((sum &amp;gt;&amp;gt; i) &amp;amp; 1) == 1) hammingDistance += 1; } return hammingDistance; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0468.-Validate-IP-Address/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0468.-Validate-IP-Address/</guid>
+      <description>0468. Validate IP Address # 题目 # 给定一个字符串 queryIP。如果是有效的 IPv4 地址，返回 &amp;quot;IPv4&amp;quot; ；如果是有效的 IPv6 地址，返回 &amp;quot;IPv6&amp;quot; ；如果不是上述类型的 IP 地址，返回 &amp;quot;Neither&amp;quot; 。 有效的IPv4地址 是 “x1.x2.x3.x4” 形式的IP地址。 其中 0 &amp;lt;= xi &amp;lt;= 255 且 xi 不能包含 前导零。例如: “192.168.1.1” 、 “192.168.1.0” 为有效IPv4地址， “192.168.01.1” 为无效IPv4地址; “192.168.1.00” 、 “192.168@1.1” 为无效IPv4地址。 一个有效的IPv6地址 是一个格式为“x1:x2:x3:x4:x5:x6:x7:x8” 的IP地址，其中: 1 &amp;lt;= xi.length &amp;lt;= 4 xi 是一个 十六进制字符串 ，可以包含数字、小写英文字母( &#39;a&#39; 到 &#39;f&#39; )和大写英文字母( &#39;A&#39; 到 &#39;F&#39; )。 在 xi 中允许前导零。 例如 &amp;quot;2001:0db8:85a3:0000:0000:8a2e:0370:7334&amp;quot; 和 &amp;quot;2001:db8:85a3:0:0:8A2E:0370:7334&amp;quot; 是有效的 IPv6 地址，而 &amp;quot;2001:0db8:85a3::8A2E:037j:7334&amp;quot; 和 &amp;quot;02001:0db8:85a3:0000:0000:8a2e:0370:7334&amp;quot; 是无效的 IPv6 地址。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isIPv4(String ip) { String[] parts = ip.</description>
     </item>
     
     <item>
