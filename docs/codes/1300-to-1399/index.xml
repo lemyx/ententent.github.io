@@ -27,6 +27,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1346.-Check-If-N-and-Its-Double-Exist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1346.-Check-If-N-and-Its-Double-Exist/</guid>
+      <description>1346. Check If N and Its Double Exist # 题目 # 给你一个整数数组 arr，请你检查是否存在两个整数 N 和 M，满足 N 是 M 的两倍（即，N = 2 * M）。 更正式地，检查是否存在两个下标 i 和 j 满足： i != j 0 &amp;lt;= i, j &amp;lt; arr.length arr[i] == 2 * arr[j] 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean checkIfExist(int[] arr) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: arr) { if (set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1374.-Generate-a-String-With-Characters-That-Have-Odd-Counts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

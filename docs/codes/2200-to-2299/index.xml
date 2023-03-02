@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2200-to-2299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2215.-Find-the-DIfference-of-Two-Arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2215.-Find-the-DIfference-of-Two-Arrays/</guid>
+      <description>2215. Find the Difference of Two Arrays # 题目 # 给你两个下标从 0 开始的整数数组 nums1 和 nums2 ，请你返回一个长度为 2 的列表 answer ，其中： answer[0] 是 nums1 中所有 不 存在于 nums2 中的 不同 整数组成的列表。 answer[1] 是 nums2 中所有 不 存在于 nums1 中的 不同 整数组成的列表。 **注意：**列表中的整数可以按 任意 顺序返回。 思路 # 哈希 # 代码 # 哈希 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; findDifference(int[] nums1, int[] nums2) { List&amp;lt;Integer&amp;gt; diff1 = new LinkedList&amp;lt;&amp;gt;(), diff2 = new LinkedList&amp;lt;&amp;gt;(); Set&amp;lt;Integer&amp;gt; set1 = new HashSet&amp;lt;&amp;gt;(), set2 = new HashSet&amp;lt;&amp;gt;(); for (int num: nums1) set1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

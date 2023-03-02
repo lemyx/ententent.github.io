@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0700-to-0799/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0703.-Kth-Largest-Element-in-a-Stream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0703.-Kth-Largest-Element-in-a-Stream/</guid>
+      <description>0703. Kth Largest Element in a Stream # 题目 # 设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。 请实现 KthLargest 类： KthLargest(int k, int[] nums) 使用整数 k 和整数流 nums 初始化对象。 int add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。 思路 # 堆 # 代码 # 堆 # class KthLargest { private int k; private Queue&amp;lt;Integer&amp;gt; pq; public KthLargest(int k, int[] nums) { this.k = k; this.pq = new PriorityQueue&amp;lt;&amp;gt;(); for (int num: nums) { if (this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0704.-Binary-Search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

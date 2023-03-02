@@ -712,6 +712,15 @@ LRUCache(int capacity) 以 正整数 作为容量 capacity 初始化 LRU 缓存 
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0165.-Compare-Version-Numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0165.-Compare-Version-Numbers/</guid>
+      <description>0165. Compare Version Numbers # 题目 # 给你两个版本号 version1 和 version2 ，请你比较它们。 版本号由一个或多个修订号组成，各修订号由一个 &#39;.&#39; 连接。每个修订号由 多位数字 组成，可能包含 前导零 。每个版本号至少包含一个字符。修订号从左到右编号，下标从 0 开始，最左边的修订号下标为 0 ，下一个修订号下标为 1 ，以此类推。例如，2.5.33 和 0.1 都是有效的版本号。 比较版本号时，请按从左到右的顺序依次比较它们的修订号。比较修订号时，只需比较 忽略任何前导零后的整数值 。也就是说，修订号 1 和修订号 001 相等 。如果版本号没有指定某个下标处的修订号，则该修订号视为 0 。例如，版本 1.0 小于版本 1.1 ，因为它们下标为 0 的修订号相同，而下标为 1 的修订号分别为 0 和 1 ，0 &amp;lt; 1 。 返回规则如下： 如果 *version1* &amp;gt; *version2* 返回 1， 如果 *version1* &amp;lt; *version2* 返回 -1， 除此之外返回 0。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int compareVersion(String version1, String version2) { String[] version1_parts = version1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1177,6 +1186,15 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0300-to-0399/0392.-Is-Subsequence/</guid>
       <description> 0392. Is Subsequence # 题目 # 给定字符串 s 和 t ，判断 s 是否为 t 的子序列。 字符串的一个子序列是原始字符串删除一些（也可以不删除）字符而不改变剩余字符相对位置形成的新字符串。 （例如，&amp;quot;ace&amp;quot;是&amp;quot;abcde&amp;quot;的一个子序列，而&amp;quot;aec&amp;quot;不是）。 思路 # 代码 # class Solution { public boolean isSubsequence(String s, String t) { int i = 0, j = 0; while (i &amp;lt; s.length() &amp;amp;&amp;amp; j &amp;lt; t.length()) { if (s.charAt(i) == t.charAt(j)) i++; j++; } return i == s.length(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0400.-Nth-Digit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0400.-Nth-Digit/</guid>
+      <description>0400. Nth Digit # 题目 # 给你一个整数 n ，请你在无限的整数序列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...] 中找出并返回第 n 位上的数字。 模拟 # 代码 # 模拟 # class Solution { public int findNthDigit(int n) { /** * 1位数有9个 * 2位数有10~99 共90个 * 3位数有100~999 共900个 * 4位数有1000~9999 共9000个 */ /** * 1. 首先确定第n位数所对应的数字是k位数 * 2. 然后确定第n位数中第i个数字 * 3. 对这个数字分解各数位, 然后返回 */ int sum = 0, k = 0; while (sum &amp;lt; n) { k++; sum += 9 * Math.</description>
     </item>
     
     <item>
@@ -1689,6 +1707,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
       <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/</guid>
       <description>693. Binary Number with Alternating Bits # 题目 # 给定一个正整数，检查其二进制表示是否总是 0、1 交替出现。换言之，二进制表示中相邻两位的数字永不相同。
 思路 # 代码 # class Solution { public boolean hasAlternatingBits(int n) { /** 先定位最高位的 1 */ int start = 0; for (int i = 30; i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == 0) continue; start = i; break; } /** 判断数 n 的二进制表示中相邻两位的数字永不相同 */ for (int i = start - 1, lastBit = ((n &amp;gt;&amp;gt; start) &amp;amp; 1); i &amp;gt;= 0; i--) { if (((n &amp;gt;&amp;gt; i) &amp;amp; 1) == lastBit) return false; lastBit = lastBit = 1 ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0703.-Kth-Largest-Element-in-a-Stream/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0703.-Kth-Largest-Element-in-a-Stream/</guid>
+      <description>0703. Kth Largest Element in a Stream # 题目 # 设计一个找到数据流中第 k 大元素的类（class）。注意是排序后的第 k 大元素，不是第 k 个不同的元素。 请实现 KthLargest 类： KthLargest(int k, int[] nums) 使用整数 k 和整数流 nums 初始化对象。 int add(int val) 将 val 插入数据流 nums 后，返回当前数据流中第 k 大的元素。 思路 # 堆 # 代码 # 堆 # class KthLargest { private int k; private Queue&amp;lt;Integer&amp;gt; pq; public KthLargest(int k, int[] nums) { this.k = k; this.pq = new PriorityQueue&amp;lt;&amp;gt;(); for (int num: nums) { if (this.</description>
     </item>
     
     <item>
@@ -2333,6 +2360,15 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
       <description>1342. Number of Steps to Reduce a Number to Zero # 题目 # 给你一个非负整数 nums，返回将它变为 0 所需要的步数。
 如果当前数字是偶数，则将它除以 2，否则减去 1。
 思路 # 模拟 数学 + 位运算 可从如下角度考虑模拟过程: 若 nums 最低位非 1，则进行右移 若 nums 最低位为 1，则消减最低位的 1 总操作次数等于: 最高位 1 的右移次数 + nums 的二进制表示中 1 的个数 代码 # 模拟 # class Solution { public int numberOfSteps(int num) { int step = 0; while (num != 0 &amp;amp;&amp;amp; ++step &amp;gt; 0) num = (num &amp;amp; 1 == 0) ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1346.-Check-If-N-and-Its-Double-Exist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1346.-Check-If-N-and-Its-Double-Exist/</guid>
+      <description>1346. Check If N and Its Double Exist # 题目 # 给你一个整数数组 arr，请你检查是否存在两个整数 N 和 M，满足 N 是 M 的两倍（即，N = 2 * M）。 更正式地，检查是否存在两个下标 i 和 j 满足： i != j 0 &amp;lt;= i, j &amp;lt; arr.length arr[i] == 2 * arr[j] 思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean checkIfExist(int[] arr) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: arr) { if (set.</description>
     </item>
     
     <item>
@@ -3119,6 +3155,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2215.-Find-the-DIfference-of-Two-Arrays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2215.-Find-the-DIfference-of-Two-Arrays/</guid>
+      <description>2215. Find the Difference of Two Arrays # 题目 # 给你两个下标从 0 开始的整数数组 nums1 和 nums2 ，请你返回一个长度为 2 的列表 answer ，其中： answer[0] 是 nums1 中所有 不 存在于 nums2 中的 不同 整数组成的列表。 answer[1] 是 nums2 中所有 不 存在于 nums1 中的 不同 整数组成的列表。 **注意：**列表中的整数可以按 任意 顺序返回。 思路 # 哈希 # 代码 # 哈希 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; findDifference(int[] nums1, int[] nums2) { List&amp;lt;Integer&amp;gt; diff1 = new LinkedList&amp;lt;&amp;gt;(), diff2 = new LinkedList&amp;lt;&amp;gt;(); Set&amp;lt;Integer&amp;gt; set1 = new HashSet&amp;lt;&amp;gt;(), set2 = new HashSet&amp;lt;&amp;gt;(); for (int num: nums1) set1.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3561,6 +3606,15 @@ MAllk33</description>
       <description>面试题 05.07. 配对交换 # 题目 # 配对交换，编写代码，交换某个整数的奇数位和偶数位，尽量使用较少的指令。
 即将位0与位1交换，位2与位3交换，以此类推。
 思路 # 位运算 代码 # local picture # class Solution { public int exchangeBits(int num) { int odd = 1 &amp;lt;&amp;lt; 1, even = 1 &amp;lt;&amp;lt; 0; while (0 &amp;lt;= odd &amp;amp;&amp;amp; odd &amp;lt;= (1 &amp;lt;&amp;lt; 29)) { if (((num &amp;amp; odd) != 0) &amp;amp;&amp;amp; (num &amp;amp; even) == 0) || (num &amp;amp; odd) == 0 &amp;amp;&amp;amp; (num &amp;amp; even) != 0) { num ^= odd ^ even; } odd &amp;lt;= 2; even &amp;lt;= 2; } return num; } } global picture # class Solution { public int exchangeBits(int num) { return ((num &amp;amp; 0xaaaaaaaa) &amp;gt;&amp;gt; 1) | ((num &amp;amp; 0x55555555) &amp;lt;&amp;lt; 1); } } 致谢 # 我要出去乱说</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-16.07.-%E6%9C%80%E5%A4%A7%E6%95%B0%E5%80%BC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-16.07.-%E6%9C%80%E5%A4%A7%E6%95%B0%E5%80%BC/</guid>
+      <description>面试题 16.07. 最大数值 # 题目 # 编写一个方法，找出两个数字a和b中最大的那一个。 不得使用if-else或其他比较运算符。 思路 # 位运算 # 如果a &amp;gt; b，则k为1，否则为0。如果给定k，你能返回最大值吗（没有比较或if-else逻辑）？ 如果当a &amp;gt; b时，k等于1，那么当k等于0时则相反，然后你可以返回a*k + b*(1-k) 。但你如何创建k？ 当a &amp;gt; b时，a – b &amp;gt; 0。你能得到a – b的符号位吗？ 你考虑过如何处理a – b中的整数溢出吗？ 代码 # 位运算 # class Solution { public int maximum(int a, int b) { long res = (long)a - (long)b; long sign = (res &amp;gt;&amp;gt; 63) &amp;amp; 1; /** 若sign==1, 则a&amp;lt;b 否则 a &amp;gt;= b */ return (int)(1-sign) * a + (int)sign * b; } } 致谢 # Ripple</description>
     </item>
     
     <item>

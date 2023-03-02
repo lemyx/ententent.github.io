@@ -109,5 +109,14 @@ MAllk33</description>
 思路 # 位运算 代码 # local picture # class Solution { public int exchangeBits(int num) { int odd = 1 &amp;lt;&amp;lt; 1, even = 1 &amp;lt;&amp;lt; 0; while (0 &amp;lt;= odd &amp;amp;&amp;amp; odd &amp;lt;= (1 &amp;lt;&amp;lt; 29)) { if (((num &amp;amp; odd) != 0) &amp;amp;&amp;amp; (num &amp;amp; even) == 0) || (num &amp;amp; odd) == 0 &amp;amp;&amp;amp; (num &amp;amp; even) != 0) { num ^= odd ^ even; } odd &amp;lt;= 2; even &amp;lt;= 2; } return num; } } global picture # class Solution { public int exchangeBits(int num) { return ((num &amp;amp; 0xaaaaaaaa) &amp;gt;&amp;gt; 1) | ((num &amp;amp; 0x55555555) &amp;lt;&amp;lt; 1); } } 致谢 # 我要出去乱说</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-16.07.-%E6%9C%80%E5%A4%A7%E6%95%B0%E5%80%BC/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-16.07.-%E6%9C%80%E5%A4%A7%E6%95%B0%E5%80%BC/</guid>
+      <description>面试题 16.07. 最大数值 # 题目 # 编写一个方法，找出两个数字a和b中最大的那一个。 不得使用if-else或其他比较运算符。 思路 # 位运算 # 如果a &amp;gt; b，则k为1，否则为0。如果给定k，你能返回最大值吗（没有比较或if-else逻辑）？ 如果当a &amp;gt; b时，k等于1，那么当k等于0时则相反，然后你可以返回a*k + b*(1-k) 。但你如何创建k？ 当a &amp;gt; b时，a – b &amp;gt; 0。你能得到a – b的符号位吗？ 你考虑过如何处理a – b中的整数溢出吗？ 代码 # 位运算 # class Solution { public int maximum(int a, int b) { long res = (long)a - (long)b; long sign = (res &amp;gt;&amp;gt; 63) &amp;amp; 1; /** 若sign==1, 则a&amp;lt;b 否则 a &amp;gt;= b */ return (int)(1-sign) * a + (int)sign * b; } } 致谢 # Ripple</description>
+    </item>
+    
   </channel>
 </rss>

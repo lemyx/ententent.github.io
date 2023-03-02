@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/0400-to-0499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0400.-Nth-Digit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0400.-Nth-Digit/</guid>
+      <description>0400. Nth Digit # 题目 # 给你一个整数 n ，请你在无限的整数序列 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, ...] 中找出并返回第 n 位上的数字。 模拟 # 代码 # 模拟 # class Solution { public int findNthDigit(int n) { /** * 1位数有9个 * 2位数有10~99 共90个 * 3位数有100~999 共900个 * 4位数有1000~9999 共9000个 */ /** * 1. 首先确定第n位数所对应的数字是k位数 * 2. 然后确定第n位数中第i个数字 * 3. 对这个数字分解各数位, 然后返回 */ int sum = 0, k = 0; while (sum &amp;lt; n) { k++; sum += 9 * Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
