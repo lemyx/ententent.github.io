@@ -16,6 +16,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/</guid>
+      <description>0915. Partition Array into Disjoint Intervals # 题目 # 给定一个数组 nums ，将其划分为两个连续子数组 left 和 right， 使得： left 中的每个元素都小于或等于 right 中的每个元素。 left 和 right 都是非空的。 left 的长度要尽可能小。 在完成这样的分组后返回 left 的 长度 。 用例可以保证存在这样的划分方法。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int partitionDisjoint(int[] nums) { int[] leftMaximum = new int[nums.length], rightMinimum = new int[nums.length]; leftMaximum[0] = nums[0]; for (int i = 1; i &amp;lt; nums.length; i++) leftMaximum[i] = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -7,6 +7,24 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1300-to-1399/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1309.-Decrypt-String-from-Alphabet-to-Integer-Mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1309.-Decrypt-String-from-Alphabet-to-Integer-Mapping/</guid>
+      <description>1309. Decrypt String from Alphabet to Integer Mapping # 题目 # 给你一个字符串 s，它由数字（&#39;0&#39; - &#39;9&#39;）和 &#39;#&#39; 组成。我们希望按下述规则将 s 映射为一些小写英文字符： 字符（&#39;a&#39; - &#39;i&#39;）分别用（&#39;1&#39; - &#39;9&#39;）表示。 字符（&#39;j&#39; - &#39;z&#39;）分别用（&#39;10#&#39; - &#39;26#&#39;）表示。 返回映射之后形成的新字符串。 题目数据保证映射始终唯一。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mapping(String s) { switch (s) { case &amp;#34;1&amp;#34;: return &amp;#34;a&amp;#34;; case &amp;#34;2&amp;#34;: return &amp;#34;b&amp;#34;; case &amp;#34;3&amp;#34;: return &amp;#34;c&amp;#34;; case &amp;#34;4&amp;#34;: return &amp;#34;d&amp;#34;; case &amp;#34;5&amp;#34;: return &amp;#34;e&amp;#34;; case &amp;#34;6&amp;#34;: return &amp;#34;f&amp;#34;; case &amp;#34;7&amp;#34;: return &amp;#34;g&amp;#34;; case &amp;#34;8&amp;#34;: return &amp;#34;h&amp;#34;; case &amp;#34;9&amp;#34;: return &amp;#34;i&amp;#34;; case &amp;#34;10#&amp;#34;: return &amp;#34;j&amp;#34;; case &amp;#34;11#&amp;#34;: return &amp;#34;k&amp;#34;; case &amp;#34;12#&amp;#34;: return &amp;#34;l&amp;#34;; case &amp;#34;13#&amp;#34;: return &amp;#34;m&amp;#34;; case &amp;#34;14#&amp;#34;: return &amp;#34;n&amp;#34;; case &amp;#34;15#&amp;#34;: return &amp;#34;o&amp;#34;; case &amp;#34;16#&amp;#34;: return &amp;#34;p&amp;#34;; case &amp;#34;17#&amp;#34;: return &amp;#34;q&amp;#34;; case &amp;#34;18#&amp;#34;: return &amp;#34;r&amp;#34;; case &amp;#34;19#&amp;#34;: return &amp;#34;s&amp;#34;; case &amp;#34;20#&amp;#34;: return &amp;#34;t&amp;#34;; case &amp;#34;21#&amp;#34;: return &amp;#34;u&amp;#34;; case &amp;#34;22#&amp;#34;: return &amp;#34;v&amp;#34;; case &amp;#34;23#&amp;#34;: return &amp;#34;w&amp;#34;; case &amp;#34;24#&amp;#34;: return &amp;#34;x&amp;#34;; case &amp;#34;25#&amp;#34;: return &amp;#34;y&amp;#34;; case &amp;#34;26#&amp;#34;: return &amp;#34;z&amp;#34;; } return &amp;#34;&amp;#34;; } public String freqAlphabets(String s) { String ans = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1323.-Maximum-69-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1323.-Maximum-69-Number/</guid>
+      <description> 1323. Maximum 69 Number # 题目 # 给你一个仅由数字 6 和 9 组成的正整数 num。 你最多只能翻转一位数字，将 6 变成 9，或者把 9 变成 6 。 请返回你可以得到的最大数字。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximum69Number(int num) { char[] charArray = String.valueOf(num).toCharArray(); for (int i = 0; i &amp;lt; charArray.length; i++) { if (charArray[i] == &amp;#39;6&amp;#39;) { charArray[i] = &amp;#39;9&amp;#39;; break; } } return Integer.parseInt(String.valueOf(charArray)); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

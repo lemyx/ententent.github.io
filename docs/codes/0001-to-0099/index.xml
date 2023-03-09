@@ -229,6 +229,15 @@ countAndSay(1) = &amp;quot;1&amp;quot; countAndSay(n) 是对 countAndSay(n-1) �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</guid>
+      <description>0073. Set Matrix Zeros # 题目 # 给定一个 m x n 的矩阵，如果一个元素为 0 ，则将其所在行和列的所有元素都设为 0 。请使用 原地 算法 思路 # 模拟 # 代码 # 模拟 # class Solution { public void setZeroes(int[][] matrix) { boolean makeFirstRowZero = false, makeFirstColZero = false; for (int j = 0; j &amp;lt; matrix[0].length; j++) if (matrix[0][j] == 0) makeFirstRowZero = true; for (int i = 0; i &amp;lt; matrix.length; i++) if (matrix[i][0] == 0) makeFirstColZero = true; for (int i = 1; i &amp;lt; matrix.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

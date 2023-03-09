@@ -93,6 +93,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0670.-Maximum-Swap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0670.-Maximum-Swap/</guid>
+      <description>0670. Maximum Swap # 题目 # 给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] seperateDigits(int num) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); while (num &amp;gt; 0) { stack.push(num % 10); num /= 10; } int[] ret = new int[stack.size()]; for (int i = 0; i &amp;lt; ret.length; i++) ret[i] = stack.pop(); return ret; } public int[] findRightMaximum(int[] digits) { int N = digits.length; int[] maximum = new int[N]; for (int i = N-1; i &amp;gt;= 0; i--) { maximum[i] = i == N - 1 ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0682.-Baseball-Game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

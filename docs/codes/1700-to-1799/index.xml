@@ -28,6 +28,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1710.-Maximum-Units-on-a-Truck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1710.-Maximum-Units-on-a-Truck/</guid>
+      <description>1710. Maximum Units on a Truck # 题目 # 请你将一些箱子装在 一辆卡车 上。给你一个二维数组 boxTypes ，其中 boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi] ： numberOfBoxesi 是类型 i 的箱子的数量。 numberOfUnitsPerBoxi 是类型 i 每个箱子可以装载的单元数量。 整数 truckSize 表示卡车上可以装载 箱子 的 最大数量 。只要箱子数量不超过 truckSize ，你就可以选择任意箱子装到卡车上。 返回卡车可以装载 单元 的 最大 总数*。* 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumUnits(int[][] boxTypes, int truckSize) { Arrays.sort(boxTypes, (o1,o2)-&amp;gt;o2[1]-o1[1]); int ans = 0; for (int[] boxType: boxTypes) { if (truckSize == 0) break; int diff = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -129,6 +138,15 @@
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/</guid>
       <description>1773. Count Items Mathcing a Rule # 题目 # 给你一个数组 items ，其中 items[i] = [typei, colori, namei] ，描述第 i 件物品的类型、颜色以及名称。 另给你一条由两个字符串 ruleKey 和 ruleValue 表示的检索规则。 如果第 i 件物品能满足下述条件之一，则认为该物品与给定的检索规则 匹配 ： ruleKey == &amp;quot;type&amp;quot; 且 ruleValue == typei 。 ruleKey == &amp;quot;color&amp;quot; 且 ruleValue == colori 。 ruleKey == &amp;quot;name&amp;quot; 且 ruleValue == namei 。 统计并返回 匹配检索规则的物品数量 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countMatches(List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; items, String ruleKey, String ruleValue) { int count = 0; for (List&amp;lt;String&amp;gt; item: items) { switch (ruleKey) { case &amp;#34;type&amp;#34; : if (item.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1779.-Find-Nearest-Point-That-Has-the-Same-X-or-Y-Coordinate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1779.-Find-Nearest-Point-That-Has-the-Same-X-or-Y-Coordinate/</guid>
+      <description>1779. Find Neaerest Point That Has the Same X or Y Coordinate # 题目 # 给你两个整数 x 和 y ，表示你在一个笛卡尔坐标系下的 (x, y) 处。同时，在同一个坐标系下给你一个数组 points ，其中 points[i] = [ai, bi] 表示在 (ai, bi) 处有一个点。当一个点与你所在的位置有相同的 x 坐标或者相同的 y 坐标时，我们称这个点是 有效的 。 请返回距离你当前位置 曼哈顿距离 最近的 有效 点的下标（下标从 0 开始）。如果有多个最近的有效点，请返回下标 最小 的一个。如果没有有效点，请返回 -1 。 两个点 (x1, y1) 和 (x2, y2) 之间的 曼哈顿距离 为 abs(x1 - x2) + abs(y1 - y2) 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isValid(int x, int y, int[] point) { return x == point[0] || y == point[1]; } public int manhattan(int x, int y, int[] point) { return Math.</description>
     </item>
     
     <item>

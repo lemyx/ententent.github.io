@@ -48,6 +48,15 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0423.-Reconstruct-Original-Digits-from-English/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0423.-Reconstruct-Original-Digits-from-English/</guid>
+      <description>0423. Reconstruct Original Digits from English # 题目 # 给你一个字符串 s ，其中包含字母顺序打乱的用英文单词表示的若干数字（0-9）。按 升序 返回原始的数字。 例如: 输入：s = &amp;#34;owoztneoer&amp;#34; 输出：&amp;#34;012&amp;#34; 思路 # 模拟 # 代码 # 模拟 # class Solution { public String originalDigits(String s) { /** zero -&amp;gt; &amp;#39;z&amp;#39; one -&amp;gt; &amp;#39;o&amp;#39; two -&amp;gt; &amp;#39;w&amp;#39; three -&amp;gt; &amp;#39;h&amp;#39; four -&amp;gt; &amp;#39;u&amp;#39; five -&amp;gt; &amp;#39;f&amp;#39; six -&amp;gt; &amp;#39;x&amp;#39; seven -&amp;gt; &amp;#39;s&amp;#39; eight -&amp;gt; &amp;#39;g&amp;#39; nine -&amp;gt; &amp;#39;i&amp;#39; */ int[] cnt = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

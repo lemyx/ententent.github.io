@@ -42,5 +42,14 @@
       <description>1893. Check if All the Integers in a Range Are Covered # 题目 # 给你一个二维整数数组 ranges 和两个整数 left 和 right 。每个 ranges[i] = [starti, endi] 表示一个从 starti 到 endi 的 闭区间 。 如果闭区间 [left, right] 内每个整数都被 ranges 中 至少一个 区间覆盖，那么请你返回 true ，否则返回 false 。 已知区间 ranges[i] = [starti, endi] ，如果整数 x 满足 starti &amp;lt;= x &amp;lt;= endi ，那么我们称整数x 被覆盖了。 思路 # 模拟 # 树状数组 # 线段树 # 代码 # 模拟 # class Solution { public boolean isCovered(int[][] ranges, int left, int right) { int[] mark = new int[51]; for (int[] range: ranges) { for (int k = range[0]; k &amp;lt;= range[1]; k++) { mark[k] = 1; } } for (int i = left; i &amp;lt;= right; i++) { if (mark[i] == 0) return false; } return true; } } 致谢 # 宫水三叶</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/</guid>
+      <description>1894. Find the Student that Will Replace the Chalk # 题目 # 一个班级里有 n 个学生，编号为 0 到 n - 1 。每个学生会依次回答问题，编号为 0 的学生先回答，然后是编号为 1 的学生，以此类推，直到编号为 n - 1 的学生，然后老师会重复这个过程，重新从编号为 0 的学生开始回答问题。 给你一个长度为 n 且下标从 0 开始的整数数组 chalk 和一个整数 k 。一开始粉笔盒里总共有 k 支粉笔。当编号为 i 的学生回答问题时，他会消耗 chalk[i] 支粉笔。如果剩余粉笔数量 严格小于 chalk[i] ，那么学生 i 需要 补充 粉笔。 请你返回需要 补充 粉笔的学生 编号 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int chalkReplacer(int[] chalk, int k) { long sum = 0; for (int num: chalk) sum += num; k = (int)(k % sum); for (int i = 0; i &amp;lt; chalk.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -341,6 +341,15 @@ countAndSay(1) = &amp;quot;1&amp;quot; countAndSay(n) 是对 countAndSay(n-1) �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</guid>
+      <description>0073. Set Matrix Zeros # 题目 # 给定一个 m x n 的矩阵，如果一个元素为 0 ，则将其所在行和列的所有元素都设为 0 。请使用 原地 算法 思路 # 模拟 # 代码 # 模拟 # class Solution { public void setZeroes(int[][] matrix) { boolean makeFirstRowZero = false, makeFirstColZero = false; for (int j = 0; j &amp;lt; matrix[0].length; j++) if (matrix[0][j] == 0) makeFirstRowZero = true; for (int i = 0; i &amp;lt; matrix.length; i++) if (matrix[i][0] == 0) makeFirstColZero = true; for (int i = 1; i &amp;lt; matrix.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1231,6 +1240,15 @@ answer[i] == i （以字符串形式）如果上述条件全不满足。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0423.-Reconstruct-Original-Digits-from-English/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0423.-Reconstruct-Original-Digits-from-English/</guid>
+      <description>0423. Reconstruct Original Digits from English # 题目 # 给你一个字符串 s ，其中包含字母顺序打乱的用英文单词表示的若干数字（0-9）。按 升序 返回原始的数字。 例如: 输入：s = &amp;#34;owoztneoer&amp;#34; 输出：&amp;#34;012&amp;#34; 思路 # 模拟 # 代码 # 模拟 # class Solution { public String originalDigits(String s) { /** zero -&amp;gt; &amp;#39;z&amp;#39; one -&amp;gt; &amp;#39;o&amp;#39; two -&amp;gt; &amp;#39;w&amp;#39; three -&amp;gt; &amp;#39;h&amp;#39; four -&amp;gt; &amp;#39;u&amp;#39; five -&amp;gt; &amp;#39;f&amp;#39; six -&amp;gt; &amp;#39;x&amp;#39; seven -&amp;gt; &amp;#39;s&amp;#39; eight -&amp;gt; &amp;#39;g&amp;#39; nine -&amp;gt; &amp;#39;i&amp;#39; */ int[] cnt = new int[26]; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1689,6 +1707,15 @@ MyCircularDeque(int k) ：构造函数,双端队列最大为 k 。 boolean inser
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0670.-Maximum-Swap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0670.-Maximum-Swap/</guid>
+      <description>0670. Maximum Swap # 题目 # 给定一个非负整数，你至多可以交换一次数字中的任意两位。返回你能得到的最大值。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] seperateDigits(int num) { Stack&amp;lt;Integer&amp;gt; stack = new Stack&amp;lt;&amp;gt;(); while (num &amp;gt; 0) { stack.push(num % 10); num /= 10; } int[] ret = new int[stack.size()]; for (int i = 0; i &amp;lt; ret.length; i++) ret[i] = stack.pop(); return ret; } public int[] findRightMaximum(int[] digits) { int N = digits.length; int[] maximum = new int[N]; for (int i = N-1; i &amp;gt;= 0; i--) { maximum[i] = i == N - 1 ?</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0600-to-0699/0682.-Baseball-Game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1775,6 +1802,15 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0720-Longest-Word-in-Dictionary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0720-Longest-Word-in-Dictionary/</guid>
+      <description>720. Longest Word in Dictionary # 题目 # 给出一个字符串数组 words 组成的一本英语词典。返回 words 中最长的一个单词，该单词是由 words 词典中其他单词逐步添加一个字母组成。 若其中有多个可行的答案，则返回答案中字典序最小的单词。若无答案，则返回空字符串。 例如: 输入：words = [&amp;#34;w&amp;#34;,&amp;#34;wo&amp;#34;,&amp;#34;wor&amp;#34;,&amp;#34;worl&amp;#34;, &amp;#34;world&amp;#34;] 输出：&amp;#34;world&amp;#34; 解释： 单词&amp;#34;world&amp;#34;可由&amp;#34;w&amp;#34;, &amp;#34;wo&amp;#34;, &amp;#34;wor&amp;#34;, 和 &amp;#34;worl&amp;#34;逐步添加一个字母组成。 思路 # 排序+哈希 # 前缀树 # 代码 # 排序+哈希 # class Solution { public String longestWord(String[] words) { Arrays.sort(words); Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); set.add(&amp;#34;&amp;#34;); String ans = &amp;#34;&amp;#34;; for (String word: words) { if (set.contains(word.substring(0, word.length()-1))) { set.add(word); if (ans.length() &amp;lt; word.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1836,9 +1872,22 @@ MaxStack() 初始化栈对象 void push(int x) 将元素 x 压入栈中 int pop(
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/</guid>
-      <description>747. Largest Number At Least Twice of Others # 题目 # 给定整数数组 nums ，其中存在 唯一的 最大整数 。
+      <description>0747. Largest Number At Least Twice of Others # 题目 # 给定整数数组 nums ，其中存在 唯一的 最大整数 。
 找出数组中的最大元素并检查它是否 至少是数组中每个其他数字的两倍 。如果是，则返回 最大元素的下标 ，否则返回 -1 。
 思路 # 双指针 # 代码 # 双指针 # class Solution { public int dominantIndex(int[] nums) { if (nums.length == 1) return 0; /** 双指针 */ int first = -1, second = -1; if (nums[0] &amp;gt;= nums[1]) { first = 0; second = 1; } else { first = 1; second = 0; } /** 遍历 */ for (int i = 2; i &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0748.-Shortest-Completing-Word/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0700-to-0799/0748.-Shortest-Completing-Word/</guid>
+      <description>0748. Shortest Completing Word # 题目 # 给你一个字符串 licensePlate 和一个字符串数组 words ，请你找出 words 中的 最短补全词 。
+补全词 是一个包含 licensePlate 中所有字母的单词。忽略 licensePlate 中的 数字和空格 。不区分大小写。如果某个字母在 licensePlate 中出现不止一次，那么该字母在补全词中的出现次数应当一致或者更多。
+例如：licensePlate`` = &amp;quot;aBc 12c&amp;quot;，那么它的补全词应当包含字母 &#39;a&#39;、&#39;b&#39; （忽略大写）和两个 &#39;c&#39; 。可能的 补全词 有 &amp;quot;abccdef&amp;quot;、&amp;quot;caaacab&amp;quot; 以及 &amp;quot;cbca&amp;quot; 。
+请返回 words 中的 最短补全词 。题目数据保证一定存在一个最短补全词。当有多个单词都符合最短补全词的匹配条件时取 words 中 第一个 出现的那个。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public int[] statistics; public void getStatistics(String word, int[] cnt) { for (int i = 0; i &amp;lt; word.</description>
     </item>
     
     <item>
@@ -2039,6 +2088,15 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/</guid>
       <description> 0905. Sort Array by Parity # 题目 # 给定整数数组 nums，将 nums 中偶数元素移动到数组前面，奇数元素移动到数组末端。 返回满足此条件的 任一数组 作为答案。 思路 # 双指针 # 代码 # 双指针 # class Solution { boolean isEven(int num) { return num % 2 == 0; } boolean isOdd(int num) { return num % 2 == 1; } public int[] sortArrayByParity(int[] nums) { int i = 0, j = nums.length - 1; while (i &amp;lt; j) { if (isEven(nums[i])) i += 1; else if (isOdd(nums[j])) j -= 1; else if (isEven(nums[i]) == isOdd(nums[j])) { nums[i] ^= nums[j]; nums[j] ^= nums[i]; nums[i] ^= nums[j]; i += 1; j -= 1; } } return nums; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/</guid>
+      <description>0915. Partition Array into Disjoint Intervals # 题目 # 给定一个数组 nums ，将其划分为两个连续子数组 left 和 right， 使得： left 中的每个元素都小于或等于 right 中的每个元素。 left 和 right 都是非空的。 left 的长度要尽可能小。 在完成这样的分组后返回 left 的 长度 。 用例可以保证存在这样的划分方法。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int partitionDisjoint(int[] nums) { int[] leftMaximum = new int[nums.length], rightMinimum = new int[nums.length]; leftMaximum[0] = nums[0]; for (int i = 1; i &amp;lt; nums.length; i++) leftMaximum[i] = Math.</description>
     </item>
     
     <item>
@@ -2344,6 +2402,24 @@ ImmutableListNode.printValue()：打印当前节点的值。 ImmutableListNode.g
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1309.-Decrypt-String-from-Alphabet-to-Integer-Mapping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1309.-Decrypt-String-from-Alphabet-to-Integer-Mapping/</guid>
+      <description>1309. Decrypt String from Alphabet to Integer Mapping # 题目 # 给你一个字符串 s，它由数字（&#39;0&#39; - &#39;9&#39;）和 &#39;#&#39; 组成。我们希望按下述规则将 s 映射为一些小写英文字符： 字符（&#39;a&#39; - &#39;i&#39;）分别用（&#39;1&#39; - &#39;9&#39;）表示。 字符（&#39;j&#39; - &#39;z&#39;）分别用（&#39;10#&#39; - &#39;26#&#39;）表示。 返回映射之后形成的新字符串。 题目数据保证映射始终唯一。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String mapping(String s) { switch (s) { case &amp;#34;1&amp;#34;: return &amp;#34;a&amp;#34;; case &amp;#34;2&amp;#34;: return &amp;#34;b&amp;#34;; case &amp;#34;3&amp;#34;: return &amp;#34;c&amp;#34;; case &amp;#34;4&amp;#34;: return &amp;#34;d&amp;#34;; case &amp;#34;5&amp;#34;: return &amp;#34;e&amp;#34;; case &amp;#34;6&amp;#34;: return &amp;#34;f&amp;#34;; case &amp;#34;7&amp;#34;: return &amp;#34;g&amp;#34;; case &amp;#34;8&amp;#34;: return &amp;#34;h&amp;#34;; case &amp;#34;9&amp;#34;: return &amp;#34;i&amp;#34;; case &amp;#34;10#&amp;#34;: return &amp;#34;j&amp;#34;; case &amp;#34;11#&amp;#34;: return &amp;#34;k&amp;#34;; case &amp;#34;12#&amp;#34;: return &amp;#34;l&amp;#34;; case &amp;#34;13#&amp;#34;: return &amp;#34;m&amp;#34;; case &amp;#34;14#&amp;#34;: return &amp;#34;n&amp;#34;; case &amp;#34;15#&amp;#34;: return &amp;#34;o&amp;#34;; case &amp;#34;16#&amp;#34;: return &amp;#34;p&amp;#34;; case &amp;#34;17#&amp;#34;: return &amp;#34;q&amp;#34;; case &amp;#34;18#&amp;#34;: return &amp;#34;r&amp;#34;; case &amp;#34;19#&amp;#34;: return &amp;#34;s&amp;#34;; case &amp;#34;20#&amp;#34;: return &amp;#34;t&amp;#34;; case &amp;#34;21#&amp;#34;: return &amp;#34;u&amp;#34;; case &amp;#34;22#&amp;#34;: return &amp;#34;v&amp;#34;; case &amp;#34;23#&amp;#34;: return &amp;#34;w&amp;#34;; case &amp;#34;24#&amp;#34;: return &amp;#34;x&amp;#34;; case &amp;#34;25#&amp;#34;: return &amp;#34;y&amp;#34;; case &amp;#34;26#&amp;#34;: return &amp;#34;z&amp;#34;; } return &amp;#34;&amp;#34;; } public String freqAlphabets(String s) { String ans = &amp;#34;&amp;#34;; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1323.-Maximum-69-Number/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1323.-Maximum-69-Number/</guid>
+      <description> 1323. Maximum 69 Number # 题目 # 给你一个仅由数字 6 和 9 组成的正整数 num。 你最多只能翻转一位数字，将 6 变成 9，或者把 9 变成 6 。 请返回你可以得到的最大数字。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximum69Number(int num) { char[] charArray = String.valueOf(num).toCharArray(); for (int i = 0; i &amp;lt; charArray.length; i++) { if (charArray[i] == &amp;#39;6&amp;#39;) { charArray[i] = &amp;#39;9&amp;#39;; break; } } return Integer.parseInt(String.valueOf(charArray)); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2570,11 +2646,29 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1502.-Can-Make-Arithmetic-Progression-From-Sequence/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1502.-Can-Make-Arithmetic-Progression-From-Sequence/</guid>
+      <description> 1502. Can Make Arithmetic Progression From Sequence # 题目 # 给你一个数字数组 arr 。 如果一个数列中，任意相邻两项的差总等于同一个常数，那么这个数列就称为 等差数列 。 如果可以重新排列数组形成等差数列，请返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean canMakeArithmeticProgression(int[] arr) { Arrays.sort(arr); int diff = arr[0]-arr[1]; for (int i = 0; i &amp;lt; arr.length-1; i++) { if (arr[i]-arr[i+1] != diff) return false; } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</guid>
       <description>1518. Water Bottles # 题目 # 超市正在促销，你可以用 numExchange 个空水瓶从超市兑换一瓶水。最开始，你一共购入了 numBottles 瓶水。 如果喝掉了水瓶中的水，那么水瓶就会变成空的。 给你两个整数 numBottles 和 numExchange ，返回你 最多 可以喝到多少瓶水。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int numWaterBottles(int numBottles, int numExchange) { int drink = numBottles, empty = numBottles; while (empty / numExchange != 0) { drink += empty / numExchange; empty = empty / numExchange + empty % numExchange; } return drink; } } 数学 # 致谢 # 宫水三叶</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1550.-Three-Consecutive-Odds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1550.-Three-Consecutive-Odds/</guid>
+      <description> 1550. Three Consecutive Odds # 题目 # 给你一个整数数组 arr，请你判断数组中是否存在连续三个元素都是奇数的情况：如果存在，请返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean threeConsecutiveOdds(int[] arr) { for (int i = 0; i &amp;lt; arr.length; i++) { if (arr[i] % 2 == 1) { if ((i+1 &amp;lt; arr.length &amp;amp;&amp;amp; arr[i+1] % 2 == 1) &amp;amp;&amp;amp; (i+2 &amp;lt; arr.length &amp;amp;&amp;amp; arr[i+2] % 2 == 1)) return true; } } return false; } } </description>
     </item>
     
     <item>
@@ -2611,6 +2705,17 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1598.-Crawler-Log-Folder/</guid>
       <description>1598. Crawler Log Folder # 题目 # 每当用户执行变更文件夹操作时，LeetCode 文件系统都会保存一条日志记录。下面给出对变更操作的说明： &amp;quot;../&amp;quot; ：移动到当前文件夹的父文件夹。如果已经在主文件夹下，则 继续停留在当前文件夹 。 &amp;quot;./&amp;quot; ：继续停留在当前文件夹**。** &amp;quot;x/&amp;quot; ：移动到名为 x 的子文件夹中。题目数据 保证总是存在文件夹 x 。 给你一个字符串列表 logs ，其中 logs[i] 是用户在 ith 步执行的操作。 文件系统启动时位于主文件夹，然后执行 logs 中的操作。 执行完所有变更文件夹操作后，请你找出 返回主文件夹所需的最小步数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minOperations(String[] logs) { int ans = 0; for (String log: logs) { switch (log) { case &amp;#34;../&amp;#34;: if (ans &amp;gt; 0) ans -= 1; break; case &amp;#34;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1603.-Design-Parking-System/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1600-to-1699/1603.-Design-Parking-System/</guid>
+      <description>1603. Design Parking System # 题目 # 请你给一个停车场设计一个停车系统。停车场总共有三种不同大小的车位：大，中和小，每种尺寸分别有固定数目的车位。
+请你实现 ParkingSystem 类：
+ParkingSystem(int big, int medium, int small) 初始化 ParkingSystem 类，三个参数分别对应每种停车位的数目。 bool addCar(int carType) 检查是否有 carType 对应的停车位。 carType 有三种类型：大，中，小，分别用数字 1， 2 和 3 表示。一辆车只能停在 carType 对应尺寸的停车位中。如果没有空车位，请返回 false ，否则将该车停入车位并返回 true 。 思路 # 模拟 # 二进制分段 # 代码 # 模拟 # class ParkingSystem { private int big, medium, small; public ParkingSystem(int big, int medium, int small) { this.big = big; this.medium = medium; this.</description>
     </item>
     
     <item>
@@ -2826,6 +2931,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1710.-Maximum-Units-on-a-Truck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1710.-Maximum-Units-on-a-Truck/</guid>
+      <description>1710. Maximum Units on a Truck # 题目 # 请你将一些箱子装在 一辆卡车 上。给你一个二维数组 boxTypes ，其中 boxTypes[i] = [numberOfBoxesi, numberOfUnitsPerBoxi] ： numberOfBoxesi 是类型 i 的箱子的数量。 numberOfUnitsPerBoxi 是类型 i 每个箱子可以装载的单元数量。 整数 truckSize 表示卡车上可以装载 箱子 的 最大数量 。只要箱子数量不超过 truckSize ，你就可以选择任意箱子装到卡车上。 返回卡车可以装载 单元 的 最大 总数*。* 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maximumUnits(int[][] boxTypes, int truckSize) { Arrays.sort(boxTypes, (o1,o2)-&amp;gt;o2[1]-o1[1]); int ans = 0; for (int[] boxType: boxTypes) { if (truckSize == 0) break; int diff = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2931,6 +3045,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1779.-Find-Nearest-Point-That-Has-the-Same-X-or-Y-Coordinate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1779.-Find-Nearest-Point-That-Has-the-Same-X-or-Y-Coordinate/</guid>
+      <description>1779. Find Neaerest Point That Has the Same X or Y Coordinate # 题目 # 给你两个整数 x 和 y ，表示你在一个笛卡尔坐标系下的 (x, y) 处。同时，在同一个坐标系下给你一个数组 points ，其中 points[i] = [ai, bi] 表示在 (ai, bi) 处有一个点。当一个点与你所在的位置有相同的 x 坐标或者相同的 y 坐标时，我们称这个点是 有效的 。 请返回距离你当前位置 曼哈顿距离 最近的 有效 点的下标（下标从 0 开始）。如果有多个最近的有效点，请返回下标 最小 的一个。如果没有有效点，请返回 -1 。 两个点 (x1, y1) 和 (x2, y2) 之间的 曼哈顿距离 为 abs(x1 - x2) + abs(y1 - y2) 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isValid(int x, int y, int[] point) { return x == point[0] || y == point[1]; } public int manhattan(int x, int y, int[] point) { return Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2995,6 +3118,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/</guid>
+      <description>1894. Find the Student that Will Replace the Chalk # 题目 # 一个班级里有 n 个学生，编号为 0 到 n - 1 。每个学生会依次回答问题，编号为 0 的学生先回答，然后是编号为 1 的学生，以此类推，直到编号为 n - 1 的学生，然后老师会重复这个过程，重新从编号为 0 的学生开始回答问题。 给你一个长度为 n 且下标从 0 开始的整数数组 chalk 和一个整数 k 。一开始粉笔盒里总共有 k 支粉笔。当编号为 i 的学生回答问题时，他会消耗 chalk[i] 支粉笔。如果剩余粉笔数量 严格小于 chalk[i] ，那么学生 i 需要 补充 粉笔。 请你返回需要 补充 粉笔的学生 编号 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int chalkReplacer(int[] chalk, int k) { long sum = 0; for (int num: chalk) sum += num; k = (int)(k % sum); for (int i = 0; i &amp;lt; chalk.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3049,6 +3181,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2043.-Simple-Bank-System/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2043.-Simple-Bank-System/</guid>
+      <description>2043. Simple Bank System # 题目 # 你的任务是为一个很受欢迎的银行设计一款程序，以自动化执行所有传入的交易（转账，存款和取款）。银行共有 n 个账户，编号从 1 到 n 。每个账号的初始余额存储在一个下标从 0 开始的整数数组 balance 中，其中第 (i + 1) 个账户的初始余额是 balance[i] 。 请你执行所有 有效的 交易。如果满足下面全部条件，则交易 有效 ： 指定的账户数量在 1 和 n 之间，且 取款或者转账需要的钱的总数 小于或者等于 账户余额。 实现 Bank 类： Bank(long[] balance) 使用下标从 0 开始的整数数组 balance 初始化该对象。 boolean transfer(int account1, int account2, long money) 从编号为 account1 的账户向编号为 account2 的账户转帐 money 美元。如果交易成功，返回 true ，否则，返回 false 。 boolean deposit(int account, long money) 向编号为 account 的账户存款 money 美元。如果交易成功，返回 true ；否则，返回 false 。 boolean withdraw(int account, long money) 从编号为 account 的账户取款 money 美元。如果交易成功，返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Bank { private long[] balance; public Bank(long[] balance) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3078,6 +3219,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 注意：节点只有在同时存在前一个节点和后一个节点的情况下，才能成为一个 局部极大值点 / 极小值点 。
 给你一个链表 head ，返回一个长度为 2 的数组 [minDistance, maxDistance] ，其中 minDistance 是任意两个不同临界点之间的最小距离，maxDistance 是任意两个不同临界点之间的最大距离。如果临界点少于两个，则返回 [-1，-1] 。
 思路 # 在第一个节点存在的情况下，每遇到一个新的临界点，maxDistance 在原有基础上递增距离，minDistance 重新计算。 maxDistance 是所有临界点分段的距离之和。 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2069.-Walking-Robot-Simulation-ii/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2000-to-2099/2069.-Walking-Robot-Simulation-ii/</guid>
+      <description>2069. Walking Robot Simulation ii # 题目 # 给你一个在 XY 平面上的 width x height 的网格图，左下角 的格子为 (0, 0) ，右上角 的格子为 (width - 1, height - 1) 。网格图中相邻格子为四个基本方向之一（&amp;quot;North&amp;quot;，&amp;quot;East&amp;quot;，&amp;quot;South&amp;quot; 和 &amp;quot;West&amp;quot;）。一个机器人 初始 在格子 (0, 0) ，方向为 &amp;quot;East&amp;quot; 。 机器人可以根据指令移动指定的 步数 。每一步，它可以执行以下操作。 沿着当前方向尝试 往前一步 。 如果机器人下一步将到达的格子 超出了边界 ，机器人会 逆时针 转 90 度，然后再尝试往前一步。 如果机器人完成了指令要求的移动步数，它将停止移动并等待下一个指令。 请你实现 Robot 类： Robot(int width, int height) 初始化一个 width x height 的网格图，机器人初始在 (0, 0) ，方向朝 &amp;quot;East&amp;quot; 。 void move(int num) 给机器人下达前进 num 步的指令。 int[] getPos() 返回机器人当前所处的格子位置，用一个长度为 2 的数组 [x, y] 表示。 String getDir() 返回当前机器人的朝向，为 &amp;quot;North&amp;quot; ，&amp;quot;East&amp;quot; ，&amp;quot;South&amp;quot; 或者 &amp;quot;West&amp;quot; 。 思路 # 模拟 # 代码 # 模拟 # class Robot { private int maxWidth, maxHeight, curWidth, curHeight; private String dir; public Robot(int width, int height) { this.</description>
     </item>
     
     <item>
