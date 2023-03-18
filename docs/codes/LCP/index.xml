@@ -7,6 +7,42 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/LCP/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/01.-%E7%8C%9C%E6%95%B0%E5%AD%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/01.-%E7%8C%9C%E6%95%B0%E5%AD%97/</guid>
+      <description> LCP 01. 猜数字 # 题目 # 小A 和 小B 在玩猜数字。小B 每次从 1, 2, 3 中随机选择一个，小A 每次也从 1, 2, 3 中选择一个猜。他们一共进行三次这个游戏，请返回 小A 猜对了几次？ 输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int game(int[] guess, int[] answer) { int ans = 0; for (int i = 0; i &amp;lt; 3; i++) { if (guess[i] == answer[i]) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/</guid>
+      <description> LCP 06. 拿硬币 # 题目 # 桌上有 n 堆力扣币，每堆的数量保存在数组 coins 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minCount(int[] coins) { int ans = 0; for (int coin: coins) { ans += coin / 2 + coin % 2; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/17.-%E9%80%9F%E7%AE%97%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/17.-%E9%80%9F%E7%AE%97%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <description>LCP 17. 速算机器人 # 题目 # 小扣在秋日市集发现了一款速算机器人。店家对机器人说出两个数字（记作 x 和 y），请小扣说出计算指令： &amp;quot;A&amp;quot; 运算：使 x = 2 * x + y； &amp;quot;B&amp;quot; 运算：使 y = 2 * y + x。 在本次游戏中，店家说出的数字为 x = 1 和 y = 0，小扣说出的计算指令记作仅由大写字母 A、B 组成的字符串 s，字符串中字符的顺序表示计算顺序，请返回最终 x 与 y 的和为多少。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int calculate(String s) { int x = 1, y = 0; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/44.-%E5%BC%80%E5%B9%95%E5%BC%8F%E7%84%B0%E7%81%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/44.-%E5%BC%80%E5%B9%95%E5%BC%8F%E7%84%B0%E7%81%AB/</guid>
+      <description>LCP 44. 开幕式焰火 # 题目 # 「力扣挑战赛」开幕式开始了，空中绽放了一颗二叉树形的巨型焰火。 给定一棵二叉树 root 代表焰火，节点值表示巨型焰火这一位置的颜色种类。请帮小扣计算巨型焰火有多少种不同的颜色。 思路 # 模拟 # 代码 # 模拟 # /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) { val = x; } * } */ class Solution { private Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); private void traverse(TreeNode root) { if (root == null) return; set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -15,6 +51,27 @@
 每位勇者初始都拥有一些能量宝石， gem[i] 表示第 i 位勇者的宝石数量。现在这些勇者们进行了一系列的赠送，operations[j] = [x, y] 表示在第 j 次的赠送中 第 x 位勇者将自己一半的宝石（需向下取整）赠送给第 y 位勇者。
 在完成所有的赠送后，请找到拥有最多宝石的勇者和拥有最少宝石的勇者，并返回他们二者的宝石数量之差。
 思路 # 模拟 代码 # class Solution { public int giveGem(int[] gem, int[][] operations) { for (int i = 0; i &amp;lt; operations.length; i++) { int giver = operations[i][0], claimant = operations[i][1]; int numGems = gem[giver] / 2; gem[giver] -= numGems; gem[claimant] += numGems; } int minGems = gem[0], maxGems = gem[0]; for (int i = 0; i &amp;lt; gem.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/61.-%E6%B0%94%E6%B8%A9%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/61.-%E6%B0%94%E6%B8%A9%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF/</guid>
+      <description>LCP 61. 气温变化趋势 # 题目 # 力扣城计划在两地设立「力扣嘉年华」的分会场，气象小组正在分析两地区的气温变化趋势，对于第 i ~ (i+1) 天的气温变化趋势，将根据以下规则判断：
+若第 i+1 天的气温 高于 第 i 天，为 上升 趋势 若第 i+1 天的气温 等于 第 i 天，为 平稳 趋势 若第 i+1 天的气温 低于 第 i 天，为 下降 趋势 已知 temperatureA[i] 和 temperatureB[i] 分别表示第 i 天两地区的气温。 组委会希望找到一段天数尽可能多，且两地气温变化趋势相同的时间举办嘉年华活动。请分析并返回两地气温变化趋势相同的最大连续天数。
+即最大的 n，使得第 i~i+n 天之间，两地气温变化趋势相同
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int trend(int diff) { if (diff &amp;gt; 0) return 1; if (diff == 0) return 0; return -1; } public int temperatureTrend(int[] temperatureA, int[] temperatureB) { int ans = 0, cur = 0; int[] trendA = new int[temperatureA.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/66.-%E6%9C%80%E5%B0%8F%E5%B1%95%E5%8F%B0%E6%95%B0%E9%87%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/66.-%E6%9C%80%E5%B0%8F%E5%B1%95%E5%8F%B0%E6%95%B0%E9%87%8F/</guid>
+      <description>LCP 66. 最小展台数量 # 题目 # 力扣嘉年华将举办一系列展览活动，后勤部将负责为每场展览提供所需要的展台。 已知后勤部得到了一份需求清单，记录了近期展览所需要的展台类型， demand[i][j] 表示第 i 天展览时第 j 个展台的类型。 在满足每一天展台需求的基础上，请返回后勤部需要准备的 最小 展台数量。 注意： 同一展台在不同天中可以重复使用。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minNumBooths(String[] demand) { int[] numPlatforms = new int[26]; for (String day: demand) { int[] cnt = new int[26]; for (int i = 0; i &amp;lt; day.length(); i++) cnt[day.charAt(i)-&amp;#39;a&amp;#39;]++; for (int i = 0; i &amp;lt; 26; i++) numPlatforms[i] = Math.</description>
     </item>
     
   </channel>

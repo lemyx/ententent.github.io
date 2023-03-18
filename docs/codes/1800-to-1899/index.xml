@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1800-to-1899/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1802.-Maximum-Value-at-a-Given-Index-in-a-Bounded-array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1802.-Maximum-Value-at-a-Given-Index-in-a-Bounded-array/</guid>
+      <description>1802. Maximum Value at a Given Index in a Bounded Array # 题目 # 给你三个正整数 n、index 和 maxSum 。你需要构造一个同时满足下述所有条件的数组 nums（下标 从 0 开始 计数）： nums.length == n nums[i] 是 正整数 ，其中 0 &amp;lt;= i &amp;lt; n abs(nums[i] - nums[i+1]) &amp;lt;= 1 ，其中 0 &amp;lt;= i &amp;lt; n-1 nums 中所有元素之和不超过 maxSum nums[index] 的值被 最大化 返回你所构造的数组中的 nums[index] 。 注意：abs(x) 等于 x 的前提是 x &amp;gt;= 0 ；否则，abs(x) 等于 -x 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxValue(int n, int index, int maxSum) { int k = 1; maxSum -= n; while (true) { int left = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

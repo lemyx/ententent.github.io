@@ -176,5 +176,14 @@
       <description>1791. Find Center of Star Graph # 题目 # 有一个无向的 星型 图，由 n 个编号从 1 到 n 的节点组成。星型图有一个 中心 节点，并且恰有 n - 1 条边将中心节点与其他每个节点连接起来。 给你一个二维整数数组 edges ，其中 edges[i] = [ui, vi] 表示在节点 ui 和 vi 之间存在一条边。请你找出并返回 edges 所表示星型图的中心节点。 思路 # 模拟 # 欧拉回路 # 代码 # 模拟 # class Solution { public int findCenter(int[][] edges) { int[] edge1 = edges[0], edge2 = edges[1]; if (edge2[0] == edge1[0] || edge2[0] == edge1[1]) return edge2[0]; return edge2[1]; } } 欧拉回路 # 致谢 # 宫水三叶</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1796.-Second-Largest-Digit-in-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1796.-Second-Largest-Digit-in-a-String/</guid>
+      <description> 1796. Second Largest Digit in a String # 题目 # 给你一个混合字符串 s ，请你返回 s 中 第二大 的数字，如果不存在第二大的数字，请你返回 -1 。 混合字符串 由小写英文字母和数字组成。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int secondHighest(String s) { int first = -1, second = -1; for (int i = 0; i &amp;lt; s.length(); i++) { if (Character.isDigit(s.charAt(i))) { int val = s.charAt(i)-&amp;#39;0&amp;#39;; if (val &amp;gt; first) { if (first != -1) second = first; first = val; } else if (val &amp;gt; second &amp;amp;&amp;amp; first &amp;gt; val) second = val; } } return second; } } </description>
+    </item>
+    
   </channel>
 </rss>

@@ -341,6 +341,15 @@ countAndSay(1) = &amp;quot;1&amp;quot; countAndSay(n) 是对 countAndSay(n-1) �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0071.-Simplify-Path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0071.-Simplify-Path/</guid>
+      <description>0071. Simplify Path # 题目 # 给你一个字符串 path ，表示指向某一文件或目录的 Unix 风格 绝对路径 （以 &#39;/&#39; 开头），请你将其转化为更加简洁的规范路径。 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。任意多个连续的斜杠（即，&#39;//&#39;）都被视为单个斜杠 &#39;/&#39; 。 对于此问题，任何其他格式的点（例如，&#39;...&#39;）均被视为文件/目录名称。 请注意，返回的 规范路径 必须遵循下述格式： 始终以斜杠 &#39;/&#39; 开头。 两个目录名之间必须只有一个斜杠 &#39;/&#39; 。 最后一个目录名（如果存在）不能 以 &#39;/&#39; 结尾。 此外，路径仅包含从根目录到目标文件或目录的路径上的目录（即，不含 &#39;.&#39; 或 &#39;..&#39;）。 返回简化后得到的 规范路径 。 思路 # 栈 # 代码 # 栈 # class Solution { public String simplifyPath(String path) { String[] parts = path.split(&amp;#34;/&amp;#34;); Stack&amp;lt;String&amp;gt; reserved = new Stack&amp;lt;&amp;gt;(); for (String part: parts) { if (part.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1208,6 +1217,15 @@ magazine 中的每个字符只能在 ransomNote 中使用一次。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0404.-Sum-of-Left-Leaves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0404.-Sum-of-Left-Leaves/</guid>
+      <description>0404. Sum of Left Leaves # 题目 # 给定二叉树的根节点 root ，返回所有左叶子之和。 模拟 # 代码 # 模拟 # /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode() {} * TreeNode(int val) { this.val = val; } * TreeNode(int val, TreeNode left, TreeNode right) { * this.val = val; * this.left = left; * this.right = right; * } * } */ class Solution { public int sumOfLeftLeaves(TreeNode root) { Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1492,6 +1510,15 @@ LFUCache(int capacity) - 用数据结构的容量 capacity 初始化对象 int g
       <description>0520. Detect Capital # 题目 # 定义单词的大写用法的正确使用情景为：
 全部字母都是大写，比如 &amp;quot;USA&amp;quot; 。 单词中所有字母都不是大写，比如 &amp;quot;leetcode&amp;quot; 。 如果单词不只含有一个字母，只有首字母大写， 比如 &amp;quot;Google&amp;quot; 。 给定字符串 word 。如果大写用法正确，返回 true ；否则，返回 false 。
 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean detectCapitalUse(String word) { int cnt = 0; for (int i = 0; i &amp;lt; word.length(); i++) { if (Character.isUpperCase(word.charAt(i))) cnt++; } return cnt == word.length() || cnt == 0 || (cnt == 1 &amp;amp;&amp;amp; Character.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0535.-Encode-and-Decode-TinyURL/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0500-to-0599/0535.-Encode-and-Decode-TinyURL/</guid>
+      <description>0535. Encode and Decode TinyURL # 题目 # TinyURL 是一种 URL 简化服务， 比如：当你输入一个 URL https://leetcode.com/problems/design-tinyurl 时，它将返回一个简化的URL http://tinyurl.com/4e9iAk 。请你设计一个类来加密与解密 TinyURL 。 加密和解密算法如何设计和运作是没有限制的，你只需要保证一个 URL 可以被加密成一个 TinyURL ，并且这个 TinyURL 可以用解密方法恢复成原本的 URL 。 实现 Solution 类： Solution() 初始化 TinyURL 系统对象。 String encode(String longUrl) 返回 longUrl 对应的 TinyURL 。 String decode(String shortUrl) 返回 shortUrl 原本的 URL 。题目数据保证给定的 shortUrl 是由同一个系统对象加密的。 思路 # 模拟 # 代码 # 模拟 # public class Codec { private int cnt = 0; private Map&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); private String dec2hex(int cnt) { String ans = &amp;#34;&amp;#34;; while (cnt &amp;gt; 0) { int digit = cnt % 16; ans = digit &amp;gt; 9 ?</description>
     </item>
     
     <item>
@@ -2092,6 +2119,15 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0908.-Smallest-Range-i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0908.-Smallest-Range-i/</guid>
+      <description>0908. Smallest Range I # 题目 # 给你一个整数数组 nums，和一个整数 k 。 在一个操作中，您可以选择 0 &amp;lt;= i &amp;lt; nums.length 的任何索引 i 。将 nums[i] 改为 nums[i] + x ，其中 x 是一个范围为 [-k, k] 的整数。对于每个索引 i ，最多 只能 应用 一次 此操作。 nums 的 分数 是 nums 中最大和最小元素的差值。 在对 nums 中的每个索引最多应用一次上述操作后，返回 nums 的最低 分数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int smallestRangeI(int[] nums, int k) { int minimum = Integer.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2106,6 +2142,15 @@ s 的 旋转操作 就是将 s 最左边的字符移动到最右边。
       
       <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/</guid>
       <description>0917. Reverse Only Letters # 题目 # 给定字符串 s ，根据下述规则反转字符串： 所有非英文字母保留在原有位置。 所有英文字母（小写或大写）位置反转。 返回反转后的 s 。 思路 # 双指针 # 代码 # 双指针 # class Solution { public String reverseOnlyLetters(String s) { char[] charArray = s.toCharArray(); int i = 0, j = s.length() - 1; while (i &amp;lt; j) { if (Character.isLetter(s.charAt(i)) == false) i++; else if (Character.isLetter(s.charAt(j)) == false) j--; else { char ch = charArray[i]; charArray[i] = charArray[j]; charArray[j] = charArray[i]; i++; j--; } } return String.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0921.-Minimum-Add-to-Make-Parentheses-Valid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0900-to-0999/0921.-Minimum-Add-to-Make-Parentheses-Valid/</guid>
+      <description>0921. Minimum Add to Make Parentheses Valid # 题目 # 只有满足下面几点之一，括号字符串才是有效的： 它是一个空字符串，或者 它可以被写成 AB （A 与 B 连接）, 其中 A 和 B 都是有效字符串，或者 它可以被写作 (A)，其中 A 是有效字符串。 给定一个括号字符串 s ，在每一次操作中，你都可以在字符串的任何位置插入一个括号 例如，如果 s = &amp;quot;()))&amp;quot; ，你可以插入一个开始括号为 &amp;quot;(()))&amp;quot; 或结束括号为 &amp;quot;())))&amp;quot; 。 返回 为使结果字符串 s 有效而必须添加的最少括号数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minAddToMakeValid(String s) { int left = 0, ans = 0; for (int i = 0; i &amp;lt;s.</description>
     </item>
     
     <item>
@@ -2349,6 +2394,15 @@ T0 = 0, T1 = 1, T2 = 1, 且在 n &amp;gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1200.-Minimum-Absolute-Difference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1200.-Minimum-Absolute-Difference/</guid>
+      <description>1200. Minimum Absolute Difference # 题目 # 给你个整数数组 arr，其中每个元素都 不相同。 请你找到所有具有最小绝对差的元素对，并且按升序的顺序返回。 每对元素对 [a,b] 如下： a , b 均为数组 arr 中的元素 a &amp;lt; b b - a 等于 arr 中任意两个元素的最小绝对差 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; minimumAbsDifference(int[] arr) { Arrays.sort(arr); List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); int minDistance = Integer.MAX_VALUE; for (int i = 1; i &amp;lt; arr.length; i++) { int distance = arr[i] - arr[i-1]; if (distance &amp;gt; minDistance) continue; if (distance &amp;lt; minDistance) { minDistance = distance; ans = new LinkedList&amp;lt;&amp;gt;(); } List&amp;lt;Integer&amp;gt; pair = new LinkedList&amp;lt;&amp;gt;(); pair.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2359,6 +2413,24 @@ T0 = 0, T1 = 1, T2 = 1, 且在 n &amp;gt;= 0 的条件下 Tn+3 = Tn + Tn+1 + Tn+
 本题的设计应该包含以下函数：
 bool search(int target)：返回 target 是否存在于跳表中。 void add(int num)：插入一个元素到跳表。 bool erase(int num)：在跳表中删除一个值，如果 num 不存在，直接返回 false。如果存在多个 num，删除其中任意一个即可。 Tips 跳表中可能存在多个相同的值，所设计的跳表需要处理这种情况。
 思路 # 代码 # class Skiplist { private int MAX_LEVEL = 10; private class SkipNode { public int val; public SkipNode[] next; SkipNode(int val) { this.val = val; this.next = new SkipNode[this.MAX_LEVEL]; } } private SkipNode sentinel; private Random random; public Skiplist() { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1207.-Unique-Number-of-Occurrences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1207.-Unique-Number-of-Occurrences/</guid>
+      <description>1207. Unique Number of Occurrences # 题目 # 给你一个整数数组 arr，请你帮忙统计数组中每个数的出现次数。 如果每个数的出现次数都是独一无二的，就返回 true；否则返回 false。 1 &amp;lt;= arr.length &amp;lt;= 1000 -1000 &amp;lt;= arr[i] &amp;lt;= 1000 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean uniqueOccurrences(int[] arr) { int[] cnt = new int[2001]; for (int num: arr) cnt[num+1000]++; Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; cnt.length; i++) { if (cnt[i] == 0) continue; if (set.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1232.-Check-If-It-Is-a-Straight-Line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1232.-Check-If-It-Is-a-Straight-Line/</guid>
+      <description>1232. Check If It Is a Straight Line # 题目 # 给定一个数组 coordinates ，其中 coordinates[i] = [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkStraightLine(int[][] coordinates) { if (coordinates[0][0] == coordinates[1][0]) { for (int i = 2; i &amp;lt; coordinates.length; i++) { if (coordinates[0][0] != coordinates[i][0]) return false; } return true; } double slope = (double)(coordinates[1][1]-coordinates[0][1]) / (coordinates[1][0]-coordinates[0][0]); for (int i = 2; i &amp;lt; coordinates.</description>
     </item>
     
     <item>
@@ -2651,6 +2723,15 @@ BrowserHistory(string homepage) 用 homepage 初始化浏览器类。 void visit
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1502.-Can-Make-Arithmetic-Progression-From-Sequence/</guid>
       <description> 1502. Can Make Arithmetic Progression From Sequence # 题目 # 给你一个数字数组 arr 。 如果一个数列中，任意相邻两项的差总等于同一个常数，那么这个数列就称为 等差数列 。 如果可以重新排列数组形成等差数列，请返回 true ；否则，返回 false 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean canMakeArithmeticProgression(int[] arr) { Arrays.sort(arr); int diff = arr[0]-arr[1]; for (int i = 0; i &amp;lt; arr.length-1; i++) { if (arr[i]-arr[i+1] != diff) return false; } return true; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1507.-Reformat-Date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1507.-Reformat-Date/</guid>
+      <description>1507. Reformat Date # 题目 # 给你一个字符串 date ，它的格式为 Day Month Year ，其中： Day 是集合 {&amp;quot;1st&amp;quot;, &amp;quot;2nd&amp;quot;, &amp;quot;3rd&amp;quot;, &amp;quot;4th&amp;quot;, ..., &amp;quot;30th&amp;quot;, &amp;quot;31st&amp;quot;} 中的一个元素。 Month 是集合 {&amp;quot;Jan&amp;quot;, &amp;quot;Feb&amp;quot;, &amp;quot;Mar&amp;quot;, &amp;quot;Apr&amp;quot;, &amp;quot;May&amp;quot;, &amp;quot;Jun&amp;quot;, &amp;quot;Jul&amp;quot;, &amp;quot;Aug&amp;quot;, &amp;quot;Sep&amp;quot;, &amp;quot;Oct&amp;quot;, &amp;quot;Nov&amp;quot;, &amp;quot;Dec&amp;quot;} 中的一个元素。 Year 的范围在 [1900, 2100] 之间。 请你将字符串转变为 YYYY-MM-DD 的格式，其中： YYYY 表示 4 位的年份。 MM 表示 2 位的月份。 DD 表示 2 位的天数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String month2int(String month) { switch (month) { case &amp;#34;Jan&amp;#34;: return &amp;#34;01&amp;#34;; case &amp;#34;Feb&amp;#34;: return &amp;#34;02&amp;#34;; case &amp;#34;Mar&amp;#34;: return &amp;#34;03&amp;#34;; case &amp;#34;Apr&amp;#34;: return &amp;#34;04&amp;#34;; case &amp;#34;May&amp;#34;: return &amp;#34;05&amp;#34;; case &amp;#34;Jun&amp;#34;: return &amp;#34;06&amp;#34;; case &amp;#34;Jul&amp;#34;: return &amp;#34;07&amp;#34;; case &amp;#34;Aug&amp;#34;: return &amp;#34;08&amp;#34;; case &amp;#34;Sep&amp;#34;: return &amp;#34;09&amp;#34;; case &amp;#34;Oct&amp;#34;: return &amp;#34;10&amp;#34;; case &amp;#34;Nov&amp;#34;: return &amp;#34;11&amp;#34;; case &amp;#34;Dec&amp;#34;: return &amp;#34;12&amp;#34;; } return &amp;#34;&amp;#34;; } public String reformatDate(String date) { String year = date.</description>
     </item>
     
     <item>
@@ -3081,6 +3162,24 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1796.-Second-Largest-Digit-in-a-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1700-to-1799/1796.-Second-Largest-Digit-in-a-String/</guid>
+      <description> 1796. Second Largest Digit in a String # 题目 # 给你一个混合字符串 s ，请你返回 s 中 第二大 的数字，如果不存在第二大的数字，请你返回 -1 。 混合字符串 由小写英文字母和数字组成。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int secondHighest(String s) { int first = -1, second = -1; for (int i = 0; i &amp;lt; s.length(); i++) { if (Character.isDigit(s.charAt(i))) { int val = s.charAt(i)-&amp;#39;0&amp;#39;; if (val &amp;gt; first) { if (first != -1) second = first; first = val; } else if (val &amp;gt; second &amp;amp;&amp;amp; first &amp;gt; val) second = val; } } return second; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1802.-Maximum-Value-at-a-Given-Index-in-a-Bounded-array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1802.-Maximum-Value-at-a-Given-Index-in-a-Bounded-array/</guid>
+      <description>1802. Maximum Value at a Given Index in a Bounded Array # 题目 # 给你三个正整数 n、index 和 maxSum 。你需要构造一个同时满足下述所有条件的数组 nums（下标 从 0 开始 计数）： nums.length == n nums[i] 是 正整数 ，其中 0 &amp;lt;= i &amp;lt; n abs(nums[i] - nums[i+1]) &amp;lt;= 1 ，其中 0 &amp;lt;= i &amp;lt; n-1 nums 中所有元素之和不超过 maxSum nums[index] 的值被 最大化 返回你所构造的数组中的 nums[index] 。 注意：abs(x) 等于 x 的前提是 x &amp;gt;= 0 ；否则，abs(x) 等于 -x 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int maxValue(int n, int index, int maxSum) { int k = 1; maxSum -= n; while (true) { int left = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1816.-Truncate-Sentence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3123,6 +3222,33 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       
       <guid>https://leetcode.akaeecs.com/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/</guid>
       <description>1894. Find the Student that Will Replace the Chalk # 题目 # 一个班级里有 n 个学生，编号为 0 到 n - 1 。每个学生会依次回答问题，编号为 0 的学生先回答，然后是编号为 1 的学生，以此类推，直到编号为 n - 1 的学生，然后老师会重复这个过程，重新从编号为 0 的学生开始回答问题。 给你一个长度为 n 且下标从 0 开始的整数数组 chalk 和一个整数 k 。一开始粉笔盒里总共有 k 支粉笔。当编号为 i 的学生回答问题时，他会消耗 chalk[i] 支粉笔。如果剩余粉笔数量 严格小于 chalk[i] ，那么学生 i 需要 补充 粉笔。 请你返回需要 补充 粉笔的学生 编号 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int chalkReplacer(int[] chalk, int k) { long sum = 0; for (int num: chalk) sum += num; k = (int)(k % sum); for (int i = 0; i &amp;lt; chalk.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1952.-Three-Divisors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1952.-Three-Divisors/</guid>
+      <description>1952. Three Divisors # 题目 # 给你一个整数 n 。如果 n 恰好有三个正除数 ，返回 true ；否则，返回 false 。 如果存在整数 k ，满足 n = k * m ，那么整数 m 就是 n 的一个 除数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isThree(int n) { if (n &amp;lt; 3) return false; int cnt = 0; for (int i = 1; i &amp;lt; (int)Math.sqrt(n); i++) { if (n % i == 0) cnt += 2; } if ((int)Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1974.-Minimum-Time-to-Type-Word-Using-Special-Typewriter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1974.-Minimum-Time-to-Type-Word-Using-Special-Typewriter/</guid>
+      <description>1974. Minimum Time to Type Word Using Special Typewriter # 题目 # 有一个特殊打字机，它由一个 圆盘 和一个 指针 组成， 圆盘上标有小写英文字母 &#39;a&#39; 到 &#39;z&#39;。只有 当指针指向某个字母时，它才能被键入。指针 初始时 指向字符 &#39;a&#39; 。 每一秒钟，你可以执行以下操作之一： 将指针 顺时针 或者 逆时针 移动一个字符。 键入指针 当前 指向的字符。 给你一个字符串 word ，请你返回键入 word 所表示单词的 最少 秒数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int distance(Character prev, Character cur) { if (cur == prev) return 0; if (cur &amp;gt; prev) { return Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1979.-Find-Greatest-Common-Divisor-of-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1979.-Find-Greatest-Common-Divisor-of-Array/</guid>
+      <description>1979. Find Greatest Common Divisor of Array # 题目 # 给你一个整数数组 nums ，返回数组中最大数和最小数的 最大公约数 。 两个数的 最大公约数 是能够被两个数整除的最大正整数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findGCD(int[] nums) { int maximum = nums[0], minimum = nums[0]; for (int num: nums) { maximum = Math.max(maximum, num); minimum = Math.min(minimum, num); } int ans = 0; for (int i = 1; i &amp;lt;= (int)Math.sqrt(minimum); i++) { if (minimum % i == 0 &amp;amp;&amp;amp; maximum % i == 0) ans = Math.</description>
     </item>
     
     <item>
@@ -3269,6 +3395,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2114.-Maximum-Number-of-Words-Found-in-Sentences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2114.-Maximum-Number-of-Words-Found-in-Sentences/</guid>
+      <description> 2114. Maximum Number of Words Found in Sentences # 题目 # 一个 句子 由一些 单词 以及它们之间的单个空格组成，句子的开头和结尾不会有多余空格。 给你一个字符串数组 sentences ，其中 sentences[i] 表示单个 句子 。 请你返回单个句子里 单词的最多数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int mostWordsFound(String[] sentences) { int ans = 0; for (String sentence: sentences) { ans = Math.max(ans, sentence.split(&amp;#34; &amp;#34;).length); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3277,6 +3412,26 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 比方说，n = 4 那么节点 0 是节点 3 的孪生节点，节点 1 是节点 2 的孪生节点。这是长度为 n = 4 的链表中所有的孪生节点。 孪生和 定义为一个节点和它孪生节点两者值之和。
 给你一个长度为偶数的链表的头节点 head ，请你返回链表的 最大孪生和 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2133.-Check-if-Every-Row-and-Colum-Contains-All-Numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2133.-Check-if-Every-Row-and-Colum-Contains-All-Numbers/</guid>
+      <description>2133. Check if Every Row and Colum Contains All Numbers # 题目 # 对一个大小为 n x n 的矩阵而言，如果其每一行和每一列都包含从 1 到 n 的 全部 整数（含 1 和 n），则认为该矩阵是一个 有效 矩阵。
+给你一个大小为 n x n 的整数矩阵 matrix ，请你判断矩阵是否为一个有效矩阵：如果是，返回 true ；否则，返回 false 。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean checkValid(int[][] matrix) { int N = matrix.length; int[] cnt = new int[N]; for (int i = 0; i &amp;lt; N; i++) { Arrays.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2144.-Minimum-Cost-of-Buying-Candies-With-Discount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2144.-Minimum-Cost-of-Buying-Candies-With-Discount/</guid>
+      <description>2144. Minimum Cost of Buying Candies With Discount # 题目 # 一家商店正在打折销售糖果。每购买 两个 糖果，商店会 免费 送一个糖果。 免费送的糖果唯一的限制是：它的价格需要小于等于购买的两个糖果价格的 较小值 。 比方说，总共有 4 个糖果，价格分别为 1 ，2 ，3 和 4 ，一位顾客买了价格为 2 和 3 的糖果，那么他可以免费获得价格为 1 的糖果，但不能获得价格为 4 的糖果。 给你一个下标从 0 开始的整数数组 cost ，其中 cost[i] 表示第 i 个糖果的价格，请你返回获得 所有 糖果的 最小 总开销。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minimumCost(int[] cost) { int ans = 0; Arrays.</description>
     </item>
     
     <item>
@@ -3293,6 +3448,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2180.-Count-Integers-With-Even-Digit-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2180.-Count-Integers-With-Even-Digit-Sum/</guid>
+      <description> 2180. Count Integers With Even Digit Sum # 题目 # 给你一个正整数 num ，请你统计并返回 小于或等于 num 且各位数字之和为 偶数 的正整数的数目。 正整数的 各位数字之和 是其所有位上的对应数字相加的结果。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isEven(int num) { int sum = 0; while (num &amp;gt; 0) { sum += num % 10; num /= 10; } return sum % 2 == 0; } public int countEven(int num) { int ans = 0; for (int i = 1; i &amp;lt;= num; i++) { if (isEven(i)) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3301,6 +3465,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 对于每两个相邻的 0 ，之间的所有节点合并为一个节点，其值是所有已合并节点的值之和。然后将所有 0 移除，修改后的链表不应该含有任何 0 。
 返回修改后链表的头节点 head 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeNodes(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2185.-Counting-Words-With-a-Given-Prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2185.-Counting-Words-With-a-Given-Prefix/</guid>
+      <description>2185. Counting Words With a Given Prefix # 题目 # 给你一个字符串数组 words 和一个字符串 pref 。 返回 words 中以 pref 作为 前缀 的字符串的数目。 字符串 s 的 前缀 就是 s 的任一前导连续字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int preficCount(String[] words, String pref) { int ans = 0; for (String word: words) { if (word.length() &amp;gt;= pref.length() &amp;amp;&amp;amp; word.substring(0, pref.length()).equals(pref)) ans++; } return ans; } } 致谢 # 昊十七</description>
     </item>
     
     <item>
@@ -3345,6 +3518,42 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2255.-Count-Prefixes-of-a-Given-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2255.-Count-Prefixes-of-a-Given-String/</guid>
+      <description> 2255. Count Prefixes of a Given String # 题目 # 给你一个字符串数组 words 和一个字符串 s ，其中 words[i] 和 s 只包含 小写英文字母 。 请你返回 words 中是字符串 s 前缀 的 字符串数目 。 一个字符串的 前缀 是出现在字符串开头的子字符串。子字符串 是一个字符串中的连续一段字符序列。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countPrefixes(String[] words, String s) { int ans = 0; for (String word: words) { if (word.length() &amp;lt;= s.length() &amp;amp;&amp;amp; s.substring(0, word.length()).equals(word)) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2278.-Percentage-of-Letter-in-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2278.-Percentage-of-Letter-in-String/</guid>
+      <description> 2278. Percentage of Letter in String # 题目 # 给你一个字符串 s 和一个字符 letter ，返回在 s 中等于 letter 字符所占的 百分比 ，向下取整到最接近的百分比。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int percentageLetter(String s, char letter) { int ans = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.charAt(i) == letter) ans++; } return ans * 100 / s.length(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2283.-Minimum-Hours-of-Training-to-Win-a-Competition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2283.-Minimum-Hours-of-Training-to-Win-a-Competition/</guid>
+      <description>2283. Minimum Hours of Training to Win a Competition # 题目 # 你正在参加一场比赛，给你两个 正 整数 initialEnergy 和 initialExperience 分别表示你的初始精力和初始经验。 另给你两个下标从 0 开始的整数数组 energy 和 experience，长度均为 n 。 你将会 依次 对上 n 个对手。第 i 个对手的精力和经验分别用 energy[i] 和 experience[i] 表示。当你对上对手时，需要在经验和精力上都 严格 超过对手才能击败他们，然后在可能的情况下继续对上下一个对手。 击败第 i 个对手会使你的经验 增加 experience[i]，但会将你的精力 减少 energy[i] 。 在开始比赛前，你可以训练几个小时。每训练一个小时，你可以选择将增加经验增加 1 或者 将精力增加 1 。 返回击败全部 n 个对手需要训练的 最少 小时数目。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience) { int myEnergy = initialEnergy, myExperience = initialExperience; int ans = 0; for (int i = 0; i &amp;lt; energy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2287.-Rearrange-Characters-to-Make-Target-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2287.-Rearrange-Characters-to-Make-Target-String/</guid>
+      <description>2287. Rearrange Characters to Make Target String # 题目 # 给你两个下标从 0 开始的字符串 s 和 target 。你可以从 s 取出一些字符并将其重排，得到若干新的字符串。 从 s 中取出字符并重新排列，返回可以形成 target 的 最大 副本数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int rearrangeCharacters(String s, String target) { int[] cntS = new int[26], cntTarget = new int[26]; for (int i = 0; i &amp;lt; target.length(); i++) cntTarget[target.charAt(i)-&amp;#39;a&amp;#39;]++; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3352,6 +3561,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
       <description>2289. Steps to Make Array Non-decreasing # 题目 # 给定一个下标从 0 开始的整数数组 nums。在一步操作中，移除所有满足 nums[i-1] &amp;gt; nums[i] 的 nums[i]，其中 0 &amp;lt; i &amp;lt; nums.length。
 重复执行步骤，直到 nums 变为 非递减 数组，返回所需执行的操作数。
 思路 # 代码 # class Solution { /** 观察: 如果一个结点的左侧结点未发生变化，则该结点在本轮不会被删除 * 推论: 仅有被删除的结点会触发下一轮删除。当某结点被删除时，考虑是否将被删除结点的下一个结点纳入下一轮删除的列表里 */ private class ListNode { public int val; public ListNode prev; public ListNode next; ListNode(int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } public int totalSteps(int[] nums) { ListNode sentinel = new ListNode(-1, null, null); sentinel.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2293.-Min-Max-Game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2293.-Min-Max-Game/</guid>
+      <description>2293. Min Max Game # 题目 # 给你一个下标从 0 开始的整数数组 nums ，其长度是 2 的幂。 对 nums 执行下述算法： 设 n 等于 nums 的长度，如果 n == 1 ，终止 算法过程。否则，创建 一个新的整数数组 newNums ，新数组长度为 n / 2 ，下标从 0 开始。 对于满足 0 &amp;lt;= i &amp;lt; n / 2 的每个 偶数 下标 i ，将 newNums[i] 赋值 为 min(nums[2 * i], nums[2 * i + 1]) 。 对于满足 0 &amp;lt;= i &amp;lt; n / 2 的每个 奇数 下标 i ，将 newNums[i] 赋值 为 max(nums[2 * i], nums[2 * i + 1]) 。 用 newNums 替换 nums 。 从步骤 1 开始 重复 整个过程。 执行算法后，返回 nums 中剩下的那个数字。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minMaxGame(int[] nums) { int[] prev = nums; while (prev.</description>
     </item>
     
     <item>
@@ -3364,6 +3582,15 @@ FrontMiddleBack() 初始化队列。 void pushFront(int val) 将 val 添加到�
 添加：在光标处添加文本。 删除：在光标处删除文本。 移动：将光标往左或往右移动。 当删除文本时，只有光标左边的字符会被删除。光标会留在文本内，即任何时候 0 &amp;lt;= cursor.position &amp;lt;= currentText.length 都成立。
 请实现 TextEditor 类：
 TextEditor() 用空文本初始化对象。 void addText(String text) 将 text 添加到光标所在位置。添加完后光标在 text 的右边。 int deleteText(int k) 删除光标左边 k 个字符。返回实际删除的字符数目。 String cursorLeft(int k) 将光标向左移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 String cursorRight(int k) 将光标向右移动 k 次。返回移动后光标左边 min(10, len) 个字符，其中 len 是光标左边的字符数目。 思路 # 代码 # class TextEditor { private class ListNode { public char character; public ListNode prev; public ListNode next; ListNode (char character, ListNode prev, ListNode next) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2309.-Generate-English-Letter-in-Upper-and-Lower-Case/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2300-to-2399/2309.-Generate-English-Letter-in-Upper-and-Lower-Case/</guid>
+      <description>2309. Generate English Letter in Upper and Lower Case # 题目 # 给你一个由英文字母组成的字符串 s ，请你找出并返回 s 中的 最好 英文字母。返回的字母必须为大写形式。如果不存在满足条件的字母，则返回一个空字符串。 最好 英文字母的大写和小写形式必须 都 在 s 中出现。 英文字母 b 比另一个英文字母 a 更好 的前提是：英文字母表中，b 在 a 之 后 出现。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String greatestLetter(String s) { String ans = &amp;#34;&amp;#34;; Set&amp;lt;Character&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; s.length(); i++) set.</description>
     </item>
     
     <item>
@@ -3414,11 +3641,74 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2404.-Most-Frequent-Even-Element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2404.-Most-Frequent-Even-Element/</guid>
+      <description>2404. Most Frequent Even Element # 题目 # 给你一个整数数组 nums ，返回出现最频繁的偶数元素。 如果存在多个满足条件的元素，只需要返回 最小 的一个。如果不存在这样的元素，返回 -1 。 1 &amp;lt;= nums.length &amp;lt;= 2000 0 &amp;lt;= nums[i] &amp;lt;= 105 思路 # 模拟 # 代码 # 模拟 # class Solution { public int mostFrequentEven(int[] nums) { int ans = Integer.MAX_VALUE; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: nums) { if (num % 2 == 1) continue; map.put(num, map.getOrDefault(num, 0) + 1); if (map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2413.-Smallest-Even-Multiple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2413.-Smallest-Even-Multiple/</guid>
+      <description> 2413. Smallest Even Multiple # 题目 # 给你一个正整数 n ，返回 2 和 n 的最小公倍数（正整数）。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int smallestEvenMultiple(int n) { return n % 2 == 0 ? n : 2 * n; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2427.-Number-of-Common-Factors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2427.-Number-of-Common-Factors/</guid>
+      <description>2427. Number of Common Factors # 题目 # 给你两个正整数 a 和 b ，返回 a 和 b 的 公 因子的数目。 如果 x 可以同时整除 a 和 b ，则认为 x 是 a 和 b 的一个 公因子 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int commonFactors(int a, int b) { int ans = 0; for (int i = 1; i &amp;lt;= (int)Math.sqrt(a); i++) { if (a % i == 0) { if (b % i == 0) ans++; if (i * i &amp;lt; a &amp;amp;&amp;amp; b % (a / i) == 0) ans++; } } return ans; } } 致谢 # 灵茶山艾府</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2432.-The-Employee-That-Worked-on-the-Longest-Task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2432.-The-Employee-That-Worked-on-the-Longest-Task/</guid>
+      <description>2432. The Employee That Worked on the Longest Task # 题目 # 共有 n 位员工，每位员工都有一个从 0 到 n - 1 的唯一 id 。 给你一个二维整数数组 logs ，其中 logs[i] = [idi, leaveTimei] ： idi 是处理第 i 个任务的员工的 id ，且 leaveTimei 是员工完成第 i 个任务的时刻。所有 leaveTimei 的值都是 唯一 的。 注意，第 i 个任务在第 (i - 1) 个任务结束后立即开始，且第 0 个任务从时刻 0 开始。 返回处理用时最长的那个任务的员工的 id 。如果存在两个或多个员工同时满足，则返回几人中 最小 的 id 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int hardestWorker(int n, int[][] logs) { int maxTime = logs[0][1], idx = logs[0][0]; for (int i = 1; i &amp;lt; logs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2441.-Largest-Positive-Integer-That-Exists-With-Its-Negative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2441.-Largest-Positive-Integer-That-Exists-With-Its-Negative/</guid>
+      <description>2441. Largest Positive Integer That Exists With Its Negative # 题目 # 给你一个 不包含 任何零的整数数组 nums ，找出自身与对应的负数都在数组中存在的最大正整数 k 。 返回正整数 k ，如果不存在这样的整数，返回 -1 。 思路 # 哈希 # 双指针 # 代码 # 哈希 # class Solution { public int findMaxK(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) { set.add(num); } int ans = -1; for (int num: nums) { if (num &amp;gt; 0 &amp;amp;&amp;amp; set.contains(-num) &amp;amp;&amp;amp; num &amp;gt; ans) ans = num; } return ans; } } 致谢 # 灵茶山艾府</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</guid>
       <description>2460. Apply Operations to an Array # 题目 # 给你一个下标从 0 开始的数组 nums ，数组大小为 n ，且由 非负 整数组成。 对数组执行 n - 1 步操作，其中第 i 步操作（从 0 开始计数）要求对 nums 中第 i 个元素执行下述指令： 如果 nums[i] == nums[i + 1] ，则 nums[i] 的值变成原来的 2 倍，nums[i + 1] 的值变成 0 。否则，跳过这步操作。 在执行完 全部 操作后，将所有 0 移动 到数组的 末尾 。 例如，数组 [1,0,2,0,0,1] 将所有 0 移动到末尾后变为 [1,2,1,0,0,0] 。 返回结果数组。 注意 操作应当 依次有序 执行，而不是一次性全部执行。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] moveZeros(int[] nums) { int left = 0, right = 0; while (right &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2469.-Convert-the-Temperature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2469.-Convert-the-Temperature/</guid>
+      <description> 2469. Convert the Temperature # 题目 # 给你一个四舍五入到两位小数的非负浮点数 celsius 来表示温度，以 摄氏度（Celsius）为单位。 你需要将摄氏度转换为 开氏度（Kelvin）和 华氏度（Fahrenheit），并以数组 ans = [kelvin, fahrenheit] 的形式返回结果。 返回数组 ans 。与实际答案误差不超过 10-5 的会视为正确答案**。** 注意： 开氏度 = 摄氏度 + 273.15 华氏度 = 摄氏度 * 1.80 + 32.00 思路 # 模拟 # 代码 # 模拟 # class Solution { public double[] convertTemperature(double celsius) { return new double[]{celsius+273.15, celsius*1.80+32.00}; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2485.-Find-the-Pivot-Integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2485.-Find-the-Pivot-Integer/</guid>
+      <description>2485. Find the Pivot Integer # 题目 # 给你一个正整数 n ，找出满足下述条件的 中枢整数 x ： 1 和 x 之间的所有元素之和等于 x 和 n 之间所有元素之和。 返回中枢整数 x 。如果不存在中枢整数，则返回 -1 。题目保证对于给定的输入，至多存在一个中枢整数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int pivotInteger(int n) { int root = (int)Math.sqrt((n*n+n)/2); return root * root == (n*n+n)/2 ? root : -1; } } 致谢 # 灵茶山艾府</description>
     </item>
     
     <item>
@@ -3434,6 +3724,51 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2500-to-2599/2586.-Count-the-Number-of-Vowel-Strings-in-Range/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2500-to-2599/2586.-Count-the-Number-of-Vowel-Strings-in-Range/</guid>
+      <description>2586. Count the Number of Vowel Strings in Range # 题目 # 给你一个下标从 0 开始的字符串数组 words 和两个整数：left 和 right 。 如果字符串以元音字母开头并以元音字母结尾，那么该字符串就是一个 元音字符串 ，其中元音字母是 &#39;a&#39;、&#39;e&#39;、&#39;i&#39;、&#39;o&#39;、&#39;u&#39; 。 返回 words[i] 是元音字符串的数目，其中 i 在闭区间 [left, right] 内。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int vowelStrings(String[] words, int left, int right) { String vowels = &amp;#34;aeiou&amp;#34;; int ans = 0; for (int i = left; i &amp;lt;= right; i++) { char start = words[i].</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/01.-%E7%8C%9C%E6%95%B0%E5%AD%97/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/01.-%E7%8C%9C%E6%95%B0%E5%AD%97/</guid>
+      <description> LCP 01. 猜数字 # 题目 # 小A 和 小B 在玩猜数字。小B 每次从 1, 2, 3 中随机选择一个，小A 每次也从 1, 2, 3 中选择一个猜。他们一共进行三次这个游戏，请返回 小A 猜对了几次？ 输入的guess数组为 小A 每次的猜测，answer数组为 小B 每次的选择。guess和answer的长度都等于3。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int game(int[] guess, int[] answer) { int ans = 0; for (int i = 0; i &amp;lt; 3; i++) { if (guess[i] == answer[i]) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/</guid>
+      <description> LCP 06. 拿硬币 # 题目 # 桌上有 n 堆力扣币，每堆的数量保存在数组 coins 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minCount(int[] coins) { int ans = 0; for (int coin: coins) { ans += coin / 2 + coin % 2; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/17.-%E9%80%9F%E7%AE%97%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/17.-%E9%80%9F%E7%AE%97%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+      <description>LCP 17. 速算机器人 # 题目 # 小扣在秋日市集发现了一款速算机器人。店家对机器人说出两个数字（记作 x 和 y），请小扣说出计算指令： &amp;quot;A&amp;quot; 运算：使 x = 2 * x + y； &amp;quot;B&amp;quot; 运算：使 y = 2 * y + x。 在本次游戏中，店家说出的数字为 x = 1 和 y = 0，小扣说出的计算指令记作仅由大写字母 A、B 组成的字符串 s，字符串中字符的顺序表示计算顺序，请返回最终 x 与 y 的和为多少。 思路 # 模拟 # 数学 # 代码 # 模拟 # class Solution { public int calculate(String s) { int x = 1, y = 0; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/44.-%E5%BC%80%E5%B9%95%E5%BC%8F%E7%84%B0%E7%81%AB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/44.-%E5%BC%80%E5%B9%95%E5%BC%8F%E7%84%B0%E7%81%AB/</guid>
+      <description>LCP 44. 开幕式焰火 # 题目 # 「力扣挑战赛」开幕式开始了，空中绽放了一颗二叉树形的巨型焰火。 给定一棵二叉树 root 代表焰火，节点值表示巨型焰火这一位置的颜色种类。请帮小扣计算巨型焰火有多少种不同的颜色。 思路 # 模拟 # 代码 # 模拟 # /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode(int x) { val = x; } * } */ class Solution { private Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); private void traverse(TreeNode root) { if (root == null) return; set.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3442,6 +3777,36 @@ TextEditor() 用空文本初始化对象。 void addText(String text) 将 text �
 每位勇者初始都拥有一些能量宝石， gem[i] 表示第 i 位勇者的宝石数量。现在这些勇者们进行了一系列的赠送，operations[j] = [x, y] 表示在第 j 次的赠送中 第 x 位勇者将自己一半的宝石（需向下取整）赠送给第 y 位勇者。
 在完成所有的赠送后，请找到拥有最多宝石的勇者和拥有最少宝石的勇者，并返回他们二者的宝石数量之差。
 思路 # 模拟 代码 # class Solution { public int giveGem(int[] gem, int[][] operations) { for (int i = 0; i &amp;lt; operations.length; i++) { int giver = operations[i][0], claimant = operations[i][1]; int numGems = gem[giver] / 2; gem[giver] -= numGems; gem[claimant] += numGems; } int minGems = gem[0], maxGems = gem[0]; for (int i = 0; i &amp;lt; gem.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/61.-%E6%B0%94%E6%B8%A9%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/61.-%E6%B0%94%E6%B8%A9%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF/</guid>
+      <description>LCP 61. 气温变化趋势 # 题目 # 力扣城计划在两地设立「力扣嘉年华」的分会场，气象小组正在分析两地区的气温变化趋势，对于第 i ~ (i+1) 天的气温变化趋势，将根据以下规则判断：
+若第 i+1 天的气温 高于 第 i 天，为 上升 趋势 若第 i+1 天的气温 等于 第 i 天，为 平稳 趋势 若第 i+1 天的气温 低于 第 i 天，为 下降 趋势 已知 temperatureA[i] 和 temperatureB[i] 分别表示第 i 天两地区的气温。 组委会希望找到一段天数尽可能多，且两地气温变化趋势相同的时间举办嘉年华活动。请分析并返回两地气温变化趋势相同的最大连续天数。
+即最大的 n，使得第 i~i+n 天之间，两地气温变化趋势相同
+思路 # 模拟 # 代码 # 模拟 # class Solution { public int trend(int diff) { if (diff &amp;gt; 0) return 1; if (diff == 0) return 0; return -1; } public int temperatureTrend(int[] temperatureA, int[] temperatureB) { int ans = 0, cur = 0; int[] trendA = new int[temperatureA.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCP/66.-%E6%9C%80%E5%B0%8F%E5%B1%95%E5%8F%B0%E6%95%B0%E9%87%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCP/66.-%E6%9C%80%E5%B0%8F%E5%B1%95%E5%8F%B0%E6%95%B0%E9%87%8F/</guid>
+      <description>LCP 66. 最小展台数量 # 题目 # 力扣嘉年华将举办一系列展览活动，后勤部将负责为每场展览提供所需要的展台。 已知后勤部得到了一份需求清单，记录了近期展览所需要的展台类型， demand[i][j] 表示第 i 天展览时第 j 个展台的类型。 在满足每一天展台需求的基础上，请返回后勤部需要准备的 最小 展台数量。 注意： 同一展台在不同天中可以重复使用。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minNumBooths(String[] demand) { int[] numPlatforms = new int[26]; for (String day: demand) { int[] cnt = new int[26]; for (int i = 0; i &amp;lt; day.length(); i++) cnt[day.charAt(i)-&amp;#39;a&amp;#39;]++; for (int i = 0; i &amp;lt; 26; i++) numPlatforms[i] = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCS/02.-%E5%AE%8C%E6%88%90%E4%B8%80%E5%8D%8A%E9%A2%98%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCS/02.-%E5%AE%8C%E6%88%90%E4%B8%80%E5%8D%8A%E9%A2%98%E7%9B%AE/</guid>
+      <description>LCS 02. 完成一半题目 # 题目 # 有 N 位扣友参加了微软与力扣举办了「以扣会友」线下活动。主办方提供了 2*N 道题目，整型数组 questions 中每个数字对应了每道题目所涉及的知识点类型。 若每位扣友选择不同的一题，请返回被选的 N 道题目至少包含多少种知识点类型。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int halfQuestions(int[] questions) { int[] cnt = new int[1001]; for (int question: questions) cnt[question]--; Arrays.sort(cnt); int ans = 0, remain = questions.length / 2; for (int i = 0; i &amp;lt; cnt.length; i++) { ans++; if (-cnt[i] &amp;gt;= remain) return ans; remain += cnt[i]; } return ans; } } 致谢 # 慢慢来比较快</description>
     </item>
     
     <item>

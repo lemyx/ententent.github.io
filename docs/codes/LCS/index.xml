@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LeetCode Recipe</title>
+    <link>https://leetcode.akaeecs.com/docs/codes/LCS/</link>
+    <description>Recent content on LeetCode Recipe</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/LCS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/LCS/02.-%E5%AE%8C%E6%88%90%E4%B8%80%E5%8D%8A%E9%A2%98%E7%9B%AE/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/LCS/02.-%E5%AE%8C%E6%88%90%E4%B8%80%E5%8D%8A%E9%A2%98%E7%9B%AE/</guid>
+      <description>LCS 02. 完成一半题目 # 题目 # 有 N 位扣友参加了微软与力扣举办了「以扣会友」线下活动。主办方提供了 2*N 道题目，整型数组 questions 中每个数字对应了每道题目所涉及的知识点类型。 若每位扣友选择不同的一题，请返回被选的 N 道题目至少包含多少种知识点类型。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int halfQuestions(int[] questions) { int[] cnt = new int[1001]; for (int question: questions) cnt[question]--; Arrays.sort(cnt); int ans = 0, remain = questions.length / 2; for (int i = 0; i &amp;lt; cnt.length; i++) { ans++; if (-cnt[i] &amp;gt;= remain) return ans; remain += cnt[i]; } return ans; } } 致谢 # 慢慢来比较快</description>
+    </item>
+    
+  </channel>
+</rss>

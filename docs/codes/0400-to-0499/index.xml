@@ -16,6 +16,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0404.-Sum-of-Left-Leaves/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0404.-Sum-of-Left-Leaves/</guid>
+      <description>0404. Sum of Left Leaves # 题目 # 给定二叉树的根节点 root ，返回所有左叶子之和。 模拟 # 代码 # 模拟 # /** * Definition for a binary tree node. * public class TreeNode { * int val; * TreeNode left; * TreeNode right; * TreeNode() {} * TreeNode(int val) { this.val = val; } * TreeNode(int val, TreeNode left, TreeNode right) { * this.val = val; * this.left = left; * this.right = right; * } * } */ class Solution { public int sumOfLeftLeaves(TreeNode root) { Queue&amp;lt;TreeNode&amp;gt; queue = new LinkedList&amp;lt;&amp;gt;(); queue.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

@@ -1,0 +1,6014 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content=" LCP 06. 拿硬币 # 题目 # 桌上有 n 堆力扣币，每堆的数量保存在数组 coins 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minCount(int[] coins) { int ans = 0; for (int coin: coins) { ans &#43;= coin / 2 &#43; coin % 2; } return ans; } } ">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="" />
+<meta property="og:description" content=" LCP 06. 拿硬币 # 题目 # 桌上有 n 堆力扣币，每堆的数量保存在数组 coins 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minCount(int[] coins) { int ans = 0; for (int coin: coins) { ans &#43;= coin / 2 &#43; coin % 2; } return ans; } } " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leetcode.akaeecs.com/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/" /><meta property="article:section" content="docs" />
+
+
+<title>06. 拿硬币 | LeetCode Recipe</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.a82d7e77ceb134d151c4d7e381eeb30623fbd5a524d58c584d8716ecec0205bd.css" integrity="sha256-qC1&#43;d86xNNFRxNfjge6zBiP71aUk1YxYTYcW7OwCBb0=" crossorigin="anonymous">
+  <script defer src="/flexsearch.min.js"></script>
+  <script defer src="/en.search.min.b0d2dc32ba13948d3a7fde98f024d9dec86cbd749c82fdfe6dc61e796b9eb768.js" integrity="sha256-sNLcMroTlI06f96Y8CTZ3shsvXScgv3&#43;bcYeeWuet2g=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>LeetCode Recipe</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/" class="">Topic</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/array/" class="">1.01 Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/topic/linked-list/" class="">1.02 Linked List</a>
+  
+
+        </li>
+      
+    
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/" class="">Codes</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-6351da6832d9068cce20b9ab86b9f709" class="toggle"  />
+    <label for="section-6351da6832d9068cce20b9ab86b9f709" class="flex justify-between">
+      <a role="button" class="">0001 to 0099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0001.-Two-Sum/" class="">0001. Two Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0002.-Add-Two-Numbers/" class="">0002. Add Two Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0013.-Roman-to-Integer/" class="">0013. Roman to Integer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0014.-Longest-Common-Prefix/" class="">0014. Longest Common Prefix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0019.-Remove-Nth-Node-from-End-of-List/" class="">0019. Remove Nth Node From End of List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0020.-Valid-Parentheses/" class="">0020. Valid Parentheses</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0021.-Merge-Two-Sorted-Lists/" class="">0021. Merge Two Sorted Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0023.-Merge-K-Sorted-Lists/" class="">0023. Merge K Sorted Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0024.-Swap-Nodes-in-pairs/" class="">0024. Swap Nodes in Pairs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0025.-Reverse-Nodes-in-K-Group/" class="">0025. Reverse Nodes in K Group</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0026.-Remove-Duplicates-from-Sorted-Array/" class="">0026. Remove Duplicates From Sorted Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0027.-Remove-Element/" class="">0027. Remove Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0038.-Count-and-Say/" class="">0038. Count and Say</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0054.-Spiral-Matrix/" class="">0054. Spiral Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0058.-Length-of-Last-Word/" class="">0058. Length of Last Word</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0059.-Spiral-Matrix-ii/" class="">0059. Spiral Matrix Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0061.-Rotate-List/" class="">0061. Rotate List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0066.-Plus-One/" class="">0066. Plus One</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0067.-Add-Binary/" class="">0067. Add Binary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0070.-Climbing-Stairs/" class="">0070. Climbing Stairs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0071.-Simplify-Path/" class="">0071. Simplify Path</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/" class="">0073. Set Matrix Zeros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0082.-Remove-Duplicates-from-Sorted-List-ii/" class="">0082. Remove Duplicates From Sorted List Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0083.-Remove-Duplicates-from-Sorted-List/" class="">0083. Remove Duplicates From Sorted List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0086.-Partition-List/" class="">0086. Partition List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0088.-Merge-Sorted-Array/" class="">0088. Merge Sorted Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0092.-Reverse-Linked-List-ii/" class="">0092. Reverse Linked List Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0094.-Binary-Tree-Inorder-Traversal/" class="">0094. Binary Tree Inorder Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0001-to-0099/0098.-Validate-Binary-Search-Tree/" class="">0098. Validate Binary Search Tree</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cd5dde26833080b2913dd50e3fd335d6" class="toggle"  />
+    <label for="section-cd5dde26833080b2913dd50e3fd335d6" class="flex justify-between">
+      <a role="button" class="">0100 to 0199</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0100.-Same-Tree/" class="">0100. Same Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0101.-Symmetric-Tree/" class="">0101. Symmetric Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0102.-Binary-Tree-Level-Order-Traversal/" class="">0102. Binary Tree Level Order Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0103.-Binary-Tree-Zigzag-Level-Order-Traversal/" class="">0103. Binary Tree Zigzag Level Order Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0104.-Maximum-Depth-of-BInary-Tree/" class="">0104. Maximum Depth of Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0107.-Binary-Tree-Level-Order-Traversal-II/" class="">0107. Binary Tree Level Order Traversal Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0110.-Balanced-Binary-Tree/" class="">0110. Balanced Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0111.-Minimum-Depth-of-Binary-Tree/" class="">0111. Minimum Depth of Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0112.-Path-Sum/" class="">0112. Path Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0116.-Populating-Next-Right-Pointers-in-Each-Node/" class="">0116. Populating Next Right Pointers in Each Node</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0117.-Populating-Next-Right-Pointers-in-Each-Node-ii/" class="">0117. Populating Next Right Pointers in Each Node Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0118.-Pascals-Triangle/" class="">0118. Pascal&#39;s Triangle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0121.-Best-Time-to-Buy-ans-Sell-Stock/" class="">0121. Best Time to Buy Ans Sell Stock</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0125.-Valid-Palindrome/" class="">0125. Valid Palindrome</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0136.-Single-Number/" class="">0136. Single Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0137.-Single-Number-ii/" class="">0137. Single Number Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0138.-Copy-List-with-Random-Pointer/" class="">0138. Copy List With Random Pointer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0141.-Linked-List-Cycle/" class="">0141. Linked List Cycle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0142.-Linked-List-Cycle-ii/" class="">0142. Linked List Cycle Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0143.-Reorder-List/" class="">0143. Reorder List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0144.-Binary-Tree-Preorder-Traversal/" class="">0144. Binary Tree Preorder Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0145.-Binary-Tree-Postorder-Traversal/" class="">0145. Binary Tree Postorder Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0146.-LRU-Cache/" class="">0146. Lru Cache</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0147.-Insertion-Sort-List/" class="">0147. Insertion Sort List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0148.-Sort-List/" class="">0148. Sort List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0150.-Evaluate-Reverse-Polish-Notation/" class="">0150. Evaluate Reverse Polish Notation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0160.-Intersection-of-Two-Linked-List/" class="">0160. Intersection of Two Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0165.-Compare-Version-Numbers/" class="">0165. Compare Version Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0167.-Two-Sum-II-Input-Array-Is-Sorted/" class="">0167. Two Sum Ii Input Array Is Sorted</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0168.-Excel-Sheet-Column-Title/" class="">0168. Excel Sheet Column Title</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0169.-Majority-Element/" class="">0169. Majority Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0171.-Excel-Sheet-Column-Number/" class="">0171. Excel Sheet Column Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0189.-Rotate-Array/" class="">0189. Rotate Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0191.-Number-of-1-Bits/" class="">0191. Number of 1 Bits</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0198.-House-Robber/" class="">0198. House Robber</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0100-to-0199/0199.-Binary-Tree-Right-Side-View/" class="">0199. Binary Tree Right Side View</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-f6e90de89406b3d2e96fbd107c91b627" class="toggle"  />
+    <label for="section-f6e90de89406b3d2e96fbd107c91b627" class="flex justify-between">
+      <a role="button" class="">0200 to 0299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0202.-Happy-Number/" class="">0202. Happy Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0203.-Remove-Linked-List-Elements/" class="">0203. Remove Linked List Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0205.-Isomorphic-Strings/" class="">0205. Isomorphic Strings</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0206.-Reverse-Linked-List/" class="">0206. Reverse Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0209.-Minimum-Size-Subarray-Sum/" class="">0209. Minimum Size Subarray Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0217.-Contains-Duplicate/" class="">0217. Contains Duplicate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0219.-Contains-Duplicate-ii/" class="">0219. Contains Duplicate Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0226.-Invert-Binary-Tree/" class="">0226. Invert Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0231.-Power-of-Two/" class="">0231. Power of Two</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0232.-Implement-Queue-using-Stacks/" class="">0232. Implement Queue Using Stacks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0234.-Palindrome-Linked-List/" class="">0234. Palindrome Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0237.-Delete-Nodes-in-A-Linked-List/" class="">0237. Delete Nodes in a Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0242.-Valid-Anagram/" class="">0242. Valid Anagram</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0255.-Implement-Stack-using-Queues/" class="">0255. Implement Stack Using Queues</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0258.-Add-Digits/" class="">0258. Add Digits</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0263.-Ugly-Number/" class="">0263. Ugly Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0268.-Missing-Number/" class="">0268. Missing Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0278.-First-Bad-Version/" class="">0278. First Bad Version</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0283.-Move-Zeros/" class="">0283. Move Zeros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0290.-Word-Pattern/" class="">0290. Word Pattern</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0200-to-0299/0292.-Nim-Game/" class="">0292. Nim Game</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2bd5c1b03f9f98091a194999a33306cf" class="toggle"  />
+    <label for="section-2bd5c1b03f9f98091a194999a33306cf" class="flex justify-between">
+      <a role="button" class="">0300 to 0399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0326.-Power-of-Three/" class="">0326. Power of Three</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0328.-Odd-Even-Linked-List/" class="">0328. Odd Even Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0338.-Counting-Bits/" class="">0338. Counting Bits</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0342.-Power-of-Four/" class="">0342. Power of Four</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0344.-Reverse-String/" class="">0344. Reverse String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0345.-Reverse-Vowels-of-a-String/" class="">0345. Reverse Vowels of a String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0349.-Intersection-of-Two-Arrays/" class="">0349. Intersection of Two Arrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0355.-Design-Twitter/" class="">0355. Design Twitter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0369.-Plus-One-Linked-List/" class="">0369. Plus One Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0374.-Guess-Number-Higher-or-Lower/" class="">0374. Guess Number Higher or Lower</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0379.-Design-Phone-Directory/" class="">0379. Design Phone Directory</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0382.-Linked-List-Random-Node/" class="">0382. Linked List Random Node</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0383.-Ransom-Note/" class="">0383. Ransom Note</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0387.-First-Unique-Character-in-a-String/" class="">0387. First Unique Character in a String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0389.-Find-the-Difference/" class="">0389. Find the Difference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0300-to-0399/0392.-Is-Subsequence/" class="">0392. Is Subsequence</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5fbe824fef779ca2125c866051eb76e8" class="toggle"  />
+    <label for="section-5fbe824fef779ca2125c866051eb76e8" class="flex justify-between">
+      <a role="button" class="">0400 to 0499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0400.-Nth-Digit/" class="">0400. Nth Digit</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0404.-Sum-of-Left-Leaves/" class="">0404. Sum of Left Leaves</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0405.-Convert-a-Number-to-Hexadecimal/" class="">0405. Convert a Number to Hexadecimal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0412.-Fizz-Buzz/" class="">0412. Fizz Buzz</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0414.-Third-Maximum-Number/" class="">0414. Third Maximum Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0423.-Reconstruct-Original-Digits-from-English/" class="">0423. Reconstruct Original Digits From English</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0429.-N-ary-Tree-Level-Order-Traversal/" class="">0429. N Ary Tree Level Order Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0430.-Flatten-a-Multilevel-Doubly-Linked-List/" class="">0430. Flatten a Multilevel Doubly Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0432.-All-O1-Data-Structure/" class="">0432. All O(1) Data Structure</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0434.-Number-of-Segments-in-a-String/" class="">0434. Number of Segments in a String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0441.-Arranging-Coins/" class="">0441. Arranging Coins</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0443.-String-Compression/" class="">0443. String Compression</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0445.-Add-Two-Numbers-ii/" class="">0445. Add Two Numbers Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0448.-Find-All-Numbers-Disappeared-in-an-Arry/" class="">0448. Find All Numbers Disappeared in an Arry</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0455.-Assign-Cookies/" class="">0455. Assign Cookies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0460.-LFU-Cache/" class="">0460. Lfu Cache</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0461.-Hamming-Distance/" class="">0461. Hamming Distance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0468.-Validate-IP-Address/" class="">0468. Validate IP Address</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0476.-Number-Complement/" class="">0476. Number Complement</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0482.-License-Key-Formatting/" class="">0482. License Key Formatting</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0485.-Max-Consecutive-Ones/" class="">0485. Max Consecutive Ones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0492.-Construct-the-Rectangle/" class="">0492. Construct the Rectangle</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0400-to-0499/0495.-Teemo-Attacking/" class="">0495. Teemo Attacking</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3f9cd720e8967d2876a88c5e17455db7" class="toggle"  />
+    <label for="section-3f9cd720e8967d2876a88c5e17455db7" class="flex justify-between">
+      <a role="button" class="">0500 to 0599</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0500.-Keyboard-Row/" class="">0500. Keyboard Row</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0504.-Base-7/" class="">0504. Base 7</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0506.-Relative-Ranks/" class="">0506. Relative Ranks</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0507.-Perfect-Number/" class="">0507. Perfect Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0513.-Find-Bottom-Left-Tree-Value/" class="">0513. Find Bottom Left Tree Value</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0515.-Find-Largest-Value-in-Each-Tree-Row/" class="">0515. Find Largest Value in Each Tree Row</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0520.-Detect-Capital/" class="">0520. Detect Capital</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0535.-Encode-and-Decode-TinyURL/" class="">0535. Encode and Decode Tiny URL</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0537.-Complex-Number-Multiplication/" class="">0537. Complex Number Multiplication</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0541.-Reverse-String-ii/" class="">0541. Reverse String Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0551.-Student-Attendance-Record-i/" class="">0551. Student Attendance Record I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0557.-Reverse-Words-in-a-String-iii/" class="">0557. Reverse Words in a String Iii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0559.-Maximum-Depth-of-N-ary-Tree/" class="">0559. Maximum Depth of N Ary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0563.-Binary-Tree-Tilt/" class="">0563. Binary Tree Tilt</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0566.-Reshape-the-Matrix/" class="">0566. Reshape the Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0575.-Distribute-Candies/" class="">0575. Distribute Candies</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0589.-N-ary-Tree-Preorder-Traversal/" class="">0589. N Ary Tree Preorder Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0590.-N-ary-Tree-Postorder-Traversal/" class="">0590. N Ary Tree Postorder Traversal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0594.-Longest-Harmonious-Subsequence/" class="">0594. Longest Harmonious Subsequence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0598.-Range-Addition-II/" class="">0598. Range Addition Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0500-to-0599/0599.-Minimum-Index-Sum-of-Two-Lists/" class="">0599. Minimum Index Sum of Two Lists</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-93f5b144e499e90abaf6cb65c2ed318b" class="toggle"  />
+    <label for="section-93f5b144e499e90abaf6cb65c2ed318b" class="flex justify-between">
+      <a role="button" class="">0600 to 0699</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0617.-Merge-Two-Binary-Trees/" class="">0617. Merge Two Binary Trees</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0622.-Design-Circular-Queue/" class="">0622. Design Circular Queue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0637.-Average-of-Levels-in-Binary-Tree/" class="">0637. Average of Levels in Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0641.-Design-Circular-Deque/" class="">0641. Design Circular Deque</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0643.-Maximum-Average-Subarray-i/" class="">0643. Maximum Average Subarray I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0645.-Set-Mismatch/" class="">0645. Set Mismatch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0657.-Robot-Return-to-Origin/" class="">0657. Robot Return to Origin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0661.-Image-Smoother/" class="">0661. Image Smoother</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0670.-Maximum-Swap/" class="">0670. Maximum Swap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0682.-Baseball-Game/" class="">0682. Baseball Game</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0600-to-0699/0693.-Binary-Number-with-Alternating-Bits/" class="">0693. Binary Number With Alternating Bits</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b6e0c04e11fb5b167b6150beeca1d75e" class="toggle"  />
+    <label for="section-b6e0c04e11fb5b167b6150beeca1d75e" class="flex justify-between">
+      <a role="button" class="">0700 to 0799</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0703.-Kth-Largest-Element-in-a-Stream/" class="">0703. Kth Largest Element in a Stream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0704.-Binary-Search/" class="">0704. Binary Search</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0707.-Design-Linked-List/" class="">0707. Design Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0708.-Insert-into-a-Sorted-Circular-Linked-List/" class="">0708. Insert Into a Sorted Circular Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0709.-To-Lower-Case/" class="">0709. to Lower Case</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0716.-Max-Stack/" class="">0716. Max Stack</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0720-Longest-Word-in-Dictionary/" class="">0720 Longest Word in Dictionary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0724.-Find-Pivot-Index/" class="">0724. Find Pivot Index</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0725.-Split-Linked-List-in-Parts/" class="">0725. Split Linked List in Parts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0735.-Asteroid-Collision/" class="">0735. Asteroid Collision</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0744.-Find-Smallest-Letter-Greater-Than-Target/" class="">0744. Find Smallest Letter Greater Than Target</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0746.-Min-Cost-Climbing-Stairs/" class="">0746. Min Cost Climbing Stairs</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0747.-Largest-Number-At-Least-Twice-of-Others/" class="">0747. Largest Number at Least Twice of Others</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0748.-Shortest-Completing-Word/" class="">0748. Shortest Completing Word</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0762.-Prime-Number-of-Set-Bits-in-Binary-Representation/" class="">0762. Prime Number of Set Bits in Binary Representation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0771.-Jewels-and-Stones/" class="">0771. Jewels and Stones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0700-to-0799/0796.-Rotate-String/" class="">0796. Rotate String</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-20586204c49b6a1799e6989506fab6c8" class="toggle"  />
+    <label for="section-20586204c49b6a1799e6989506fab6c8" class="flex justify-between">
+      <a role="button" class="">0800 to 0899</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0804.-Unique-Morse-Code-Words/" class="">0804. Unique Morse Code Words</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0817.-Linked-List-Components/" class="">0817. Linked List Components</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0819.-Most-Common-Word/" class="">0819. Most Common Word</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0821.-Shortest-Distance-to-a-Character/" class="">0821. Shortest Distance to a Character</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0824.-Goat-Latin/" class="">0824. Goat Latin</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0832.-Flipping-an-Image/" class="">0832. Flipping an Image</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0844.-Backspace-String-Compare/" class="">0844. Backspace String Compare</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0859.-Buddy-Strings/" class="">0859. Buddy Strings</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0860.-Lemonade-Change/" class="">0860. Lemonade Change</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0867.-Transpose-Matrix/" class="">0867. Transpose Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0868.-Binary-Gap/" class="">0868. Binary Gap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0876.-Middle-of-the-Linked-List/" class="">0876. Middle of the Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0883.-Projection-Area-of-3D-Shapes/" class="">0883. Projection Area of 3 D Shapes</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0884.-Uncommon-Words-from-Two-Sentences/" class="">0884. Uncommon Words From Two Sentences</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0888.-Fair-Candy-Swap/" class="">0888. Fair Candy Swap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0800-to-0899/0896.-Monotonic-Array/" class="">0896. Monotonic Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="toggle"  />
+    <label for="section-ceca5d7fd6f3698a3f8a1247fd7c6b56" class="flex justify-between">
+      <a role="button" class="">0900 to 0999</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0905.-Sort-Array-by-Parity/" class="">0905. Sort Array by Parity</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0908.-Smallest-Range-i/" class="">0908. Smallest Range I</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0915.-Partition-Array-into-Disjoint-Intervals/" class="">0915. Partition Array Into Disjoint Intervals</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0917.-Reverse-Only-Letters/" class="">0917. Reverse Only Letters</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0921.-Minimum-Add-to-Make-Parentheses-Valid/" class="">0921. Minimum Add to Make Parentheses Valid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0929.-Unique-Email-Addresses/" class="">0929. Unique Email Addresses</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0933.-Number-of-Recent-Calls/" class="">0933. Number of Recent Calls</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0944.-Delete-Columns-to-Make-Sorted/" class="">0944. Delete Columns to Make Sorted</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0953.-Verifying-an-Alien-Dictionary/" class="">0953. Verifying an Alien Dictionary</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0961.-N-Repeated-Element-in-Size-2N-Array/" class="">0961. N Repeated Element in Size 2 N Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0965.-Univalued-Binary-Tree/" class="">0965. Univalued Binary Tree</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0977.-Squares-of-A-Sorted-Array/" class="">0977. Squares of a Sorted Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/0900-to-0999/0997.-Find-the-Town-Judge/" class="">0997. Find the Town Judge</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-249e5a4bf35001596fa3af040d4d4bc5" class="toggle"  />
+    <label for="section-249e5a4bf35001596fa3af040d4d4bc5" class="flex justify-between">
+      <a role="button" class="">1000 to 1099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1005.-Maximize-Sum-Of-Array-After-K-Negations/" class="">1005. Maximize Sum of Array After K Negations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1019.-Next-Greater-Node-in-Linked-List/" class="">1019. Next Greater Node in Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1021.-Remove-Outermost-Parentheses/" class="">1021. Remove Outermost Parentheses</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1037.-Valid-Boomerang/" class="">1037. Valid Boomerang</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1047.-Remove-All-Adjacent-Duplicates-In-String/" class="">1047. Remove All Adjacent Duplicates in String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1051.-Height-Checker/" class="">1051. Height Checker</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1078.-Occurrences-After-Bigram/" class="">1078. Occurrences After Bigram</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1000-to-1099/1089.-Duplicate-Zeros/" class="">1089. Duplicate Zeros</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-4e08bb43d7994a54f4a7a514bf0dd7a5" class="toggle"  />
+    <label for="section-4e08bb43d7994a54f4a7a514bf0dd7a5" class="flex justify-between">
+      <a role="button" class="">1100 to 1199</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1108.-Defanging-an-IP-Address/" class="">1108. Defanging an IP Address</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1137.-N-th-Tribonacci-Number/" class="">1137. N Th Tribonacci Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1154.-Day-of-the-Year/" class="">1154. Day of the Year</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1171.-Remove-Zero-Sum-Consecutive-Nodes-from-Linked-List/" class="">1171. Remove Zero Sum Consecutive Nodes From Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1184.-Distance-Between-Bus-Stops/" class="">1184. Distance Between Bus Stops</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1185.-Day-of-the-Week/" class="">1185. Day of the Week</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1100-to-1199/1189.-Maximum-Number-of-Balloons/" class="">1189. Maximum Number of Balloons</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0896ec8c597c0f1df734aa8fd96f23d4" class="toggle"  />
+    <label for="section-0896ec8c597c0f1df734aa8fd96f23d4" class="flex justify-between">
+      <a role="button" class="">1200 to 1299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1200.-Minimum-Absolute-Difference/" class="">1200. Minimum Absolute Difference</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1206.-Design-SkipList/" class="">1206. Design Skip List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1207.-Unique-Number-of-Occurrences/" class="">1207. Unique Number of Occurrences</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1232.-Check-If-It-Is-a-Straight-Line/" class="">1232. Check if It Is a Straight Line</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1252.-Cells-with-Odd-Values-in-a-Matrix/" class="">1252. Cells With Odd Values in a Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1265.-Print-Immutable-Linked-List-in-Reverse/" class="">1265. Print Immutable Linked List in Reverse</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1290.-Convert-Binary-Number-in-A-Linked-List-to-Integer/" class="">1290. Convert Binary Number in a Linked List to Integer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1200-to-1299/1295.-Find-Numbers-with-Even-Number-of-Digits/" class="">1295. Find Numbers With Even Number of Digits</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-70be06056342852d930bf4c7177962cd" class="toggle"  />
+    <label for="section-70be06056342852d930bf4c7177962cd" class="flex justify-between">
+      <a role="button" class="">1300 to 1399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1309.-Decrypt-String-from-Alphabet-to-Integer-Mapping/" class="">1309. Decrypt String From Alphabet to Integer Mapping</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1323.-Maximum-69-Number/" class="">1323. Maximum 69 Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1331.-Rank-Transform-of-an-Array/" class="">1331. Rank Transform of an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1342.-Number-of-Steps-to-Reduce-a-Number-to-Zero/" class="">1342. Number of Steps to Reduce a Number to Zero</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1346.-Check-If-N-and-Its-Double-Exist/" class="">1346. Check if N and Its Double Exist</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1374.-Generate-a-String-With-Characters-That-Have-Odd-Counts/" class="">1374. Generate a String With Characters That Have Odd Counts</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1380.-Lucky-Numbers-in-a-Matrix/" class="">1380. Lucky Numbers in a Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1300-to-1399/1394.-Find-Lucky-Integer-in-an-Array/" class="">1394. Find Lucky Integer in an Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-882c6dfa4cac6a5a4fc53d76ea16e6a9" class="toggle"  />
+    <label for="section-882c6dfa4cac6a5a4fc53d76ea16e6a9" class="flex justify-between">
+      <a role="button" class="">1400 to 1499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1408.-String-Matching-in-an-Array/" class="">1408. String Matching in an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1413.-Minimum-Value-to-Get-Positive-Step-by-Step-Sum/" class="">1413. Minimum Value to Get Positive Step by Step Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1417.-Reformat-The-String/" class="">1417. Reformat the String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1422.-Maximum-Score-After-Splitting-a-String/" class="">1422. Maximum Score After Splitting a String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1436.-Destination-City/" class="">1436. Destination City</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1446.-Consecutive-Characters/" class="">1446. Consecutive Characters</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1455.-Check-If-a-Word-Occurs-As-a-Prefix-of-Any-Word-in-a-Sentence/" class="">1455. Check if a Word Occurs as a Prefix of Any Word in a Sentence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1460.-Make-Two-Arrays-Equal-by-Reversing-Subarrays/" class="">1460. Make Two Arrays Equal by Reversing Subarrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1464.-Maximum-Product-of-Two-Elements-in-an-Array/" class="">1464. Maximum Product of Two Elements in an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1470.-Shuffle-the-Array/" class="">1470. Shuffle the Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1472.-Design-Browser-History/" class="">1472. Design Browser History</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1474.-Delete-N-Nodes-After-M-Nodes-of-A-Linked-List/" class="">1474. Delete N Nodes After M Nodes of a Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1475.-Final-Prices-With-a-Special-Discount-in-a-Shop/" class="">1475. Final Prices With a Special Discount in a Shop</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1480.-Running-Sum-of-1d-Array/" class="">1480. Running Sum of 1d Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1486.-XOR-Operation-in-an-Array/" class="">1486. Xor Operation in an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1400-to-1499/1491.-Average-Salary-Excluding-the-Minimum-and-Maximum-Salary/" class="">1491. Average Salary Excluding the Minimum and Maximum Salary</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-50c82b9a8d7ef568cd0166292966f1dc" class="toggle"  />
+    <label for="section-50c82b9a8d7ef568cd0166292966f1dc" class="flex justify-between">
+      <a role="button" class="">1500 to 1599</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1502.-Can-Make-Arithmetic-Progression-From-Sequence/" class="">1502. Can Make Arithmetic Progression From Sequence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1507.-Reformat-Date/" class="">1507. Reformat Date</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1518.-Water-Bottles/" class="">1518. Water Bottles</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1550.-Three-Consecutive-Odds/" class="">1550. Three Consecutive Odds</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1576.-Replace-All-s-to-Avoid-Consecutive-Repeating-Characters/" class="">1576. Replace All ?&#39;S to Avoid Consecutive Repeating Characters</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1582.-Special-Positions-in-a-Binary-Matrix/" class="">1582. Special Positions in a Binary Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1592.-Rearrange-Spaces-Between-Words/" class="">1592. Rearrange Spaces Between Words</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1500-to-1599/1598.-Crawler-Log-Folder/" class="">1598. Crawler Log Folder</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2ef42fab8c3d128ac222bcb81913a18d" class="toggle"  />
+    <label for="section-2ef42fab8c3d128ac222bcb81913a18d" class="flex justify-between">
+      <a role="button" class="">1600 to 1699</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1603.-Design-Parking-System/" class="">1603. Design Parking System</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1608.-Special-Array-With-X-Elements-Greater-Than-or-Equal-X/" class="">1608. Special Array With X Elements Greater Than or Equal X</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1614.-Maximum-Nesting-Depth-of-the-Parentheses/" class="">1614. Maximum Nesting Depth of the Parentheses</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1619.-Mean-of-Array-After-Removing-Some-Elements/" class="">1619. Mean of Array After Removing Some Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1624.-Largest-Substring-Between-Two-Equal-Characters/" class="">1624. Largest Substring Between Two Equal Characters</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1629.-Slowest-Key/" class="">1629. Slowest Key</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1634.-Add-Two-Polynomials-Represented-as-Linked-Lists/" class="">1634. Add Two Polynomials Represented as Linked Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1640.-Check-Array-Formation-Through-Concatenation/" class="">1640. Check Array Formation Through Concatenation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1646.-Get-Maximum-in-Generated-Array/" class="">1646. Get Maximum in Generated Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1652.-Defuse-the-Bomb/" class="">1652. Defuse the Bomb</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1656.-Design-an-Ordered-Stream/" class="">1656. Design an Ordered Stream</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1662.-Check-If-Two-String-Arrays-are-Equivalent/" class="">1662. Check if Two String Arrays Are Equivalent</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1669.-Merge-in-Between-Linked-Lists/" class="">1669. Merge in Between Linked Lists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1670.-Design-Front-Middle-Back-Queue/" class="">1670. Design Front Middle Back Queue</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1672.-Richest-Customer-Wealth/" class="">1672. Richest Customer Wealth</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1678.-Goal-Parser-Interpretation/" class="">1678. Goal Parser Interpretation</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1684.-Count-the-Number-of-Consistent-Strings/" class="">1684. Count the Number of Consistent Strings</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1688.-Count-of-Matches-in-Tournament/" class="">1688. Count of Matches in Tournament</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1600-to-1699/1694.-Reformat-Phone-Number/" class="">1694. Reformat Phone Number</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-7c8d50336e45d2ee7a05b738c99dbd66" class="toggle"  />
+    <label for="section-7c8d50336e45d2ee7a05b738c99dbd66" class="flex justify-between">
+      <a role="button" class="">1700 to 1799</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1700.-Number-of-Students-Unable-to-Eat-Lunch/" class="">1700. Number of Students Unable to Eat Lunch</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1704.-Determine-if-String-Halves-Are-Alike/" class="">1704. Determine if String Halves Are Alike</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1710.-Maximum-Units-on-a-Truck/" class="">1710. Maximum Units on a Truck</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1716.-Calculate-Money-in-Leetcode-Bank/" class="">1716. Calculate Money in Leetcode Bank</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1720.-Decode-XORed-Array/" class="">1720. Decode Xored Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1721.-Swapping-Nodes-in-A-Linked-List/" class="">1721. Swapping Nodes in a Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1725.-Number-Of-Rectangles-That-Can-Form-The-Largest-Square/" class="">1725. Number of Rectangles That Can Form the Largest Square</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1732.-Find-the-Highest-Altitude/" class="">1732. Find the Highest Altitude</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1736.-Latest-Time-by-Replacing-Hidden-Digits/" class="">1736. Latest Time by Replacing Hidden Digits</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1742.-Maximum-Number-of-Balls-in-a-Box/" class="">1742. Maximum Number of Balls in a Box</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1748.-Sum-of-Unique-Elements/" class="">1748. Sum of Unique Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1758.-Minimum-Changes-To-Make-Alternating-Binary-String/" class="">1758. Minimum Changes to Make Alternating Binary String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1768.-Merge-Strings-Alternatively/" class="">1768. Merge Strings Alternatively</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1773.-Count-Items-Matching-a-Rule/" class="">1773. Count Items Matching a Rule</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1779.-Find-Nearest-Point-That-Has-the-Same-X-or-Y-Coordinate/" class="">1779. Find Nearest Point That Has the Same X or Y Coordinate</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1784.-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones/" class="">1784. Check if Binary String Has at Most One Segment of Ones</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1790.-Check-if-One-String-Swap-Can-Make-Strings-Equal/" class="">1790. Check if One String Swap Can Make Strings Equal</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1791.-Find-Center-of-Star-Graph/" class="">1791. Find Center of Star Graph</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1700-to-1799/1796.-Second-Largest-Digit-in-a-String/" class="">1796. Second Largest Digit in a String</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-1a44a1dd10cac6c62e2adcbd9b336979" class="toggle"  />
+    <label for="section-1a44a1dd10cac6c62e2adcbd9b336979" class="flex justify-between">
+      <a role="button" class="">1800 to 1899</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1802.-Maximum-Value-at-a-Given-Index-in-a-Bounded-array/" class="">1802. Maximum Value at a Given Index in a Bounded Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1816.-Truncate-Sentence/" class="">1816. Truncate Sentence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1822.-Sign-of-the-Product-of-an-Array/" class="">1822. Sign of the Product of an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1836.-Remove-Duplicates-From-an-Unsorted-Linked-List/" class="">1836. Remove Duplicates From an Unsorted Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1893.-Check-if-All-the-Integers-in-a-Range-Are-Covered/" class="">1893. Check if All the Integers in a Range Are Covered</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1800-to-1899/1894.-Find-the-Student-that-Will-Replace-the-Chalk/" class="">1894. Find the Student That Will Replace the Chalk</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ead4ec45db718fe5afad43e67d7db0f0" class="toggle"  />
+    <label for="section-ead4ec45db718fe5afad43e67d7db0f0" class="flex justify-between">
+      <a role="button" class="">1900 to 1999</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1900-to-1999/1952.-Three-Divisors/" class="">1952. Three Divisors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1900-to-1999/1974.-Minimum-Time-to-Type-Word-Using-Special-Typewriter/" class="">1974. Minimum Time to Type Word Using Special Typewriter</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1900-to-1999/1979.-Find-Greatest-Common-Divisor-of-Array/" class="">1979. Find Greatest Common Divisor of Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/" class="">1991. Find the Middle Index in Array</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3e201d992afa23525d93fd88b6f14424" class="toggle"  />
+    <label for="section-3e201d992afa23525d93fd88b6f14424" class="flex justify-between">
+      <a role="button" class="">2000 to 2099</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2000.-Reverse-Prefix-of-Word/" class="">2000. Reverse Prefix of Word</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2006.-Count-Number-of-Pairs-With-Absolute-Difference-K/" class="">2006. Count Number of Pairs With Absolute Difference K</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2016.-Maximum-Difference-Between-Increasing-Elements/" class="">2016. Maximum Difference Between Increasing Elements</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2022.-Convert-1D-Array-into-2D-Array/" class="">2022. Convert 1 D Array Into 2 D Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2028.-Find-Missing-Observations/" class="">2028. Find Missing Observations</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2043.-Simple-Bank-System/" class="">2043. Simple Bank System</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2046.-Sort-Linked-List-Already-Sorted-Using-Absolute-Values/" class="">2046. Sort Linked List Already Sorted Using Absolute Values</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2047.-Number-of-Valid-Words-in-a-Sentence/" class="">2047. Number of Valid Words in a Sentence</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2058.-Find-the-Minimum-and-Maximum-Number-of-Nodes-Between-Critical-Points/" class="">2058. Find the Minimum and Maximum Number of Nodes Between Critical Points</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2069.-Walking-Robot-Simulation-ii/" class="">2069. Walking Robot Simulation Ii</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2073.-Time-Needed-to-Buy-Tickets/" class="">2073. Time Needed to Buy Tickets</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2074.-Reverse-Nodes-in-Even-Length-Groups/" class="">2074. Reverse Nodes in Even Length Groups</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2000-to-2099/2095.-Delete-the-Middle-Node-of-A-Linked-List/" class="">2095. Delete the Middle Node of a Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-86737189db6d1b5c337363a21309d2e7" class="toggle"  />
+    <label for="section-86737189db6d1b5c337363a21309d2e7" class="flex justify-between">
+      <a role="button" class="">2100 to 2199</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2114.-Maximum-Number-of-Words-Found-in-Sentences/" class="">2114. Maximum Number of Words Found in Sentences</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/" class="">2130. Maximum Twin Sum of a Linked List</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2133.-Check-if-Every-Row-and-Colum-Contains-All-Numbers/" class="">2133. Check if Every Row and Colum Contains All Numbers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2144.-Minimum-Cost-of-Buying-Candies-With-Discount/" class="">2144. Minimum Cost of Buying Candies With Discount</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2169.-Count-Operations-to-Obtain-Zero/" class="">2169. Count Operations to Obtain Zero</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2180.-Count-Integers-With-Even-Digit-Sum/" class="">2180. Count Integers With Even Digit Sum</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/" class="">2181. Merge Nodes in Between Zeros</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2100-to-2199/2185.-Counting-Words-With-a-Given-Prefix/" class="">2185. Counting Words With a Given Prefix</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-551f264b0c6829c2a83468166f53bdfe" class="toggle"  />
+    <label for="section-551f264b0c6829c2a83468166f53bdfe" class="flex justify-between">
+      <a role="button" class="">2200 to 2299</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2215.-Find-the-DIfference-of-Two-Arrays/" class="">2215. Find the Difference of Two Arrays</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2220.-Minimum-Bit-Flips-to-Convert-Number/" class="">2220. Minimum Bit Flips to Convert Number</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2235.-Add-Two-Integers/" class="">2235. Add Two Integers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2236.-Root-Equals-Sum-of-Children/" class="">2236. Root Equals Sum of Children</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2255.-Count-Prefixes-of-a-Given-String/" class="">2255. Count Prefixes of a Given String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2278.-Percentage-of-Letter-in-String/" class="">2278. Percentage of Letter in String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2283.-Minimum-Hours-of-Training-to-Win-a-Competition/" class="">2283. Minimum Hours of Training to Win a Competition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2287.-Rearrange-Characters-to-Make-Target-String/" class="">2287. Rearrange Characters to Make Target String</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/" class="">2289. Steps to Make Array Non Decreasing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2293.-Min-Max-Game/" class="">2293. Min Max Game</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2200-to-2299/2296.-Design-A-Text-Editor/" class="">2296. Design a Text Editor</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-ae5f2a479797f4c4177fac58d9f00259" class="toggle"  />
+    <label for="section-ae5f2a479797f4c4177fac58d9f00259" class="flex justify-between">
+      <a role="button" class="">2300 to 2399</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2309.-Generate-English-Letter-in-Upper-and-Lower-Case/" class="">2309. Generate English Letter in Upper and Lower Case</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2319.-Check-if-Matrix-is-X-Matrix/" class="">2319. Check if Matrix Is X Matrix</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2325.-Decode-the-Message/" class="">2325. Decode the Message</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2326.-Spiral-Matrix-IV/" class="">2326. Spiral Matrix Iv</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2300-to-2399/2331.-Evaluate-Boolean-Binary-Tree/" class="">2331. Evaluate Boolean Binary Tree</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-510a7b32d3f64083c77e9f20b163e680" class="toggle"  />
+    <label for="section-510a7b32d3f64083c77e9f20b163e680" class="flex justify-between">
+      <a role="button" class="">2400 to 2499</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2404.-Most-Frequent-Even-Element/" class="">2404. Most Frequent Even Element</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2413.-Smallest-Even-Multiple/" class="">2413. Smallest Even Multiple</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2427.-Number-of-Common-Factors/" class="">2427. Number of Common Factors</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2432.-The-Employee-That-Worked-on-the-Longest-Task/" class="">2432. the Employee That Worked on the Longest Task</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2441.-Largest-Positive-Integer-That-Exists-With-Its-Negative/" class="">2441. Largest Positive Integer That Exists With Its Negative</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/" class="">2460. Apply Operations to an Array</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2469.-Convert-the-Temperature/" class="">2469. Convert the Temperature</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2485.-Find-the-Pivot-Integer/" class="">2485. Find the Pivot Integer</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2400-to-2499/2487.-Remove-Nodes-From-Linked-List/" class="">2487. Remove Nodes From Linked List</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-33c07b1fbf2a93086338729bfc4a07e8" class="toggle"  />
+    <label for="section-33c07b1fbf2a93086338729bfc4a07e8" class="flex justify-between">
+      <a role="button" class="">2500 to 2599</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/2500-to-2599/2586.-Count-the-Number-of-Vowel-Strings-in-Range/" class="">2586. Count the Number of Vowel Strings in Range</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-77c52f6e02bb053791d65c6510860578" class="toggle"  />
+    <label for="section-77c52f6e02bb053791d65c6510860578" class="flex justify-between">
+      <a role="button" class="">剑指 Offer</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/06.-%E4%BB%8E%E5%B0%BE%E5%88%B0%E5%A4%B4%E6%89%93%E5%8D%B0%E9%93%BE%E8%A1%A8/" class="">06. 从尾到头打印链表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/09.-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/" class="">09. 用两个栈实现队列</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/10.-%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97/" class="">10. 斐波那契数列</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/18.-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E8%8A%82%E7%82%B9/" class="">18. 删除链表的节点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/27.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%95%9C%E5%83%8F/" class="">27. 二叉树的镜像</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/28.-%E5%AF%B9%E7%A7%B0%E7%9A%84%E4%BA%8C%E5%8F%89%E6%A0%91/" class="">28. 对称的二叉树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/32.-%E4%BB%8E%E4%B8%8A%E5%88%B0%E4%B8%8B%E6%89%93%E5%8D%B0%E4%BA%8C%E5%8F%89%E6%A0%91/" class="">32. 从上到下打印二叉树</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer/55.-%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6/" class="">55. 二叉树的深度</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-2398d8b2b1fadc2dc201e900f01e6178" class="toggle"  />
+    <label for="section-2398d8b2b1fadc2dc201e900f01e6178" class="flex justify-between">
+      <a role="button" class="">剑指 Offer 2</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/002.-%E4%BA%8C%E8%BF%9B%E5%88%B6%E5%8A%A0%E6%B3%95/" class="">002. 二进制加法</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/003.-%E5%89%8Dn%E4%B8%AA%E6%95%B0%E5%AD%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E4%B8%AD1%E7%9A%84%E4%B8%AA%E6%95%B0/" class="">003. 前n个数字二进制中1的个数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/041.-%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC/" class="">041. 滑动窗口的平均值</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/042.-%E6%9C%80%E8%BF%91%E8%AF%B7%E6%B1%82%E6%AC%A1%E6%95%B0/" class="">042. 最近请求次数</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E5%89%91%E6%8C%87-Offer-2/058.-%E5%B7%A6%E6%97%8B%E8%BD%AC%E5%AD%97%E7%AC%A6%E4%B8%B2/" class="">058. 左旋转字符串</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-3548349c75abc0aa04669478999a37be" class="toggle"  />
+    <label for="section-3548349c75abc0aa04669478999a37be" class="flex justify-between">
+      <a role="button" class="">面试题</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.01.-%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E6%98%AF%E5%90%A6%E5%94%AF%E4%B8%80/" class="">面试题 01.01. 判断字符是否唯一</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.02.-%E5%88%A4%E5%AE%9A%E6%98%AF%E5%90%A6%E4%BA%92%E4%B8%BA%E5%AD%97%E7%AC%A6%E9%87%8D%E6%8E%92/" class="">面试题 01.02. 判定是否互为字符重排</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.04.-%E5%9B%9E%E6%96%87%E6%8E%92%E5%88%97/" class="">面试题 01.04. 回文排列</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-01.08.-%E9%9B%B6%E7%9F%A9%E9%98%B5/" class="">面试题 01.08. 零矩阵</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-02.01.-%E7%A7%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%8A%82%E7%82%B9/" class="">面试题 02.01. 移除重复节点</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.03.-%E5%A0%86%E7%9B%98%E5%AD%90/" class="">面试题 03.03. 堆盘子</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-03.04.-%E5%8C%96%E6%A0%88%E4%B8%BA%E9%98%9F/" class="">面试题 03.04. 化栈为队</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.03.-%E7%89%B9%E5%AE%9A%E6%B7%B1%E5%BA%A6%E8%8A%82%E7%82%B9%E9%93%BE%E8%A1%A8/" class="">面试题 04.03. 特定深度节点链表</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-04.04.-%E6%A3%80%E6%9F%A5%E5%B9%B3%E8%A1%A1%E6%80%A7/" class="">面试题 04.04. 检查平衡性</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-05.07.-%E9%85%8D%E5%AF%B9%E4%BA%A4%E6%8D%A2/" class="">面试题 05.07. 配对交换</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/%E9%9D%A2%E8%AF%95%E9%A2%98/%E9%9D%A2%E8%AF%95%E9%A2%98-16.07.-%E6%9C%80%E5%A4%A7%E6%95%B0%E5%80%BC/" class="">面试题 16.07. 最大数值</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-cbcc31a583c0145a76ad69ecb3df93c8" class="toggle" checked />
+    <label for="section-cbcc31a583c0145a76ad69ecb3df93c8" class="flex justify-between">
+      <a role="button" class="">Lcp</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/01.-%E7%8C%9C%E6%95%B0%E5%AD%97/" class="">01. 猜数字</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/06.-%E6%8B%BF%E7%A1%AC%E5%B8%81/" class="active">06. 拿硬币</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/17.-%E9%80%9F%E7%AE%97%E6%9C%BA%E5%99%A8%E4%BA%BA/" class="">17. 速算机器人</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/44.-%E5%BC%80%E5%B9%95%E5%BC%8F%E7%84%B0%E7%81%AB/" class="">44. 开幕式焰火</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/50.-%E5%AE%9D%E7%9F%B3%E8%A1%A5%E7%BB%99/" class="">50. 宝石补给</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/61.-%E6%B0%94%E6%B8%A9%E5%8F%98%E5%8C%96%E8%B6%8B%E5%8A%BF/" class="">61. 气温变化趋势</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCP/66.-%E6%9C%80%E5%B0%8F%E5%B1%95%E5%8F%B0%E6%95%B0%E9%87%8F/" class="">66. 最小展台数量</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5b48bc7be4b46f11e83d8d5014bd341b" class="toggle"  />
+    <label for="section-5b48bc7be4b46f11e83d8d5014bd341b" class="flex justify-between">
+      <a role="button" class="">Lcs</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/codes/LCS/02.-%E5%AE%8C%E6%88%90%E4%B8%80%E5%8D%8A%E9%A2%98%E7%9B%AE/" class="">02. 完成一半题目</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/" class="">Templates</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/reservoir/" class="">3.01 Random sampling with a reservoir</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/LRU/" class="">3.02 LRU &amp; LFU</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/SkipList/" class="">3.03 SkipList</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/HashMap/" class="">3.04 HashMap</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/templates/bit/" class="">3.05 Bit Operation</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>06. 拿硬币</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h1 id="lcp-06-拿硬币httpsleetcodecnproblemsna-ying-bidescription">
+  
+  <a href="https://leetcode.cn/problems/na-ying-bi/description/">LCP 06. 拿硬币</a>
+  <a class="anchor" href="#lcp-06-%e6%8b%bf%e7%a1%ac%e5%b8%81httpsleetcodecnproblemsna-ying-bidescription">#</a>
+</h1>
+<h2 id="题目">
+  题目
+  <a class="anchor" href="#%e9%a2%98%e7%9b%ae">#</a>
+</h2>
+<ul>
+<li>桌上有 <code>n</code> 堆力扣币，每堆的数量保存在数组 <code>coins</code> 中。我们每次可以选择任意一堆，拿走其中的一枚或者两枚，求拿完所有力扣币的最少次数。</li>
+</ul>
+<h2 id="思路">
+  思路
+  <a class="anchor" href="#%e6%80%9d%e8%b7%af">#</a>
+</h2>
+<h3 id="模拟">
+  模拟
+  <a class="anchor" href="#%e6%a8%a1%e6%8b%9f">#</a>
+</h3>
+<h2 id="代码">
+  代码
+  <a class="anchor" href="#%e4%bb%a3%e7%a0%81">#</a>
+</h2>
+<h3 id="模拟-1">
+  模拟
+  <a class="anchor" href="#%e6%a8%a1%e6%8b%9f-1">#</a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">minCount</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">[]</span> coins<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> coin<span style="color:#f92672">:</span> coins<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>            ans <span style="color:#f92672">+=</span> coin <span style="color:#f92672">/</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> coin <span style="color:#f92672">%</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ans<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/ententent/ententent.github.io/edit/main/exampleSite/content.en/docs/codes/LCP/06.%20%e6%8b%bf%e7%a1%ac%e5%b8%81.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

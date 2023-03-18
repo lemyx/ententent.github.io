@@ -16,6 +16,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1507.-Reformat-Date/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1507.-Reformat-Date/</guid>
+      <description>1507. Reformat Date # 题目 # 给你一个字符串 date ，它的格式为 Day Month Year ，其中： Day 是集合 {&amp;quot;1st&amp;quot;, &amp;quot;2nd&amp;quot;, &amp;quot;3rd&amp;quot;, &amp;quot;4th&amp;quot;, ..., &amp;quot;30th&amp;quot;, &amp;quot;31st&amp;quot;} 中的一个元素。 Month 是集合 {&amp;quot;Jan&amp;quot;, &amp;quot;Feb&amp;quot;, &amp;quot;Mar&amp;quot;, &amp;quot;Apr&amp;quot;, &amp;quot;May&amp;quot;, &amp;quot;Jun&amp;quot;, &amp;quot;Jul&amp;quot;, &amp;quot;Aug&amp;quot;, &amp;quot;Sep&amp;quot;, &amp;quot;Oct&amp;quot;, &amp;quot;Nov&amp;quot;, &amp;quot;Dec&amp;quot;} 中的一个元素。 Year 的范围在 [1900, 2100] 之间。 请你将字符串转变为 YYYY-MM-DD 的格式，其中： YYYY 表示 4 位的年份。 MM 表示 2 位的月份。 DD 表示 2 位的天数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public String month2int(String month) { switch (month) { case &amp;#34;Jan&amp;#34;: return &amp;#34;01&amp;#34;; case &amp;#34;Feb&amp;#34;: return &amp;#34;02&amp;#34;; case &amp;#34;Mar&amp;#34;: return &amp;#34;03&amp;#34;; case &amp;#34;Apr&amp;#34;: return &amp;#34;04&amp;#34;; case &amp;#34;May&amp;#34;: return &amp;#34;05&amp;#34;; case &amp;#34;Jun&amp;#34;: return &amp;#34;06&amp;#34;; case &amp;#34;Jul&amp;#34;: return &amp;#34;07&amp;#34;; case &amp;#34;Aug&amp;#34;: return &amp;#34;08&amp;#34;; case &amp;#34;Sep&amp;#34;: return &amp;#34;09&amp;#34;; case &amp;#34;Oct&amp;#34;: return &amp;#34;10&amp;#34;; case &amp;#34;Nov&amp;#34;: return &amp;#34;11&amp;#34;; case &amp;#34;Dec&amp;#34;: return &amp;#34;12&amp;#34;; } return &amp;#34;&amp;#34;; } public String reformatDate(String date) { String year = date.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1500-to-1599/1518.-Water-Bottles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

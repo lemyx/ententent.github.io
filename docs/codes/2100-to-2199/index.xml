@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2100-to-2199/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2114.-Maximum-Number-of-Words-Found-in-Sentences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2114.-Maximum-Number-of-Words-Found-in-Sentences/</guid>
+      <description> 2114. Maximum Number of Words Found in Sentences # 题目 # 一个 句子 由一些 单词 以及它们之间的单个空格组成，句子的开头和结尾不会有多余空格。 给你一个字符串数组 sentences ，其中 sentences[i] 表示单个 句子 。 请你返回单个句子里 单词的最多数目 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int mostWordsFound(String[] sentences) { int ans = 0; for (String sentence: sentences) { ans = Math.max(ans, sentence.split(&amp;#34; &amp;#34;).length); } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2130.-Maximum-Twin-Sum-of-A-Linked-List/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -15,6 +24,26 @@
 比方说，n = 4 那么节点 0 是节点 3 的孪生节点，节点 1 是节点 2 的孪生节点。这是长度为 n = 4 的链表中所有的孪生节点。 孪生和 定义为一个节点和它孪生节点两者值之和。
 给你一个长度为偶数的链表的头节点 head ，请你返回链表的 最大孪生和 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2133.-Check-if-Every-Row-and-Colum-Contains-All-Numbers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2133.-Check-if-Every-Row-and-Colum-Contains-All-Numbers/</guid>
+      <description>2133. Check if Every Row and Colum Contains All Numbers # 题目 # 对一个大小为 n x n 的矩阵而言，如果其每一行和每一列都包含从 1 到 n 的 全部 整数（含 1 和 n），则认为该矩阵是一个 有效 矩阵。
+给你一个大小为 n x n 的整数矩阵 matrix ，请你判断矩阵是否为一个有效矩阵：如果是，返回 true ；否则，返回 false 。
+思路 # 哈希 # 代码 # 哈希 # class Solution { public boolean checkValid(int[][] matrix) { int N = matrix.length; int[] cnt = new int[N]; for (int i = 0; i &amp;lt; N; i++) { Arrays.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2144.-Minimum-Cost-of-Buying-Candies-With-Discount/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2144.-Minimum-Cost-of-Buying-Candies-With-Discount/</guid>
+      <description>2144. Minimum Cost of Buying Candies With Discount # 题目 # 一家商店正在打折销售糖果。每购买 两个 糖果，商店会 免费 送一个糖果。 免费送的糖果唯一的限制是：它的价格需要小于等于购买的两个糖果价格的 较小值 。 比方说，总共有 4 个糖果，价格分别为 1 ，2 ，3 和 4 ，一位顾客买了价格为 2 和 3 的糖果，那么他可以免费获得价格为 1 的糖果，但不能获得价格为 4 的糖果。 给你一个下标从 0 开始的整数数组 cost ，其中 cost[i] 表示第 i 个糖果的价格，请你返回获得 所有 糖果的 最小 总开销。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minimumCost(int[] cost) { int ans = 0; Arrays.</description>
     </item>
     
     <item>
@@ -31,6 +60,15 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2180.-Count-Integers-With-Even-Digit-Sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2180.-Count-Integers-With-Even-Digit-Sum/</guid>
+      <description> 2180. Count Integers With Even Digit Sum # 题目 # 给你一个正整数 num ，请你统计并返回 小于或等于 num 且各位数字之和为 偶数 的正整数的数目。 正整数的 各位数字之和 是其所有位上的对应数字相加的结果。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isEven(int num) { int sum = 0; while (num &amp;gt; 0) { sum += num % 10; num /= 10; } return sum % 2 == 0; } public int countEven(int num) { int ans = 0; for (int i = 1; i &amp;lt;= num; i++) { if (isEven(i)) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2181.-Merge-Nodes-in-Between-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -39,6 +77,15 @@
 对于每两个相邻的 0 ，之间的所有节点合并为一个节点，其值是所有已合并节点的值之和。然后将所有 0 移除，修改后的链表不应该含有任何 0 。
 返回修改后链表的头节点 head 。
 思路 # 代码 # public class ListNode { int val; ListNode next; ListNode() {} ListNode(int val) { this.val = val; } ListNode(int val, ListNode next) { this.val = val; this.next = next; } } class Solution { public ListNode mergeNodes(ListNode head) { ListNode sentinel = new ListNode(-1, head); ListNode ptr = sentinel; while (ptr !</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2185.-Counting-Words-With-a-Given-Prefix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2100-to-2199/2185.-Counting-Words-With-a-Given-Prefix/</guid>
+      <description>2185. Counting Words With a Given Prefix # 题目 # 给你一个字符串数组 words 和一个字符串 pref 。 返回 words 中以 pref 作为 前缀 的字符串的数目。 字符串 s 的 前缀 就是 s 的任一前导连续字符串。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int preficCount(String[] words, String pref) { int ans = 0; for (String word: words) { if (word.length() &amp;gt;= pref.length() &amp;amp;&amp;amp; word.substring(0, pref.length()).equals(pref)) ans++; } return ans; } } 致谢 # 昊十七</description>
     </item>
     
   </channel>

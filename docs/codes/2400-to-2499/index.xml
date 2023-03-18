@@ -7,11 +7,74 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/2400-to-2499/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2404.-Most-Frequent-Even-Element/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2404.-Most-Frequent-Even-Element/</guid>
+      <description>2404. Most Frequent Even Element # 题目 # 给你一个整数数组 nums ，返回出现最频繁的偶数元素。 如果存在多个满足条件的元素，只需要返回 最小 的一个。如果不存在这样的元素，返回 -1 。 1 &amp;lt;= nums.length &amp;lt;= 2000 0 &amp;lt;= nums[i] &amp;lt;= 105 思路 # 模拟 # 代码 # 模拟 # class Solution { public int mostFrequentEven(int[] nums) { int ans = Integer.MAX_VALUE; Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;(); for (int num: nums) { if (num % 2 == 1) continue; map.put(num, map.getOrDefault(num, 0) + 1); if (map.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2413.-Smallest-Even-Multiple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2413.-Smallest-Even-Multiple/</guid>
+      <description> 2413. Smallest Even Multiple # 题目 # 给你一个正整数 n ，返回 2 和 n 的最小公倍数（正整数）。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int smallestEvenMultiple(int n) { return n % 2 == 0 ? n : 2 * n; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2427.-Number-of-Common-Factors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2427.-Number-of-Common-Factors/</guid>
+      <description>2427. Number of Common Factors # 题目 # 给你两个正整数 a 和 b ，返回 a 和 b 的 公 因子的数目。 如果 x 可以同时整除 a 和 b ，则认为 x 是 a 和 b 的一个 公因子 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int commonFactors(int a, int b) { int ans = 0; for (int i = 1; i &amp;lt;= (int)Math.sqrt(a); i++) { if (a % i == 0) { if (b % i == 0) ans++; if (i * i &amp;lt; a &amp;amp;&amp;amp; b % (a / i) == 0) ans++; } } return ans; } } 致谢 # 灵茶山艾府</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2432.-The-Employee-That-Worked-on-the-Longest-Task/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2432.-The-Employee-That-Worked-on-the-Longest-Task/</guid>
+      <description>2432. The Employee That Worked on the Longest Task # 题目 # 共有 n 位员工，每位员工都有一个从 0 到 n - 1 的唯一 id 。 给你一个二维整数数组 logs ，其中 logs[i] = [idi, leaveTimei] ： idi 是处理第 i 个任务的员工的 id ，且 leaveTimei 是员工完成第 i 个任务的时刻。所有 leaveTimei 的值都是 唯一 的。 注意，第 i 个任务在第 (i - 1) 个任务结束后立即开始，且第 0 个任务从时刻 0 开始。 返回处理用时最长的那个任务的员工的 id 。如果存在两个或多个员工同时满足，则返回几人中 最小 的 id 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int hardestWorker(int n, int[][] logs) { int maxTime = logs[0][1], idx = logs[0][0]; for (int i = 1; i &amp;lt; logs.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2441.-Largest-Positive-Integer-That-Exists-With-Its-Negative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2441.-Largest-Positive-Integer-That-Exists-With-Its-Negative/</guid>
+      <description>2441. Largest Positive Integer That Exists With Its Negative # 题目 # 给你一个 不包含 任何零的整数数组 nums ，找出自身与对应的负数都在数组中存在的最大正整数 k 。 返回正整数 k ，如果不存在这样的整数，返回 -1 。 思路 # 哈希 # 双指针 # 代码 # 哈希 # class Solution { public int findMaxK(int[] nums) { Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int num: nums) { set.add(num); } int ans = -1; for (int num: nums) { if (num &amp;gt; 0 &amp;amp;&amp;amp; set.contains(-num) &amp;amp;&amp;amp; num &amp;gt; ans) ans = num; } return ans; } } 致谢 # 灵茶山艾府</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2460.-Apply-Operations-to-an-Array/</guid>
       <description>2460. Apply Operations to an Array # 题目 # 给你一个下标从 0 开始的数组 nums ，数组大小为 n ，且由 非负 整数组成。 对数组执行 n - 1 步操作，其中第 i 步操作（从 0 开始计数）要求对 nums 中第 i 个元素执行下述指令： 如果 nums[i] == nums[i + 1] ，则 nums[i] 的值变成原来的 2 倍，nums[i + 1] 的值变成 0 。否则，跳过这步操作。 在执行完 全部 操作后，将所有 0 移动 到数组的 末尾 。 例如，数组 [1,0,2,0,0,1] 将所有 0 移动到末尾后变为 [1,2,1,0,0,0] 。 返回结果数组。 注意 操作应当 依次有序 执行，而不是一次性全部执行。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int[] moveZeros(int[] nums) { int left = 0, right = 0; while (right &amp;lt; nums.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2469.-Convert-the-Temperature/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2469.-Convert-the-Temperature/</guid>
+      <description> 2469. Convert the Temperature # 题目 # 给你一个四舍五入到两位小数的非负浮点数 celsius 来表示温度，以 摄氏度（Celsius）为单位。 你需要将摄氏度转换为 开氏度（Kelvin）和 华氏度（Fahrenheit），并以数组 ans = [kelvin, fahrenheit] 的形式返回结果。 返回数组 ans 。与实际答案误差不超过 10-5 的会视为正确答案**。** 注意： 开氏度 = 摄氏度 + 273.15 华氏度 = 摄氏度 * 1.80 + 32.00 思路 # 模拟 # 代码 # 模拟 # class Solution { public double[] convertTemperature(double celsius) { return new double[]{celsius+273.15, celsius*1.80+32.00}; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2485.-Find-the-Pivot-Integer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2400-to-2499/2485.-Find-the-Pivot-Integer/</guid>
+      <description>2485. Find the Pivot Integer # 题目 # 给你一个正整数 n ，找出满足下述条件的 中枢整数 x ： 1 和 x 之间的所有元素之和等于 x 和 n 之间所有元素之和。 返回中枢整数 x 。如果不存在中枢整数，则返回 -1 。题目保证对于给定的输入，至多存在一个中枢整数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int pivotInteger(int n) { int root = (int)Math.sqrt((n*n+n)/2); return root * root == (n*n+n)/2 ? root : -1; } } 致谢 # 灵茶山艾府</description>
     </item>
     
     <item>

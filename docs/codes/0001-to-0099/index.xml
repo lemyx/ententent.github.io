@@ -229,6 +229,15 @@ countAndSay(1) = &amp;quot;1&amp;quot; countAndSay(n) 是对 countAndSay(n-1) �
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0071.-Simplify-Path/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0071.-Simplify-Path/</guid>
+      <description>0071. Simplify Path # 题目 # 给你一个字符串 path ，表示指向某一文件或目录的 Unix 风格 绝对路径 （以 &#39;/&#39; 开头），请你将其转化为更加简洁的规范路径。 在 Unix 风格的文件系统中，一个点（.）表示当前目录本身；此外，两个点 （..） 表示将目录切换到上一级（指向父目录）；两者都可以是复杂相对路径的组成部分。任意多个连续的斜杠（即，&#39;//&#39;）都被视为单个斜杠 &#39;/&#39; 。 对于此问题，任何其他格式的点（例如，&#39;...&#39;）均被视为文件/目录名称。 请注意，返回的 规范路径 必须遵循下述格式： 始终以斜杠 &#39;/&#39; 开头。 两个目录名之间必须只有一个斜杠 &#39;/&#39; 。 最后一个目录名（如果存在）不能 以 &#39;/&#39; 结尾。 此外，路径仅包含从根目录到目标文件或目录的路径上的目录（即，不含 &#39;.&#39; 或 &#39;..&#39;）。 返回简化后得到的 规范路径 。 思路 # 栈 # 代码 # 栈 # class Solution { public String simplifyPath(String path) { String[] parts = path.split(&amp;#34;/&amp;#34;); Stack&amp;lt;String&amp;gt; reserved = new Stack&amp;lt;&amp;gt;(); for (String part: parts) { if (part.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/0001-to-0099/0073.-Set-Matrix-Zeros/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

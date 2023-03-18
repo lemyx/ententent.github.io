@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1200-to-1299/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1200.-Minimum-Absolute-Difference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1200.-Minimum-Absolute-Difference/</guid>
+      <description>1200. Minimum Absolute Difference # 题目 # 给你个整数数组 arr，其中每个元素都 不相同。 请你找到所有具有最小绝对差的元素对，并且按升序的顺序返回。 每对元素对 [a,b] 如下： a , b 均为数组 arr 中的元素 a &amp;lt; b b - a 等于 arr 中任意两个元素的最小绝对差 思路 # 模拟 # 代码 # 模拟 # class Solution { public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; minimumAbsDifference(int[] arr) { Arrays.sort(arr); List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ans = new LinkedList&amp;lt;&amp;gt;(); int minDistance = Integer.MAX_VALUE; for (int i = 1; i &amp;lt; arr.length; i++) { int distance = arr[i] - arr[i-1]; if (distance &amp;gt; minDistance) continue; if (distance &amp;lt; minDistance) { minDistance = distance; ans = new LinkedList&amp;lt;&amp;gt;(); } List&amp;lt;Integer&amp;gt; pair = new LinkedList&amp;lt;&amp;gt;(); pair.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1206.-Design-SkipList/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -17,6 +26,24 @@
 本题的设计应该包含以下函数：
 bool search(int target)：返回 target 是否存在于跳表中。 void add(int num)：插入一个元素到跳表。 bool erase(int num)：在跳表中删除一个值，如果 num 不存在，直接返回 false。如果存在多个 num，删除其中任意一个即可。 Tips 跳表中可能存在多个相同的值，所设计的跳表需要处理这种情况。
 思路 # 代码 # class Skiplist { private int MAX_LEVEL = 10; private class SkipNode { public int val; public SkipNode[] next; SkipNode(int val) { this.val = val; this.next = new SkipNode[this.MAX_LEVEL]; } } private SkipNode sentinel; private Random random; public Skiplist() { this.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1207.-Unique-Number-of-Occurrences/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1207.-Unique-Number-of-Occurrences/</guid>
+      <description>1207. Unique Number of Occurrences # 题目 # 给你一个整数数组 arr，请你帮忙统计数组中每个数的出现次数。 如果每个数的出现次数都是独一无二的，就返回 true；否则返回 false。 1 &amp;lt;= arr.length &amp;lt;= 1000 -1000 &amp;lt;= arr[i] &amp;lt;= 1000 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean uniqueOccurrences(int[] arr) { int[] cnt = new int[2001]; for (int num: arr) cnt[num+1000]++; Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;(); for (int i = 0; i &amp;lt; cnt.length; i++) { if (cnt[i] == 0) continue; if (set.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1232.-Check-If-It-Is-a-Straight-Line/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1200-to-1299/1232.-Check-If-It-Is-a-Straight-Line/</guid>
+      <description>1232. Check If It Is a Straight Line # 题目 # 给定一个数组 coordinates ，其中 coordinates[i] = [x, y] ， [x, y] 表示横坐标为 x、纵坐标为 y 的点。请你来判断，这些点是否在该坐标系中属于同一条直线上。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean checkStraightLine(int[][] coordinates) { if (coordinates[0][0] == coordinates[1][0]) { for (int i = 2; i &amp;lt; coordinates.length; i++) { if (coordinates[0][0] != coordinates[i][0]) return false; } return true; } double slope = (double)(coordinates[1][1]-coordinates[0][1]) / (coordinates[1][0]-coordinates[0][0]); for (int i = 2; i &amp;lt; coordinates.</description>
     </item>
     
     <item>

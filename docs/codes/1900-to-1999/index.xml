@@ -7,6 +7,33 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://leetcode.akaeecs.com/docs/codes/1900-to-1999/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1952.-Three-Divisors/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1952.-Three-Divisors/</guid>
+      <description>1952. Three Divisors # 题目 # 给你一个整数 n 。如果 n 恰好有三个正除数 ，返回 true ；否则，返回 false 。 如果存在整数 k ，满足 n = k * m ，那么整数 m 就是 n 的一个 除数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public boolean isThree(int n) { if (n &amp;lt; 3) return false; int cnt = 0; for (int i = 1; i &amp;lt; (int)Math.sqrt(n); i++) { if (n % i == 0) cnt += 2; } if ((int)Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1974.-Minimum-Time-to-Type-Word-Using-Special-Typewriter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1974.-Minimum-Time-to-Type-Word-Using-Special-Typewriter/</guid>
+      <description>1974. Minimum Time to Type Word Using Special Typewriter # 题目 # 有一个特殊打字机，它由一个 圆盘 和一个 指针 组成， 圆盘上标有小写英文字母 &#39;a&#39; 到 &#39;z&#39;。只有 当指针指向某个字母时，它才能被键入。指针 初始时 指向字符 &#39;a&#39; 。 每一秒钟，你可以执行以下操作之一： 将指针 顺时针 或者 逆时针 移动一个字符。 键入指针 当前 指向的字符。 给你一个字符串 word ，请你返回键入 word 所表示单词的 最少 秒数 。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int distance(Character prev, Character cur) { if (cur == prev) return 0; if (cur &amp;gt; prev) { return Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1979.-Find-Greatest-Common-Divisor-of-Array/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1979.-Find-Greatest-Common-Divisor-of-Array/</guid>
+      <description>1979. Find Greatest Common Divisor of Array # 题目 # 给你一个整数数组 nums ，返回数组中最大数和最小数的 最大公约数 。 两个数的 最大公约数 是能够被两个数整除的最大正整数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int findGCD(int[] nums) { int maximum = nums[0], minimum = nums[0]; for (int num: nums) { maximum = Math.max(maximum, num); minimum = Math.min(minimum, num); } int ans = 0; for (int i = 1; i &amp;lt;= (int)Math.sqrt(minimum); i++) { if (minimum % i == 0 &amp;amp;&amp;amp; maximum % i == 0) ans = Math.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/1900-to-1999/1991.-Find-the-Middle-Index-in-Array/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

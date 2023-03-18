@@ -47,6 +47,42 @@
     
     <item>
       <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2255.-Count-Prefixes-of-a-Given-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2255.-Count-Prefixes-of-a-Given-String/</guid>
+      <description> 2255. Count Prefixes of a Given String # 题目 # 给你一个字符串数组 words 和一个字符串 s ，其中 words[i] 和 s 只包含 小写英文字母 。 请你返回 words 中是字符串 s 前缀 的 字符串数目 。 一个字符串的 前缀 是出现在字符串开头的子字符串。子字符串 是一个字符串中的连续一段字符序列。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int countPrefixes(String[] words, String s) { int ans = 0; for (String word: words) { if (word.length() &amp;lt;= s.length() &amp;amp;&amp;amp; s.substring(0, word.length()).equals(word)) ans++; } return ans; } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2278.-Percentage-of-Letter-in-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2278.-Percentage-of-Letter-in-String/</guid>
+      <description> 2278. Percentage of Letter in String # 题目 # 给你一个字符串 s 和一个字符 letter ，返回在 s 中等于 letter 字符所占的 百分比 ，向下取整到最接近的百分比。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int percentageLetter(String s, char letter) { int ans = 0; for (int i = 0; i &amp;lt; s.length(); i++) { if (s.charAt(i) == letter) ans++; } return ans * 100 / s.length(); } } </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2283.-Minimum-Hours-of-Training-to-Win-a-Competition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2283.-Minimum-Hours-of-Training-to-Win-a-Competition/</guid>
+      <description>2283. Minimum Hours of Training to Win a Competition # 题目 # 你正在参加一场比赛，给你两个 正 整数 initialEnergy 和 initialExperience 分别表示你的初始精力和初始经验。 另给你两个下标从 0 开始的整数数组 energy 和 experience，长度均为 n 。 你将会 依次 对上 n 个对手。第 i 个对手的精力和经验分别用 energy[i] 和 experience[i] 表示。当你对上对手时，需要在经验和精力上都 严格 超过对手才能击败他们，然后在可能的情况下继续对上下一个对手。 击败第 i 个对手会使你的经验 增加 experience[i]，但会将你的精力 减少 energy[i] 。 在开始比赛前，你可以训练几个小时。每训练一个小时，你可以选择将增加经验增加 1 或者 将精力增加 1 。 返回击败全部 n 个对手需要训练的 最少 小时数目。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minNumberOfHours(int initialEnergy, int initialExperience, int[] energy, int[] experience) { int myEnergy = initialEnergy, myExperience = initialExperience; int ans = 0; for (int i = 0; i &amp;lt; energy.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2287.-Rearrange-Characters-to-Make-Target-String/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2287.-Rearrange-Characters-to-Make-Target-String/</guid>
+      <description>2287. Rearrange Characters to Make Target String # 题目 # 给你两个下标从 0 开始的字符串 s 和 target 。你可以从 s 取出一些字符并将其重排，得到若干新的字符串。 从 s 中取出字符并重新排列，返回可以形成 target 的 最大 副本数。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int rearrangeCharacters(String s, String target) { int[] cntS = new int[26], cntTarget = new int[26]; for (int i = 0; i &amp;lt; target.length(); i++) cntTarget[target.charAt(i)-&amp;#39;a&amp;#39;]++; for (int i = 0; i &amp;lt; s.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2289.-Steps-to-Make-Array-Non-decreasing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,6 +90,15 @@
       <description>2289. Steps to Make Array Non-decreasing # 题目 # 给定一个下标从 0 开始的整数数组 nums。在一步操作中，移除所有满足 nums[i-1] &amp;gt; nums[i] 的 nums[i]，其中 0 &amp;lt; i &amp;lt; nums.length。
 重复执行步骤，直到 nums 变为 非递减 数组，返回所需执行的操作数。
 思路 # 代码 # class Solution { /** 观察: 如果一个结点的左侧结点未发生变化，则该结点在本轮不会被删除 * 推论: 仅有被删除的结点会触发下一轮删除。当某结点被删除时，考虑是否将被删除结点的下一个结点纳入下一轮删除的列表里 */ private class ListNode { public int val; public ListNode prev; public ListNode next; ListNode(int val, ListNode prev, ListNode next) { this.val = val; this.prev = prev; this.next = next; } } public int totalSteps(int[] nums) { ListNode sentinel = new ListNode(-1, null, null); sentinel.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2293.-Min-Max-Game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leetcode.akaeecs.com/docs/codes/2200-to-2299/2293.-Min-Max-Game/</guid>
+      <description>2293. Min Max Game # 题目 # 给你一个下标从 0 开始的整数数组 nums ，其长度是 2 的幂。 对 nums 执行下述算法： 设 n 等于 nums 的长度，如果 n == 1 ，终止 算法过程。否则，创建 一个新的整数数组 newNums ，新数组长度为 n / 2 ，下标从 0 开始。 对于满足 0 &amp;lt;= i &amp;lt; n / 2 的每个 偶数 下标 i ，将 newNums[i] 赋值 为 min(nums[2 * i], nums[2 * i + 1]) 。 对于满足 0 &amp;lt;= i &amp;lt; n / 2 的每个 奇数 下标 i ，将 newNums[i] 赋值 为 max(nums[2 * i], nums[2 * i + 1]) 。 用 newNums 替换 nums 。 从步骤 1 开始 重复 整个过程。 执行算法后，返回 nums 中剩下的那个数字。 思路 # 模拟 # 代码 # 模拟 # class Solution { public int minMaxGame(int[] nums) { int[] prev = nums; while (prev.</description>
     </item>
     
     <item>
